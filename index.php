@@ -91,19 +91,94 @@
             </a>
           </li> -->
 
-          
+          <style>
+          .uxh-tray-menu {
+    background-color: #fff;
+    position: inherit;
+    display: table-cell;
+    margin: 0;
+    min-height: 42px;
+    padding: 0;
+    vertical-align: bottom;
+    zoom: 1;
+    opacity: 1;
+    width: 1px;
+}
+          .uxh-tray-dropdown {
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 0;
+    right: 0;
+    padding: 40px 20px;
+    -webkit-box-shadow: 4px 4px 0 0 rgba(0,0,0,.1);
+    box-shadow: 4px 4px 0 0 rgba(0,0,0,.1);
+    background-color: #e8e8e8;
+    font-size: 14px;
+    z-index: 1029;
+    overflow: auto;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transition: all .3s cubic-bezier(.65,-.01,.26,1);
+    transition: all .3s cubic-bezier(.65,-.01,.26,1);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    display: block;
+    height: auto;
+}
+.uxh-open .uxh-tray-dropdown {
+    /* -webkit-transform: scaleY(1); */
+    /* transform: scaleY(1); */
+}
+.open .tray-content {
+    opacity: 1;
+    -webkit-transition-delay: .25s;
+    transition-delay: .25s;
+}
+.open .tray-content {
+    opacity: 1;
+    -webkit-transition-delay: .25s;
+    transition-delay: .25s;
+}
+          </style>
 
           <li class="dropdown" data-toggle="modal" data-target="#contactmodal">
             <a href="">
               <i class="material-icons">contacts</i> Contact
               <!-- <b class="caret"></b> -->
+              
             </a>
+            </div>
           </li>
 
           
             </ul>
+            
           </div>
       </div>
+      <div class="uxh-open open">
+              <div class="uxh-tray-dropdown">
+              <div class="uxh-tray-content">
+              <button class="uxh-close"></button>
+              <div class="uxh-container">
+              <div class="uxh-row">
+              <div class="uxh-col-lg-4 uxh-col-md-6 uxh-content-wrap">
+              <div class="uxh-row"><div class="uxh-col-sm-12">
+              <h3 class="uxh-font-primary-bold"><span>โทรหาเรา</span></h3>
+              </div></div>
+              <ul class="uxh-alt-contact-list uxh-list-unstyled">
+              <li><span>สนับสนุน 24/7 อังกฤษ</span>
+                <a class="uxh-headline-primary uxh-contact-link" data-eid="uxp.hyd.shared.utility_bar.support_phone.02_105_6194.click" href="tel:021056194">02-105-6194</a>
+                </li>
+                <li>
+                  <span>สนับสนุน 24/7 อังกฤษ</span>
+                  <a class="uxh-headline-primary uxh-contact-link" data-eid="uxp.hyd.shared.utility_bar.support_phone.060_002_4085.click" href="tel:0600024085">060-002-4085</a>
+                  </li>
+                    </ul>
+                    <div class="uxh-contact-link-info"><span>ไดเรกทอรีสากล</span>
+                    </div>
+                    <a href="https://th.godaddy.com/contact-us.aspx" class="uxh-headline-primary uxh-contact-link" data-eid="uxp.hyd.sales_header.utility_bar.support_phone.global_directory.link.click" data-tcc-ignore="true"><span>หมายเลขโทรศัพท์และชั่วโมงทำงาน</span></a></div><div class="uxh-col-lg-4 uxh-col-md-6 uxh-content-wrap uxh-divider"><div id="gdchat-container"></div></div><div class="uxh-col-md-4 uxh-help-mobile uxh-hidden-md-up"><div class="uxh-row"><div class="uxh-col-sm-12"><h3 class="uxh-font-primary-bold"><span>ศูนย์ช่วยเหลือ</span></h3></div></div><p><span>สำรวจแหล่งข้อมูลความช่วยเหลือออนไลน์ของเรา</span></p><div><a href="https://th.godaddy.com/help" class="uxh-btn uxh-btn-default" data-eid="uxp.hyd.sales_header.utility_bar.support_phone.help_center.help_center_link.link.click" data-tcc-ignore="true"><span>วิธีใช้</span></a>
+                    </div></div></div></div></div>
+                    </div>
     </nav>
 
   <div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(http://danatoursasia.com/images/bg-sea2.png); transform: translate3d(0px, 0px, 0px);" id="page-headerpopular">
