@@ -1,6 +1,6 @@
 <?
 include("../config.php");
-    $sql = "SELECT *  FROM ir_tourpackage";
+    $sql = "SELECT *  FROM dn_package";
     $Objquery = mysql_query($sql,$conndb);
     //echo $Objquery;
     //$row = mysql_num_rows($Objquery); // นับจำนวนแถว

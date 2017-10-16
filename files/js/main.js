@@ -44,9 +44,10 @@ var app = angular.module('myApp', ['ngCookies']);
     $scope.getTourforarea = function(x){
         $scope.dataTour = [];
         console.log(x)
+        console.log($scope.allTour)
          angular.forEach($scope.allTour, function (y) {
-            console.log(y.province)
-            if (y.province == x) {
+            console.log(y.city)
+            if (y.city == x) {
                 $scope.dataTour.push(y);
             }
             

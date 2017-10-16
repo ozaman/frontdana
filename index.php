@@ -316,7 +316,7 @@
                         <div class="rotating-card-container">
                             <div class="card-image">
                                 <div class="front">
-                                    <img class="img" src="backend/images/icon/{{item.icon}}"  style="height: 280px">
+                                    <img class="img" src="./data/files/upload/icon/{{item.icon}}"  style="height: 280px">
                                     <div class="colored-shadow" style="background-image: url(&quot;files/images/dolce.jpg&quot;); opacity: 1;"></div>
                                 </div>
                                 <div class="back back-background" style="height: 376px; width: 360px; background-image: url(&quot;files/images/page1_img1.jpg&quot;);">
@@ -338,7 +338,7 @@
                         </div>
                         <div class="card-content">
                             <h4 class="card-title">
-                                <a href="" ng-bind="item.name_en">Similan Island</a>
+                                <a href="" ng-bind="item.name"></a>
                             </h4>
                             <p class="card-description" ng-bind="item.description" style="height: 125px;overflow: hidden;"></p>
                             <div class="footer">
@@ -346,12 +346,12 @@
                                 <div class="" style="display: inline-block;" align="right">
                                     <div type="button" rel="tooltip" title="" class="btn btn-simple " data-original-title="place" style=" margin-top: 0; text-transform: none;margin: 0;font-size: 16px;padding: 0;margin-left: -80px;
 ">
-                                      <i class="material-icons" style="line-height: 2;">place</i> <span ng-bind="item.province"></span>
+                                      <i class="material-icons" style="line-height: 2;">place</i> <span ng-bind="item.city"></span>
                                     </div>
                                 </div>
                                 <div class="price-container" align="left" style="    float: right;">
                                     <span class="price price-old"> <!-- 12,500 --></span>
-                                    <span class="price price-new" ng-bind="item.cost | currency:'':0 "> </span> / Package
+                                    <span class="price price-new" ng-bind="item.net_price_adult | currency:'':0 "> </span> / Package
                                 </div>
                             </div>
                         </div>
@@ -382,13 +382,13 @@
             <div class="col-md-3" ng-repeat="item in dataTour" id="fade-in-out" >
                 <div class="card card-blog" >
                     <div class="card-image" ng-click="viewpackageforid(item.id)">
-                        <img src="backend/images/icon/{{item.icon}}" style="height: 180px" >
+                        <img src="./data/files/upload/icon/{{item.icon}}" style="height: 180px" >
                        <!--  <div class="colored-shadow" style="background-image: url(&quot;files/images/color1.jpg&quot;); opacity: 1;"></div> -->
                         <!-- <div class="ripple-container"></div>
                         <div class="colored-shadow" style="background-image: url(&quot;files/images/1.png&quot;); opacity: 1;"></div> -->
                     </div>
                     <div class="card-content">
-                        <h6 class="category text-rose" ng-bind="item.name_en">Similan Island</h6>                      
+                        <h6 class="category text-rose" ng-bind="item.name"></h6>                      
                         
                     </div>
                     <div class="description-package">
@@ -400,7 +400,7 @@
                       <p class="pro-item" ng-bind="item.province" align="left" ></p>
 
                       <p style="float: right;display: inline-block;">/ Package</p>
-                      <p ng-bind="item.cost | currency:'':0 " align="right" style="float: right;    color: #FF5722;"></p>
+                      <p ng-bind="item.net_price_adult | currency:'':0 " align="right" style="float: right;    color: #FF5722;"></p>
                     </div>
                 </div>
             </div>
