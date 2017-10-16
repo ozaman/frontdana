@@ -299,8 +299,18 @@
     </div>
   </div>
 </div>
- 
+ <style>
+   .obj3 {
+    width: 132px;
+    height: 134px;
+    position: absolute;
+    top: -60px;
+    right: 50px;
+    z-index: -8;
+}
+ </style>
 <div class="main main-raised">
+
     <div class="section " style="padding-top: 5px" align="center">
   
         <div class="container">
@@ -365,9 +375,11 @@
 </div> <!-- end-main-raised -->
 
 <div class="section section-blog" id="area" >
+
     <div class="container">
     <div class="row">
     <div class="col-md-12">
+    <!-- <div class="obj3"><img src="./files/images/obj3.png" alt=""></div> -->
         <h2 class="section-title">Area</h2>      
         <ul class="nav nav-pills nav-pills-icons" role="tablist" style="margin-bottom: 25px;">
             <li class="active" id="Phuket"><a href="#pill1" data-toggle="tab" aria-expanded="true" ng-click="getTourforarea('Phuket');show = !show">Phuket</a></li>
