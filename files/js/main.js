@@ -36,6 +36,11 @@ var app = angular.module('myApp', ['ngCookies']);
         //alert("aaaa")
          $window.location.href = 'view.php#?data='+x;
     }
+    $scope.contact = function(){
+        angular.element(document.querySelector('.open')).addClass('uxh-open')
+        //alert("aaaa")
+         //$window.location.href = 'view.php#?data='+x;
+    }
     $scope.getTourforarea = function(x){
         $scope.dataTour = [];
         console.log(x)

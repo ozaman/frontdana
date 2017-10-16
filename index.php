@@ -68,7 +68,7 @@
     
 </head>
 
-<body class="ecommerce-page" ng-app="myApp" ng-controller="main">
+<body ng-app="myApp" ng-controller="main">
   <nav class="navbar navbar-default navbar-fixed-top navbar-color-on-scroll navbar-transparent" color-on-scroll="100" id="sectionsNav">
       <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
@@ -79,7 +79,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a  href="index.php" class="navbar-brand"> <img src="http://danatoursasia.com/images/logo.png" width="50"></a>
+            <a  href="index.php" class="navbar-brand"> <img src="./files/images/logo.png" width="50"></a>
           </div>
 
           <div class="collapse navbar-collapse">
@@ -127,7 +127,7 @@
 }
 .uxh-open .uxh-tray-dropdown {
     /* -webkit-transform: scaleY(1); */
-    /* transform: scaleY(1); */
+    transform: scaleY(1);
 }
 .open .tray-content {
     opacity: 1;
@@ -138,15 +138,53 @@
     opacity: 1;
     -webkit-transition-delay: .25s;
     transition-delay: .25s;
+}
+.uxh-tray-toggle:after {
+    display: inline;
+    margin-left: .35714rem;
+    font-family: uxfont;
+    font-size: 8px;
+    line-height: 1;
+    content: '\E443';
+    border: 0;
+    vertical-align: middle;
+    width: 0;
+    height: 0;
+}
+.uxh-utility-bar .uxh-close:before {
+    content: '\D7';
+}
+ .uxh-close {
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+    -webkit-appearance: none;
+    width: 1em;
+    font-size: 24px;
+    opacity: 1;
+    font-weight: 900;
+}
+.uxh-divider:before {
+    content: '';
+    width: 1px;
+    background-color: #999;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    /* display: none; */
+    height: 220px;
 }
           </style>
 
-          <li class="dropdown" data-toggle="modal" data-target="#contactmodal">
-            <a href="">
-              <i class="material-icons">contacts</i> Contact
+          <li class="dropdown" ng-click="contact()">
+            
+              <!-- <i class="material-icons">contacts</i>  -->
               <!-- <b class="caret"></b> -->
+              <span><div><span class="uxh-basic-phone-text uxh-hidden-sm-down">Contact</span></div></span>
               
-            </a>
+            
             </div>
           </li>
 
@@ -155,11 +193,11 @@
             
           </div>
       </div>
-      <div class="uxh-open open">
+      <div class="open">
               <div class="uxh-tray-dropdown">
               <div class="uxh-tray-content">
               <button class="uxh-close"></button>
-              <div class="uxh-container">
+              <!-- <div class="uxh-container">
               <div class="uxh-row">
               <div class="uxh-col-lg-4 uxh-col-md-6 uxh-content-wrap">
               <div class="uxh-row"><div class="uxh-col-sm-12">
@@ -176,23 +214,91 @@
                     </ul>
                     <div class="uxh-contact-link-info"><span>ไดเรกทอรีสากล</span>
                     </div>
-                    <a href="https://th.godaddy.com/contact-us.aspx" class="uxh-headline-primary uxh-contact-link" data-eid="uxp.hyd.sales_header.utility_bar.support_phone.global_directory.link.click" data-tcc-ignore="true"><span>หมายเลขโทรศัพท์และชั่วโมงทำงาน</span></a></div><div class="uxh-col-lg-4 uxh-col-md-6 uxh-content-wrap uxh-divider"><div id="gdchat-container"></div></div><div class="uxh-col-md-4 uxh-help-mobile uxh-hidden-md-up"><div class="uxh-row"><div class="uxh-col-sm-12"><h3 class="uxh-font-primary-bold"><span>ศูนย์ช่วยเหลือ</span></h3></div></div><p><span>สำรวจแหล่งข้อมูลความช่วยเหลือออนไลน์ของเรา</span></p><div><a href="https://th.godaddy.com/help" class="uxh-btn uxh-btn-default" data-eid="uxp.hyd.sales_header.utility_bar.support_phone.help_center.help_center_link.link.click" data-tcc-ignore="true"><span>วิธีใช้</span></a>
-                    </div></div></div></div></div>
+                    <a href="https://th.godaddy.com/contact-us.aspx" class="uxh-headline-primary uxh-contact-link" data-eid="uxp.hyd.sales_header.utility_bar.support_phone.global_directory.link.click" data-tcc-ignore="true"><span>หมายเลขโทรศัพท์และชั่วโมงทำงาน</span></a></div>
+                    <div class="uxh-col-lg-4 uxh-col-md-6 uxh-content-wrap uxh-divider">
+                      <div id="gdchat-container"></div>
+                    </div>
+                    <div class="uxh-col-md-4 uxh-help-mobile uxh-hidden-md-up">
+                      <div class="uxh-row"><div class="uxh-col-sm-12">
+                        <h3 class="uxh-font-primary-bold"><span>ศูนย์ช่วยเหลือ</span></h3>
+                      </div>
+                    </div>
+                    <p><span>สำรวจแหล่งข้อมูลความช่วยเหลือออนไลน์ของเรา</span></p>
+                    <div>
+                      <a href="https://th.godaddy.com/help" class="uxh-btn uxh-btn-default" data-eid="uxp.hyd.sales_header.utility_bar.support_phone.help_center.help_center_link.link.click" data-tcc-ignore="true"><span>วิธีใช้</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>-->
+                    <!-- <div class="subscribe-line subscribe-line-image" data-parallax="true" style="background-color: #e8e8e8;" id="footers"> -->
+    <div class="container">
+      <div class="row">
+        <!-- <div class="col-md-6 ">
+          <div class="text-center">
+            <h3 class="title">Subscribe to our Newsletter</h3>
+            <p class="description">
+              Join our newsletter and get news in your inbox every week! We hate spam too, so no worries about this.
+            </p>
+          </div>
+
+          <div class="card card-raised card-form-horizontal">
+            <div class="card-content">
+              <form method="">
+                <div class="row">
+                  <div class="col-sm-8">
+
+                    <div class="input-group">
+                      <span class="input-group-addon">
+                        <i class="material-icons">mail</i>
+                      </span>
+                      <div class="form-group is-empty"><input type="email" value="" placeholder="Your Email..." class="form-control"><span class="material-input"></span><span class="material-input"></span></div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <button type="button" class="btn btn-rose btn-block">Subscribe</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div> -->
+        <div class="col-md-4 col-md-offset-1" >
+          
+          <h5 style="color: #fff">Contacts</h5>
+          <div class="contact" id="contact">             
+            <ul >
+              <li class="">Address: <a>116/3 Moo. 2 Maikhao, Phuket, 83110</a></li>
+              <li class="">Phones: <a href="tel:#" style="display: inline-block;">(+66) 87-2794723</a>; <a href="tel:#" style="display: inline-block;">087-2794723</a></li>
+              <li class="">E-mail: <a href="mailto:#" style="display: inline-block;"> imronspeedboattour@gmail.com</a></li>
+            </ul>
+          </div>
+          <div class="uxh-divider">
+                      <div id="gdchat-container"></div>
+                    </div>
+
+        </div>
+      </div>
+    </div>
+  <!-- </div> -->
+                  </div></div> 
                     </div>
     </nav>
 
-  <div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(http://danatoursasia.com/images/bg-sea2.png); transform: translate3d(0px, 0px, 0px);" id="page-headerpopular">
-    <div class="container">
+  <div class="page-header header-filter header-small" data-parallax="true"  id="page-headerpopular">
+  <div style="background-image: url(./files/images/slide.jpg); transform: translate3d(0px, 0px, 0px);min-height: 65vh;">  
+  <div class="container">
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
           <div class="brand">
             <h1 class="title">Travel Service!</h1>
-            <h4>IMRON PHUKET SPEEDBOAD TOUR  <b>LTD.</b> ,PART.</h4>
+            <!-- <h4>IMRON PHUKET SPEEDBOAD TOUR  <b>LTD.</b> ,PART.</h4> -->
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
  
 <div class="main main-raised">
     <div class="section " style="padding-top: 5px" align="center">
@@ -309,53 +415,7 @@
 
 
 
-  <div class="subscribe-line subscribe-line-image" data-parallax="true" style="background-image: url(&#39;files/images/bg_body.jpg&#39;);" id="footers">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 ">
-          <div class="text-center">
-            <h3 class="title">Subscribe to our Newsletter</h3>
-            <p class="description">
-              Join our newsletter and get news in your inbox every week! We hate spam too, so no worries about this.
-            </p>
-          </div>
-
-          <div class="card card-raised card-form-horizontal">
-            <div class="card-content">
-              <form method="">
-                <div class="row">
-                  <div class="col-sm-8">
-
-                    <div class="input-group">
-                      <span class="input-group-addon">
-                        <i class="material-icons">mail</i>
-                      </span>
-                      <div class="form-group is-empty"><input type="email" value="" placeholder="Your Email..." class="form-control"><span class="material-input"></span><span class="material-input"></span></div>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <button type="button" class="btn btn-rose btn-block">Subscribe</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-
-        </div>
-        <div class="col-md-4 col-md-offset-1" >
-          <h5 style="color: #fff">Contacts</h5>
-          <div class="contact" id="contact">             
-            <ul >
-              <li class="">Address: <a>116/3 Moo. 2 Maikhao, Phuket, 83110</a></li>
-              <li class="">Phones: <a href="tel:#" style="display: inline-block;">(+66) 87-2794723</a>; <a href="tel:#" style="display: inline-block;">087-2794723</a></li>
-              <li class="">E-mail: <a href="mailto:#" style="display: inline-block;"> imronspeedboattour@gmail.com</a></li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
+  
   <div class="modal fade" id="contactmodal">
                     <div class="modal-dialog">
                         <!-- Modal content-->
