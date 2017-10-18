@@ -10,6 +10,7 @@ var app = angular.module('myApp', ['ngCookies']);
                 //data: $.param({sv: $scope.dataSV}),
                 headers: {'Content-Type': 'application/x-www-form-urlencoded'}
                 }).success(function(res){
+                    console.log(res)
                     $scope.tours = res;
                     $scope.dataTour = res;
                     $scope.allTour = res;
