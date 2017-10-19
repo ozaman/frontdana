@@ -12,7 +12,14 @@ var app = angular.module('myApp', ['ngCookies']);
                 }).success(function(res){
                     console.log(res)
                     $scope.tours = res;
-                    $scope.dataTour = res;
+                    angular.forEach(res, function (d,i) {
+                    if (d.show_home == 1 && i <=10) {
+                        $scope.dataTour.push(d);
+                    }
+                
+
+            });   
+                    //$scope.dataTour = res;
                     $scope.allTour = res;
                  angular.forEach(res, function (z) {
                     if (z.show_popular == 1) {
@@ -29,8 +36,10 @@ var app = angular.module('myApp', ['ngCookies']);
             });
     $scope.getTourforareaall = function(){
         $scope.dataTour = [];
-        angular.forEach($scope.allTour, function (z) {
-                $scope.dataTour.push(z);
+        angular.forEach($scope.tours, function (z,i) {
+                if (i<=7) {
+                    $scope.dataTour.push(z);
+                }
             });
     }
     $scope.viewpackageforid = function(x){
@@ -45,10 +54,10 @@ var app = angular.module('myApp', ['ngCookies']);
     $scope.getTourforarea = function(x){
         $scope.dataTour = [];
         console.log(x)
-        console.log($scope.allTour)
-         angular.forEach($scope.allTour, function (y) {
-            console.log(y.city)
-            if (y.city == x) {
+        //console.log($scope.allTour)
+         angular.forEach($scope.tours, function (y,key) {
+        console.log(key)
+            if (y.city == x && key <= 8) {
                 $scope.dataTour.push(y);
             }
             
