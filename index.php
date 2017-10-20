@@ -28,7 +28,111 @@
     .navbar-nav>li>a {
     color: #333 !important;
   </style>
-    <div id="header-636bc237837a4d9b38e27ea5831a8004">
+
+  <nav class="navbar navbar-default navbar-fixed-top navbar-color-on-scroll navbar-transparent" color-on-scroll="100" id="sectionsNav">
+      <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a  href="index.php" class="navbar-brand"> 
+                        <img src="./files/images/logo.png" width="50">
+                    </a>
+          </div>
+
+          <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">                    
+                        <li>
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                   
+                                <p> Help<span class="caret"></span></p>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="/bootstrap-themes">
+                                        All Categories
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/bootstrap-themes/admin-dashboard">
+                                        Admin &amp; Dashboards
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/bootstrap-themes/ui-kit">
+                                        UI Kits
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/bootstrap-themes/free">
+                                        Free Themes
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/bootstrap-themes/premium">
+                                        Premium Themes
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/bootstrap-themes/angular-dashboard">
+                                        Angular Dashboards
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/bootstrap-themes/landing-page">
+                                        Landing Pages
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/bootstrap-themes/e-commerce">
+                                        E-commerce
+                                    </a>
+                                </li>
+                               
+                            </ul>
+                           
+
+                        </li>
+                    </ul>            
+                </div>
+      </div>
+    </nav>
+    <div class="page-header header-filter header-small" data-parallax="true" style="background-size: 100%;background-image: url(./files/images/1.png);background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);min-height: 80vh;">
+        <div >  
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-4">
+                        <div class="brand">
+                            <h1 class="title">Travel Service!</h1>
+                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- <div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(&quot;files/images/bg0.jpg&quot;); transform: translate3d(0px, 0px, 0px);" id="page-headerpopular">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="brand">
+            <h1 class="title">Travel Service!</h1>
+            <h4>IMRON PHUKET SPEEDBOAD TOUR  <b>LTD.</b> ,PART.</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+
+
+
+    <!-- <div id="header-636bc237837a4d9b38e27ea5831a8004">
         <nav class="navbar navbar-color-on-scroll fixed-top navbar-transparent" color-on-scroll="100" id="sectionsNav" style="    border-top: #008933 solid 4px;">
             <div class="container">        
                 <div class="navbar-header">
@@ -98,22 +202,22 @@
                     </ul>            
                 </div>
             </div>
-        </nav>
-    </div>  
-    <div class="page-header ">
+        </nav> -->
+    <!-- </div>   -->
+   <!--  <div class="page-header ">
         <div style="background-size: 100%;background-image: url(./files/images/slide.jpg);background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);min-height: 65vh;">  
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-4">
                         <div class="brand">
                             <h1 class="title">Travel Service!</h1>
-                          <!-- <h4>IMRON PHUKET SPEEDBOAD TOUR  <b>LTD.</b> ,PART.</h4> -->
+                         
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <section>
         <div class="main main-raised">
@@ -152,8 +256,8 @@
                                         <h4 class="card-title">
                                             <a href="" ng-bind="item.name"></a>
                                         </h4>
-                                        <p class="card-description" ng-bind="item.description" style="height: 125px;overflow: hidden;">                                          
-                                        </p>
+                                       <!--  <p class="card-description" ng-bind="item.description" style="height: 125px;overflow: hidden;">                                          
+                                        </p> -->
                                         <div class="footer">                                            
                                             <div class="" style="display: inline-block;" align="right">
                                                 <div type="button" rel="tooltip" title="" class="btn btn-simple " data-original-title="place" style=" margin-top: 0; text-transform: none;margin: 0;font-size: 16px;padding: 0;margin-left: -80px;">
@@ -179,10 +283,10 @@
 
     <div class="section section-blog" id="area" >
         <div class="container">
-            <div class="row">
+            <div class="row" style="margin-top: 35px;">
                 <div class="col-md-12">   
                     <h2 class="section-title">Tour</h2>      
-                    <ul class="nav nav-pills nav-pills-icons" role="tablist" style="margin-bottom: 25px;">
+                    <ul class="nav-tours" role="tablist" style="margin-bottom: 25px;">
                         <li class="active" id="Phuket"><a href="#pill1" data-toggle="tab" aria-expanded="true" ng-click="getTourforarea('Phuket');show = !show">Phuket</a></li>
                         <li class="" id="Phangnga"><a href="#pill2" data-toggle="tab" aria-expanded="false" ng-click="getTourforarea('Phang nga');show = !show">Phang nga</a></li>
                         <li class="" id="Krabi"><a href="#pill3" data-toggle="tab" aria-expanded="false" ng-click="getTourforarea('Krabi');show = !show">Krabi</a></li>
@@ -201,9 +305,9 @@
                             <h6 class="category text-rose" ng-bind="item.name"></h6>                      
                             
                         </div>
-                        <div class="description-package">
+                        <!-- <div class="description-package">
                             <p class="card-description" ng-bind="item.description"></p>
-                        </div>
+                        </div> -->
                         <div class="cost-pro">
                             <i class="material-icons" style="display: inline-block; line-height: 0;">place</i>
                             <p class="pro-item" ng-bind="item.province" align="left" ></p>
@@ -214,24 +318,32 @@
                     </div>
                 </div>
             </div> 
-            <div class="row">
+            <div class="row" >
     <section>
-    <div class="pro_list first mt15 clearfix freePackage">
+    <div class="pro_list first mt15 clearfix freePackage box-transfer">
+
     <h2 class="section-title">Transfer</h2>
+    <div class="mod-tab clearfix" id="more_tab">
+                        <a href="javascript:void(0);" class="current-transfer" cityid="58" id="link58">Phuket</a>
+                        <a href="javascript:void(0);" class="" cityid="59" id="link59">Bangkok</a>
+                        
+                        <a align="right" href="//english.ctrip.com/hotels/list?city=58" target="_blank" id="btnMore">More &gt;</a>
+                </div>
     <div class="fr pro_fr">
 
       <div class="pro_lb list_ad" id="show1">
             <div>
             <div class="col-md-3">
-                  <a name="__AD_module_3_60_3948" href="http://www.itrip.com/p21380" target="_blank" class="img"> 
-                    <img class="lazy1" data-original="http://pic2.itrip.com/p/20161123165226-standard-935.jpg?imageView2/5/w/208/h/138/q/100" width="208" height="138" border="0" alt="ๆณฐๅฝ่ญๆ้…็ๆชๅฎๅผนๅฐๅปไฝ“้ช" src="http://pic2.itrip.com/p/20161123165226-standard-935.jpg?imageView2/5/w/208/h/138/q/100" style="display: block;">
+                  <a name="__AD_module_3_60_3948"  class="img"> 
+                    <img class="lazy1"  width="208" height="138" border="0" alt="" src="http://pic2.itrip.com/p/20161123165226-standard-935.jpg?imageView2/5/w/208/h/138/q/100" style="display: block;">
                     <div class="proinfo oh">
                     <p class="f14 mt10 oh" style="height:42px;">
-                      ๆณฐๅฝ่ญๆ้…็ๆชๅฎๅผนๅฐๅปไฝ“้ช</p>
+                      transfer</p>
                     <p class="oh mt5">
                       <span class="fr pri price_label">
                         <label class="js_curCode f12">RMB</label>
-                        <label class="js_curMonery_exten f16 ml5" data-cid="12" data-exrates="{9=5.26, 10=4.81, 11=3.31, 12=1.0, 13=6.62, 14=0.2, 15=5.0E-4, 17=4.85, 16=1.6, 21=8.79, 20=7.82, 23=0.06, 22=6.78, 25=0.76, 24=0.8, 27=0.98, 26=0.28}" data-price="136.98">136.98</label><label class="f12">&nbsp;่ตท</label>
+                        <label class="js_curMonery_exten f16 ml5">179.16</label>
+                        <label class="f12">THB</label>
                       </span>
                       </p>
                   </div>
@@ -239,15 +351,16 @@
                   </a>
                 </div>
              <div class="col-md-3">
-                  <a name="__AD_module_3_60_3949" href="http://www.itrip.com/p15477" target="_blank" class="img"> 
-                    <img class="lazy1" data-original="http://pic2.itrip.com/p/20151013093957-standard-748.jpg?imageView2/5/w/208/h/138/q/100" width="208" height="138" border="0" alt="่ญๆ้…ๆ&nbsp;ผๅ…ฐๅฒๅฟซ่ๅบๆตทไธ€ๆ—ฅๆธธ" src="http://pic2.itrip.com/p/20151013093957-standard-748.jpg?imageView2/5/w/208/h/138/q/100" style="display: block;">
+                  <a name="__AD_module_3_60_3949"  class="img"> 
+                    <img class="lazy1"  width="208" height="138" border="0" alt="" src="http://pic2.itrip.com/p/20151013093957-standard-748.jpg?imageView2/5/w/208/h/138/q/100" style="display: block;">
                     <div class="proinfo oh">
                     <p class="f14 mt10 oh" style="height:42px;">
-                      ่ญๆ้…ๆ&nbsp;ผๅ…ฐๅฒๅฟซ่ๅบๆตทไธ€ๆ—ฅๆธธ</p>
+                      transfer</p>
                     <p class="oh mt5">
                       <span class="fr pri price_label">
                         <label class="js_curCode f12">RMB</label>
-                        <label class="js_curMonery_exten f16 ml5" data-cid="12" data-exrates="{9=5.26, 10=4.81, 11=3.31, 12=1.0, 13=6.62, 14=0.2, 15=5.0E-4, 17=4.85, 16=1.6, 21=8.79, 20=7.82, 23=0.06, 22=6.78, 25=0.76, 24=0.8, 27=0.98, 26=0.28}" data-price="120.32">120.32</label><label class="f12">&nbsp;่ตท</label>
+                        <label class="js_curMonery_exten f16 ml5">179.16</label>
+                        <label class="f12">THB</label>
                       </span>
                       </p>
                   </div>
@@ -255,15 +368,16 @@
                   </a>
                 </div>
              <div class="col-md-3">
-                  <a name="__AD_module_3_60_3950" href="http://www.itrip.com/p21718" target="_blank" class="img"> 
-                    <img class="lazy1" data-original="http://pic2.itrip.com/p/20170216155955-standard-584.jpg?imageView2/5/w/208/h/138/q/100" width="208" height="138" border="0" alt="่ญๆ้…Health Land Spaไผ&nbsp;็ปๆณฐๅผๆๆ‘ฉ(120ๅ้’)" src="http://pic2.itrip.com/p/20170216155955-standard-584.jpg?imageView2/5/w/208/h/138/q/100" style="display: block;">
+                  <a name="__AD_module_3_60_3950"  class="img"> 
+                    <img class="lazy1"  width="208" height="138" border="0" alt="Health Land Spa" src="http://pic2.itrip.com/p/20170216155955-standard-584.jpg?imageView2/5/w/208/h/138/q/100" style="display: block;">
                     <div class="proinfo oh">
                     <p class="f14 mt10 oh" style="height:42px;">
-                      ่ญๆ้…Health Land Spaไผ&nbsp;็ปๆณฐๅผๆๆ‘ฉ(120ๅ้’)</p>
+                      transfer</p>
                     <p class="oh mt5">
                       <span class="fr pri price_label">
                         <label class="js_curCode f12">RMB</label>
-                        <label class="js_curMonery_exten f16 ml5" data-cid="14" data-exrates="{9=5.26, 10=4.81, 11=3.31, 12=1.0, 13=6.62, 14=0.2, 15=5.0E-4, 17=4.85, 16=1.6, 21=8.79, 20=7.82, 23=0.06, 22=6.78, 25=0.76, 24=0.8, 27=0.98, 26=0.28}" data-price="726.55">145.31</label><label class="f12">&nbsp;่ตท</label>
+                        <label class="js_curMonery_exten f16 ml5">179.16</label>
+                        <label class="f12">THB</label>
                       </span>
                       </p>
                   </div>
@@ -271,15 +385,16 @@
                   </a>
                 </div>
               <div class="col-md-3">
-                  <a name="__AD_module_3_60_3951" href="http://www.itrip.com/p21540" target="_blank" class="img"> 
-                    <img class="lazy1" data-original="http://pic2.itrip.com/p/20170104145753-standard-842.jpg?imageView2/5/w/208/h/138/q/100" width="208" height="138" border="0" alt="่ญๆ้…ๆ—&nbsp;ไบบๅฒไธๅฒ่ฑชๅๆธธ่ไธ€ๆ—ฅๆธธ" src="http://pic2.itrip.com/p/20170104145753-standard-842.jpg?imageView2/5/w/208/h/138/q/100" style="display: block;">
+                  <a name="__AD_module_3_60_3951"  class="img"> 
+                    <img class="lazy1"  width="208" height="138" border="0" alt="" src="http://pic2.itrip.com/p/20170104145753-standard-842.jpg?imageView2/5/w/208/h/138/q/100" style="display: block;">
                     <div class="proinfo oh">
                     <p class="f14 mt10 oh" style="height:42px;">
-                      ่ญๆ้…ๆ—&nbsp;ไบบๅฒไธๅฒ่ฑชๅๆธธ่ไธ€ๆ—ฅๆธธ</p>
+                    transfer</p>
                     <p class="oh mt5">
                       <span class="fr pri price_label">
                         <label class="js_curCode f12">RMB</label>
-                        <label class="js_curMonery_exten f16 ml5" data-cid="12" data-exrates="{9=5.26, 10=4.81, 11=3.31, 12=1.0, 13=6.62, 14=0.2, 15=5.0E-4, 17=4.85, 16=1.6, 21=8.79, 20=7.82, 23=0.06, 22=6.78, 25=0.76, 24=0.8, 27=0.98, 26=0.28}" data-price="541.5">541.5</label><label class="f12">&nbsp;่ตท</label>
+                        <label class="js_curMonery_exten f16 ml5">179.16</label>
+                        <label class="f12">THB</label>
                       </span>
                       </p>
                   </div>
@@ -287,15 +402,16 @@
                   </a>
                 </div>
              <div class="col-md-3">
-                  <a name="__AD_module_3_60_3952" href="http://www.itrip.com/p4170" target="_blank" class="img"> 
-                    <img class="lazy1" data-original="http://pic2.itrip.com/p/20170104102921-standard-213.jpg?imageView2/5/w/208/h/138/q/100" width="208" height="138" border="0" alt="่ญๆ้…ๆณฐๆณๆฏ”่ต" src="http://pic2.itrip.com/p/20170104102921-standard-213.jpg?imageView2/5/w/208/h/138/q/100" style="display: block;">
+                  <a name="__AD_module_3_60_3952" class="img"> 
+                    <img class="lazy1" width="208" height="138" border="0" alt="่ญๆ้…ๆณฐๆณๆฏ”่ต" src="http://pic2.itrip.com/p/20170104102921-standard-213.jpg?imageView2/5/w/208/h/138/q/100" style="display: block;">
                     <div class="proinfo oh">
                     <p class="f14 mt10 oh" style="height:42px;">
-                      ่ญๆ้…ๆณฐๆณๆฏ”่ต</p>
+                      transfer</p>
                     <p class="oh mt5">
                       <span class="fr pri price_label">
                         <label class="js_curCode f12">RMB</label>
-                        <label class="js_curMonery_exten f16 ml5" data-cid="14" data-exrates="{9=5.26, 10=4.81, 11=3.31, 12=1.0, 13=6.62, 14=0.2, 15=5.0E-4, 17=4.85, 16=1.6, 21=8.79, 20=7.82, 23=0.06, 22=6.78, 25=0.76, 24=0.8, 27=0.98, 26=0.28}" data-price="506.54">101.31</label><label class="f12">&nbsp;่ตท</label>
+                        <label class="js_curMonery_exten f16 ml5">179.16</label>
+                        <label class="f12">THB</label>
                       </span>
                       </p>
                   </div>
@@ -303,15 +419,16 @@
                   </a>
                 </div>
               <div class="col-md-3">
-                  <a name="__AD_module_3_60_3953" href="http://www.itrip.com/p4187" target="_blank" class="img"> 
-                    <img class="lazy1" data-original="http://pic2.itrip.com/p/20140923155537-standard-79.jpg?imageView2/5/w/208/h/138/q/100" width="208" height="138" border="0" alt="่ญๆ้…่’่ฌๅฆฎไบบๅฆ–็ง€้—จ็ฅจ+่ต&nbsp;้ฅฎ" src="http://pic2.itrip.com/p/20140923155537-standard-79.jpg?imageView2/5/w/208/h/138/q/100" style="display: block;">
+                  <a name="__AD_module_3_60_3953"  class="img"> 
+                    <img class="lazy1" width="208" height="138" border="0" alt="" src="http://pic2.itrip.com/p/20140923155537-standard-79.jpg?imageView2/5/w/208/h/138/q/100" style="display: block;">
                     <div class="proinfo oh">
                     <p class="f14 mt10 oh" style="height:42px;">
-                      ่ญๆ้…่’่ฌๅฆฎไบบๅฆ–็ง€้—จ็ฅจ+่ต&nbsp;้ฅฎ</p>
+                     transfer</p>
                     <p class="oh mt5">
                       <span class="fr pri price_label">
                         <label class="js_curCode f12">RMB</label>
-                        <label class="js_curMonery_exten f16 ml5" data-cid="12" data-exrates="{9=5.26, 10=4.81, 11=3.31, 12=1.0, 13=6.62, 14=0.2, 15=5.0E-4, 17=4.85, 16=1.6, 21=8.79, 20=7.82, 23=0.06, 22=6.78, 25=0.76, 24=0.8, 27=0.98, 26=0.28}" data-price="137.2">137.2</label><label class="f12">&nbsp;่ตท</label>
+                        <label class="js_curMonery_exten f16 ml5">179.16</label>
+                        <label class="f12">THB</label>
                       </span>
                       </p>
                   </div>
@@ -323,15 +440,16 @@
         <div class="pro_lb list_ad" style="display:none;" id="show2">
             <ul>
             <li>
-                  <a name="__AD_module_3_61_3954" href="http://www.itrip.com/p18519" target="_blank" class="img"> 
-                    <img class="lazy1" data-original="http://pic2.itrip.com/p/20160627150040-standard-925.jpg?imageView2/5/w/208/h/138/q/100" width="208" height="138" border="0" alt="ๅก็ญๅฒ้ซ็ฉบ่ทณไผ" src="http://pic.itrip.com/img/loading2.gif">
+                  <a name="__AD_module_3_61_3954"  class="img"> 
+                    <img class="lazy1"  width="208" height="138" border="0" alt="ๅ" src="http://pic.itrip.com/img/loading2.gif">
                     <div class="proinfo oh">
                     <p class="f14 mt10 oh" style="height:42px;">
-                      ๅก็ญๅฒ้ซ็ฉบ่ทณไผ</p>
+                      transfer</p>
                     <p class="oh mt5">
                       <span class="fr pri price_label">
                         <label class="js_curCode f12">RMB</label>
-                        <label class="js_curMonery_exten f16 ml5" data-cid="13" data-exrates="{9=5.26, 10=4.81, 11=3.31, 12=1.0, 13=6.62, 14=0.2, 15=5.0E-4, 17=4.85, 16=1.6, 21=8.79, 20=7.82, 23=0.06, 22=6.78, 25=0.76, 24=0.8, 27=0.98, 26=0.28}" data-price="284.96">1886.44</label><label class="f12">&nbsp;่ตท</label>
+                        <label class="js_curMonery_exten f16 ml5">179.16</label>
+                        <label class="f12">THB</label>
                       </span>
                       </p>
                   </div>
@@ -339,15 +457,16 @@
                   </a>
                 </li>
               <li>
-                  <a name="__AD_module_3_61_3955" href="http://www.itrip.com/p18339" target="_blank" class="img"> 
-                    <img class="lazy1" data-original="http://pic2.itrip.com/p/20160426181429-standard-69.jpg?imageView2/5/w/208/h/138/q/100" width="208" height="138" border="0" alt="ใ€ๅก็ญๅฟ…ไฝ“้ชใ€‘ๅก็ญๅฒไฝ“้ชๆป‘็ฟ”ๆบ้ฉพ้ฉถ๏ผ่ช้ฉพใ€้ช้ฉพ๏ผ" src="http://pic.itrip.com/img/loading2.gif">
+                  <a name="__AD_module_3_61_3955"  class="img"> 
+                    <img class="lazy1" width="208" height="138" border="0" alt="" src="http://pic.itrip.com/img/loading2.gif">
                     <div class="proinfo oh">
                     <p class="f14 mt10 oh" style="height:42px;">
-                      ใ€ๅก็ญๅฟ…ไฝ“้ชใ€‘ๅก็ญๅฒไฝ“้ชๆป‘็ฟ”ๆบ้ฉพ้ฉถ๏ผ่ช้ฉพใ€้ช้ฉพ๏ผ</p>
+                      transfer</p>
                     <p class="oh mt5">
                       <span class="fr pri price_label">
                         <label class="js_curCode f12">RMB</label>
-                        <label class="js_curMonery_exten f16 ml5" data-cid="13" data-exrates="{9=5.26, 10=4.81, 11=3.31, 12=1.0, 13=6.62, 14=0.2, 15=5.0E-4, 17=4.85, 16=1.6, 21=8.79, 20=7.82, 23=0.06, 22=6.78, 25=0.76, 24=0.8, 27=0.98, 26=0.28}" data-price="160.5">1062.51</label><label class="f12">&nbsp;่ตท</label>
+                        <label class="js_curMonery_exten f16 ml5">179.16</label>
+                        <label class="f12">THB</label>
                       </span>
                       </p>
                   </div>
@@ -355,15 +474,16 @@
                   </a>
                 </li>
               <li>
-                  <a name="__AD_module_3_61_3956" href="http://www.itrip.com/p18329" target="_blank" class="img"> 
-                    <img class="lazy1" data-original="http://pic2.itrip.com/p/20160426171649-standard-512.jpg?imageView2/5/w/208/h/138/q/100" width="208" height="138" border="0" alt="ๅก็ญๅฒๅ—้จ่งๅ… ็ฆๆ–ญๅฒ ้ธๅฒ ๅฆๅ…ๆตทๆปฉ" src="http://pic.itrip.com/img/loading2.gif">
+                  <a name="__AD_module_3_61_3956" class="img"> 
+                    <img class="lazy1"  width="208" height="138" border="0" alt="" src="http://pic.itrip.com/img/loading2.gif">
                     <div class="proinfo oh">
                     <p class="f14 mt10 oh" style="height:42px;">
                       ๅก็ญๅฒๅ—้จ่งๅ… ็ฆๆ–ญๅฒ ้ธๅฒ ๅฆๅ…ๆตทๆปฉ</p>
                     <p class="oh mt5">
                       <span class="fr pri price_label">
                         <label class="js_curCode f12">RMB</label>
-                        <label class="js_curMonery_exten f16 ml5" data-cid="13" data-exrates="{9=5.26, 10=4.81, 11=3.31, 12=1.0, 13=6.62, 14=0.2, 15=5.0E-4, 17=4.85, 16=1.6, 21=8.79, 20=7.82, 23=0.06, 22=6.78, 25=0.76, 24=0.8, 27=0.98, 26=0.28}" data-price="29.4">194.63</label><label class="f12">&nbsp;่ตท</label>
+                         <label class="js_curMonery_exten f16 ml5">179.16</label>
+                        <label class="f12">THB</label>
                       </span>
                       </p>
                   </div>
@@ -371,15 +491,16 @@
                   </a>
                 </li>
               <li>
-                  <a name="__AD_module_3_61_3957" href="http://www.itrip.com/p18355" target="_blank" class="img"> 
-                    <img class="lazy1" data-original="http://pic2.itrip.com/p/20160427110553-standard-815.jpg?imageView2/5/w/208/h/138/q/100" width="208" height="138" border="0" alt="ใ€้ฃๅจๅก็ญใ€‘Tony Roma's ๅ้คๅฅ—้ค/ ๆ้คๅฅ—้ค" src="http://pic.itrip.com/img/loading2.gif">
+                  <a name="__AD_module_3_61_3957"  class="img"> 
+                    <img class="lazy1"  width="208" height="138" border="0" alt="" src="http://pic.itrip.com/img/loading2.gif">
                     <div class="proinfo oh">
                     <p class="f14 mt10 oh" style="height:42px;">
-                      ใ€้ฃๅจๅก็ญใ€‘Tony Roma's ๅ้คๅฅ—้ค/ ๆ้คๅฅ—้ค</p>
+                      transfer</p>
                     <p class="oh mt5">
                       <span class="fr pri price_label">
                         <label class="js_curCode f12">RMB</label>
-                        <label class="js_curMonery_exten f16 ml5" data-cid="13" data-exrates="{9=5.26, 10=4.81, 11=3.31, 12=1.0, 13=6.62, 14=0.2, 15=5.0E-4, 17=4.85, 16=1.6, 21=8.79, 20=7.82, 23=0.06, 22=6.78, 25=0.76, 24=0.8, 27=0.98, 26=0.28}" data-price="23.52">155.70</label><label class="f12">&nbsp;่ตท</label>
+                        <label class="js_curMonery_exten f16 ml5">179.16</label>
+                        <label class="f12">THB</label>
                       </span>
                       </p>
                   </div>
@@ -388,14 +509,15 @@
                 </li>
               <li>
                   <a name="__AD_module_3_61_3958" href="http://www.itrip.com/p18410" target="_blank" class="img"> 
-                    <img class="lazy1" data-original="http://pic2.itrip.com/p/20160428170359-standard-317.jpg?imageView2/5/w/208/h/138/q/100" width="208" height="138" border="0" alt="็พๅฝๅก็ญๅฒๆตทๅบ•ๆข็ง็ณปๅ—---็พไบบ้ฑผๅทๆฝๆฐด่" src="http://pic.itrip.com/img/loading2.gif">
+                    <img class="lazy1" width="208" height="138" border="0" alt="" src="http://pic.itrip.com/img/loading2.gif">
                     <div class="proinfo oh">
                     <p class="f14 mt10 oh" style="height:42px;">
-                      ็พๅฝๅก็ญๅฒๆตทๅบ•ๆข็ง็ณปๅ—---็พไบบ้ฑผๅทๆฝๆฐด่</p>
+                      transfer</p>
                     <p class="oh mt5">
                       <span class="fr pri price_label">
                         <label class="js_curCode f12">RMB</label>
-                        <label class="js_curMonery_exten f16 ml5" data-cid="13" data-exrates="{9=5.26, 10=4.81, 11=3.31, 12=1.0, 13=6.62, 14=0.2, 15=5.0E-4, 17=4.85, 16=1.6, 21=8.79, 20=7.82, 23=0.06, 22=6.78, 25=0.76, 24=0.8, 27=0.98, 26=0.28}" data-price="74.86">495.57</label><label class="f12">&nbsp;่ตท</label>
+                        <label class="js_curMonery_exten f16 ml5">179.16</label>
+                        <label class="f12">THB</label>
                       </span>
                       </p>
                   </div>
@@ -403,15 +525,16 @@
                   </a>
                 </li>
               <li>
-                  <a name="__AD_module_3_61_3959" href="http://www.itrip.com/p19501" target="_blank" class="img"> 
-                    <img class="lazy1" data-original="http://pic2.itrip.com/p/20160617141954-standard-857.jpg?imageView2/5/w/208/h/138/q/100" width="208" height="138" border="0" alt="ใ€้ฃๅจๅก็ญใ€‘็พๅฝๅก็ญๅฒ้็พๅค่ฒ็ณปๅ—---ๆๆกๆ——ๅทๅค•้ณ้ฎ่ฝฎ" src="http://pic.itrip.com/img/loading2.gif">
+                  <a name="__AD_module_3_61_3959" class="img"> 
+                    <img class="lazy1"  width="208" height="138" border="0" alt="" src="http://pic.itrip.com/img/loading2.gif">
                     <div class="proinfo oh">
                     <p class="f14 mt10 oh" style="height:42px;">
-                      ใ€้ฃๅจๅก็ญใ€‘็พๅฝๅก็ญๅฒ้็พๅค่ฒ็ณปๅ—---ๆๆกๆ——ๅทๅค•้ณ้ฎ่ฝฎ</p>
+                      transer</p>
                     <p class="oh mt5">
                       <span class="fr pri price_label">
                         <label class="js_curCode f12">RMB</label>
-                        <label class="js_curMonery_exten f16 ml5" data-cid="13" data-exrates="{9=5.26, 10=4.81, 11=3.31, 12=1.0, 13=6.62, 14=0.2, 15=5.0E-4, 17=4.85, 16=1.6, 21=8.79, 20=7.82, 23=0.06, 22=6.78, 25=0.76, 24=0.8, 27=0.98, 26=0.28}" data-price="64.08">424.21</label><label class="f12">&nbsp;่ตท</label>
+                        <label class="js_curMonery_exten f16 ml5">179.16</label>
+                        <label class="f12">THB</label>
                       </span>
                       </p>
                   </div>
@@ -423,15 +546,16 @@
         <div class="pro_lb list_ad" style="display:none;" id="show3">
             <ul>
             <li>
-                  <a name="__AD_module_3_64_3977" href="http://www.itrip.com/p4989" target="_blank" class="img"> 
-                    <img class="lazy1" data-original="http://pic2.itrip.com/p/20140919113036-standard-982.jpg?imageView2/5/w/208/h/138/q/100" width="208" height="138" border="0" alt="ๆ–ฐๅ&nbsp;ๅกๅค้—ดๅจ็ฉๅญ้—จ็ฅจ๏ผๅซๆธธ่ง่ฝฆ๏ผ" src="http://pic.itrip.com/img/loading2.gif">
+                  <a name="__AD_module_3_64_3977"  class="img"> 
+                    <img class="lazy1"  width="208" height="138" border="0" alt="" src="http://pic.itrip.com/img/loading2.gif">
                     <div class="proinfo oh">
                     <p class="f14 mt10 oh" style="height:42px;">
-                      ๆ–ฐๅ&nbsp;ๅกๅค้—ดๅจ็ฉๅญ้—จ็ฅจ๏ผๅซๆธธ่ง่ฝฆ๏ผ</p>
+                      trnsfer</p>
                     <p class="oh mt5">
                       <span class="fr pri price_label">
                         <label class="js_curCode f12">RMB</label>
-                        <label class="js_curMonery_exten f16 ml5" data-cid="17" data-exrates="{9=5.26, 10=4.81, 11=3.31, 12=1.0, 13=6.62, 14=0.2, 15=5.0E-4, 17=4.85, 16=1.6, 21=8.79, 20=7.82, 23=0.06, 22=6.78, 25=0.76, 24=0.8, 27=0.98, 26=0.28}" data-price="36.9412">179.16</label><label class="f12">&nbsp;่ตท</label>
+                        <label class="js_curMonery_exten f16 ml5">179.16</label>
+                        <label class="f12">THB</label>
                       </span>
                       </p>
                   </div>
@@ -439,15 +563,17 @@
                   </a>
                 </li>
               <li>
-                  <a name="__AD_module_3_64_3978" href="http://www.itrip.com/p14134" target="_blank" class="img"> 
-                    <img class="lazy1" data-original="http://pic2.itrip.com/p/20151028143447-standard-711.jpg?imageView2/5/w/208/h/138/q/100" width="208" height="138" border="0" alt="ๆจๅฎๆบๅบT2/T3 Ambassador Transit Lounge ่ฝฌๆบ่ดตๅฎพไผ‘ๆฏๅฎค(5ๅฐๆ—ถ)" src="http://pic.itrip.com/img/loading2.gif">
+                  <a name="__AD_module_3_64_3978"  class="img"> 
+                    <img class="lazy1" width="208" height="138" border="0" alt="Ambassador Transit Lounge " src="http://pic.itrip.com/img/loading2.gif">
                     <div class="proinfo oh">
                     <p class="f14 mt10 oh" style="height:42px;">
-                      ๆจๅฎๆบๅบT2/T3 Ambassador Transit Lounge ่ฝฌๆบ่ดตๅฎพไผ‘ๆฏๅฎค(5ๅฐๆ—ถ)</p>
+                      Ambassador Transit Lounge</p>
                     <p class="oh mt5">
                       <span class="fr pri price_label">
                         <label class="js_curCode f12">RMB</label>
-                        <label class="js_curMonery_exten f16 ml5" data-cid="17" data-exrates="{9=5.26, 10=4.81, 11=3.31, 12=1.0, 13=6.62, 14=0.2, 15=5.0E-4, 17=4.85, 16=1.6, 21=8.79, 20=7.82, 23=0.06, 22=6.78, 25=0.76, 24=0.8, 27=0.98, 26=0.28}" data-price="45.8592">222.42</label><label class="f12">&nbsp;่ตท</label>
+                        <label class="js_curMonery_exten f16 ml5">179.16</label>
+                        <label class="f12">THB</label>
+                       
                       </span>
                       </p>
                   </div>
@@ -455,15 +581,17 @@
                   </a>
                 </li>
               <li>
-                  <a name="__AD_module_3_64_3979" href="http://www.itrip.com/p4141" target="_blank" class="img"> 
-                    <img class="lazy1" data-original="http://pic2.itrip.com/p/20150506173301-standard-895.jpg?imageView2/5/w/208/h/138/q/100" width="208" height="138" border="0" alt="ๆ–ฐๅ&nbsp;ๅกๆ—ถๅ…ไน็ฟผ้—จ็ฅจ" src="http://pic.itrip.com/img/loading2.gif">
+                  <a name="__AD_module_3_64_3979" class="img"> 
+                    <img class="lazy1"  width="208" height="138" border="0" alt="" src="http://pic.itrip.com/img/loading2.gif">
                     <div class="proinfo oh">
                     <p class="f14 mt10 oh" style="height:42px;">
-                      ๆ–ฐๅ&nbsp;ๅกๆ—ถๅ…ไน็ฟผ้—จ็ฅจ</p>
+                      transfer</p>
                     <p class="oh mt5">
                       <span class="fr pri price_label">
                         <label class="js_curCode f12">RMB</label>
-                        <label class="js_curMonery_exten f16 ml5" data-cid="17" data-exrates="{9=5.26, 10=4.81, 11=3.31, 12=1.0, 13=6.62, 14=0.2, 15=5.0E-4, 17=4.85, 16=1.6, 21=8.79, 20=7.82, 23=0.06, 22=6.78, 25=0.76, 24=0.8, 27=0.98, 26=0.28}" data-price="10.0">48.5</label><label class="f12">&nbsp;่ตท</label>
+                        <label class="js_curMonery_exten f16 ml5">179.16</label>
+                        <label class="f12">THB</label>
+                        
                       </span>
                       </p>
                   </div>
@@ -471,15 +599,17 @@
                   </a>
                 </li>
               <li>
-                  <a name="__AD_module_3_64_3980" href="http://www.itrip.com/p4137" target="_blank" class="img"> 
-                    <img class="lazy1" data-original="http://pic2.itrip.com/p/20150506153147-standard-357.jpg?imageView2/5/w/208/h/138/q/100" width="208" height="138" border="0" alt="ๆ–ฐๅ&nbsp;ๅกๆฐด้้ธญๅญ่นๅ’้ฉไนๆ—…1ๅฐๆ—ถ" src="http://pic.itrip.com/img/loading2.gif">
+                  <a name="__AD_module_3_64_3980"  class="img"> 
+                    <img class="lazy1"  width="208" height="138" border="0" alt="" src="http://pic.itrip.com/img/loading2.gif">
                     <div class="proinfo oh">
                     <p class="f14 mt10 oh" style="height:42px;">
-                      ๆ–ฐๅ&nbsp;ๅกๆฐด้้ธญๅญ่นๅ’้ฉไนๆ—…1ๅฐๆ—ถ</p>
+                     transfer</p>
                     <p class="oh mt5">
                       <span class="fr pri price_label">
                         <label class="js_curCode f12">RMB</label>
-                        <label class="js_curMonery_exten f16 ml5" data-cid="17" data-exrates="{9=5.26, 10=4.81, 11=3.31, 12=1.0, 13=6.62, 14=0.2, 15=5.0E-4, 17=4.85, 16=1.6, 21=8.79, 20=7.82, 23=0.06, 22=6.78, 25=0.76, 24=0.8, 27=0.98, 26=0.28}" data-price="23.7994">115.43</label><label class="f12">&nbsp;่ตท</label>
+                        <label class="js_curMonery_exten f16 ml5">179.16</label>
+                        <label class="f12">THB</label>
+                       
                       </span>
                       </p>
                   </div>
@@ -487,15 +617,17 @@
                   </a>
                 </li>
               <li>
-                  <a name="__AD_module_3_64_3981" href="http://www.itrip.com/p14124" target="_blank" class="img"> 
-                    <img class="lazy1" data-original="http://pic2.itrip.com/p/20150715104150-standard-482.jpg?imageView2/5/w/208/h/138/q/100" width="208" height="138" border="0" alt="ๆ–ฐๅ&nbsp;ๅกๆฒณๅท็”ๆ€ๅญ้—จ็ฅจ๏ผๅซๆธธ่น๏ผ" src="http://pic.itrip.com/img/loading2.gif">
+                  <a name="__AD_module_3_64_3981"
+                    <img class="lazy1" width="208" height="138" border="0" alt="" src="http://pic.itrip.com/img/loading2.gif">
                     <div class="proinfo oh">
                     <p class="f14 mt10 oh" style="height:42px;">
-                      ๆ–ฐๅ&nbsp;ๅกๆฒณๅท็”ๆ€ๅญ้—จ็ฅจ๏ผๅซๆธธ่น๏ผ</p>
+                     transfer</p>
                     <p class="oh mt5">
                       <span class="fr pri price_label">
                         <label class="js_curCode f12">RMB</label>
-                        <label class="js_curMonery_exten f16 ml5" data-cid="17" data-exrates="{9=5.26, 10=4.81, 11=3.31, 12=1.0, 13=6.62, 14=0.2, 15=5.0E-4, 17=4.85, 16=1.6, 21=8.79, 20=7.82, 23=0.06, 22=6.78, 25=0.76, 24=0.8, 27=0.98, 26=0.28}" data-price="21.32">103.40</label><label class="f12">&nbsp;่ตท</label>
+                        <label class="js_curMonery_exten f16 ml5">179.16</label>
+                        <label class="f12">THB</label>
+                       
                       </span>
                       </p>
                   </div>
@@ -503,15 +635,17 @@
                   </a>
                 </li>
               <li>
-                  <a name="__AD_module_3_64_3982" href="http://www.itrip.com/p15049" target="_blank" class="img"> 
-                    <img class="lazy1" data-original="http://pic2.itrip.com/p/20150911120349-standard-978.jpg?imageView2/5/w/208/h/138/q/100" width="208" height="138" border="0" alt="ใ€้ๆ้–ๅๆฌพใ€‘ๆ–ฐๅ&nbsp;ๅกๅฃๆทๆฒ้ฑผๅฐพ็ฎๅก”้—จ็ฅจ" src="http://pic.itrip.com/img/loading2.gif">
+                  <a name="__AD_module_3_64_3982" href="" class="img"> 
+                    <img class="lazy1" width="208" height="138" border="0" src="http://pic.itrip.com/img/loading2.gif">
                     <div class="proinfo oh">
                     <p class="f14 mt10 oh" style="height:42px;">
-                      ใ€้ๆ้–ๅๆฌพใ€‘ๆ–ฐๅ&nbsp;ๅกๅฃๆทๆฒ้ฑผๅฐพ็ฎๅก”้—จ็ฅจ</p>
+                      Transfer</p>
                     <p class="oh mt5">
                       <span class="fr pri price_label">
                         <label class="js_curCode f12">RMB</label>
-                        <label class="js_curMonery_exten f16 ml5" data-cid="17" data-exrates="{9=5.26, 10=4.81, 11=3.31, 12=1.0, 13=6.62, 14=0.2, 15=5.0E-4, 17=4.85, 16=1.6, 21=8.79, 20=7.82, 23=0.06, 22=6.78, 25=0.76, 24=0.8, 27=0.98, 26=0.28}" data-price="8.9">43.17</label><label class="f12">&nbsp;่ตท</label>
+                        <label class="js_curMonery_exten f16 ml5">179.16</label>
+                        <label class="f12">THB</label>
+                        
                       </span>
                       </p>
                   </div>
@@ -525,232 +659,201 @@
   </section>
 </div>
 
-<div class="row">
-                      <div class="h-popular-hotel">
-               
-                <div class="mod-tab clearfix" id="more_tab">
-                        <a href="javascript:void(0);" class="current" cityid="58" id="link58">Phuket</a>
-                        <a href="javascript:void(0);" class="" cityid="59" id="link59">Bangkok</a>
-                        
-                        <a align="right" href="//english.ctrip.com/hotels/list?city=58" target="_blank" id="btnMore">More &gt;</a>
-                </div>
-                <div class="mod-box centered-message" id="popCityLoading" style="display: none;"><i class="icon-loading icon-loading-64-eee"></i></div>
-                <div class="h-data-list" id="div_top_sell">        
-                 
-        <div class="hotel-link col-md-6" >
-            <a href="javascript:void(0);" class="hotel-img" rel="nofollow" onclick="redirectTo('//english.ctrip.com/hotels/hong-kong-hotel-detail-426611/east-hong-kong/?from_page=home&amp;module=best&amp;link=pic#ctm_ref=ix_ts_img_2', 'txtCheckIn','txtCheckOut', true)"><img src="//dimg04.c-ctrip.com/images/hotel/75000/74613/00a2266ac95f4c3fb18f39a67a6780e7_R_180_180.jpg" alt="East Hong Kong Hong Kong"></a>
-            <div class="hotel-info">
-                <h3 class="hotel-name">
-                    <strong>
-                        <a href="javascript:void(0);" rel="nofollow" onclick="redirectTo('//english.ctrip.com/hotels/hong-kong-hotel-detail-426611/east-hong-kong/?from_page=home&amp;module=best&amp;link=title#ctm_ref=ix_ts_n_2', 'txtCheckIn', 'txtCheckOut', true)">East Hong Kong</a>
-                    </strong>
-                </h3>
-                <div class="hotel-lm">
-                    <span class="level">
-                        <i class="c-icon icon-star icon-star-4"></i>
-                    </span>
-                    <span class="location" data-index="2" data-hotel-id="426611" data-hotel-name="East Hong Kong" data-lat="22.2860257786" data-lng="114.2161101848" rel="nofollow" onclick="HomePage.LocationMap.clickShowMap(event);">
-                        <i class="h-icon icon-location"></i> North Point and Quarry Bay
-                    </span>
-                </div>
-                <div class="hotel-grade">
-                    <div class="c-reviews-box">
-                        <a href="javascript:void(0);" class="hotel-review" onclick="redirectTo('//english.ctrip.com/hotels/hong-kong-hotel-review-426611/east-hong-kong/?link=review&amp;ctm_ref=ix_ts_rw_2#review', 'txtCheckIn', 'txtCheckOut', true)">
-                            <span class="score">4.7</span>/5<span class="rating">Outstanding</span>
-                            <span target="_blank" class="review-link" rel="nofollow">
-                                (5023 Reviews)
-                            </span>
-                        </a>
-                            <span class="reviews-box"><a href="javascript:void(0);" class="review-link" rel="nofollow" onclick="redirectTo('//english.ctrip.com/hotels/hong-kong-hotel-review-426611/east-hong-kong/?checkin=2017-10-20&amp;checkout=2017-10-21&amp;link=taReview&amp;reviewtype=tripadvisor#review', 'txtCheckIn', 'txtCheckOut', true)">
-                                <img src="https://www.tripadvisor.cn/img/cdsi/img2-daodao/ratings/traveler/4.5-21589-4.png" alt="4.5 of 5 stars">(1144 Reviews)</a>
-                            </span>
-                    </div><div class="pack-bubble self-review" data-type="reviewThemeTag"><i class="h-icon icon-user-s"></i><span class="txt txt-block">"Convenient transport options" "Excellent location" "Nice sea view"</span></div>             
-                    
-                    <div class="server-box">
-                                   <span class="h-tag"><i class="h-icon icon-wifi"></i>Wi-Fi in public areas</span>
-                                   <span class="h-tag"><i class="h-icon icon-pool"></i>Swimming Pool</span>
-                                   <span class="h-tag"><i class="h-icon icon-gym"></i>Gym</span>
-                                   <span class="h-tag"><i class="h-icon icon-bar"></i>Bar</span>
+<div class="row" style="margin-top: 35px;margin-bottom: 50px;">
+    <div class="h-popular-hotel">               
+        <div class="mod-tab" id="more_tab">
+            <a href="" class="current" cityid="58" id="link58">Phuket</a>
+            <a href="" class="" cityid="59" id="link59">Bangkok</a>                        
+            <a align="right" href="" target="_blank" id="btnMore">More &gt;</a>
+        </div>
+        <div class="mod-box centered-message" id="popCityLoading" style="display: none;">
+          <i class="icon-loading icon-loading-64-eee"></i>
+        </div>
+        <div class="h-data-list" id="div_top_sell"> 
+          <div class="col-md-6">
+            <div class="hotel-link " >
+                <a href="" class="hotel-img" rel="nofollow" ">
+                    <img src="//dimg04.c-ctrip.com/images/hotel/75000/74613/00a2266ac95f4c3fb18f39a67a6780e7_R_180_180.jpg" alt="East Hong Kong Hong Kong">
+                </a>
+                <div class="hotel-info">
+                    <h3 class="hotel-name">
+                        <strong>
+                            <a href="" rel="nofollow" >East Hong Kong</a>
+                        </strong>
+                    </h3>
+                    <div class="hotel-lm">
+                        <span class="level">
+                            <i class="c-icon icon-star icon-star-4"></i>
+                        </span>
+                        <span class="location" data-index="2" data-hotel-id="426611" data-hotel-name="East Hong Kong" data-lat="22.2860257786" data-lng="114.2161101848" rel="nofollow" onclick="HomePage.LocationMap.clickShowMap(event);">
+                            <i class="h-icon icon-location"></i> North Point and Quarry Bay
+                        </span>
                     </div>
-                </div>
-                <div class="hotel-tag">
-                                    </div>
-                <div class="price-box">
-                    
-                                                <div class="c-price">
-                                <dfn class="price-currency">CNY</dfn>
-                                <span class="price-num">1,707</span>
-                            </div>
-                                                            <div class="select-btn">
-                        <a class="c-btn btn-key" href="javascript:void(0);" rel="nofollow" onclick="redirectTo('//english.ctrip.com/hotels/hong-kong-hotel-detail-426611/east-hong-kong/?from_page=home&amp;module=best&amp;link=button#ctm_ref=ix_ts_n_2', 'txtCheckIn', 'txtCheckOut', true)">Select</a>
+                    <div class="hotel-grade">
+                        <div class="pack-bubble self-review" >
+                            <i class="h-icon icon-user-s"></i>
+                              <span class="txt txt-block">"Convenient transport options" "Excellent location" "Nice sea view"</span>
+                        </div> 
+                        <div class="server-box">
+                            <span class="h-tag"><i class="h-icon icon-wifi"></i>Wi-Fi in public areas</span>
+                            <span class="h-tag"><i class="h-icon icon-pool"></i>Swimming Pool</span>
+                            <span class="h-tag"><i class="h-icon icon-gym"></i>Gym</span>
+                            <span class="h-tag"><i class="h-icon icon-bar"></i>Bar</span>
+                        </div>
+                    </div>
+                    <div class="hotel-tag"></div>
+                    <div class="price-box">                        
+                        <div class="c-price">
+                            <dfn class="price-currency">CNY</dfn>
+                            <span class="price-num">1,707</span>
+                        </div>
+                        <div class="select-btn">
+                            <a class="c-btn btn-key" href="" rel="nofollow" >Select</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="hotel-link col-md-6" >
-            <a href="javascript:void(0);" class="hotel-img" rel="nofollow" onclick="redirectTo('//english.ctrip.com/hotels/hong-kong-hotel-detail-385221/disney-s-hollywood-hotel/?from_page=home&amp;module=best&amp;link=pic#ctm_ref=ix_ts_img_3', 'txtCheckIn','txtCheckOut', true)"><img src="//dimg04.c-ctrip.com/images/200d070000002bjnuC170_R_180_180.jpg" alt="Disney's Hollywood Hotel Hong Kong"></a>
-            <div class="hotel-info">
-                <h3 class="hotel-name">
-                    <strong>
-                        <a href="javascript:void(0);" rel="nofollow" onclick="redirectTo('//english.ctrip.com/hotels/hong-kong-hotel-detail-385221/disney-s-hollywood-hotel/?from_page=home&amp;module=best&amp;link=title#ctm_ref=ix_ts_n_3', 'txtCheckIn', 'txtCheckOut', true)">Disney's Hollywood Hotel</a>
-                    </strong>
-                </h3>
-                <div class="hotel-lm">
-                    <span class="level">
-                        <i class="c-icon icon-star icon-star-4"></i>
-                    </span>
-                    <span class="location" data-index="3" data-hotel-id="385221" data-hotel-name="Disney's Hollywood Hotel" data-lat="22.3090660322" data-lng="114.0372571349" rel="nofollow" onclick="HomePage.LocationMap.clickShowMap(event);">
-                        <i class="h-icon icon-location"></i> Disneyland Area
-                    </span>
-                </div>
-                <div class="hotel-grade">
-                    <div class="c-reviews-box">
-                        <a href="javascript:void(0);" class="hotel-review" onclick="redirectTo('//english.ctrip.com/hotels/hong-kong-hotel-review-385221/disney-s-hollywood-hotel/?link=review&amp;ctm_ref=ix_ts_rw_3#review', 'txtCheckIn', 'txtCheckOut', true)">
-                            <span class="score">4.7</span>/5<span class="rating">Outstanding</span>
-                            <span target="_blank" class="review-link" rel="nofollow">
-                                (21919 Reviews)
-                            </span>
-                        </a>
-                            <span class="reviews-box"><a href="javascript:void(0);" class="review-link" rel="nofollow" onclick="redirectTo('//english.ctrip.com/hotels/hong-kong-hotel-review-385221/disney-s-hollywood-hotel/?checkin=2017-10-20&amp;checkout=2017-10-21&amp;link=taReview&amp;reviewtype=tripadvisor#review', 'txtCheckIn', 'txtCheckOut', true)">
-                                <img src="https://www.tripadvisor.cn/img/cdsi/img2-daodao/ratings/traveler/4.0-21589-4.png" alt="4.0 of 5 stars">(1979 Reviews)</a>
-                            </span>
-                    </div><div class="pack-bubble self-review" data-type="reviewThemeTag"><i class="h-icon icon-user-s"></i><span class="txt txt-block">"Family-friendly" "Room was good" "Near bus station"</span></div>             
-                    
-                    <div class="server-box">
-                                   <span class="h-tag"><i class="h-icon icon-restaurant"></i>Restaurant</span>
-                                   <span class="h-tag"><i class="h-icon icon-park"></i>Parking</span>
-                                   <span class="h-tag"><i class="h-icon icon-pool"></i>Swimming Pool</span>
-                                   <span class="h-tag"><i class="h-icon icon-bar"></i>Bar</span>
+          </div>
+
+          <div class="col-md-6">
+            <div class="hotel-link " >
+                <a href="" class="hotel-img" rel="nofollow" ">
+                    <img src="//dimg04.c-ctrip.com/images/hotel/75000/74613/00a2266ac95f4c3fb18f39a67a6780e7_R_180_180.jpg" alt="East Hong Kong Hong Kong">
+                </a>
+                <div class="hotel-info">
+                    <h3 class="hotel-name">
+                        <strong>
+                            <a href="" rel="nofollow" >East Hong Kong</a>
+                        </strong>
+                    </h3>
+                    <div class="hotel-lm">
+                        <span class="level">
+                            <i class="c-icon icon-star icon-star-4"></i>
+                        </span>
+                        <span class="location" data-index="2" data-hotel-id="426611" data-hotel-name="East Hong Kong" data-lat="22.2860257786" data-lng="114.2161101848" rel="nofollow" onclick="HomePage.LocationMap.clickShowMap(event);">
+                            <i class="h-icon icon-location"></i> North Point and Quarry Bay
+                        </span>
                     </div>
-                </div>
-                <div class="hotel-tag">
-                                    </div>
-                <div class="price-box">
-                    
-                                                <div class="c-price">
-                                <dfn class="price-currency">CNY</dfn>
-                                <span class="price-num">1,565</span>
-                            </div>
-                                                            <div class="select-btn">
-                        <a class="c-btn btn-key" href="javascript:void(0);" rel="nofollow" onclick="redirectTo('//english.ctrip.com/hotels/hong-kong-hotel-detail-385221/disney-s-hollywood-hotel/?from_page=home&amp;module=best&amp;link=button#ctm_ref=ix_ts_n_3', 'txtCheckIn', 'txtCheckOut', true)">Select</a>
+                    <div class="hotel-grade">
+                        <div class="pack-bubble self-review" >
+                            <i class="h-icon icon-user-s"></i>
+                              <span class="txt txt-block">"Convenient transport options" "Excellent location" "Nice sea view"</span>
+                        </div> 
+                        <div class="server-box">
+                            <span class="h-tag"><i class="h-icon icon-wifi"></i>Wi-Fi in public areas</span>
+                            <span class="h-tag"><i class="h-icon icon-pool"></i>Swimming Pool</span>
+                            <span class="h-tag"><i class="h-icon icon-gym"></i>Gym</span>
+                            <span class="h-tag"><i class="h-icon icon-bar"></i>Bar</span>
+                        </div>
+                    </div>
+                    <div class="hotel-tag"></div>
+                    <div class="price-box">                        
+                        <div class="c-price">
+                            <dfn class="price-currency">CNY</dfn>
+                            <span class="price-num">1,707</span>
+                        </div>
+                        <div class="select-btn">
+                            <a class="c-btn btn-key" href="" rel="nofollow" >Select</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-       <div class="hotel-link col-md-6" >
-            <a href="javascript:void(0);" class="hotel-img" rel="nofollow" onclick="redirectTo('//english.ctrip.com/hotels/hong-kong-hotel-detail-396354/prince-hotel-marco-polo/?from_page=home&amp;module=best&amp;link=pic#ctm_ref=ix_ts_img_4', 'txtCheckIn','txtCheckOut', true)"><img src="//dimg04.c-ctrip.com/images/fd/hotel/g3/M05/9E/13/CggYGVXrMyKAchhrAAsnL-o-rBQ899_R_180_180.jpg" alt="Prince Hotel Marco Polo Hong Kong"></a>
-            <div class="hotel-info">
-                <h3 class="hotel-name">
-                    <strong>
-                        <a href="javascript:void(0);" rel="nofollow" onclick="redirectTo('//english.ctrip.com/hotels/hong-kong-hotel-detail-396354/prince-hotel-marco-polo/?from_page=home&amp;module=best&amp;link=title#ctm_ref=ix_ts_n_4', 'txtCheckIn', 'txtCheckOut', true)">Prince Hotel Marco Polo</a>
-                    </strong>
-                </h3>
-                <div class="hotel-lm">
-                    <span class="level">
-                        <i class="c-icon icon-star icon-star-4"></i>
-                    </span>
-                    <span class="location" data-index="4" data-hotel-id="396354" data-hotel-name="Prince Hotel Marco Polo" data-lat="22.2989984478832" data-lng="114.168307185173" rel="nofollow" onclick="HomePage.LocationMap.clickShowMap(event);">
-                        <i class="h-icon icon-location"></i> Tsim Sha Tsui and Kowloon West
-                    </span>
-                </div>
-                <div class="hotel-grade">
-                    <div class="c-reviews-box">
-                        <a href="javascript:void(0);" class="hotel-review" onclick="redirectTo('//english.ctrip.com/hotels/hong-kong-hotel-review-396354/prince-hotel-marco-polo/?link=review&amp;ctm_ref=ix_ts_rw_4#review', 'txtCheckIn', 'txtCheckOut', true)">
-                            <span class="score">4.7</span>/5<span class="rating">Outstanding</span>
-                            <span target="_blank" class="review-link" rel="nofollow">
-                                (9473 Reviews)
-                            </span>
-                        </a>
-                            <span class="reviews-box"><a href="javascript:void(0);" class="review-link" rel="nofollow" onclick="redirectTo('//english.ctrip.com/hotels/hong-kong-hotel-review-396354/prince-hotel-marco-polo/?checkin=2017-10-20&amp;checkout=2017-10-21&amp;link=taReview&amp;reviewtype=tripadvisor#review', 'txtCheckIn', 'txtCheckOut', true)">
-                                <img src="https://www.tripadvisor.cn/img/cdsi/img2-daodao/ratings/traveler/4.5-21589-4.png" alt="4.5 of 5 stars">(1207 Reviews)</a>
-                            </span>
-                    </div><div class="pack-bubble self-review" data-type="reviewThemeTag"><i class="h-icon icon-user-s"></i><span class="txt txt-block">"Excellent location" "Convenient transport options" "Convenient for shopping"</span></div>             
-                    
-                    <div class="server-box">
-                                   <span class="h-tag"><i class="h-icon icon-wifi"></i>Free Wi-Fi in designated areas</span>
-                                   <span class="h-tag"><i class="h-icon icon-restaurant"></i>Restaurant</span>
-                                   <span class="h-tag"><i class="h-icon icon-pickup"></i>Airport pickup service</span>
-                                   <span class="h-tag"><i class="h-icon icon-gym"></i>Gym</span>
-                                   <span class="h-tag"><i class="h-icon icon-meeting"></i>Meeting rooms</span>
+          </div>
+          <div class="col-md-6">
+            <div class="hotel-link " >
+                <a href="" class="hotel-img" rel="nofollow" ">
+                    <img src="//dimg04.c-ctrip.com/images/hotel/75000/74613/00a2266ac95f4c3fb18f39a67a6780e7_R_180_180.jpg" alt="East Hong Kong Hong Kong">
+                </a>
+                <div class="hotel-info">
+                    <h3 class="hotel-name">
+                        <strong>
+                            <a href="" rel="nofollow" >East Hong Kong</a>
+                        </strong>
+                    </h3>
+                    <div class="hotel-lm">
+                        <span class="level">
+                            <i class="c-icon icon-star icon-star-4"></i>
+                        </span>
+                        <span class="location" data-index="2" data-hotel-id="426611" data-hotel-name="East Hong Kong" data-lat="22.2860257786" data-lng="114.2161101848" rel="nofollow" onclick="HomePage.LocationMap.clickShowMap(event);">
+                            <i class="h-icon icon-location"></i> North Point and Quarry Bay
+                        </span>
                     </div>
-                </div>
-                <div class="hotel-tag">
-                         <!--Sales-->
-                        <label class="sale-tag" data-tips="jump" data-content="Special rate only available for bookings of minimum 2 rooms, otherwise regular room rate will apply. " data-params="{'options':{'showArrow':false,'type':'jmp_text','template':'$jmp_text','classNames':{'tip': 'tuna_jmpinfo1','boxType':'jmp_content'},'css':{'maxWidth':450},'position':'bottomLeft-topRight','content':{'txt':'Special rate only available for bookings of minimum 2 rooms, otherwise regular room rate will apply. '}}}" data-role="jmp">
-                            Sale
-                        </label>
-                                    </div>
-                <div class="price-box">
-                    
-                                                <div class="c-price">
-                                <dfn class="price-currency">CNY</dfn>
-                                <span class="price-num">2,805</span>
-                            </div>
-                                                            <div class="select-btn">
-                        <a class="c-btn btn-key" href="javascript:void(0);" rel="nofollow" onclick="redirectTo('//english.ctrip.com/hotels/hong-kong-hotel-detail-396354/prince-hotel-marco-polo/?from_page=home&amp;module=best&amp;link=button#ctm_ref=ix_ts_n_4', 'txtCheckIn', 'txtCheckOut', true)">Select</a>
+                    <div class="hotel-grade">
+                        <div class="pack-bubble self-review" >
+                            <i class="h-icon icon-user-s"></i>
+                              <span class="txt txt-block">"Convenient transport options" "Excellent location" "Nice sea view"</span>
+                        </div> 
+                        <div class="server-box">
+                            <span class="h-tag"><i class="h-icon icon-wifi"></i>Wi-Fi in public areas</span>
+                            <span class="h-tag"><i class="h-icon icon-pool"></i>Swimming Pool</span>
+                            <span class="h-tag"><i class="h-icon icon-gym"></i>Gym</span>
+                            <span class="h-tag"><i class="h-icon icon-bar"></i>Bar</span>
+                        </div>
+                    </div>
+                    <div class="hotel-tag"></div>
+                    <div class="price-box">                        
+                        <div class="c-price">
+                            <dfn class="price-currency">CNY</dfn>
+                            <span class="price-num">1,707</span>
+                        </div>
+                        <div class="select-btn">
+                            <a class="c-btn btn-key" href="" rel="nofollow" >Select</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-       <div class="hotel-link col-md-6" >
-            <a href="javascript:void(0);" class="hotel-img" rel="nofollow" onclick="redirectTo('//english.ctrip.com/hotels/hong-kong-hotel-detail-396352/gateway-hotel-marco-polo/?from_page=home&amp;module=best&amp;link=pic#ctm_ref=ix_ts_img_5', 'txtCheckIn','txtCheckOut', true)"><img src="//dimg04.c-ctrip.com/images/2n0n0i00000098ltnD13F_R_180_180.jpg" alt="Gateway Hotel Marco Polo Hong Kong"></a>
-            <div class="hotel-info">
-                <h3 class="hotel-name">
-                    <strong>
-                        <a href="javascript:void(0);" rel="nofollow" onclick="redirectTo('//english.ctrip.com/hotels/hong-kong-hotel-detail-396352/gateway-hotel-marco-polo/?from_page=home&amp;module=best&amp;link=title#ctm_ref=ix_ts_n_5', 'txtCheckIn', 'txtCheckOut', true)">Gateway Hotel Marco Polo</a>
-                    </strong>
-                </h3>
-                <div class="hotel-lm">
-                    <span class="level">
-                        <i class="c-icon icon-star icon-star-4"></i>
-                    </span>
-                    <span class="location" data-index="5" data-hotel-id="396352" data-hotel-name="Gateway Hotel Marco Polo" data-lat="22.297756" data-lng="114.168542" rel="nofollow" onclick="HomePage.LocationMap.clickShowMap(event);">
-                        <i class="h-icon icon-location"></i> Tsim Sha Tsui and Kowloon West
-                    </span>
-                </div>
-                <div class="hotel-grade">
-                    <div class="c-reviews-box">
-                        <a href="javascript:void(0);" class="hotel-review" onclick="redirectTo('//english.ctrip.com/hotels/hong-kong-hotel-review-396352/gateway-hotel-marco-polo/?link=review&amp;ctm_ref=ix_ts_rw_5#review', 'txtCheckIn', 'txtCheckOut', true)">
-                            <span class="score">4.7</span>/5<span class="rating">Outstanding</span>
-                            <span target="_blank" class="review-link" rel="nofollow">
-                                (9697 Reviews)
-                            </span>
-                        </a>
-                            <span class="reviews-box"><a href="javascript:void(0);" class="review-link" rel="nofollow" onclick="redirectTo('//english.ctrip.com/hotels/hong-kong-hotel-review-396352/gateway-hotel-marco-polo/?checkin=2017-10-20&amp;checkout=2017-10-21&amp;link=taReview&amp;reviewtype=tripadvisor#review', 'txtCheckIn', 'txtCheckOut', true)">
-                                <img src="https://www.tripadvisor.cn/img/cdsi/img2-daodao/ratings/traveler/4.5-21589-4.png" alt="4.5 of 5 stars">(1248 Reviews)</a>
-                            </span>
-                    </div><div class="pack-bubble self-review" data-type="reviewThemeTag"><i class="h-icon icon-user-s"></i><span class="txt txt-block">"Excellent location" "Convenient for shopping" "Convenient transport options"</span></div>             
-                    
-                    <div class="server-box">
-                                   <span class="h-tag"><i class="h-icon icon-wifi"></i>Free Wi-Fi in designated areas</span>
-                                   <span class="h-tag"><i class="h-icon icon-restaurant"></i>Restaurant</span>
-                                   <span class="h-tag"><i class="h-icon icon-pickup"></i>Airport pickup service</span>
-                                   <span class="h-tag"><i class="h-icon icon-gym"></i>Gym</span>
-                                   <span class="h-tag"><i class="h-icon icon-meeting"></i>Meeting rooms</span>
-                                   <span class="h-tag"><i class="h-icon icon-bar"></i>Bar</span>
+          </div>
+          <div class="col-md-6">
+            <div class="hotel-link " >
+                <a href="" class="hotel-img" rel="nofollow" ">
+                    <img src="//dimg04.c-ctrip.com/images/hotel/75000/74613/00a2266ac95f4c3fb18f39a67a6780e7_R_180_180.jpg" alt="East Hong Kong Hong Kong">
+                </a>
+                <div class="hotel-info">
+                    <h3 class="hotel-name">
+                        <strong>
+                            <a href="" rel="nofollow" >East Hong Kong</a>
+                        </strong>
+                    </h3>
+                    <div class="hotel-lm">
+                        <span class="level">
+                            <i class="c-icon icon-star icon-star-4"></i>
+                        </span>
+                        <span class="location" data-index="2" data-hotel-id="426611" data-hotel-name="East Hong Kong" data-lat="22.2860257786" data-lng="114.2161101848" rel="nofollow" onclick="HomePage.LocationMap.clickShowMap(event);">
+                            <i class="h-icon icon-location"></i> North Point and Quarry Bay
+                        </span>
                     </div>
-                </div>
-                <div class="hotel-tag">
-                         <!--Sales-->
-                        <label class="sale-tag" data-tips="jump" data-content="Special rate only available for bookings from 2017-8-29 17:31:00 to 2017-11-30 23:59:59. If an extended stay is desired, please also book during the designated time or regular room rate will apply." data-params="{'options':{'showArrow':false,'type':'jmp_text','template':'$jmp_text','classNames':{'tip': 'tuna_jmpinfo1','boxType':'jmp_content'},'css':{'maxWidth':450},'position':'bottomLeft-topRight','content':{'txt':'Special rate only available for bookings from 2017-8-29 17:31:00 to 2017-11-30 23:59:59. If an extended stay is desired, please also book during the designated time or regular room rate will apply.'}}}" data-role="jmp">
-                            Sale
-                        </label>
-                                    </div>
-                <div class="price-box">
-                    
-                            <div class="member-deal member-sign">
-                                <a href="javascript:;"><span class="h-icon icon-member"></span>Member Deal</a>
-                            </div>
-                                                <div class="c-price">
-                                <dfn class="price-currency">CNY</dfn>
-                                <span class="price-num">2,747</span>
-                            </div>
-                                                            <div class="select-btn">
-                        <a class="c-btn btn-key" href="javascript:void(0);" rel="nofollow" onclick="redirectTo('//english.ctrip.com/hotels/hong-kong-hotel-detail-396352/gateway-hotel-marco-polo/?from_page=home&amp;module=best&amp;link=button#ctm_ref=ix_ts_n_5', 'txtCheckIn', 'txtCheckOut', true)">Select</a>
+                    <div class="hotel-grade">
+                        <div class="pack-bubble self-review" >
+                            <i class="h-icon icon-user-s"></i>
+                              <span class="txt txt-block">"Convenient transport options" "Excellent location" "Nice sea view"</span>
+                        </div> 
+                        <div class="server-box">
+                            <span class="h-tag"><i class="h-icon icon-wifi"></i>Wi-Fi in public areas</span>
+                            <span class="h-tag"><i class="h-icon icon-pool"></i>Swimming Pool</span>
+                            <span class="h-tag"><i class="h-icon icon-gym"></i>Gym</span>
+                            <span class="h-tag"><i class="h-icon icon-bar"></i>Bar</span>
+                        </div>
+                    </div>
+                    <div class="hotel-tag"></div>
+                    <div class="price-box">                        
+                        <div class="c-price">
+                            <dfn class="price-currency">CNY</dfn>
+                            <span class="price-num">1,707</span>
+                        </div>
+                        <div class="select-btn">
+                            <a class="c-btn btn-key" href="" rel="nofollow" >Select</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+          </div>
+
+            
+         
+
+
+       
+       
     <script type="text/javascript">
         var reviewLab = 'Reviews';
     </script>
@@ -811,7 +914,32 @@
 }
 .pro_list .pro_fr {
     /*width: 696px;*/
-    border-top: 2px solid #fda93b;
+    /*border-top: 2px solid #fda93b;*/
+}
+.box-transfer .mod-tab {
+  border-top: 4px solid #fda93b;
+    /*border-top: 4px solid #1171b7;*/
+    margin-bottom: 8px;
+    height: 38px;
+    overflow: hidden;
+}
+  .nav-tours{  margin-bottom: 25px;
+    border-top: 4px solid #00bcd4;
+    /* border-top: 4px solid #1171b7; */
+    margin-bottom: 8px;
+    height: 38px;
+    overflow: hidden;
+  }
+.active{
+ background: #00bcd4;
+}
+.nav-tours li{
+  display: inline-block;
+    padding: 10px;
+}
+.mod-tab a.current-transfer, .mod-tab a.current-transfer:hover
+.box-transfer .mod-tab a{
+  background-color: #fda93b;
 }
 .list_ad ul {
     overflow: hidden;
@@ -874,52 +1002,8 @@
     width: 70px;
 }
 @charset "UTF-8";
-body,input{
-  font-size:12px;line-height:150%;font-family:"Helvetica Neue",Helvetica,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei","微软雅黑",Arial,simsun,sans-serif;color:#333
-}
-  body,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button{
-  margin:0;padding:0
-}
-  li{
-  list-style:none
-}
-  img{
-  border:0
-}
-  input[type=text]{
-  padding:2px 5px
-}
-  em{
-  font-style:normal
-}
-  ::-webkit-scrollbar{
-  width:12px
-}
-  ::-webkit-scrollbar-track{
-  -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);border-radius:10px
-}
-  ::-webkit-scrollbar-thumb{
-  border-radius:10px;background:rgba(0,0,0,0.1);-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.5)
-}
-  ::-webkit-scrollbar-thumb:window-inactive{
-  background:rgba(255,0,0,0.4)
-}
-  input::-webkit-input-placeholder{
-  color:#999!important;font-size:12px
-}
-  input:-moz-placeholder{
-  color:#999!important;font-size:12px
-}
-  input::-moz-placeholder{
-  color:#999!important;font-size:12px
-}
-  input:-ms-input-placeholder{
-  color:#999!important;font-size:12px
-}
-  @font-face{
-  font-family:'iconfont';src:url('//at.alicdn.com/t/font_59742_cso72ft3g9hn0zfr.eot');src:url('//at.alicdn.com/t/font_59742_cso72ft3g9hn0zfr.eot?#iefix') format('embedded-opentype'),url('//at.alicdn.com/t/font_59742_cso72ft3g9hn0zfr.woff') format('woff'),url('//at.alicdn.com/t/font_59742_cso72ft3g9hn0zfr.ttf') format('truetype'),url('//at.alicdn.com/t/font_59742_cso72ft3g9hn0zfr.svg#iconfont') format('svg')
-}
-  .iconfont{
+
+.iconfont{
   font-family:"iconfont"!important;font-size:18px;font-style:normal;color:#4ea9f2;margin-right:8px;position:relative;top:-1px;margin-left:1px
 }
   .fl{
@@ -1084,18 +1168,9 @@ body,input{
   .f26{
   font-size:26px;line-height:36px
 }
-  .f30{
-  font-size:30px;line-height:45px
-}
-  .f36{
-  font-size:36px;line-height:54px
-}
-  .f42{
-  font-size:42px;line-height:63px
-}
-  .mt2{
-  margin-top:2px
-}
+ 
+
+ 
   .mt3{
   margin-top:3px
 }
@@ -1588,336 +1663,7 @@ body,input{
   .starBox,.starWhiteBox{
   display:inline-block;width:75px;height:15px;vertical-align:middle;margin-top:-3px
 }
-  .starBox .star1,.starBox .star2,.starBox .star3,.starBox .star4,.starBox .star5,.starBox .star1-5,.starBox .star2-5,.starBox .star3-5,.starBox .star4-5,.starBox .star0,.starWhiteBox .star1,.starWhiteBox .star2,.starWhiteBox .star3,.starWhiteBox .star4,.starWhiteBox .star5,.starWhiteBox .star1-5,.starWhiteBox .star2-5,.starWhiteBox .star3-5,.starWhiteBox .star4-5,.starWhiteBox .star0{
-  height:15px;display:inline-block;margin:0;padding:0
-}
-  .starBox{
-  background:url(../img/star.png) 0 0 repeat-x
-}
-  .starBox .star1,.starBox .star2,.starBox .star3,.starBox .star4,.starBox .star5,.starBox .star1-5,.starBox .star2-5,.starBox .star3-5,.starBox .star4-5,.starBox .star0{
-  background:url(../img/star.png) 0 -15px repeat-x
-}
-  .starWhiteBox{
-  background:url(../img/star.png) 0 -30px repeat-x
-}
-  .starWhiteBox .star1,.starWhiteBox .star2,.starWhiteBox .star3,.starWhiteBox .star4,.starWhiteBox .star5{
-  background:url(../img/star.png) 0 -45px repeat-x
-}
-  .star1{
-  width:15px
-}
-  .star2{
-  width:30px
-}
-  .star3{
-  width:45px
-}
-  .star4{
-  width:60px
-}
-  .star5{
-  width:75px
-}
-  .star0{
-  widht:7px
-}
-  .star1-5{
-  width:22px
-}
-  .star2-5{
-  width:37px
-}
-  .star3-5{
-  width:52px
-}
-  .star4-5{
-  width:67px
-}
-  .starBox_b{
-  display:inline-block;width:140px;height:27px;vertical-align:middle;margin-top:-3px;background:url(../img/star_b.png) 0 0 repeat-x
-}
-  .starBox_b .star_b{
-  height:27px;width:28px;display:inline-block;float:left;margin:0;padding:0;cursor:pointer
-}
-  .starBox_b .cur,.starBox_b .star_ok{
-  background:url(../img/star_b.png) 0 -28px repeat-x
-}
-  .icon_star1{
-  height:15px;width:15px;background-position:-38px -223px
-}
-  .icon_star2{
-  height:15px;width:30px;background-position:-38px -223px
-}
-  .icon_star3{
-  height:15px;width:45px;background-position:-38px -223px
-}
-  .icon_star4{
-  height:15px;width:60px;background-position:-38px -223px
-}
-  .icon_star5{
-  height:15px;width:75px;background-position:-38px -223px
-}
-  .icon_white_star1{
-  height:15px;width:15px;background-position:-48px -525px
-}
-  .icon_white_star2{
-  height:15px;width:30px;background-position:-48px -525px
-}
-  .icon_white_star3{
-  height:15px;width:45px;background-position:-48px -525px
-}
-  .icon_white_star4{
-  height:15px;width:60px;background-position:-48px -525px
-}
-  .icon_white_star5{
-  height:15px;width:75px;background-position:-48px -525px
-}
-  .icon_phone{
-  width:25px;height:28px;background-position:0 -252px
-}
-  .icon_qq{
-  width:26px;height:28px;background-position:-25px -252px
-}
-  .icon_pc{
-  width:30px;height:29px;background-position:-51px -251px
-}
-  .icon_write{
-  width:32px;height:31px;background-position:-81px -249px
-}
-  .icon_blue_case{
-  width:30px;height:33px;background-position:-143px -238px
-}
-  .icon_blue_waring{
-  width:33px;height:30px;background-position:0 -280px
-}
-  .icon_blue_Question{
-  width:33px;height:32px;background-position:-33px -280px
-}
-  .icon_blue_listItem{
-  width:32px;height:25px;background-position:-66px -280px
-}
-  .icon_user{
-  width:18px;height:18px;background-position:-129px -271px
-}
-  .icon_white_listItem_s{
-  width:15px;height:15px;background-position:0 0
-}
-  .icon_blue_listItem_s{
-  width:17px;height:12px;background-position:-160px -221px
-}
-  .icon_white_view{
-  width:14px;height:14px;background-position:-129px -291px
-}
-  .icon_blue_view{
-  width:14px;height:14px;background-position:-143px -291px
-}
-  .icon_blue_history{
-  width:18px;height:19px;background-position:-158px -291px
-}
-  .icon_black_eye{
-  width:28px;height:17px;background-position:-65px -312px
-}
-  .icon_right_talk{
-  width:21px;height:19px;background-position:-73px -329px
-}
-  .icon_right_qq{
-  width:20px;height:20px;background-position:-94px -329px
-}
-  .icon_right_phone{
-  width:18px;height:20px;background-position:-117px -329px
-}
-  .icon_right_feedback{
-  width:18px;height:18px;background-position:-135px -312px
-}
-  .icon_right_code{
-  width:18px;height:18px;background-position:-154px -312px
-}
-  .icon_right_top{
-  width:9px;height:8px;background-position:-117px -312px
-}
-  .icon_rebate{
-  width:42px;height:51px;background-position:0 -400px
-}
-  .icon_visa{
-  width:37px;height:39px;background-position:-42px -400px
-}
-  .icon_bus{
-  width:43px;height:39px;background-position:-79px -400px
-}
-  .icon_blue_phone{
-  width:35px;height:36px;background-position:-122px -400px
-}
-  .icon_tax{
-  width:39px;height:39px;background-position:-157px -400px
-}
-  .icon_weather{
-  width:44px;height:38px;background-position:0 -455px
-}
-  .icon_blue_itrip{
-  width:35px;height:38px;background-position:-46px -441px
-}
-  .icon_white_visa{
-  width:53px;height:57px;background-position:-143px -445px
-}
-  .icon_white_bus{
-  width:81px;height:40px;background-position:-48px -484px
-}
-  .icon_white_phone{
-  width:48px;height:50px;background-position:0 -503px
-}
-  .icon_white_tax{
-  width:57px;height:49px;background-position:-139px -503px
-}
-  .icon_new{
-  width:15px;height:15px;background-position:-181px -206px
-}
-  .icon_black_list{
-  width:28px;height:21px;background-position:0 -358px
-}
-  .icon_black_pen{
-  width:28px;height:21px;background-position:-28px -358px
-}
-  .icon_black_uimg{
-  width:28px;height:21px;background-position:-56px -358px
-}
-  .icon_black_clk{
-  width:28px;height:21px;background-position:-84px -358px
-}
-  .icon_black_quan{
-  width:28px;height:21px;background-position:-112px -358px
-}
-  .icon_black_dollor{
-  width:28px;height:21px;background-position:-140px -358px
-}
-  .icon_black_score{
-  width:28px;height:21px;background-position:-168px -358px
-}
-  .icon_black_star{
-  width:28px;height:21px;background-position:-140px -337px
-}
-  .icon_black_distri{
-  width:28px;height:21px;background-position:-81px -441px
-}
-  .icon_white_list{
-  width:28px;height:21px;background-position:0 -379px
-}
-  .icon_white_pen{
-  width:28px;height:21px;background-position:-28px -379px
-}
-  .icon_white_uimg{
-  width:28px;height:21px;background-position:-56px -379px
-}
-  .icon_white_clk{
-  width:28px;height:21px;background-position:-84px -379px
-}
-  .icon_white_quan{
-  width:28px;height:21px;background-position:-112px -379px
-}
-  .icon_white_dollor{
-  width:28px;height:21px;background-position:-140px -379px
-}
-  .icon_white_score{
-  width:28px;height:21px;background-position:-168px -379px
-}
-  .icon_white_star{
-  width:28px;height:21px;background-position:-168px -337px
-}
-  .icon_orange_star{
-  width:18px;height:17px;background-position:-93px -312px
-}
-  .icon_white_distri{
-  width:28px;height:21px;background-position:-109px -441px
-}
-  .icon_white_home{
-  width:20px;height:18px;background-position:-45px -312px
-}
-  .icon_Passager{
-  width:26px;height:22px;background-position:-47px -333px
-}
-  .itrip_chuo{
-  width:79px;height:79px;background:url(../img/uc/itrip_chuo.png) 0 0 no-repeat;position:absolute;display:inline-block
-}
-  .coupon_lost{
-  width:75px;height:76px;background:url(../img/uc/coupon_lost.png) 0 0 no-repeat;position:absolute;display:inline-block
-}
-  .coupon_used{
-  width:75px;height:76px;background:url(../img/uc/coupon_used.png) 0 0 no-repeat;position:absolute;display:inline-block
-}
-  .qicon{
-  background-image:url(../img/quickInS.png);background-repeat:no-repeat;display:inline-block;vertical-align:middle
-}
-  .qicon_plane{
-  width:32px;height:28px;background-position:0 0
-}
-  .qicon_car{
-  width:26px;height:21px;background-position:-32px 0
-}
-  .qicon_boat{
-  width:31px;height:24px;background-position:-58px 0
-}
-  .qicon_train{
-  width:41px;height:31px;background-position:-89px 0
-}
-  .qicon_bus{
-  width:45px;height:27px;background-position:-130px 0
-}
-  .qicon_ferryboat{
-  width:45px;height:23px;background-position:-175px 0
-}
-  .qicon_walk{
-  width:27px;height:26px;background-position:-220px 0
-}
-  .icon_footer{
-  background-image:url(../img/footer1.png);background-repeat:no-repeat;display:inline-block
-}
-  .icon_footer_Money{
-  width:52px;height:52px;background-position:0 0
-}
-  .icon_footer_Bag{
-  width:52px;height:52px;background-position:-52px 0
-}
-  .icon_footer_Earplug{
-  width:52px;height:52px;background-position:-104px 0
-}
-  .icon_footer_Praise{
-  width:52px;height:52px;background-position:-156px 0
-}
-  .icon_footer_User{
-  width:32px;height:32px;background-position:0 -52px
-}
-  .icon_footer_Inform{
-  width:37px;height:37px;background-position:-32px -52px
-}
-  .icon_footer_List{
-  width:26px;height:32px;background-position:-69px -52px
-}
-  .icon_footer_Service{
-  width:32px;height:32px;background-position:-95px -52px
-}
-  .icon_footer_Phone{
-  width:30px;height:38px;background-position:-127px -52px
-}
-  .icon_footer_net_1{
-  width:84px;height:31px;background-position:0 -90px
-}
-  .icon_footer_net_2{
-  width:84px;height:31px;background-position:-84px -90px
-}
-  .icon_footer_net_3{
-  width:84px;height:31px;background-position:0 -121px
-}
-  .icon_footer_net_4{
-  width:84px;height:31px;background-position:-84px -121px
-}
-  .icon_footer_net_5{
-  width:84px;height:31px;background-position:0 -152px
-}
-  .icon_footer_net_6{
-  width:84px;height:31px;background-position:-84px -152px
-}
-  .footer_logo{
-  width:165px;height:63px;background-position:0 -183px
-}
+ 
   
 </style>
   
@@ -2138,7 +1884,7 @@ body,input{
 }
 .card-blog, .card-testimonial .card-description+.card-title, .card-testimonial .icon {
     margin-top: 30px;
-    min-height: 435px;
+    min-height: 290px;
 }
 .card .card-content {
     padding: 10px 25px;
@@ -2306,6 +2052,7 @@ icon-loading-64-eee {
     /*border: 1px solid #ccc;*/
     margin-bottom: 8px;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+    min-height: 175px;
 }
 .hotel-img {
     float: left;
