@@ -20,7 +20,7 @@
     
 </head>
 
-<body ng-app="myApp" ng-controller="main">
+<body ng-app="myApp" ng-controller="main" style="background: url(./files/images/bg-wrap.jpg) top left repeat-x;">
   <style>
     .navbar{
       border-radius: 0px;
@@ -281,12 +281,17 @@
         </div>
     </section> <!-- end-main-raised -->
 
-    <div class="section section-blog" id="area" >
+    <div class="section section-blog" id="area" style="margin-top: 30px;">
         <div class="container">
-            <div class="row" style="margin-top: 35px;">
+            <div class="row">
+                <div style="background: #fff; width: 170px; font-weight: 400; border-radius: 8px 8px 0 0; height: 50px; line-height: 54px; text-align: center;">
+                  <div class="section-title" style="font-size: 18px;">Tour</div>
+                </div>
+            </div>   
+            <div class="row" style=" border-radius: 4px 4px 0 0 ; background: #fff;">
                 <div class="col-md-12">   
-                    <h2 class="section-title">Tour</h2>      
-                    <ul class="nav-tours" role="tablist" style="margin-bottom: 25px;">
+                  <div class="row">  
+                    <ul class="nav-tours" role="tablist" style="margin-bottom: 25px;padding-left: 0;">
                         <li class="active" id="Phuket"><a href="#pill1" data-toggle="tab" aria-expanded="true" ng-click="getTourforarea('Phuket');show = !show">Phuket</a></li>
                         <li class="" id="Phangnga"><a href="#pill2" data-toggle="tab" aria-expanded="false" ng-click="getTourforarea('Phang nga');show = !show">Phang nga</a></li>
                         <li class="" id="Krabi"><a href="#pill3" data-toggle="tab" aria-expanded="false" ng-click="getTourforarea('Krabi');show = !show">Krabi</a></li>
@@ -294,8 +299,9 @@
                         <li class="" id="All"><a href="#pill3" data-toggle="tab" aria-expanded="false" ng-click="getTourforareaall('All');show = !show">All</a></li>
                     </ul> 
                 </div>
+              </div>
             </div>    
-            <div class="row">
+            <div class="row" style="padding: 0 10px; border-radius: 4px; background: #fff;">
                 <div class="col-md-3" ng-repeat="item in dataTour" id="fade-in-out" >
                     <div class="card card-blog" >
                         <div class="card-image" ng-click="viewpackageforid(item.id)">
@@ -318,11 +324,18 @@
                     </div>
                 </div>
             </div> 
-            <div class="row" >
-    <section>
+
+            <div class="row">
+            <div style="background: #fff; width: 170px; font-weight: 400; border-radius: 8px 8px 0 0; height: 50px; line-height: 54px; text-align: center;    margin-top: 30px;">
+                  <div class="section-title" style="font-size: 18px;">Transfer</div>
+                </div>
+              </div>
+             <!-- <h2 class="section-title">Transfer</h2> -->
+            <div class="row" style=" border-radius: 4px; background: #fff;">
+    <section style="    margin-top: -15px;">
     <div class="pro_list first mt15 clearfix freePackage box-transfer">
 
-    <h2 class="section-title">Transfer</h2>
+   
     <div class="mod-tab clearfix" id="more_tab">
                         <a href="javascript:void(0);" class="current-transfer" cityid="58" id="link58">Phuket</a>
                         <a href="javascript:void(0);" class="" cityid="59" id="link59">Bangkok</a>
@@ -659,7 +672,13 @@
   </section>
 </div>
 
-<div class="row" style="margin-top: 35px;margin-bottom: 50px;">
+
+<div class="row">
+    <div style="background: #fff; width: 170px; font-weight: 400; border-radius: 8px 8px 0 0; height: 50px; line-height: 54px; text-align: center;    margin-top: 30px;">
+        <div class="section-title" style="font-size: 18px;">Hotel</div>
+    </div>
+</div>
+<div class="row" style="margin-bottom: 50px;  border-radius: 4px; background: #fff;">
     <div class="h-popular-hotel">               
         <div class="mod-tab" id="more_tab">
             <a href="" class="current" cityid="58" id="link58">Phuket</a>
@@ -847,6 +866,10 @@
                 </div>
             </div>
           </div>
+
+        </div>
+      </div>
+    </div>
 
             
          
