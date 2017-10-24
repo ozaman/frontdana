@@ -285,13 +285,15 @@
     <div class="section section-blog" id="area" style="margin-top: 30px;">
         <div class="container">
             <div class="row">
-                <div style="background: #fff; width: 170px; font-weight: 400; border-radius: 8px 8px 0 0; height: 50px; line-height: 54px; text-align: center;">
+                
+            </div>   
+            <div class="row" style=" border-radius: 4px 4px 0 0 ; margin-top: 30px;">
+
+                <div class="col-md-12">
+<div style="background: #fff; width: 170px; font-weight: 400; border-radius: 8px 8px 0 0; height: 50px; line-height: 54px; text-align: center;">
                   <div class="section-title" style="font-size: 18px;">Tour</div>
                 </div>
-            </div>   
-            <div class="row" style=" border-radius: 4px 4px 0 0 ; ">
-                <div class="col-md-12">   
-                  <div class="" style="    margin-top: 9px;
+                  <div class="" style="
     margin-bottom: 60px;
     border-top: 4px solid #00bcd4;">  
                     <ul class="nav-pills" role="tablist" style="padding-left: 0;">
@@ -300,12 +302,15 @@
                         <li class="" id="Phangnga"><a href="#pill3" data-toggle="tab" aria-expanded="false" ng-click="getTourforarea('Phang nga');show = !show">Phang nga</a></li>
                         <li class="" id="Krabi"><a href="#pill4" data-toggle="tab" aria-expanded="false" ng-click="getTourforarea('Krabi');show = !show">Krabi</a></li>
                         <li class="" id="PhiPhiisland"><a href="#pill5" data-toggle="tab" aria-expanded="false" ng-click="getTourforarea('Phi Phi island');show = !show">Phi Phi island</a></li>
+                        <li class="" id="PhiPhiisland"><a href="#pill6" data-toggle="tab" aria-expanded="false" ng-click="getTourforareaall('All');show = !show">All</a></li>
+                        <li class="" aling="right" id="PhiPhiisland" style="float: right;"><a href="#pill7" data-toggle="tab" aria-expanded="false" ng-click="getTourforarea('Phi Phi island');show = !show">More..</a></li>
                        <!--  <li class="" id="All"><a href="#pill3" data-toggle="tab" aria-expanded="false" ng-click="getTourforareaall('All');show = !show">All</a></li> -->
                     </ul> 
                 </div>
               </div>
             </div>    
             <div class="row" style="padding: 0 10px; border-radius: 4px; ">
+
                 <div class="col-md-3" ng-repeat="item in dataTour" id="fade-in-out" >
                     <div class="card card-blog" >
                         <div class="card-image" ng-click="viewpackageforid(item.id)">
@@ -354,6 +359,26 @@
 
       <div class="pro_lb list_ad" id="show1">
             <div>
+                <div class="col-md-4">
+                    <div class="card card-blog">
+                        <a href="blog-posts.html" class="header">
+                            <img src="http://demos.creative-tim.com/gaia-bootstrap-template-pro/assets/img/header-8.jpeg" class="image-header">
+                        </a>
+                        <div class="content">
+                            <div class="circle-black">
+                                <div class="circle">
+                                    <div class="date-wrapper">
+                                        <span class="month">Mar</span>
+                                        <span class="date">10</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="blog-posts.html" class="card-title"><h3>Now There Is Only One Important Color...</h3></a>
+                            <h6 class="card-category text-danger">Trending</h6>
+                            <p class="text-description text-gray">When it comes to choosing decorative pieces, you want to stick to a maximum of three colors. Then it's all about placement.</p>
+                        </div>
+                    </div>
+                </div>
             <div ng-repeat="item in transfer">
             <div class="col-md-3">
                 <div class="card-big-shadow">
@@ -452,6 +477,25 @@
             
          
 <style>
+.card {
+    background: #fff;
+    box-shadow: 0 32px 44px -24px rgba(0, 0, 0, 0.23), 0 20px 25px 0px rgba(0, 0, 0, 0.12), 0 15px 10px -10px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    margin-bottom: 30px;
+    -webkit-transition: all 370ms cubic-bezier(0.34, 1.61, 0.7, 1);
+    -moz-transition: all 370ms cubic-bezier(0.34, 1.61, 0.7, 1);
+    -o-transition: all 370ms cubic-bezier(0.34, 1.61, 0.7, 1);
+    -ms-transition: all 370ms cubic-bezier(0.34, 1.61, 0.7, 1);
+    transition: all 370ms cubic-bezier(0.34, 1.61, 0.7, 1);
+}
+.card:not(.card-plain):not(.card-price):hover {
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  -o-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  transform: scale(1.03);
+  box-shadow: 0 26px 50px -10px rgba(0, 0, 0, 0.38), 0 10px 20px 0px rgba(0, 0, 0, 0.2), 0 15px 10px -10px rgba(0, 0, 0, 0.2);
+}
 .card-big-shadow {
     max-width: 320px;
     position: relative;

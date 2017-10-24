@@ -93,6 +93,7 @@ var app = angular.module('myApp', ['ngCookies']);
                 $scope.dataTour.push(y);
             }
             
+            
                             // if (y.read_msg == 0 && y.comment_from == 'driver') {                                       
                             //     angular.element(document.querySelector('#menudriver'+y.id)).addClass('menudriver')
                             //     updatenoti();
