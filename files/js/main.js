@@ -13,16 +13,16 @@ var app = angular.module('myApp', ['ngCookies']);
                     console.log(res)
                     $scope.tours = res;
                     angular.forEach(res, function (d,i) {
-                    if (d.show_home == 1 && i <=10) {
+                    if (d.show_re == 1 ) {
                         $scope.dataTour.push(d);
-                    }
+                 }
                 
 
             });   
                     //$scope.dataTour = res;
                     $scope.allTour = res;
                  angular.forEach(res, function (z) {
-                    if (z.show_popular == 1) {
+                    if (z.show_top == 1) {
                         $scope.tourpopular.push(z);
                     }
                 
@@ -34,6 +34,38 @@ var app = angular.module('myApp', ['ngCookies']);
                        
                        
             });
+                $http({
+                method : 'POST',
+                url : "php/getTransfer.php",
+                //data: $.param({sv: $scope.dataSV}),
+                headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+                }).success(function(res){
+                    console.log(res)
+                    $scope.transfer = res;
+            //         angular.forEach(res, function (d,i) {
+            //         if (d.show_home == 1 && i <=10) {
+            //             $scope.dataTour.push(d);
+            //         }
+                
+
+            // }); 
+                });
+                $http({
+                method : 'POST',
+                url : "php/getHotel.php",
+                //data: $.param({sv: $scope.dataSV}),
+                headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+                }).success(function(res){
+                    console.log(res)
+                    $scope.hotel = res;
+            //         angular.forEach(res, function (d,i) {
+            //         if (d.show_home == 1 && i <=10) {
+            //             $scope.dataTour.push(d);
+            //         }
+                
+
+            // }); 
+                });
     $scope.getTourforareaall = function(){
         $scope.dataTour = [];
         angular.forEach($scope.tours, function (z,i) {

@@ -20,7 +20,8 @@
     
 </head>
 
-<body ng-app="myApp" ng-controller="main" style="background: url(./files/images/bg-wrap.jpg) top left repeat-x;">
+<body ng-app="myApp" ng-controller="main" ">
+    <!-- style="background: url(./files/images/bg-wrap.jpg) top left repeat-x; -->
   <style>
     .navbar{
       border-radius: 0px;
@@ -101,7 +102,7 @@
                 </div>
       </div>
     </nav>
-    <div class="page-header header-filter header-small" data-parallax="true" style="background-size: 100%;background-image: url(./files/images/1.png);background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);min-height: 80vh;">
+    <div class="page-header header-filter header-small" data-parallax="true" style="background-size: 100%;background-image: url(./files/images/43.png);background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);min-height: 80vh;">
         <div >  
             <div class="container">
                 <div class="row">
@@ -237,14 +238,14 @@
                                     <div class="rotating-card-container">
                                         <div class="card-image">
                                             <div class="front">
-                                                <img class="img" src="./data/files/upload/icon/{{item.icon}}"  style="height: 280px">
+                                                <img class="img" src="./data/files/upload/tour/icon/{{item.icon}}"  style="height: 280px">
                                                 <div class="colored-shadow" style="background-image: url(&quot;files/images/dolce.jpg&quot;); opacity: 1;"></div>
                                             </div>
                                             <div class="back back-background" style="height: 376px; width: 360px; background-image: url(&quot;files/images/page1_img1.jpg&quot;);">
                                                 <div class="card-content">
                                                     <div class="footer text-center">
                                                       <a href="view.php#?data={{item.id}}" class="btn  btn-white">
-                                                        <i class="material-icons">info</i> Details
+                                                        <i class="material-icons">info</i> View
                                                       </a>                                                     
                                                     </div>
                                                     <hr>
@@ -288,24 +289,27 @@
                   <div class="section-title" style="font-size: 18px;">Tour</div>
                 </div>
             </div>   
-            <div class="row" style=" border-radius: 4px 4px 0 0 ; background: #fff;">
+            <div class="row" style=" border-radius: 4px 4px 0 0 ; ">
                 <div class="col-md-12">   
-                  <div class="row">  
-                    <ul class="nav-tours" role="tablist" style="margin-bottom: 25px;padding-left: 0;">
+                  <div class="" style="    margin-top: 9px;
+    margin-bottom: 60px;
+    border-top: 4px solid #00bcd4;">  
+                    <ul class="nav-pills" role="tablist" style="padding-left: 0;">
                         <li class="active" id="Phuket"><a href="#pill1" data-toggle="tab" aria-expanded="true" ng-click="getTourforarea('Phuket');show = !show">Phuket</a></li>
-                        <li class="" id="Phangnga"><a href="#pill2" data-toggle="tab" aria-expanded="false" ng-click="getTourforarea('Phang nga');show = !show">Phang nga</a></li>
-                        <li class="" id="Krabi"><a href="#pill3" data-toggle="tab" aria-expanded="false" ng-click="getTourforarea('Krabi');show = !show">Krabi</a></li>
-                        <li class="" id="PhiPhiisland"><a href="#pill3" data-toggle="tab" aria-expanded="false" ng-click="getTourforarea('Phi Phi island');show = !show">Phi Phi island</a></li>
-                        <li class="" id="All"><a href="#pill3" data-toggle="tab" aria-expanded="false" ng-click="getTourforareaall('All');show = !show">All</a></li>
+                        <li class="" id="Phuket"><a href="#pill2" data-toggle="tab" aria-expanded="true" ng-click="getTourforarea('Bangkok');show = !show">Bangkok</a></li>
+                        <li class="" id="Phangnga"><a href="#pill3" data-toggle="tab" aria-expanded="false" ng-click="getTourforarea('Phang nga');show = !show">Phang nga</a></li>
+                        <li class="" id="Krabi"><a href="#pill4" data-toggle="tab" aria-expanded="false" ng-click="getTourforarea('Krabi');show = !show">Krabi</a></li>
+                        <li class="" id="PhiPhiisland"><a href="#pill5" data-toggle="tab" aria-expanded="false" ng-click="getTourforarea('Phi Phi island');show = !show">Phi Phi island</a></li>
+                       <!--  <li class="" id="All"><a href="#pill3" data-toggle="tab" aria-expanded="false" ng-click="getTourforareaall('All');show = !show">All</a></li> -->
                     </ul> 
                 </div>
               </div>
             </div>    
-            <div class="row" style="padding: 0 10px; border-radius: 4px; background: #fff;">
+            <div class="row" style="padding: 0 10px; border-radius: 4px; ">
                 <div class="col-md-3" ng-repeat="item in dataTour" id="fade-in-out" >
                     <div class="card card-blog" >
                         <div class="card-image" ng-click="viewpackageforid(item.id)">
-                            <img src="./data/files/upload/icon/{{item.icon}}" style="height: 180px" >
+                            <img src="./data/files/upload/tour/icon/{{item.icon}}" style="height: 180px" >
                         </div>
                         <div class="card-content">
                             <h6 class="category text-rose" ng-bind="item.name"></h6>                      
@@ -315,11 +319,15 @@
                             <p class="card-description" ng-bind="item.description"></p>
                         </div> -->
                         <div class="cost-pro">
-                            <i class="material-icons" style="display: inline-block; line-height: 0;">place</i>
-                            <p class="pro-item" ng-bind="item.province" align="left" ></p>
 
-                            <p style="float: right;display: inline-block;">/ Package</p>
-                            <p ng-bind="item.net_price_adult | currency:'':0 " align="right" style="float: right;    color: #FF5722;"></p>
+                           
+                            <div >
+                            <i class="material-icons" style="display: inline-block; line-height: 0;">place</i>
+                            <p class="pro-item" ng-bind="item.city" align="left" ></p>
+                        </div>
+                         <div style="    text-align: right;"><span ng-bind="item.net_price_adult | currency:'':0 " style=" color: #FF5722;"></span><span> /person</span></div>
+
+                            
                         </div>
                     </div>
                 </div>
@@ -331,7 +339,7 @@
                 </div>
               </div>
              <!-- <h2 class="section-title">Transfer</h2> -->
-            <div class="row" style=" border-radius: 4px; background: #fff;">
+            <div class="row" style=" border-radius: 4px; ">
     <section style="    margin-top: -15px;">
     <div class="pro_list first mt15 clearfix freePackage box-transfer">
 
@@ -346,327 +354,26 @@
 
       <div class="pro_lb list_ad" id="show1">
             <div>
+            <div ng-repeat="item in transfer">
             <div class="col-md-3">
-                  <a name="__AD_module_3_60_3948"  class="img"> 
-                    <img class="lazy1"  width="208" height="138" border="0" alt="" src="http://pic2.itrip.com/p/20161123165226-standard-935.jpg?imageView2/5/w/208/h/138/q/100" style="display: block;">
+                <div class="card-big-shadow">
+                  <div class="coloured-cards card"> 
+                    <img class="lazy1"  width="208" height="138" border="0" alt="" src="./data/files/upload/transfer/icon/{{item.icon}}"q/100" style="display: block;">
                     <div class="proinfo oh">
-                    <p class="f14 mt10 oh" style="height:42px;">
-                      transfer</p>
+                    <p class="f14 mt10 oh" style="height:42px;" ng-bind="item.name"></p>
                     <p class="oh mt5">
                       <span class="fr pri price_label">
-                        <label class="js_curCode f12">RMB</label>
-                        <label class="js_curMonery_exten f16 ml5">179.16</label>
+                        <!-- <label class="js_curCode f12">RMB</label> -->
+                        <label class="js_curMonery_exten " ng-bind="item.price  | currency:'':0 "></label>
                         <label class="f12">THB</label>
                       </span>
                       </p>
                   </div>
                   <div class="bor_img"></div>
-                  </a>
-                </div>
-             <div class="col-md-3">
-                  <a name="__AD_module_3_60_3949"  class="img"> 
-                    <img class="lazy1"  width="208" height="138" border="0" alt="" src="http://pic2.itrip.com/p/20151013093957-standard-748.jpg?imageView2/5/w/208/h/138/q/100" style="display: block;">
-                    <div class="proinfo oh">
-                    <p class="f14 mt10 oh" style="height:42px;">
-                      transfer</p>
-                    <p class="oh mt5">
-                      <span class="fr pri price_label">
-                        <label class="js_curCode f12">RMB</label>
-                        <label class="js_curMonery_exten f16 ml5">179.16</label>
-                        <label class="f12">THB</label>
-                      </span>
-                      </p>
                   </div>
-                  <div class="bor_img"></div>
-                  </a>
-                </div>
-             <div class="col-md-3">
-                  <a name="__AD_module_3_60_3950"  class="img"> 
-                    <img class="lazy1"  width="208" height="138" border="0" alt="Health Land Spa" src="http://pic2.itrip.com/p/20170216155955-standard-584.jpg?imageView2/5/w/208/h/138/q/100" style="display: block;">
-                    <div class="proinfo oh">
-                    <p class="f14 mt10 oh" style="height:42px;">
-                      transfer</p>
-                    <p class="oh mt5">
-                      <span class="fr pri price_label">
-                        <label class="js_curCode f12">RMB</label>
-                        <label class="js_curMonery_exten f16 ml5">179.16</label>
-                        <label class="f12">THB</label>
-                      </span>
-                      </p>
-                  </div>
-                  <div class="bor_img"></div>
-                  </a>
-                </div>
-              <div class="col-md-3">
-                  <a name="__AD_module_3_60_3951"  class="img"> 
-                    <img class="lazy1"  width="208" height="138" border="0" alt="" src="http://pic2.itrip.com/p/20170104145753-standard-842.jpg?imageView2/5/w/208/h/138/q/100" style="display: block;">
-                    <div class="proinfo oh">
-                    <p class="f14 mt10 oh" style="height:42px;">
-                    transfer</p>
-                    <p class="oh mt5">
-                      <span class="fr pri price_label">
-                        <label class="js_curCode f12">RMB</label>
-                        <label class="js_curMonery_exten f16 ml5">179.16</label>
-                        <label class="f12">THB</label>
-                      </span>
-                      </p>
-                  </div>
-                  <div class="bor_img"></div>
-                  </a>
-                </div>
-             <div class="col-md-3">
-                  <a name="__AD_module_3_60_3952" class="img"> 
-                    <img class="lazy1" width="208" height="138" border="0" alt="่ญๆ้…ๆณฐๆณๆฏ”่ต" src="http://pic2.itrip.com/p/20170104102921-standard-213.jpg?imageView2/5/w/208/h/138/q/100" style="display: block;">
-                    <div class="proinfo oh">
-                    <p class="f14 mt10 oh" style="height:42px;">
-                      transfer</p>
-                    <p class="oh mt5">
-                      <span class="fr pri price_label">
-                        <label class="js_curCode f12">RMB</label>
-                        <label class="js_curMonery_exten f16 ml5">179.16</label>
-                        <label class="f12">THB</label>
-                      </span>
-                      </p>
-                  </div>
-                  <div class="bor_img"></div>
-                  </a>
-                </div>
-              <div class="col-md-3">
-                  <a name="__AD_module_3_60_3953"  class="img"> 
-                    <img class="lazy1" width="208" height="138" border="0" alt="" src="http://pic2.itrip.com/p/20140923155537-standard-79.jpg?imageView2/5/w/208/h/138/q/100" style="display: block;">
-                    <div class="proinfo oh">
-                    <p class="f14 mt10 oh" style="height:42px;">
-                     transfer</p>
-                    <p class="oh mt5">
-                      <span class="fr pri price_label">
-                        <label class="js_curCode f12">RMB</label>
-                        <label class="js_curMonery_exten f16 ml5">179.16</label>
-                        <label class="f12">THB</label>
-                      </span>
-                      </p>
-                  </div>
-                  <div class="bor_img"></div>
-                  </a>
-                </div>
               </div>
-          </div>
-        <div class="pro_lb list_ad" style="display:none;" id="show2">
-            <ul>
-            <li>
-                  <a name="__AD_module_3_61_3954"  class="img"> 
-                    <img class="lazy1"  width="208" height="138" border="0" alt="ๅ" src="http://pic.itrip.com/img/loading2.gif">
-                    <div class="proinfo oh">
-                    <p class="f14 mt10 oh" style="height:42px;">
-                      transfer</p>
-                    <p class="oh mt5">
-                      <span class="fr pri price_label">
-                        <label class="js_curCode f12">RMB</label>
-                        <label class="js_curMonery_exten f16 ml5">179.16</label>
-                        <label class="f12">THB</label>
-                      </span>
-                      </p>
-                  </div>
-                  <div class="bor_img"></div>
-                  </a>
-                </li>
-              <li>
-                  <a name="__AD_module_3_61_3955"  class="img"> 
-                    <img class="lazy1" width="208" height="138" border="0" alt="" src="http://pic.itrip.com/img/loading2.gif">
-                    <div class="proinfo oh">
-                    <p class="f14 mt10 oh" style="height:42px;">
-                      transfer</p>
-                    <p class="oh mt5">
-                      <span class="fr pri price_label">
-                        <label class="js_curCode f12">RMB</label>
-                        <label class="js_curMonery_exten f16 ml5">179.16</label>
-                        <label class="f12">THB</label>
-                      </span>
-                      </p>
-                  </div>
-                  <div class="bor_img"></div>
-                  </a>
-                </li>
-              <li>
-                  <a name="__AD_module_3_61_3956" class="img"> 
-                    <img class="lazy1"  width="208" height="138" border="0" alt="" src="http://pic.itrip.com/img/loading2.gif">
-                    <div class="proinfo oh">
-                    <p class="f14 mt10 oh" style="height:42px;">
-                      ๅก็ญๅฒๅ—้จ่งๅ… ็ฆๆ–ญๅฒ ้ธๅฒ ๅฆๅ…ๆตทๆปฉ</p>
-                    <p class="oh mt5">
-                      <span class="fr pri price_label">
-                        <label class="js_curCode f12">RMB</label>
-                         <label class="js_curMonery_exten f16 ml5">179.16</label>
-                        <label class="f12">THB</label>
-                      </span>
-                      </p>
-                  </div>
-                  <div class="bor_img"></div>
-                  </a>
-                </li>
-              <li>
-                  <a name="__AD_module_3_61_3957"  class="img"> 
-                    <img class="lazy1"  width="208" height="138" border="0" alt="" src="http://pic.itrip.com/img/loading2.gif">
-                    <div class="proinfo oh">
-                    <p class="f14 mt10 oh" style="height:42px;">
-                      transfer</p>
-                    <p class="oh mt5">
-                      <span class="fr pri price_label">
-                        <label class="js_curCode f12">RMB</label>
-                        <label class="js_curMonery_exten f16 ml5">179.16</label>
-                        <label class="f12">THB</label>
-                      </span>
-                      </p>
-                  </div>
-                  <div class="bor_img"></div>
-                  </a>
-                </li>
-              <li>
-                  <a name="__AD_module_3_61_3958" href="http://www.itrip.com/p18410" target="_blank" class="img"> 
-                    <img class="lazy1" width="208" height="138" border="0" alt="" src="http://pic.itrip.com/img/loading2.gif">
-                    <div class="proinfo oh">
-                    <p class="f14 mt10 oh" style="height:42px;">
-                      transfer</p>
-                    <p class="oh mt5">
-                      <span class="fr pri price_label">
-                        <label class="js_curCode f12">RMB</label>
-                        <label class="js_curMonery_exten f16 ml5">179.16</label>
-                        <label class="f12">THB</label>
-                      </span>
-                      </p>
-                  </div>
-                  <div class="bor_img"></div>
-                  </a>
-                </li>
-              <li>
-                  <a name="__AD_module_3_61_3959" class="img"> 
-                    <img class="lazy1"  width="208" height="138" border="0" alt="" src="http://pic.itrip.com/img/loading2.gif">
-                    <div class="proinfo oh">
-                    <p class="f14 mt10 oh" style="height:42px;">
-                      transer</p>
-                    <p class="oh mt5">
-                      <span class="fr pri price_label">
-                        <label class="js_curCode f12">RMB</label>
-                        <label class="js_curMonery_exten f16 ml5">179.16</label>
-                        <label class="f12">THB</label>
-                      </span>
-                      </p>
-                  </div>
-                  <div class="bor_img"></div>
-                  </a>
-                </li>
-              </ul>
-          </div>
-        <div class="pro_lb list_ad" style="display:none;" id="show3">
-            <ul>
-            <li>
-                  <a name="__AD_module_3_64_3977"  class="img"> 
-                    <img class="lazy1"  width="208" height="138" border="0" alt="" src="http://pic.itrip.com/img/loading2.gif">
-                    <div class="proinfo oh">
-                    <p class="f14 mt10 oh" style="height:42px;">
-                      trnsfer</p>
-                    <p class="oh mt5">
-                      <span class="fr pri price_label">
-                        <label class="js_curCode f12">RMB</label>
-                        <label class="js_curMonery_exten f16 ml5">179.16</label>
-                        <label class="f12">THB</label>
-                      </span>
-                      </p>
-                  </div>
-                  <div class="bor_img"></div>
-                  </a>
-                </li>
-              <li>
-                  <a name="__AD_module_3_64_3978"  class="img"> 
-                    <img class="lazy1" width="208" height="138" border="0" alt="Ambassador Transit Lounge " src="http://pic.itrip.com/img/loading2.gif">
-                    <div class="proinfo oh">
-                    <p class="f14 mt10 oh" style="height:42px;">
-                      Ambassador Transit Lounge</p>
-                    <p class="oh mt5">
-                      <span class="fr pri price_label">
-                        <label class="js_curCode f12">RMB</label>
-                        <label class="js_curMonery_exten f16 ml5">179.16</label>
-                        <label class="f12">THB</label>
-                       
-                      </span>
-                      </p>
-                  </div>
-                  <div class="bor_img"></div>
-                  </a>
-                </li>
-              <li>
-                  <a name="__AD_module_3_64_3979" class="img"> 
-                    <img class="lazy1"  width="208" height="138" border="0" alt="" src="http://pic.itrip.com/img/loading2.gif">
-                    <div class="proinfo oh">
-                    <p class="f14 mt10 oh" style="height:42px;">
-                      transfer</p>
-                    <p class="oh mt5">
-                      <span class="fr pri price_label">
-                        <label class="js_curCode f12">RMB</label>
-                        <label class="js_curMonery_exten f16 ml5">179.16</label>
-                        <label class="f12">THB</label>
-                        
-                      </span>
-                      </p>
-                  </div>
-                  <div class="bor_img"></div>
-                  </a>
-                </li>
-              <li>
-                  <a name="__AD_module_3_64_3980"  class="img"> 
-                    <img class="lazy1"  width="208" height="138" border="0" alt="" src="http://pic.itrip.com/img/loading2.gif">
-                    <div class="proinfo oh">
-                    <p class="f14 mt10 oh" style="height:42px;">
-                     transfer</p>
-                    <p class="oh mt5">
-                      <span class="fr pri price_label">
-                        <label class="js_curCode f12">RMB</label>
-                        <label class="js_curMonery_exten f16 ml5">179.16</label>
-                        <label class="f12">THB</label>
-                       
-                      </span>
-                      </p>
-                  </div>
-                  <div class="bor_img"></div>
-                  </a>
-                </li>
-              <li>
-                  <a name="__AD_module_3_64_3981"
-                    <img class="lazy1" width="208" height="138" border="0" alt="" src="http://pic.itrip.com/img/loading2.gif">
-                    <div class="proinfo oh">
-                    <p class="f14 mt10 oh" style="height:42px;">
-                     transfer</p>
-                    <p class="oh mt5">
-                      <span class="fr pri price_label">
-                        <label class="js_curCode f12">RMB</label>
-                        <label class="js_curMonery_exten f16 ml5">179.16</label>
-                        <label class="f12">THB</label>
-                       
-                      </span>
-                      </p>
-                  </div>
-                  <div class="bor_img"></div>
-                  </a>
-                </li>
-              <li>
-                  <a name="__AD_module_3_64_3982" href="" class="img"> 
-                    <img class="lazy1" width="208" height="138" border="0" src="http://pic.itrip.com/img/loading2.gif">
-                    <div class="proinfo oh">
-                    <p class="f14 mt10 oh" style="height:42px;">
-                      Transfer</p>
-                    <p class="oh mt5">
-                      <span class="fr pri price_label">
-                        <label class="js_curCode f12">RMB</label>
-                        <label class="js_curMonery_exten f16 ml5">179.16</label>
-                        <label class="f12">THB</label>
-                        
-                      </span>
-                      </p>
-                  </div>
-                  <div class="bor_img"></div>
-                  </a>
-                </li>
-              </ul>
-          </div>
+                </div>
+            </div>
         </div>
   </div>
   </section>
@@ -678,7 +385,7 @@
         <div class="section-title" style="font-size: 18px;">Hotel</div>
     </div>
 </div>
-<div class="row" style="margin-bottom: 50px;  border-radius: 4px; background: #fff;">
+<div class="row" style="margin-bottom: 50px;  border-radius: 4px; ">
     <div class="h-popular-hotel">               
         <div class="mod-tab" id="more_tab">
             <a href="" class="current" cityid="58" id="link58">Phuket</a>
@@ -689,6 +396,7 @@
           <i class="icon-loading icon-loading-64-eee"></i>
         </div>
         <div class="h-data-list" id="div_top_sell"> 
+            <div ng-repeat="item in hotel">
           <div class="col-md-6">
             <div class="hotel-link " >
                 <a href="" class="hotel-img" rel="nofollow" ">
@@ -697,21 +405,21 @@
                 <div class="hotel-info">
                     <h3 class="hotel-name">
                         <strong>
-                            <a href="" rel="nofollow" >East Hong Kong</a>
+                            <a href="" rel="nofollow" ng-bind="item.hotel_name"></a>
                         </strong>
                     </h3>
                     <div class="hotel-lm">
                         <span class="level">
                             <i class="c-icon icon-star icon-star-4"></i>
                         </span>
-                        <span class="location" data-index="2" data-hotel-id="426611" data-hotel-name="East Hong Kong" data-lat="22.2860257786" data-lng="114.2161101848" rel="nofollow" onclick="HomePage.LocationMap.clickShowMap(event);">
-                            <i class="h-icon icon-location"></i> North Point and Quarry Bay
+                        <span class="location" >aa
+                           
                         </span>
                     </div>
                     <div class="hotel-grade">
                         <div class="pack-bubble self-review" >
                             <i class="h-icon icon-user-s"></i>
-                              <span class="txt txt-block">"Convenient transport options" "Excellent location" "Nice sea view"</span>
+                              <span class="txt txt-block" ng-bind="item.topic"></span>
                         </div> 
                         <div class="server-box">
                             <span class="h-tag"><i class="h-icon icon-wifi"></i>Wi-Fi in public areas</span>
@@ -723,149 +431,19 @@
                     <div class="hotel-tag"></div>
                     <div class="price-box">                        
                         <div class="c-price">
-                            <dfn class="price-currency">CNY</dfn>
-                            <span class="price-num">1,707</span>
+                            <dfn class="price-currency">THB</dfn>
+                            <span class="price-num" ng-bind="item.sale_price">1,707</span>
                         </div>
                         <div class="select-btn">
-                            <a class="c-btn btn-key" href="" rel="nofollow" >Select</a>
+                            <a class="c-btn btn-key" href="" rel="nofollow" >View</a>
                         </div>
                     </div>
                 </div>
             </div>
+          </div>
           </div>
 
-          <div class="col-md-6">
-            <div class="hotel-link " >
-                <a href="" class="hotel-img" rel="nofollow" ">
-                    <img src="//dimg04.c-ctrip.com/images/hotel/75000/74613/00a2266ac95f4c3fb18f39a67a6780e7_R_180_180.jpg" alt="East Hong Kong Hong Kong">
-                </a>
-                <div class="hotel-info">
-                    <h3 class="hotel-name">
-                        <strong>
-                            <a href="" rel="nofollow" >East Hong Kong</a>
-                        </strong>
-                    </h3>
-                    <div class="hotel-lm">
-                        <span class="level">
-                            <i class="c-icon icon-star icon-star-4"></i>
-                        </span>
-                        <span class="location" data-index="2" data-hotel-id="426611" data-hotel-name="East Hong Kong" data-lat="22.2860257786" data-lng="114.2161101848" rel="nofollow" onclick="HomePage.LocationMap.clickShowMap(event);">
-                            <i class="h-icon icon-location"></i> North Point and Quarry Bay
-                        </span>
-                    </div>
-                    <div class="hotel-grade">
-                        <div class="pack-bubble self-review" >
-                            <i class="h-icon icon-user-s"></i>
-                              <span class="txt txt-block">"Convenient transport options" "Excellent location" "Nice sea view"</span>
-                        </div> 
-                        <div class="server-box">
-                            <span class="h-tag"><i class="h-icon icon-wifi"></i>Wi-Fi in public areas</span>
-                            <span class="h-tag"><i class="h-icon icon-pool"></i>Swimming Pool</span>
-                            <span class="h-tag"><i class="h-icon icon-gym"></i>Gym</span>
-                            <span class="h-tag"><i class="h-icon icon-bar"></i>Bar</span>
-                        </div>
-                    </div>
-                    <div class="hotel-tag"></div>
-                    <div class="price-box">                        
-                        <div class="c-price">
-                            <dfn class="price-currency">CNY</dfn>
-                            <span class="price-num">1,707</span>
-                        </div>
-                        <div class="select-btn">
-                            <a class="c-btn btn-key" href="" rel="nofollow" >Select</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="hotel-link " >
-                <a href="" class="hotel-img" rel="nofollow" ">
-                    <img src="//dimg04.c-ctrip.com/images/hotel/75000/74613/00a2266ac95f4c3fb18f39a67a6780e7_R_180_180.jpg" alt="East Hong Kong Hong Kong">
-                </a>
-                <div class="hotel-info">
-                    <h3 class="hotel-name">
-                        <strong>
-                            <a href="" rel="nofollow" >East Hong Kong</a>
-                        </strong>
-                    </h3>
-                    <div class="hotel-lm">
-                        <span class="level">
-                            <i class="c-icon icon-star icon-star-4"></i>
-                        </span>
-                        <span class="location" data-index="2" data-hotel-id="426611" data-hotel-name="East Hong Kong" data-lat="22.2860257786" data-lng="114.2161101848" rel="nofollow" onclick="HomePage.LocationMap.clickShowMap(event);">
-                            <i class="h-icon icon-location"></i> North Point and Quarry Bay
-                        </span>
-                    </div>
-                    <div class="hotel-grade">
-                        <div class="pack-bubble self-review" >
-                            <i class="h-icon icon-user-s"></i>
-                              <span class="txt txt-block">"Convenient transport options" "Excellent location" "Nice sea view"</span>
-                        </div> 
-                        <div class="server-box">
-                            <span class="h-tag"><i class="h-icon icon-wifi"></i>Wi-Fi in public areas</span>
-                            <span class="h-tag"><i class="h-icon icon-pool"></i>Swimming Pool</span>
-                            <span class="h-tag"><i class="h-icon icon-gym"></i>Gym</span>
-                            <span class="h-tag"><i class="h-icon icon-bar"></i>Bar</span>
-                        </div>
-                    </div>
-                    <div class="hotel-tag"></div>
-                    <div class="price-box">                        
-                        <div class="c-price">
-                            <dfn class="price-currency">CNY</dfn>
-                            <span class="price-num">1,707</span>
-                        </div>
-                        <div class="select-btn">
-                            <a class="c-btn btn-key" href="" rel="nofollow" >Select</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="hotel-link " >
-                <a href="" class="hotel-img" rel="nofollow" ">
-                    <img src="//dimg04.c-ctrip.com/images/hotel/75000/74613/00a2266ac95f4c3fb18f39a67a6780e7_R_180_180.jpg" alt="East Hong Kong Hong Kong">
-                </a>
-                <div class="hotel-info">
-                    <h3 class="hotel-name">
-                        <strong>
-                            <a href="" rel="nofollow" >East Hong Kong</a>
-                        </strong>
-                    </h3>
-                    <div class="hotel-lm">
-                        <span class="level">
-                            <i class="c-icon icon-star icon-star-4"></i>
-                        </span>
-                        <span class="location" data-index="2" data-hotel-id="426611" data-hotel-name="East Hong Kong" data-lat="22.2860257786" data-lng="114.2161101848" rel="nofollow" onclick="HomePage.LocationMap.clickShowMap(event);">
-                            <i class="h-icon icon-location"></i> North Point and Quarry Bay
-                        </span>
-                    </div>
-                    <div class="hotel-grade">
-                        <div class="pack-bubble self-review" >
-                            <i class="h-icon icon-user-s"></i>
-                              <span class="txt txt-block">"Convenient transport options" "Excellent location" "Nice sea view"</span>
-                        </div> 
-                        <div class="server-box">
-                            <span class="h-tag"><i class="h-icon icon-wifi"></i>Wi-Fi in public areas</span>
-                            <span class="h-tag"><i class="h-icon icon-pool"></i>Swimming Pool</span>
-                            <span class="h-tag"><i class="h-icon icon-gym"></i>Gym</span>
-                            <span class="h-tag"><i class="h-icon icon-bar"></i>Bar</span>
-                        </div>
-                    </div>
-                    <div class="hotel-tag"></div>
-                    <div class="price-box">                        
-                        <div class="c-price">
-                            <dfn class="price-currency">CNY</dfn>
-                            <span class="price-num">1,707</span>
-                        </div>
-                        <div class="select-btn">
-                            <a class="c-btn btn-key" href="" rel="nofollow" >Select</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-          </div>
+         
 
         </div>
       </div>
@@ -873,7 +451,41 @@
 
             
          
+<style>
+.card-big-shadow {
+    max-width: 320px;
+    position: relative;
+}
+.nav-pills>li>a {
+    /*border-radius: 4px;*/
+    padding: 14px 20px;
+}
+    .card-big-shadow:before {
+    background-image: url(./files/images/shadow.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    bottom: 1%;
+    content: "";
+    display: block;
+    left: -13%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+}
+.coloured-cards .card {
+     margin-top: 30px; 
+}
+.coloured-cards .card {
+     margin-top: 30px; 
+}
+.coloured-cards .card {
+     background-color: #fff;
+     border-radius: 0px; 
+}
 
+</style>
 
        
        
@@ -955,6 +567,7 @@
   }
 .active{
  background: #00bcd4;
+ color: #fff;
 }
 .nav-tours li{
   display: inline-block;
@@ -1907,7 +1520,8 @@
 }
 .card-blog, .card-testimonial .card-description+.card-title, .card-testimonial .icon {
     margin-top: 30px;
-    min-height: 290px;
+    min-height: 300px;
+    cursor: pointer;
 }
 .card .card-content {
     padding: 10px 25px;

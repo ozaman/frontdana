@@ -1,6 +1,6 @@
 <?
 include("../config.php");
-    $sql = "SELECT *  FROM dn_package WHERE show_re = 1" ;
+    $sql = "SELECT *  FROM dn_product WHERE show_re = 1";
     $Objquery = mysql_query($sql,$conndb);
     //echo $Objquery;
     //$row = mysql_num_rows($Objquery); // นับจำนวนแถว
