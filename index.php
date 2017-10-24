@@ -110,7 +110,7 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-4">
                         <div class="brand">
-                            <h1 class="title">Dana Tours Asia!</h1>
+                            <h1 class="title"><span style="color: #ffd400">D</span>ana Tours Asia!</h1>
                          
                         </div>
                     </div>
