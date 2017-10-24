@@ -27,10 +27,12 @@
       border-radius: 0px;
     }
     .navbar-nav>li>a {
-    color: #333 !important;
+            text-transform: capitalize !important;
+    /*color: #333 !important;*/
   </style>
 
-  <nav class="navbar navbar-default navbar-fixed-top navbar-color-on-scroll navbar-transparent" color-on-scroll="100" id="sectionsNav">
+  <nav class="navbar navbar-default  navbar-color-on-scroll navbar-transparent" color-on-scroll="100" id="sectionsNav">
+    <!-- navbar-fixed-top -->
       <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
@@ -102,13 +104,13 @@
                 </div>
       </div>
     </nav>
-    <div class="page-header header-filter header-small" data-parallax="true" style="background-size: 100%;background-image: url(./files/images/43.png);background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);min-height: 80vh;">
+    <div class="page-header header-filter header-small" data-parallax="true" style="background-size: 100%;background-image: url(./files/images/sunset-1.jpg);background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);min-height: 90vh;">
         <div >  
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-4">
                         <div class="brand">
-                            <h1 class="title">Travel Service!</h1>
+                            <h1 class="title">Dana Tours Asia!</h1>
                          
                         </div>
                     </div>
@@ -225,11 +227,12 @@
             <div class="section " style="padding-top: 5px" align="center">  
                 <div class="container">
                     <div class="tm-section-header section-margin-top" id="popular">
-                        <div class="col-lg-4 col-md-3 col-sm-3"><hr></div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
+                        <!-- <div class="col-lg-4 col-md-3 col-sm-3"><hr></div> -->
+                        <div class="col-lg-12 col-md-12 col-sm-12" style="text-align: center;">
                             <h2 class="tm-section-title">Popular Packages</h2>
+                            <div class="separator separator-danger">✻</div>
                         </div>
-                        <div class="col-lg-4 col-md-3 col-sm-3"><hr></div>  
+                       <!--  <div class="col-lg-4 col-md-3 col-sm-3"><hr></div>   -->
                     </div>
                     <div class="row">
                         <div style="width: 100%" align="center">
@@ -357,8 +360,8 @@
                 </div>
     <div class="fr pro_fr">
 
-      <div class="pro_lb list_ad" id="show1">
-            <div>
+      <div class="pro_lb list_ad " id="show1">
+            <div class="ection-our-projects">
                 <div class="col-md-4">
                     <div class="card card-blog">
                         <a href="blog-posts.html" class="header">
@@ -379,6 +382,7 @@
                         </div>
                     </div>
                 </div>
+               
             <div ng-repeat="item in transfer">
             <div class="col-md-3">
                 <div class="card-big-shadow">
@@ -420,8 +424,61 @@
         <div class="mod-box centered-message" id="popCityLoading" style="display: none;">
           <i class="icon-loading icon-loading-64-eee"></i>
         </div>
-        <div class="h-data-list" id="div_top_sell"> 
-            <div ng-repeat="item in hotel">
+        <div class="h-data-list section-our-projects" id="div_top_sell"> 
+             <div ng-repeat="item in hotel">
+             <div class="col-md-6">
+                    <div class="project">
+                        <img src="./data/files/upload/hotel/icon/{{item.icon}}">
+                        <a class="over-area" href="#gaia">
+                            <div class="content">
+                                <label class="label label-info label-fill">App Development</label>
+                                <h2>Analytics App Android</h2>
+                                <p>We will find freedom in truth as opposed to ridicule. Let's fight for our future. We can change everything. Pablo in blood It wasn’t any Kanyes</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+            </div>
+        </div>
+            <!-- <div class="col-md-6">
+                    <div class="project">
+                        <img src="http://demos.creative-tim.com/gaia-bootstrap-template-pro/assets/img/project-3.jpg">
+                        <a class="over-area" href="#gaia">
+                            <div class="content">
+                                <label class="label label-info label-fill">App Development</label>
+                                <h2>Analytics App Android</h2>
+                                <p>We will find freedom in truth as opposed to ridicule. Let's fight for our future. We can change everything. Pablo in blood It wasn’t any Kanyes</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="project">
+                        <img src="http://demos.creative-tim.com/gaia-bootstrap-template-pro/assets/img/project-3.jpg">
+                        <a class="over-area" href="#gaia">
+                            <div class="content">
+                                <label class="label label-info label-fill">App Development</label>
+                                <h2>Analytics App Android</h2>
+                                <p>We will find freedom in truth as opposed to ridicule. Let's fight for our future. We can change everything. Pablo in blood It wasn’t any Kanyes</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="project">
+                        <img src="http://demos.creative-tim.com/gaia-bootstrap-template-pro/assets/img/project-3.jpg">
+                        <a class="over-area" href="#gaia">
+                            <div class="content">
+                                <label class="label label-info label-fill">App Development</label>
+                                <h2>Analytics App Android</h2>
+                                <p>We will find freedom in truth as opposed to ridicule. Let's fight for our future. We can change everything. Pablo in blood It wasn’t any Kanyes</p>
+                            </div>
+                        </a>
+                    </div>
+                </div> -->
+                
+
+            <!-- <div ng-repeat="item in hotel">
           <div class="col-md-6">
             <div class="hotel-link " >
                 <a href="" class="hotel-img" rel="nofollow" ">
@@ -467,7 +524,7 @@
             </div>
           </div>
           </div>
-
+ -->
          
 
         </div>
@@ -477,6 +534,43 @@
             
          
 <style>
+.separator-danger {
+    color: #e78b90;
+}
+
+.separator {
+    color: #c5a47e;
+    margin: 0 auto 20px;
+    max-width: 240px;
+    text-align: center;
+    position: relative;
+}
+.separator-danger:before, .separator-danger:after {
+    border-color: #e78b90;
+}
+
+.separator:before {
+    float: left;
+}
+
+.separator:before, .separator:after {
+    display: block;
+    width: 40%;
+    content: " ";
+    margin-top: 10px;
+    border: 1px solid #c5a47e;
+}
+.separator:after {
+    float: right;
+}
+
+.separator:before, .separator:after {
+    display: block;
+    width: 40%;
+    content: " ";
+    margin-top: 10px;
+    border: 1px solid #c5a47e;
+}
 .card {
     background: #fff;
     box-shadow: 0 32px 44px -24px rgba(0, 0, 0, 0.23), 0 20px 25px 0px rgba(0, 0, 0, 0.12), 0 15px 10px -10px rgba(0, 0, 0, 0.2);
@@ -496,6 +590,257 @@
   transform: scale(1.03);
   box-shadow: 0 26px 50px -10px rgba(0, 0, 0, 0.38), 0 10px 20px 0px rgba(0, 0, 0, 0.2), 0 15px 10px -10px rgba(0, 0, 0, 0.2);
 }
+.section-our-projects .project {
+    margin-bottom: 30px;
+}
+
+.project {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.project .over-area {
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    z-index: 3;
+    padding: 10% 8%;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    color: white;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.55);
+    -webkit-transition: background 0.5s, opacity 0.5s 0.5s;
+    -moz-transition: background 0.5s, opacity 0.5s 0.5s;
+    -o-transition: background 0.5s, opacity 0.5s 0.5s;
+    -ms-transition: background 0.5s, opacity 0.5s 0.5s;
+    transition: background 0.5s, opacity 0.5s 0.5s;
+}
+.project .over-area:hover {
+  opacity: 1;
+  -webkit-transition: background 0.25s, opacity 0.25s 0s;
+  -moz-transition: background 0.25s, opacity 0.25s 0s;
+  -o-transition: background 0.25s, opacity 0.25s 0s;
+  -ms-transition: background 0.25s, opacity 0.25s 0s;
+  transition: background 0.25s, opacity 0.25s 0s;
+  transition-delay: 0;
+  -webkit-transition-delay: 0;
+}
+.project .over-area:hover .content {
+  opacity: 1;
+  opacity: 0.2s;
+  filter: alpha(opacity=20s);
+}
+.project .over-area:hover h3 {
+  opacity: 1;
+  -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  transform: translateY(0px);
+}
+.project .over-area:hover p {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  transform: translateY(0px);
+}
+.project .over-area:hover .btn {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  transform: translateY(0px);
+}
+.project .over-area:hover .btn {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  transform: translateY(0px);
+}
+.project .over-area.no-opacity {
+  background-color: #333333;
+}
+
+
+.project .over-area.over-area-sm {
+  padding: 20px 30px;
+}
+.project .over-area.over-area-sm .content {
+  text-align: center;
+}
+.project .over-area.over-area-sm .content h4 {
+  font-size: 1.75em;
+}
+.project .over-area.over-area-sm .content p {
+  font-size: 1em;
+}
+.project .over-area.color-black {
+  background: rgba(52, 52, 52, 0.7);
+}
+.project .over-area.color-green {
+  background: rgba(39, 94, 76, 0.55);
+}
+.project .over-area.color-gold {
+  background: rgba(197, 164, 126, 0.55);
+}
+.project .over-area.color-blue {
+  background: rgba(61, 146, 207, 0.55);
+}
+.project .over-area.color-purple {
+  background: rgba(89, 57, 111, 0.55);
+}
+.project .over-area.gradient-1 {
+  background: -moz-linear-gradient(-45deg, rgba(151, 78, 32, 0.4) 0%, rgba(244, 218, 138, 0.4) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(151, 78, 32, 0.4)), color-stop(100%, rgba(244, 218, 138, 0.4)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg, rgba(151, 78, 32, 0.4) 0%, rgba(244, 218, 138, 0.4) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg, rgba(151, 78, 32, 0.4) 0%, rgba(244, 218, 138, 0.4) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg, rgba(151, 78, 32, 0.4) 0%, rgba(244, 218, 138, 0.4) 100%);
+  /* IE10+ */
+  background: linear-gradient(135deg, rgba(151, 78, 32, 0.4) 0%, rgba(244, 218, 138, 0.4) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66954d20', endColorstr='#66f4d887',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+}
+.project .over-area.gradient-2 {
+  background: -moz-linear-gradient(-45deg, rgba(216, 44, 73, 0.4) 0%, rgba(217, 99, 131, 0.4) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(216, 44, 73, 0.4)), color-stop(100%, rgba(217, 99, 131, 0.4)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg, rgba(216, 44, 73, 0.4) 0%, rgba(217, 99, 131, 0.4) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg, rgba(216, 44, 73, 0.4) 0%, rgba(217, 99, 131, 0.4) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg, rgba(216, 44, 73, 0.4) 0%, rgba(217, 99, 131, 0.4) 100%);
+  /* IE10+ */
+  background: linear-gradient(135deg, rgba(216, 44, 73, 0.4) 0%, rgba(217, 99, 131, 0.4) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66d82c49', endColorstr='#66d96383',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+}
+.project .over-area.gradient-3 {
+  background: -moz-linear-gradient(-45deg, rgba(223, 212, 139, 0.4) 0%, rgba(236, 101, 101, 0.4) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(223, 212, 139, 0.4)), color-stop(100%, rgba(236, 101, 101, 0.4)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg, rgba(223, 212, 139, 0.4) 0%, rgba(236, 101, 101, 0.4) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg, rgba(223, 212, 139, 0.4) 0%, rgba(236, 101, 101, 0.4) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg, rgba(223, 212, 139, 0.4) 0%, rgba(236, 101, 101, 0.4) 100%);
+  /* IE10+ */
+  background: linear-gradient(135deg, rgba(223, 212, 139, 0.4) 0%, rgba(236, 101, 101, 0.4) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66dfd48b', endColorstr='#66ec6565',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+}
+.project .over-area.gradient-4 {
+  background: -moz-linear-gradient(-45deg, rgba(174, 97, 167, 0.4) 0%, rgba(210, 121, 135, 0.4) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(174, 97, 167, 0.4)), color-stop(100%, rgba(210, 121, 135, 0.4)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg, rgba(174, 97, 167, 0.4) 0%, rgba(210, 121, 135, 0.4) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg, rgba(174, 97, 167, 0.4) 0%, rgba(210, 121, 135, 0.4) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg, rgba(174, 97, 167, 0.4) 0%, rgba(210, 121, 135, 0.4) 100%);
+  /* IE10+ */
+  background: linear-gradient(135deg, rgba(174, 97, 167, 0.4) 0%, rgba(210, 121, 135, 0.4) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66ae61a8', endColorstr='#66d27987',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+}
+.project .over-area.gradient-5 {
+  background: #6c3aad;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, rgba(107, 57, 172, 0.4) 0%, rgba(200, 254, 206, 0.4) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(107, 57, 172, 0.4)), color-stop(100%, rgba(200, 254, 206, 0.4)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg, rgba(107, 57, 172, 0.4) 0%, rgba(200, 254, 206, 0.4) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg, rgba(107, 57, 172, 0.4) 0%, rgba(200, 254, 206, 0.4) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg, rgba(107, 57, 172, 0.4) 0%, rgba(200, 254, 206, 0.4) 100%);
+  /* IE10+ */
+  background: linear-gradient(135deg, rgba(107, 57, 172, 0.4) 0%, rgba(200, 254, 206, 0.4) 100%);
+  /* W3C */
+}
+.project .content {
+  position: relative;
+  opacity: 0;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  width: 100%;
+  min-height: 165px;
+  word-break: break;
+  opacity: 0.5s;
+  filter: alpha(opacity=50s);
+  -webkit-perspective: 300px;
+  -moz-perspective: 300px;
+  -o-perspective: 300px;
+  -ms-perspective: 300px;
+  perspective: 300px;
+}
+.project h3 {
+  opacity: 0;
+  font-weight: 600;
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -o-transform: translateY(-20px);
+  transform: translateY(-20px);
+  -moz-transition: opacity 0.2s, -moz-transform 0.2s;
+  -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+  transition: opacity 0.2s, transform 0.2s;
+}
+.project p {
+  font-size: 1em;
+  color: #FFFFFF;
+  opacity: 0;
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -o-transform: translateY(-20px);
+  transform: translateY(-20px);
+  -moz-transition: background-color 0.5s, opacity 0.5s 0.15s, -moz-transform 0.5s 0.15s;
+  -webkit-transition: background-color 0.5s, opacity 0.5s 0.15s, -webkit-transform 0.5s 0.15s;
+  transition: background-color 0.5s, opacity 0.5s 0.15s, transform 0.5s 0.15s;
+}
+.project .btn {
+  opacity: 0;
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -o-transform: translateY(-20px);
+  transform: translateY(-20px);
+  -moz-transition: background-color 0.3s, opacity 0.3s 0.3s, -moz-transform 0.3s 0.3s;
+  -webkit-transition: background-color 0.3s, opacity 0.3s 0.3s, -webkit-transform 0.3s 0.3s;
+  transition: background-color 0.3s, opacity 0.3s 0.3s, transform 0.3s 0.3s;
+  color: #fff;
+  border-color: #fff;
+}
+
+
+
+
+
 .card-big-shadow {
     max-width: 320px;
     position: relative;
@@ -1528,6 +1873,14 @@
 }
 .navbar.navbar-transparent{
     color: #fff;
+    margin: auto;
+    position: absolute;
+    z-index: 5;
+    right: 1%;
+    left: 1%;
+}
+.card-plain .card-image img {
+    /*border-radius: 0px !important;*/
 }
 .section{
     padding: 0;
@@ -1588,7 +1941,14 @@
     margin-top: 10px;
 }
 .section-margin-top div h2{
-    color: #f3aa29;
+    color: #fff;
+}
+.main-raised{
+box-shadow: none !important;
+    margin: -200px 30px 0 !important;
+}
+.main{
+    background-color: transparent;
 }
 .card .footer .stats .material-icons {
     position: relative;
