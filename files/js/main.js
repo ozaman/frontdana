@@ -3,6 +3,8 @@ var app = angular.module('myApp', ['ngCookies']);
     //alert("aaaa");
     $scope.tourpopular = [];
     $scope.dataTour = [];
+    $scope.dataTransfer = [];
+    $scope.dataHotel = [];
     console.log("aaaaaa")
     $http({
                 method : 'POST',
@@ -42,6 +44,13 @@ var app = angular.module('myApp', ['ngCookies']);
                 }).success(function(res){
                     console.log(res)
                     $scope.transfer = res;
+                     angular.forEach(res, function (d,i) {
+                    if (d.show_re == 1 ) {
+                        $scope.dataTransfer.push(d);
+                 }
+                
+
+            });   
             //         angular.forEach(res, function (d,i) {
             //         if (d.show_home == 1 && i <=10) {
             //             $scope.dataTour.push(d);
@@ -58,6 +67,13 @@ var app = angular.module('myApp', ['ngCookies']);
                 }).success(function(res){
                     console.log(res)
                     $scope.hotel = res;
+                     angular.forEach(res, function (d,i) {
+                    if (d.show_re == 1 ) {
+                        $scope.dataHotel.push(d);
+                 }
+                
+
+            });   
             //         angular.forEach(res, function (d,i) {
             //         if (d.show_home == 1 && i <=10) {
             //             $scope.dataTour.push(d);
@@ -71,6 +87,22 @@ var app = angular.module('myApp', ['ngCookies']);
         angular.forEach($scope.tours, function (z,i) {
                 if (i<=7) {
                     $scope.dataTour.push(z);
+                }
+            });
+    }
+    $scope.getTransferforareaall = function(){
+        $scope.dataTransfer = [];
+        angular.forEach($scope.transfer, function (z,i) {
+                if (i<=7) {
+                    $scope.dataTransfer.push(z);
+                }
+            });
+    }
+    $scope.getHotelforareaall = function(){
+        $scope.dataHotel = [];
+        angular.forEach($scope.hotel, function (z,i) {
+                if (i<=7) {
+                    $scope.dataHotel.push(z);
                 }
             });
     }
@@ -94,16 +126,39 @@ var app = angular.module('myApp', ['ngCookies']);
             }
             
             
-                            // if (y.read_msg == 0 && y.comment_from == 'driver') {                                       
-                            //     angular.element(document.querySelector('#menudriver'+y.id)).addClass('menudriver')
-                            //     updatenoti();
-                                            
-                            // }
-                            // if (y.read_msg == 0 && y.comment_from == 'callcenter') {
-                            //     console.log(y.id)
-                            //     angular.element(document.querySelector('#menudriver'+y.id)).addClass('menudriver')
-                            //     updatenoti();
-                            // }
+                            
+                                
+                        });
+        //$window.location.href = 'new.php';
+    }
+    $scope.getTransferforarea = function(x){
+        $scope.dataTransfer = [];
+        console.log(x)
+        //console.log($scope.allTour)
+         angular.forEach($scope.transfer, function (y,key) {
+        console.log(key)
+            if (y.province == x && key <= 8) {
+                $scope.dataTransfer.push(y);
+            }
+            
+            
+                            
+                                
+                        });
+        //$window.location.href = 'new.php';
+    }
+    $scope.getHotelforarea = function(x){
+        $scope.dataHotel = [];
+        console.log(x)
+        //console.log($scope.allTour)
+         angular.forEach($scope.hotel, function (y,key) {
+        console.log(key)
+            if (y.province == x && key <= 8) {
+                $scope.dataHotel.push(y);
+            }
+            
+            
+                            
                                 
                         });
         //$window.location.href = 'new.php';

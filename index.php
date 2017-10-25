@@ -237,7 +237,7 @@
                     </div>
                     <div class="row">
                         <div style="width: 100%" align="center">
-                            <div class="col-md-4 " ng-repeat="item in tourpopular" >
+                            <div class="col-sm-6 col-md-4 " ng-repeat="item in tourpopular" >
                                 <div class="card card-product card-plain card-rotate" >
                                     <div class="rotating-card-container">
                                         <div class="card-image">
@@ -285,6 +285,7 @@
             </div>
         </div>
     </section> <!-- end-main-raised -->
+   
 
     <div class="section section-blog" id="area" style="margin-top: 30px;">
         <div class="container">
@@ -301,12 +302,12 @@
     margin-bottom: 60px;
     border-top: 4px solid #00bcd4;">  
                     <ul class="nav-pills" role="tablist" style="padding-left: 0;">
-                        <li class="active" id="Phuket"><a href="#pill1" data-toggle="tab" aria-expanded="true" ng-click="getTourforarea('Phuket');show = !show">Phuket</a></li>
+                        <li class="" id="Phuket"><a href="#pill1" data-toggle="tab" aria-expanded="true" ng-click="getTourforarea('Phuket');show = !show">Phuket</a></li>
                         <li class="" id="Phuket"><a href="#pill2" data-toggle="tab" aria-expanded="true" ng-click="getTourforarea('Bangkok');show = !show">Bangkok</a></li>
                         <li class="" id="Phangnga"><a href="#pill3" data-toggle="tab" aria-expanded="false" ng-click="getTourforarea('Phang nga');show = !show">Phang nga</a></li>
                         <li class="" id="Krabi"><a href="#pill4" data-toggle="tab" aria-expanded="false" ng-click="getTourforarea('Krabi');show = !show">Krabi</a></li>
                         <li class="" id="PhiPhiisland"><a href="#pill5" data-toggle="tab" aria-expanded="false" ng-click="getTourforarea('Phi Phi island');show = !show">Phi Phi island</a></li>
-                        <li class="" id="PhiPhiisland"><a href="#pill6" data-toggle="tab" aria-expanded="false" ng-click="getTourforareaall('All');show = !show">All</a></li>
+                        <li class="active" id="PhiPhiisland"><a href="#pill6" data-toggle="tab" aria-expanded="false" ng-click="getTourforareaall('All');show = !show">All</a></li>
                         <li class="" aling="right" id="PhiPhiisland" style="float: right;"><a href="#pill7" data-toggle="tab" aria-expanded="false" ng-click="getTourforarea('Phi Phi island');show = !show">More..</a></li>
                        <!--  <li class="" id="All"><a href="#pill3" data-toggle="tab" aria-expanded="false" ng-click="getTourforareaall('All');show = !show">All</a></li> -->
                     </ul> 
@@ -315,7 +316,7 @@
             </div>    
             <div class="row" style="padding: 0 10px; border-radius: 4px; ">
 
-                <div class="col-md-3" ng-repeat="item in dataTour" id="fade-in-out" >
+                <div class="col-sm-6 col-md-3" ng-repeat="item in dataTour" id="fade-in-out" >
                     <div class="card card-blog" >
                         <div class="card-image" ng-click="viewpackageforid(item.id)">
                             <img src="./data/files/upload/tour/icon/{{item.icon}}" style="height: 180px" >
@@ -341,7 +342,17 @@
                     </div>
                 </div>
             </div> 
-
+ <style >
+        .card-product:not(.card-plain) .card-image {
+    padding: 15px;
+}
+.card-image2 {
+height: 60%;
+    z-index: 1;
+    margin-left: 15px;
+    margin-right: 15px;
+    }
+    </style>
           
              <!-- <h2 class="section-title">Transfer</h2> -->
             <div class="row" style=" border-radius: 4px;margin-top: 30px ">
@@ -355,10 +366,10 @@
     margin-bottom: 60px;
     border-top: 4px solid #ff9800;">  
                     <ul class="nav-transfer" role="tablist" style="padding-left: 0;">
-                        <li class="active" id="Phuket"><a href="#transfer1" data-toggle="tab" aria-expanded="true" ng-click="getTransferforarea('Phuket');show = !show">Phuket</a></li>
+                        <li class="" id="Phuket"><a href="#transfer1" data-toggle="tab" aria-expanded="true" ng-click="getTransferforarea('Phuket');show = !show">Phuket</a></li>
                         <li class="" id="Phuket"><a href="#transfer2" data-toggle="tab" aria-expanded="true" ng-click="getTransferforarea('Bangkok');show = !show">Bangkok</a></li>
                         
-                        <li class="" id="PhiPhiisland"><a href="#transfer6" data-toggle="tab" aria-expanded="false" ng-click="getTransferforareaall('All');show = !show">All</a></li>
+                        <li class="active" id="PhiPhiisland"><a href="#transfer6" data-toggle="tab" aria-expanded="false" ng-click="getTransferforareaall('All');show = !show">All</a></li>
                         <li class="" aling="right" id="PhiPhiisland" style="float: right;"><a href="#transfer7" data-toggle="tab" aria-expanded="false" ng-click="getTransfermore();show = !show">More..</a></li>
                        <!--  <li class="" id="All"><a href="#pill3" data-toggle="tab" aria-expanded="false" ng-click="getTourforareaall('All');show = !show">All</a></li> -->
                     </ul> 
@@ -376,37 +387,54 @@
 
       <div class="pro_lb list_ad " id="show1">
             <div class="ection-our-projects">
-                <div class="col-md-4">
-                    <div class="card card-blog">
-                        <a href="blog-posts.html" class="header">
-                            <img src="http://demos.creative-tim.com/gaia-bootstrap-template-pro/assets/img/header-8.jpeg" class="image-header">
-                        </a>
-                        <div class="content">
-                            <div class="circle-black">
-                                <div class="circle">
-                                    <div class="date-wrapper">
-                                        <span class="month">Mar</span>
-                                        <span class="date">10</span>
+                
+               
+            <div ng-repeat="item in dataTransfer">
+                <div class="col-sm-6 col-md-3">
+                        <div class="card card-product2">
+                            <div class="card-images">
+                                <a href="#pablo">
+                                    <img class="img rounded" src="./data/files/upload/transfer/icon/{{item.icon}}">
+                                </a>
+                            </div>
+                            <div class="card-body">
+                               <!--  <h6 class="category text-danger"  style="text-align: right;"></h6> -->
+                                <div class="card-titles">
+                                    <a href="#pablo" class="card-link"  ng-bind="item.name"></a>
+                                </div>
+                                <!-- <div class="card-description">
+                                    
+                                </div> -->
+                                <div class="" style="position: absolute;
+    /* height: 10%; */
+    /* padding: 18px; */
+    bottom: 15px;
+    width: 96%;
+    right: 2%;
+    left: 2%;">
+                                    <div style="float: left;"> 
+                                        <i class="material-icons" style="display: inline-block; line-height: 0;">place</i><span ng-bind="item.province"></span>
                                     </div>
+                                    <div class="price-container" style="text-align: right;">
+                                        <span class="price" ng-bind="item.price  | currency:'':0 " style="margin-right: 8px;"></span><label class="f12" style="font-size: 16px;"> THB</label>
+                                        
+                                    </div>
+                                    
                                 </div>
                             </div>
-                            <a href="blog-posts.html" class="card-title"><h3>Now There Is Only One Important Color...</h3></a>
-                            <h6 class="card-category text-danger">Trending</h6>
-                            <p class="text-description text-gray">When it comes to choosing decorative pieces, you want to stick to a maximum of three colors. Then it's all about placement.</p>
                         </div>
                     </div>
-                </div>
-               
-            <div ng-repeat="item in transfer">
-            <div class="col-md-3">
+            <!-- <div class="col-md-3">
                 <div class="card-big-shadow">
                   <div class="coloured-cards card"> 
-                    <img class="lazy1"  width="208" height="138" border="0" alt="" src="./data/files/upload/transfer/icon/{{item.icon}}"q/100" style="display: block;">
+                    <div>
+                    <img class="lazy1" src="./data/files/upload/transfer/icon/{{item.icon}}" style="display: block;">
+                </div>
                     <div class="proinfo oh">
                     <p class="f14 mt10 oh" style="height:42px;" ng-bind="item.name"></p>
                     <p class="oh mt5">
                       <span class="fr pri price_label">
-                        <!-- <label class="js_curCode f12">RMB</label> -->
+                       
                         <label class="js_curMonery_exten " ng-bind="item.price  | currency:'':0 "></label>
                         <label class="f12">THB</label>
                       </span>
@@ -415,7 +443,7 @@
                   <div class="bor_img"></div>
                   </div>
               </div>
-                </div>
+                </div> -->
             </div>
         </div>
   </div>
@@ -438,10 +466,10 @@
     margin-bottom: 60px;
     border-top: 4px solid #1171b7;">  
                     <ul class="nav-hotel" role="tablist" style="padding-left: 0;">
-                        <li class="active" id="Phuket"><a href="#hotel1" data-toggle="tab" aria-expanded="true" ng-click="getHotelforarea('Phuket');show = !show">Phuket</a></li>
+                        <li class="" id="Phuket"><a href="#hotel1" data-toggle="tab" aria-expanded="true" ng-click="getHotelforarea('Phuket');show = !show">Phuket</a></li>
                         <li class="" id="Phuket"><a href="#hotel2" data-toggle="tab" aria-expanded="true" ng-click="getHotelforarea('Bangkok');show = !show">Bangkok</a></li>
                         
-                        <li class="" id="PhiPhiisland"><a href="#hotel6" data-toggle="tab" aria-expanded="false" ng-click="getHotelforareaall('All');show = !show">All</a></li>
+                        <li class="active" id="PhiPhiisland"><a href="#hotel6" data-toggle="tab" aria-expanded="false" ng-click="getHotelforareaall('All');show = !show">All</a></li>
                         <li class="" aling="right" id="PhiPhiisland" style="float: right;"><a href="#hotel7" data-toggle="tab" aria-expanded="false" ng-click="getHotelmore();show = !show">More..</a></li>
                        <!--  <li class="" id="All"><a href="#pill3" data-toggle="tab" aria-expanded="false" ng-click="getTourforareaall('All');show = !show">All</a></li> -->
                     </ul> 
@@ -449,15 +477,18 @@
               </div>
        
         <div class="h-data-list section-our-projects" id="div_top_sell"> 
-             <div ng-repeat="item in hotel">
+             <div ng-repeat="item in dataHotel">
              <div class="col-md-6">
                     <div class="project">
                         <img src="./data/files/upload/hotel/icon/{{item.icon}}">
                         <a class="over-area" href="#gaia">
                             <div class="content">
-                                <label class="label label-info label-fill">App Development</label>
-                                <h2>Analytics App Android</h2>
-                                <p>We will find freedom in truth as opposed to ridicule. Let's fight for our future. We can change everything. Pablo in blood It wasn’t any Kanyes</p>
+                                <!-- <label class="label label-info label-fill">App Development</label> -->
+                                <h2 ng-bind="item.hotel_name"></h2>
+                                <p ng-bind="item.topic"></p>
+                                <div style="text-align: right;"><span ng-bind="item.sale_price  | currency:'':0 " style="color: #f44336;
+    font-size: 16px;
+    font-weight: 400;"></span><span>/ Night</span></div>
                             </div>
                         </a>
                     </div>
@@ -954,7 +985,7 @@
 /************************************************/
 
 .card-big-shadow {
-    max-width: 320px;
+    /*max-width: 320px;*/
     position: relative;
 }
 .nav-pills>li>a {
@@ -1803,43 +1834,43 @@
  
   
 </style>
-  
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBliu9xPrAQcibmkptCc3bwlpM1M6MbgAs" async defer></script> -->
+      <script type="text/javascript">
+    $(document).ready(function () {
+        
+        $('body').addClass('body-home');
+        $('#wrap').addClass('wrap-home');
+        $('#contacts').addClass('selected');
+        
+        function initialize() {
+            var myLatlng = new google.maps.LatLng(7.896348,98.295579);
+            var mapOptions = {
+                zoom: 13,
+                center: myLatlng,
+                mapTypeId: google.maps.MapTypeId.SATELLITE 
+            }
+            var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+            
+            var marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+                title: 'Redsea Asia!'
+            });
+        }
+        
+        google.maps.event.addDomListener(window, 'load', initialize);
+        
+    });
+</script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJa08ZMaSnJP5A6EsL9wxqdDderh7zU90&libraries=places" async defer> </script> -->
+    
+
 <div class="subscribe-line subscribe-line-image" data-parallax="true" style="background-image: url(&#39;files/images/bg_body.jpg&#39;);" id="footers">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 ">
-          <div class="text-center">
-            <h3 class="title">Subscribe to our Newsletter</h3>
-            <p class="description">
-              Join our newsletter and get news in your inbox every week! We hate spam too, so no worries about this.
-            </p>
-          </div>
-
-          <div class="card card-raised card-form-horizontal">
-            <div class="card-content">
-              <form method="">
-                <div class="row">
-                  <div class="col-sm-8">
-
-                    <div class="input-group">
-                      <span class="input-group-addon">
-                        <i class="material-icons">mail</i>
-                      </span>
-                      <div class="form-group is-empty"><input type="email" value="" placeholder="Your Email..." class="form-control"><span class="material-input"></span><span class="material-input"></span></div>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <button type="button" class="btn btn-rose btn-block">Subscribe</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-
-        </div>
-        
-
-        <div class="col-md-4 col-md-offset-1" >
+        <div class="col-md-4 " >
+            <!-- col-md-offset-1 -->
           <h5 style="color: #fff">Contacts</h5>
           <div class="contact" id="contact">             
             <ul >
@@ -1850,10 +1881,71 @@
           </div>
 
         </div>
+        <div class="col-md-8 ">
+          <!-- <div class="text-center"> -->
+            <!-- <h3 class="title">Subscribe to our Newsletter</h3> -->
+            <!-- <p class="description">
+              Join our newsletter and get news in your inbox every week! We hate spam too, so no worries about this.
+            </p> -->
+          <!-- </div> -->
+
+          <!-- <div class="card card-raised card-form-horizontal"> -->
+            <!-- <div class="card-content"> -->
+              <!-- <form id="contactsform" name="contactsform" method="post" action="http://www.danatoursasia.com/sendmail/sendmail.php" onsubmit="return validate_form(this);"> -->
+                <!-- <div class="row"> -->
+                  <div class="col-sm-12">
+<div id="map">
+                    </div>
+                   <!--  <div class="input-group">
+                      <span class="input-group-addon">
+                        <i class="material-icons">mail</i>
+                      </span>
+                      <div class="form-group"><input type="email" value="" placeholder="Your Email..." class="form-control"><span class="material-input"></span><span class="material-input"></span></div>
+                      <div>
+                            <div>
+                                <label>Name:*</label>
+                                <div class="form-group"><input  type="text" name="fullname" value="" class="form-control" /></div>
+                            </div>
+                            <div>
+                               <span class="input-group-addon">
+                        <i class="material-icons">mail</i>
+                      </span>
+                                <div class="form-group"><input type="text" name="emailaddress" value="" class="form-control"/></div>
+                            </div>
+                            <div>
+                                <label>Phone Number:*</label>
+                                <input type="text" name="phonenumber" value="" class="form-control" />
+                            </div>
+                        </div>
+                        
+                        <div class="last">
+                            <div>
+                                <label>Message:*</label>
+                                <textarea rows="" cols="" name="message" class="form-control"></textarea>
+                            </div>
+                            <div class="g-recaptcha" data-sitekey="6LcN3f8SAAAAAEJNJXa-07z0TUbReUWBgPp39nQq"></div>
+                            <p>
+                                <input type="submit" name="submit" value="Send Now" class="submit" />
+                            </p>
+                        </div>
+                    </div> -->
+                  <!-- </div> -->
+                 <!--  <div class="col-sm-4">
+                    <button type="submit" name="submit" value="Send Now" class="btn btn-rose btn-block">Send</button>
+                  </div> -->
+                </div>
+              <!-- </form> -->
+            <!-- </div> -->
+          </div>
+
+        </div>
+        
+
+        
       </div>
     </div>
   </div>
-    <footer class="footer footer-black footer-big" >
+    <footer class="footer footer-black footer-big"  style="padding: 15px;">
         <div class="container">
             <div class="socials">
               <a href="#" class="fa fa-facebook"></a>
@@ -2081,6 +2173,10 @@ box-shadow: none !important;
 .card-product {
      margin-top: 0;
      min-height: 410px 
+}
+.card-product2 {
+     margin-top: 0;
+     min-height: 340px 
 }
 .contact ul li {
     list-style: none;
