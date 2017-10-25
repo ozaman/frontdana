@@ -104,13 +104,14 @@
                 </div>
       </div>
     </nav>
-    <div class="page-header header-filter header-small" data-parallax="true" style="background-size: 100%;background-image: url(./files/images/sunset-1.jpg);background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);min-height: 90vh;">
+    <div class="page-header header-filter header-small" data-parallax="true" style="background-size: 100%;background-image: url(./files/images/sunset-1.jpg);background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);    background-size: 100% 100%;">
+        <!-- min-height: 90vh; -->
         <div >  
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 col-md-offset-4">
+                    <div class="col-md-12 col-xs-12 ">
                         <div class="brand">
-                            <h1 class="title"><span style="color: #ffd400">D</span>ana Tours Asia!</h1>
+                            <h1 class="title" style="text-align: center;"><span style="color: #ffd400">D</span>ana Tours Asia!</h1>
                          
                         </div>
                     </div>
@@ -264,7 +265,7 @@
                                         </p> -->
                                         <div class="footer">                                            
                                             <div class="" style="display: inline-block;" align="right">
-                                                <div type="button" rel="tooltip" title="" class="btn btn-simple " data-original-title="place" style=" margin-top: 0; text-transform: none;margin: 0;font-size: 16px;padding: 0;margin-left: -80px;">
+                                                <div type="button" rel="tooltip" title="" class="btn btn-simple " data-original-title="place" style=" margin-top: -7px; text-transform: none; /* margin: -2px; */ font-size: 16px; padding: 0; margin-left: -38px;">
                                                     <i class="material-icons" style="line-height: 2;">place</i>
                                                     <span ng-bind="item.city"></span>
                                                 </div>
@@ -341,23 +342,36 @@
                 </div>
             </div> 
 
-            <div class="row">
-            <div style="background: #fff; width: 170px; font-weight: 400; border-radius: 8px 8px 0 0; height: 50px; line-height: 54px; text-align: center;    margin-top: 30px;">
-                  <div class="section-title" style="font-size: 18px;">Transfer</div>
-                </div>
-              </div>
+          
              <!-- <h2 class="section-title">Transfer</h2> -->
-            <div class="row" style=" border-radius: 4px; ">
+            <div class="row" style=" border-radius: 4px;margin-top: 30px ">
     <section style="    margin-top: -15px;">
     <div class="pro_list first mt15 clearfix freePackage box-transfer">
-
+        <div class="col-md-12">
+<div style="background: #fff; width: 170px; font-weight: 400; border-radius: 8px 8px 0 0; height: 50px; line-height: 54px; text-align: center;">
+                  <div class="section-title" style="font-size: 18px;">Transfer</div>
+                </div>
+                  <div class="" style="
+    margin-bottom: 60px;
+    border-top: 4px solid #ff9800;">  
+                    <ul class="nav-transfer" role="tablist" style="padding-left: 0;">
+                        <li class="active" id="Phuket"><a href="#transfer1" data-toggle="tab" aria-expanded="true" ng-click="getTransferforarea('Phuket');show = !show">Phuket</a></li>
+                        <li class="" id="Phuket"><a href="#transfer2" data-toggle="tab" aria-expanded="true" ng-click="getTransferforarea('Bangkok');show = !show">Bangkok</a></li>
+                        
+                        <li class="" id="PhiPhiisland"><a href="#transfer6" data-toggle="tab" aria-expanded="false" ng-click="getTransferforareaall('All');show = !show">All</a></li>
+                        <li class="" aling="right" id="PhiPhiisland" style="float: right;"><a href="#transfer7" data-toggle="tab" aria-expanded="false" ng-click="getTransfermore();show = !show">More..</a></li>
+                       <!--  <li class="" id="All"><a href="#pill3" data-toggle="tab" aria-expanded="false" ng-click="getTourforareaall('All');show = !show">All</a></li> -->
+                    </ul> 
+                </div>
+              </div>
+              
    
-    <div class="mod-tab clearfix" id="more_tab">
+   <!--  <div class="mod-tab clearfix" id="more_tab">
                         <a href="javascript:void(0);" class="current-transfer" cityid="58" id="link58">Phuket</a>
                         <a href="javascript:void(0);" class="" cityid="59" id="link59">Bangkok</a>
                         
                         <a align="right" href="//english.ctrip.com/hotels/list?city=58" target="_blank" id="btnMore">More &gt;</a>
-                </div>
+                </div> -->
     <div class="fr pro_fr">
 
       <div class="pro_lb list_ad " id="show1">
@@ -409,21 +423,31 @@
 </div>
 
 
-<div class="row">
+<!-- <div class="row">
     <div style="background: #fff; width: 170px; font-weight: 400; border-radius: 8px 8px 0 0; height: 50px; line-height: 54px; text-align: center;    margin-top: 30px;">
         <div class="section-title" style="font-size: 18px;">Hotel</div>
     </div>
-</div>
+</div> -->
 <div class="row" style="margin-bottom: 50px;  border-radius: 4px; ">
     <div class="h-popular-hotel">               
-        <div class="mod-tab" id="more_tab">
-            <a href="" class="current" cityid="58" id="link58">Phuket</a>
-            <a href="" class="" cityid="59" id="link59">Bangkok</a>                        
-            <a align="right" href="" target="_blank" id="btnMore">More &gt;</a>
-        </div>
-        <div class="mod-box centered-message" id="popCityLoading" style="display: none;">
-          <i class="icon-loading icon-loading-64-eee"></i>
-        </div>
+        <div class="col-md-12">
+<div style="background: #fff; width: 170px; font-weight: 400; border-radius: 8px 8px 0 0; height: 50px; line-height: 54px; text-align: center;">
+                  <div class="section-title" style="font-size: 18px;">Hotels</div>
+                </div>
+                  <div class="" style="
+    margin-bottom: 60px;
+    border-top: 4px solid #1171b7;">  
+                    <ul class="nav-hotel" role="tablist" style="padding-left: 0;">
+                        <li class="active" id="Phuket"><a href="#hotel1" data-toggle="tab" aria-expanded="true" ng-click="getHotelforarea('Phuket');show = !show">Phuket</a></li>
+                        <li class="" id="Phuket"><a href="#hotel2" data-toggle="tab" aria-expanded="true" ng-click="getHotelforarea('Bangkok');show = !show">Bangkok</a></li>
+                        
+                        <li class="" id="PhiPhiisland"><a href="#hotel6" data-toggle="tab" aria-expanded="false" ng-click="getHotelforareaall('All');show = !show">All</a></li>
+                        <li class="" aling="right" id="PhiPhiisland" style="float: right;"><a href="#hotel7" data-toggle="tab" aria-expanded="false" ng-click="getHotelmore();show = !show">More..</a></li>
+                       <!--  <li class="" id="All"><a href="#pill3" data-toggle="tab" aria-expanded="false" ng-click="getTourforareaall('All');show = !show">All</a></li> -->
+                    </ul> 
+                </div>
+              </div>
+       
         <div class="h-data-list section-our-projects" id="div_top_sell"> 
              <div ng-repeat="item in hotel">
              <div class="col-md-6">
@@ -534,6 +558,94 @@
             
          
 <style>
+/*****************************************************/
+/********************NAV TREANSFER********************/
+/*****************************************************/
+
+.nav-transfer>li.active>a, .nav-transfer>li.active>a:focus, .nav-transfer>li.active>a:hover {
+    background-color: #ff9800;
+}
+.nav-transfer>li.active>a, .nav-transfer>li.active>a:focus, .nav-transfer>li.active>a:hover {
+    background-color: #ff9800;
+    color: #FFF;
+    box-shadow: 0 5px 20px 0 rgba(0,0,0,.2), 0 13px 24px -11px rgba(156,39,176,.6);
+}
+.nav-transfer>li>a {
+    line-height: 24px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    min-width: 100px;
+    text-align: center;
+    color: #555;
+    transition: all .3s;
+}
+.nav-transfer>li>a {
+     border-radius: 4px; 
+    padding: 14px 20px;
+}
+
+.nav-transfer>li> {
+    display: inline-block;
+}
+.nav-transfer>li {
+    float: left;
+}
+.active {
+     background: #00bcd4; 
+    color: #fff;
+}
+/*****************************************************/
+/************************END**************************/
+/*****************************************************/
+
+
+
+/*****************************************************/
+/***********************NAV HOTEL*********************/
+/*****************************************************/
+
+.nav-hotel>li.active>a, .nav-hotel>li.active>a:focus, .nav-hotel>li.active>a:hover {
+    background-color: #1171b7;
+}
+.nav-hotel>li.active>a, .nav-hotel>li.active>a:focus, .nav-hotel>li.active>a:hover {
+    background-color: #1171b7;
+    color: #FFF;
+    box-shadow: 0 5px 20px 0 rgba(0,0,0,.2), 0 13px 24px -11px rgba(156,39,176,.6);
+}
+.nav-hotel>li>a {
+    line-height: 24px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    min-width: 100px;
+    text-align: center;
+    color: #555;
+    transition: all .3s;
+}
+.nav-hotel>li>a {
+     border-radius: 4px; 
+    padding: 14px 20px;
+}
+
+.nav-hotel>li> {
+    display: inline-block;
+}
+.nav-hotel>li {
+    float: left;
+}
+.active {
+     background: #1171b7; 
+    color: #fff;
+}
+/*****************************************************/
+/***********************END***************************/
+/*****************************************************/
+
+
+/*****************************************************/
+/********************ANIMATE HOTEL********************/
+/*****************************************************/
 .separator-danger {
     color: #e78b90;
 }
@@ -837,9 +949,9 @@
   border-color: #fff;
 }
 
-
-
-
+/************************************************/
+/*************************END********************/
+/************************************************/
 
 .card-big-shadow {
     max-width: 320px;
@@ -955,7 +1067,7 @@
     overflow: hidden;
   }
 .active{
- background: #00bcd4;
+ /*background: #00bcd4;*/
  color: #fff;
 }
 .nav-tours li{
@@ -1945,7 +2057,7 @@
 }
 .main-raised{
 box-shadow: none !important;
-    margin: -200px 30px 0 !important;
+    /*margin: -200px 30px 0 !important;*/
 }
 .main{
     background-color: transparent;
@@ -1967,7 +2079,8 @@ box-shadow: none !important;
     opacity: 0;
 }
 .card-product {
-     margin-top: 0; 
+     margin-top: 0;
+     min-height: 410px 
 }
 .contact ul li {
     list-style: none;
