@@ -3,10 +3,11 @@
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   
   <link rel="apple-touch-icon" sizes="76x76" href="">
-  <link rel="icon" type="image/png" href="">
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="./files/images/logo.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <title>IMRON PHUKET SPEEDBOAT</title>
+  <title>view</title>
 
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
 
@@ -19,6 +20,11 @@
     <link href="files/css/material-kit.min.css?v=1.1.0" rel="stylesheet">
     <link href="files/css/vertical-nav.css" rel="stylesheet">
     <link href="files/css/material-dashboard.css" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+  
+  <link rel="icon" href="backend/images/logo22.png" type="image/x-icon">
+  <!-- CSS Files -->  
+  
 
   <!-- CSS Files -->
 
@@ -28,6 +34,8 @@
  
 
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js" type="text/javascript"></script>
+<script src="files/js/ui-bootstrap-tpls-2.5.0.min.js" type="text/javascript"></script>
+
 <script src="files/js/angular-cookies.min.js" type="text/javascript"></script>
 <script src="files/js/angular-scroll.js" type="text/javascript"></script>
 
@@ -35,7 +43,7 @@
    <!--  <script src="files/js/jquery-3.1.0.min.js"></script>  -->
   <script src="files/js/jquery.min.js" type="text/javascript"></script>
   <script src="files/js/bootstrap.min.js" type="text/javascript"></script>
-<script src="files/js/ui-bootstrap-tpls-2.3.2.min.js" type="text/javascript"></script>
+<!-- <script src="files/js/ui-bootstrap-tpls-2.3.2.min.js" type="text/javascript"></script> -->
   <script src="files/js/view.js" type="text/javascript"></script> 
   <script src="files/js/material.min.js" type="text/javascript"></script>
 <script src="files/js/material-dashboard.js"></script>
@@ -72,7 +80,26 @@
 </head>
 
 <body class="ecommerce-page" ng-app="myApp" ng-controller="view">
-  <nav class="navbar navbar-default navbar-fixed-top navbar-color-on-scroll navbar-transparent" color-on-scroll="100" id="sectionsNav">
+  <style>
+    .navbar{
+      border-radius: 0px;
+    }
+    .navbar-nav>li>a {
+            text-transform: capitalize !important;
+    /*color: #333 !important;*/
+  }
+  .navbar.navbar-transparent{
+    color: #fff;
+    margin: auto;
+    position: absolute;
+    z-index: 5;
+    right: 1%;
+    left: 1%;
+}
+  </style>
+
+  <nav class="navbar navbar-default  navbar-color-on-scroll navbar-transparent" color-on-scroll="100" id="sectionsNav">
+    <!-- navbar-fixed-top -->
       <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
@@ -82,41 +109,77 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a  href="index.php" class="navbar-brand"  href="">IMRON <span style="color: #ff9800; font-weight: 600;">TOURS</span></a>
+            <a  href="index.php" class="navbar-brand"> 
+                        <img src="./files/images/logo.png" width="50">
+                    </a>
           </div>
 
           <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav navbar-right">
-            
-            <li>
-            <a href="index.php">
-              <i class="material-icons">home</i>Home
-            </a>
-          </li>
+                    <ul class="nav navbar-nav navbar-right">                    
+                        <li>
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                   
+                                <p> Help<span class="caret"></span></p>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="/bootstrap-themes">
+                                        All Categories
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/bootstrap-themes/admin-dashboard">
+                                        Admin &amp; Dashboards
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/bootstrap-themes/ui-kit">
+                                        UI Kits
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/bootstrap-themes/free">
+                                        Free Themes
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/bootstrap-themes/premium">
+                                        Premium Themes
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/bootstrap-themes/angular-dashboard">
+                                        Angular Dashboards
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/bootstrap-themes/landing-page">
+                                        Landing Pages
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/bootstrap-themes/e-commerce">
+                                        E-commerce
+                                    </a>
+                                </li>
+                               
+                            </ul>
+                           
 
-          
-
-          <li class="dropdown" data-toggle="modal" data-target="#contactmodal">
-            <a href="">
-              <i class="material-icons">contacts</i> Contact
-              <!-- <b class="caret"></b> -->
-            </a>
-          </li>
-
-          
-            </ul>
-          </div>
+                        </li>
+                    </ul>            
+                </div>
       </div>
     </nav>
 
-  <div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(&quot;backend/images/icon/{{tours.icon}}&quot;); transform: translate3d(0px, 0px, 0px);" id="page-headerpopular">
+  <div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(&quot;./data/files/upload/tour/icon/{{tours.icon}}&quot;); background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);    background-size: 100% 100%;" id="page-headerpopular">
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center " >
         <!-- col-md-offset-2 -->
           <div class="brand">
-            <h2  style="margin-top: -40px;margin-bottom: 0;color: #f44336;font-size: 20px;" ><span ng-bind="tours.cost | currency:'':0" style="font-weight: 500;"></span><span style="color: #fff"><span style="color: #f44336">฿</span> / Package</span></h2>
-            <h1 class="title"><div ng-bind="tours.name_en" align="center" style="     margin-top: -25px;font-size: 20px; font-weight: 500;"></div></h1>
+            <h2  style="margin-top: -40px;margin-bottom: 0;color: #f44336;font-size: 20px;" ><span ng-bind="tours.sale_price_adult | currency:'':0" style="font-weight: 500;"></span><span style="color: #fff"><span style="color: #f44336">฿</span> / Package</span></h2>
+            <h1 class="title"><div ng-bind="tours.name" align="center" style="     margin-top: -25px;font-size: 20px; font-weight: 500;"></div></h1>
             <!-- <h4>IMRON PHUKET SPEEDBOAD TOUR  <b>LTD.</b> ,PART.</h4> -->
           </div>
         </div>
@@ -310,53 +373,356 @@
                                             
                           
                 </style>
-                <div class="subscribe-line subscribe-line-image" data-parallax="true" style="background-image: url(&#39;files/images/bg_body.jpg&#39;);" id="footers">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 ">
-          <div class="text-center">
-            <h3 class="title">Subscribe to our Newsletter</h3>
-            <p class="description">
-              Join our newsletter and get news in your inbox every week! We hate spam too, so no worries about this.
-            </p>
-          </div>
-
-          <div class="card card-raised card-form-horizontal">
-            <div class="card-content">
-              <form method="">
                 <div class="row">
-                  <div class="col-sm-8">
-
-                    <div class="input-group">
-                      <span class="input-group-addon">
-                        <i class="material-icons">mail</i>
-                      </span>
-                      <div class="form-group is-empty"><input type="email" value="" placeholder="Your Email..." class="form-control"><span class="material-input"></span><span class="material-input"></span></div>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <button type="button" class="btn btn-rose btn-block">Subscribe</button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-
-        </div>
-        <div class="col-md-4 col-md-offset-1" >
-          <h5 style="color: #fff">Contacts</h5>
-          <div class="contact">             
-            <ul >
-              <li class="">Address: <a>116/3 Moo. 2 Maikhao, Phuket, 83110</a></li>
-              <li class="">Phones: <a href="tel:#" style="display: inline-block;">(+66) 87-2794723</a>; <a href="tel:#" style="display: inline-block;">087-2794723</a></li>
-              <li class="">E-mail: <a href="mailto:#" style="display: inline-block;"> imronspeedboattour@gmail.com</a></li>
-            </ul>
-          </div>
-
+                  <div class="col-md-6">
+                     <div style="height: 305px">
+    <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+      <div uib-slide ng-repeat="slide in slides " active="slide.active">
+        <!-- track by slide.id" index="slide.id" -->
+        <img ng-src="{{slide.image}}" style="margin:auto;">
+        <div class="carousel-caption">
+          <h4>Slide {{slide.id}}</h4>
+          <p>{{slide.text}}</p>
         </div>
       </div>
     </div>
   </div>
+    <style>
+      #slides_control > div{
+  height: 200px;
+}
+
+#slides_control {
+  position:absolute;
+  width: 400px;
+  left:50%;
+  top:20px;
+ margin-left:-200px;
+}
+    </style>
+                  </div>
+                </div>
+          <div class="subscribe-line subscribe-line-image" data-parallax="true" style="background-image: url(&#39;files/images/bg_body.jpg&#39;);" id="footers">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 " >
+            <!-- col-md-offset-1 -->
+          <h5 style="color: #fff">Contacts</h5>
+          <div class="contact" id="contact">             
+            <ul >
+              <li class="">Address: <a>100/16 Moo 5 , Soi 1 Chalernprakiet Rd., T.Rassada Muang Phuket Thailand 83000</a></li>
+              <li class="">Phones: <a href="tel:#" style="display: inline-block;">(+66) 096-6409949</a>; <a href="tel:#" style="display: inline-block;">087-2794723</a></li>
+              <li class="">E-mail: <a href="mailto:#" style="display: inline-block;"> sele@danatoursasia.com</a></li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="col-md-8 ">
+          <!-- <div class="text-center"> -->
+            <!-- <h3 class="title">Subscribe to our Newsletter</h3> -->
+            <!-- <p class="description">
+              Join our newsletter and get news in your inbox every week! We hate spam too, so no worries about this.
+            </p> -->
+          <!-- </div> -->
+
+          <!-- <div class="card card-raised card-form-horizontal"> -->
+            <!-- <div class="card-content"> -->
+              <!-- <form id="contactsform" name="contactsform" method="post" action="http://www.danatoursasia.com/sendmail/sendmail.php" onsubmit="return validate_form(this);"> -->
+                <!-- <div class="row"> -->
+                  <div class="col-sm-12">
+                    
+                        <div class="section">
+                    <div class="title-area">
+                        <h5 class="subtitle text-gray">Glad to Talk With You</h5>
+                        <h2 style="color: #fff">Contact Us</h2>
+                        <div style="width: 100%;text-align: center;"><div class="separator separator-danger">✻</div></div>
+                        <!-- <p class="description">In this area you can write some interesting description about the projects that your team created. Don't forget to add some awesome images under this description, like the beautiful ones that we added.</p> -->
+                    </div>
+
+                <div class="social-buttons">
+                    <button class="btn btn-social btn-simple"><i class="fa fa-facebook-square"></i></button>
+                    <button class="btn btn-social btn-simple"><i class="fa fa-twitter"></i></button>
+                    <button class="btn btn-social btn-simple"><i class="fa fa-instagram"></i></button>
+                    <button class="btn btn-social btn-simple"><i class="fa fa-google"></i></button>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <div class="contact-form">
+                            <form action="" method="post">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Your Full Name</label>
+                                            <input type="text" name="name" value="" placeholder="Michael Jordan" class="form-control form-control-plain">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Your Email</label>
+                                            <input type="text" name="email" value="" placeholder="michael.j@gmail.com" class="form-control form-control-plain">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Subject</label>
+                                            <input type="text" name="subject" value="" placeholder="Say hi to you" class="form-control form-control-plain">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <textarea name="content" class="form-control form-control-plain" placeholder="Here you can write your nice text" rows="8"></textarea>
+                                        </div>
+                                        <div>
+                                            <div class="col-md-2 col-md-offset-5">
+                                                <button type="button" class="btn btn-danger btn-fill">
+                                                    Contact Us
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <style>
+                .section-gray {
+  background-color: #EEEEEE;
+  padding: 70px 0;
+}
+
+.section-white {
+  background-color: #FFFFFF;
+}
+
+.section {
+  position: relative;
+}
+.section-contact-form .title-area {
+    margin-bottom: 15px;
+}
+
+.section .title-area {
+  max-width: 760px;
+  /*margin: 0 auto 70px;*/
+  display: block;
+  padding: 0 15px;
+  text-align: center;
+}
+.section .title-area .description {
+  font-size: 16px;
+  color: #777777;
+}
+.section [class*="col-"] .title-area {
+  padding: 0;
+}
+.section .text-area {
+  padding: 4.375em 0;
+  position: relative;
+  z-index: 3;
+  display: block;
+}
+.section .text-area .description,
+.section .text-area .description p {
+  font-size: 16px;
+  color: #777777;
+}
+.section .parallax,
+.section .static-image {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+.section .parallax > img,
+.section .parallax .filter > img,
+.section .static-image > img,
+.section .static-image .filter > img {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+.section .parallax-small {
+  height: 65vh;
+}
+.section .responsive-background {
+  position: relative;
+  background-color: #c5a47e;
+  padding: 0;
+  z-index: 1;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 80vh;
+}
+.section .nav > li {
+  display: inline-block;
+}
+
+.section-contact-form {
+  padding-top: 110px;
+}
+.section-contact-form .title-area {
+  margin-bottom: 15px;
+}
+.social-buttons {
+  margin-top: -20px;
+  /*border-top: 1px solid #DDDDDD;*/
+  text-align: center;
+}
+.section-contact-form .social-buttons {
+  padding: 20px 0 40px;
+  margin-top: 0;
+  border: none;
+}
+
+.gradient-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.gradient-image:after {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  content: '';
+  background: -moz-linear-gradient(top, white 0%, rgba(255, 255, 255, 0.95) 22%, rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0.7) 65%, rgba(255, 255, 255, 0) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(22%, rgba(255, 255, 255, 0.95)), color-stop(30%, rgba(255, 255, 255, 0.9)), color-stop(65%, rgba(255, 255, 255, 0.7)), color-stop(100%, rgba(255, 255, 255, 0)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, white 0%, rgba(255, 255, 255, 0.95) 22%, rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0.7) 65%, rgba(255, 255, 255, 0) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, white 0%, rgba(255, 255, 255, 0.95) 22%, rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0.7) 65%, rgba(255, 255, 255, 0) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, white 0%, rgba(255, 255, 255, 0.95) 22%, rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0.7) 65%, rgba(255, 255, 255, 0) 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, white 0%, rgba(255, 255, 255, 0.95) 22%, rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0.7) 65%, rgba(255, 255, 255, 0) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+  /* IE6-9 */
+}
+
+.section-our-team .text-area {
+  padding-bottom: 0;
+}
+
+.filter {
+  position: relative;
+  height: 100%;
+  color: #FFFFFF;
+}
+.filter:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 3;
+  content: "";
+  opacity: .7;
+  background: #333;
+}
+.filter .title-area .description {
+  color: #FFFFFF;
+}
+.filter .separator {
+  color: #FFFFFF;
+}
+.filter .separator:before, .filter .separator:after {
+  border-color: #FFFFFF;
+}
+.filter.filter-color-black:before {
+  background: #333;
+}
+.filter.filter-color-gold:before {
+  background: #bd986c;
+}
+.filter.filter-color-green:before {
+  background: #55bea4;
+}
+.filter.filter-color-blue:before {
+  background: #008b9c;
+}
+.filter.filter-color-purple:before {
+  background: #50236F;
+}
+.filter.filter-color-red:before {
+  background: #de6168;
+}
+            </style>
+<!-- <div id="map">
+                    </div> -->
+                   <!--  <div class="input-group">
+                      <span class="input-group-addon">
+                        <i class="material-icons">mail</i>
+                      </span>
+                      <div class="form-group"><input type="email" value="" placeholder="Your Email..." class="form-control"><span class="material-input"></span><span class="material-input"></span></div>
+                      <div>
+                            <div>
+                                <label>Name:*</label>
+                                <div class="form-group"><input  type="text" name="fullname" value="" class="form-control" /></div>
+                            </div>
+                            <div>
+                               <span class="input-group-addon">
+                        <i class="material-icons">mail</i>
+                      </span>
+                                <div class="form-group"><input type="text" name="emailaddress" value="" class="form-control"/></div>
+                            </div>
+                            <div>
+                                <label>Phone Number:*</label>
+                                <input type="text" name="phonenumber" value="" class="form-control" />
+                            </div>
+                        </div>
+                        
+                        <div class="last">
+                            <div>
+                                <label>Message:*</label>
+                                <textarea rows="" cols="" name="message" class="form-control"></textarea>
+                            </div>
+                            <div class="g-recaptcha" data-sitekey="6LcN3f8SAAAAAEJNJXa-07z0TUbReUWBgPp39nQq"></div>
+                            <p>
+                                <input type="submit" name="submit" value="Send Now" class="submit" />
+                            </p>
+                        </div>
+                    </div> -->
+                  <!-- </div> -->
+                 <!--  <div class="col-sm-4">
+                    <button type="submit" name="submit" value="Send Now" class="btn btn-rose btn-block">Send</button>
+                  </div> -->
+                </div>
+              <!-- </form> -->
+            <!-- </div> -->
+          </div>
+
+        </div>
+        
+
+        
+      </div>
+    </div>
+  
+    <footer class="footer footer-black footer-big"  style="padding: 15px;">
+        <div class="container">
+            <div class="socials">
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-google-plus"></a>
+            </div>
+            <div class="copy">Website Template Designed by <a href="" rel="nofollow">ozaman</a></div>
+        </div>
+    </footer>
    <div class="modal fade" id="contactmodal">
                     <div class="modal-dialog">
                         <!-- Modal content-->
@@ -425,23 +791,7 @@
     border-radius: 7px;
 }
       </style>
-<footer class="footer footer-black footer-big" >
-  <div class="container">
-    
 
-      
-      
-
-      
-    <div class="socials">
-      <a href="#" class="fa fa-facebook"></a>
-      <a href="#" class="fa fa-twitter"></a>
-      <a href="#" class="fa fa-google-plus"></a>
-    </div>
-    <div class="copy"> Website Template Designed by <a href="" rel="nofollow">ozaman</a>
-    </div>
-    </div>
-</footer>
 <!-- <nav id="cd-vertical-nav">
   <ul>
     <li>

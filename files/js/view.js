@@ -4,6 +4,30 @@ var app = angular.module('myApp', ['ngCookies','ui.bootstrap']);
      // $document.scrollTopAnimated(10 ,5000).then(function() {
      //    console && console.log('You just scrolled to the top!');
      //  });
+      $scope.myInterval = 1000;
+  $scope.noWrapSlides = true;
+  $scope.active = 0;
+  // var slides = $scope.slides = [];
+  // var currIndex = 0;
+     // $scope.myInterval = 3000;
+  $scope.slides = [
+    {
+      image: './files/images/1.png'
+    },
+    {
+      image: './files/images/2.jpg'
+    },
+    {
+      image: './files/images/3.jpg'
+    },
+    {
+      image: './files/images/43.png'
+    },
+    {
+      image: './files/images/64.jpg'
+    }
+  ];
+  console.log($scope.slides)
       $scope.err = $location.search().err;
             $scope.data = JSON.parse($location.search().data);
             console.log($scope.data)

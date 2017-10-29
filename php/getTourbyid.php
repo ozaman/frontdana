@@ -1,6 +1,6 @@
 <?php
 include("../config.php");
-    $sql = "SELECT *  FROM ir_tourpackage   WHERE id  ='".$_POST[id]."'";
+    $sql = "SELECT *  FROM dn_package   WHERE id  ='".$_POST[id]."'";
     $Objquery = mysql_query($sql,$conndb);
     //echo $Objquery;
     //$row = mysql_num_rows($Objquery); // นับจำนวนแถว

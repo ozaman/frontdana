@@ -1,6 +1,6 @@
 <?
 include("../config.php");
-    $sql = "SELECT *  FROM ir_gallery   WHERE tour_id  ='".$_POST[id]."'";
+    $sql = "SELECT *  FROM dn_gallery   WHERE tour_id  ='".$_POST[id]."'";
     $Objquery = mysql_query($sql,$conndb);
     //echo $Objquery;
     //$row = mysql_num_rows($Objquery); // นับจำนวนแถว
