@@ -1894,8 +1894,240 @@ height: 60%;
               <!-- <form id="contactsform" name="contactsform" method="post" action="http://www.danatoursasia.com/sendmail/sendmail.php" onsubmit="return validate_form(this);"> -->
                 <!-- <div class="row"> -->
                   <div class="col-sm-12">
-<div id="map">
+                    
+                        <div class="section">
+                    <div class="title-area">
+                        <h5 class="subtitle text-gray">Glad to Talk With You</h5>
+                        <h2 style="color: #fff">Contact Us</h2>
+                        <div style="width: 100%;text-align: center;"><div class="separator separator-danger">✻</div></div>
+                        <!-- <p class="description">In this area you can write some interesting description about the projects that your team created. Don't forget to add some awesome images under this description, like the beautiful ones that we added.</p> -->
                     </div>
+
+                <div class="social-buttons">
+                    <button class="btn btn-social btn-simple"><i class="fa fa-facebook-square"></i></button>
+                    <button class="btn btn-social btn-simple"><i class="fa fa-twitter"></i></button>
+                    <button class="btn btn-social btn-simple"><i class="fa fa-instagram"></i></button>
+                    <button class="btn btn-social btn-simple"><i class="fa fa-google"></i></button>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <div class="contact-form">
+                            <form action="" method="post">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Your Full Name</label>
+                                            <input type="text" name="name" value="" placeholder="Michael Jordan" class="form-control form-control-plain">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Your Email</label>
+                                            <input type="text" name="email" value="" placeholder="michael.j@gmail.com" class="form-control form-control-plain">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Subject</label>
+                                            <input type="text" name="subject" value="" placeholder="Say hi to you" class="form-control form-control-plain">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <textarea name="content" class="form-control form-control-plain" placeholder="Here you can write your nice text" rows="8"></textarea>
+                                        </div>
+                                        <div>
+                                            <div class="col-md-2 col-md-offset-5">
+                                                <button type="button" class="btn btn-danger btn-fill">
+                                                    Contact Us
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <style>
+                .section-gray {
+  background-color: #EEEEEE;
+  padding: 70px 0;
+}
+
+.section-white {
+  background-color: #FFFFFF;
+}
+
+.section {
+  position: relative;
+}
+.section-contact-form .title-area {
+    margin-bottom: 15px;
+}
+
+.section .title-area {
+  max-width: 760px;
+  /*margin: 0 auto 70px;*/
+  display: block;
+  padding: 0 15px;
+  text-align: center;
+}
+.section .title-area .description {
+  font-size: 16px;
+  color: #777777;
+}
+.section [class*="col-"] .title-area {
+  padding: 0;
+}
+.section .text-area {
+  padding: 4.375em 0;
+  position: relative;
+  z-index: 3;
+  display: block;
+}
+.section .text-area .description,
+.section .text-area .description p {
+  font-size: 16px;
+  color: #777777;
+}
+.section .parallax,
+.section .static-image {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+.section .parallax > img,
+.section .parallax .filter > img,
+.section .static-image > img,
+.section .static-image .filter > img {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+.section .parallax-small {
+  height: 65vh;
+}
+.section .responsive-background {
+  position: relative;
+  background-color: #c5a47e;
+  padding: 0;
+  z-index: 1;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 80vh;
+}
+.section .nav > li {
+  display: inline-block;
+}
+
+.section-contact-form {
+  padding-top: 110px;
+}
+.section-contact-form .title-area {
+  margin-bottom: 15px;
+}
+.social-buttons {
+  margin-top: -20px;
+  /*border-top: 1px solid #DDDDDD;*/
+  text-align: center;
+}
+.section-contact-form .social-buttons {
+  padding: 20px 0 40px;
+  margin-top: 0;
+  border: none;
+}
+
+.gradient-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.gradient-image:after {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  content: '';
+  background: -moz-linear-gradient(top, white 0%, rgba(255, 255, 255, 0.95) 22%, rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0.7) 65%, rgba(255, 255, 255, 0) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(22%, rgba(255, 255, 255, 0.95)), color-stop(30%, rgba(255, 255, 255, 0.9)), color-stop(65%, rgba(255, 255, 255, 0.7)), color-stop(100%, rgba(255, 255, 255, 0)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, white 0%, rgba(255, 255, 255, 0.95) 22%, rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0.7) 65%, rgba(255, 255, 255, 0) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, white 0%, rgba(255, 255, 255, 0.95) 22%, rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0.7) 65%, rgba(255, 255, 255, 0) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, white 0%, rgba(255, 255, 255, 0.95) 22%, rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0.7) 65%, rgba(255, 255, 255, 0) 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, white 0%, rgba(255, 255, 255, 0.95) 22%, rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0.7) 65%, rgba(255, 255, 255, 0) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+  /* IE6-9 */
+}
+
+.section-our-team .text-area {
+  padding-bottom: 0;
+}
+
+.filter {
+  position: relative;
+  height: 100%;
+  color: #FFFFFF;
+}
+.filter:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 3;
+  content: "";
+  opacity: .7;
+  background: #333;
+}
+.filter .title-area .description {
+  color: #FFFFFF;
+}
+.filter .separator {
+  color: #FFFFFF;
+}
+.filter .separator:before, .filter .separator:after {
+  border-color: #FFFFFF;
+}
+.filter.filter-color-black:before {
+  background: #333;
+}
+.filter.filter-color-gold:before {
+  background: #bd986c;
+}
+.filter.filter-color-green:before {
+  background: #55bea4;
+}
+.filter.filter-color-blue:before {
+  background: #008b9c;
+}
+.filter.filter-color-purple:before {
+  background: #50236F;
+}
+.filter.filter-color-red:before {
+  background: #de6168;
+}
+            </style>
+<!-- <div id="map">
+                    </div> -->
                    <!--  <div class="input-group">
                       <span class="input-group-addon">
                         <i class="material-icons">mail</i>
