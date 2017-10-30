@@ -27,6 +27,7 @@ var app = angular.module('myApp', ['ngCookies','ui.bootstrap']);
       image: './files/images/64.jpg'
     }
   ];
+  //var slides = $scope.slides;
   console.log($scope.slides)
       $scope.err = $location.search().err;
             $scope.data = JSON.parse($location.search().data);

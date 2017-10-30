@@ -477,23 +477,42 @@ height: 60%;
               </div>
        
         <div class="h-data-list section-our-projects" id="div_top_sell"> 
-             <div ng-repeat="item in dataHotel">
-             <div class="col-md-6">
-                    <div class="project">
-                        <img src="./data/files/upload/hotel/icon/{{item.icon}}">
-                        <a class="over-area" href="#gaia">
-                            <div class="content">
-                                <!-- <label class="label label-info label-fill">App Development</label> -->
-                                <h2 ng-bind="item.hotel_name"></h2>
-                                <p ng-bind="item.topic"></p>
-                                <div style="text-align: right;"><span ng-bind="item.sale_price  | currency:'':0 " style="color: #f44336;
-    font-size: 16px;
-    font-weight: 400;"></span><span>/ Night</span></div>
+            <div ng-repeat="item in dataHotel">
+                
+                     <div class="col-md-4" ng-if="$index <= 3">
+                            <div class="project">
+                                <img src="./data/files/upload/hotel/icon/{{item.icon}}">
+                                <a class="over-area" href="#gaia">
+                                    <div class="content">
+                                        <!-- <label class="label label-info label-fill">App Development</label> -->
+                                        <h2 ng-bind="item.hotel_name"></h2>
+                                        <p ng-bind="item.topic"></p>
+                                        <div style="text-align: right;"><span ng-bind="item.sale_price  | currency:'':0 " style="color: #f44336;
+            font-size: 16px;
+            font-weight: 400;"></span><span>/ Night</span></div>
+                                    </div>
+                                </a>
                             </div>
-                        </a>
+                            
                     </div>
-                    
-            </div>
+                    <div class="col-md-6" ng-if="$index > 3">
+                            <div class="project">
+                                <img src="./data/files/upload/hotel/icon/{{item.icon}}">
+                                <a class="over-area" href="#gaia">
+                                    <div class="content">
+                                        <!-- <label class="label label-info label-fill">App Development</label> -->
+                                        <h2 ng-bind="item.hotel_name"></h2>
+                                        <p ng-bind="item.topic"></p>
+                                        <div style="text-align: right;"><span ng-bind="item.sale_price  | currency:'':0 " style="color: #f44336;
+            font-size: 16px;
+            font-weight: 400;"></span><span>/ Night</span></div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                    </div>
+
+                
         </div>
             <!-- <div class="col-md-6">
                     <div class="project">
