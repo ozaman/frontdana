@@ -28,7 +28,7 @@
     <script src="files/js/jquery.min.js" type="text/javascript"></script>
     <script src="files/js/bootstrap.min.js" type="text/javascript"></script>
     <!-- <script src="files/js/ui-bootstrap-tpls-2.3.2.min.js" type="text/javascript"></script> -->
-    <script src="files/js/view.js" type="text/javascript"></script> 
+    <script src="files/js/view-hotel.js" type="text/javascript"></script> 
     <script src="files/js/material.min.js" type="text/javascript"></script>
     <script src="files/js/material-dashboard.js"></script>
     <!--    Plugin for Date Time Picker and Full Calendar Plugin   -->

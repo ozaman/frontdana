@@ -15,7 +15,7 @@ var app = angular.module('myApp', ['ngCookies']);
                     console.log(res)
                     $scope.tours = res;
                     angular.forEach(res, function (d,i) {
-                    if (d.show_re == 1 ) {
+                    if (d.show_web == 1 ) {
                         $scope.dataTour.push(d);
                  }
                 
@@ -30,6 +30,7 @@ var app = angular.module('myApp', ['ngCookies']);
                 
 
             });   
+                 console.log($scope.dataTour)
                  console.log(res)
                  console.log(res[0].username)
                  
@@ -45,7 +46,7 @@ var app = angular.module('myApp', ['ngCookies']);
                     console.log(res)
                     $scope.transfer = res;
                      angular.forEach(res, function (d,i) {
-                    if (d.show_re == 1 ) {
+                    if (d.show_web == 1 ) {
                         $scope.dataTransfer.push(d);
                  }
                 
@@ -114,6 +115,42 @@ var app = angular.module('myApp', ['ngCookies']);
         angular.element(document.querySelector('.open')).addClass('uxh-open')
         //alert("aaaa")
          //$window.location.href = 'view.php#?data='+x;
+    }
+    $scope.getDetailtransfer = function(x){
+        
+        console.log(x)
+        //console.log($scope.allTour)
+         $window.location.href = 'view-transfer.php#?data='+x;
+            
+            
+                            
+                                
+                      
+        //$window.location.href = 'new.php';
+    }
+    $scope.getDetailhotel = function(x){
+        
+        console.log(x)
+        //console.log($scope.allTour)
+         $window.location.href = 'view-hotel.php#?data='+x;
+            
+            
+                            
+                                
+                      
+        //$window.location.href = 'new.php';
+    }
+    $scope.getDetailtour = function(x){
+        
+        console.log(x)
+        //console.log($scope.allTour)
+         $window.location.href = 'view.php#?data='+x;
+            
+            
+                            
+                                
+                      
+        //$window.location.href = 'new.php';
     }
     $scope.getTourforarea = function(x){
         $scope.dataTour = [];

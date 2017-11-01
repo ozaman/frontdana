@@ -238,7 +238,7 @@
                     <div class="row">
                         <div style="width: 100%" align="center">
                             <div class="col-sm-6 col-md-4 " ng-repeat="item in tourpopular" >
-                                <div class="card card-product card-plain card-rotate" >
+                                <div class="card card-product card-plain card-rotate" ng-click="getDetailtour(item.id)">
                                     <div class="rotating-card-container">
                                         <div class="card-image">
                                             <div class="front">
@@ -272,7 +272,7 @@
                                             </div>
                                             <div class="price-container" align="left" style="float: right;">
                                                 <span class="price price-old"> <!-- 12,500 --></span>
-                                                <span class="price price-new" ng-bind="item.net_price_adult | currency:'':0 "> </span> / Package
+                                                <span class="price price-new" ng-bind="item.cost_web | currency:'':0 "> </span> / Package
                                             </div>
                                         </div>
                                     </div>
@@ -317,7 +317,7 @@
             <div class="row" style="padding: 0 10px; border-radius: 4px; ">
 
                 <div class="col-sm-6 col-md-3" ng-repeat="item in dataTour" id="fade-in-out" >
-                    <div class="card card-blog" >
+                    <div class="card card-blog" ng-click="getDetailtour(item.id)">
                         <div class="card-image" ng-click="viewpackageforid(item.id)">
                             <img src="./data/files/upload/tour/icon/{{item.icon}}" style="height: 180px" >
                         </div>
@@ -335,7 +335,7 @@
                             <i class="material-icons" style="display: inline-block; line-height: 0;">place</i>
                             <p class="pro-item" ng-bind="item.city" align="left" ></p>
                         </div>
-                         <div style="    text-align: right;"><span ng-bind="item.net_price_adult | currency:'':0 " style=" color: #FF5722;"></span><span> /person</span></div>
+                         <div style="    text-align: right;"><span ng-bind="item.cost_web | currency:'':0 " style=" color: #FF5722;"></span><span> /person</span></div>
 
                             
                         </div>
@@ -391,7 +391,7 @@ height: 60%;
                
             <div ng-repeat="item in dataTransfer">
                 <div class="col-sm-6 col-md-3">
-                        <div class="card card-product2">
+                        <div class="card card-product2" ng-click="getDetailtransfer(item.id)">
                             <div class="card-images">
                                 <a href="#pablo">
                                     <img class="img rounded" src="./data/files/upload/transfer/icon/{{item.icon}}">
@@ -402,9 +402,9 @@ height: 60%;
                                 <div class="card-titles">
                                     <a href="#pablo" class="card-link"  ng-bind="item.name"></a>
                                 </div>
-                                <!-- <div class="card-description">
-                                    
-                                </div> -->
+                                <div class="card-description">
+                                    <span>Pax:</span><span ng-bind="item.person"></span>
+                                </div>
                                 <div class="" style="position: absolute;
     /* height: 10%; */
     /* padding: 18px; */
@@ -416,7 +416,9 @@ height: 60%;
                                         <i class="material-icons" style="display: inline-block; line-height: 0;">place</i><span ng-bind="item.province"></span>
                                     </div>
                                     <div class="price-container" style="text-align: right;">
-                                        <span class="price" ng-bind="item.price  | currency:'':0 " style="margin-right: 8px;"></span><label class="f12" style="font-size: 16px;"> THB</label>
+                                        <span class="price" ng-if="item.province == 'Bangkok'" style="margin-right: 8px;">800</span>
+                                        <span class="price"  style="margin-right: 8px;" ng-if="item.province == 'Phuket'">600</span>
+                                        <label class="f12" style="font-size: 16px;"> THB</label>
                                         
                                     </div>
                                     
@@ -477,40 +479,219 @@ height: 60%;
               </div>
        
         <div class="h-data-list section-our-projects" id="div_top_sell"> 
-            <div ng-repeat="item in dataHotel">
+            <div>
                 
-                     <div class="col-md-4" ng-if="$index <= 3">
+                     <div class="col-md-4"  ng-click="getDetailhotel(1)">
                             <div class="project">
-                                <img src="./data/files/upload/hotel/icon/{{item.icon}}">
+                                 <img src="./files/images/f5.jpg">
                                 <a class="over-area" href="#gaia">
                                     <div class="content">
                                         <!-- <label class="label label-info label-fill">App Development</label> -->
-                                        <h2 ng-bind="item.hotel_name"></h2>
-                                        <p ng-bind="item.topic"></p>
+                                        <h4 >WYNDHAM GRAND PHUKET KALIM BAY</h4>
+                                        <p >Phuket</p>
                                         <div style="text-align: right;"><span ng-bind="item.sale_price  | currency:'':0 " style="color: #f44336;
             font-size: 16px;
-            font-weight: 400;"></span><span>/ Night</span></div>
+            font-weight: 400;"></span></div>
                                     </div>
                                 </a>
                             </div>
                             
                     </div>
-                    <div class="col-md-6" ng-if="$index > 3">
+                    <div class="col-md-4"  ng-click="getDetailhotel(2)">
                             <div class="project">
-                                <img src="./data/files/upload/hotel/icon/{{item.icon}}">
+                                <img src="./files/images/f5.jpg">
                                 <a class="over-area" href="#gaia">
                                     <div class="content">
                                         <!-- <label class="label label-info label-fill">App Development</label> -->
-                                        <h2 ng-bind="item.hotel_name"></h2>
-                                        <p ng-bind="item.topic"></p>
+                                        <h4 >VILLA TANTAWAN</h4>
+                                         <p >Phuket</p>
                                         <div style="text-align: right;"><span ng-bind="item.sale_price  | currency:'':0 " style="color: #f44336;
             font-size: 16px;
-            font-weight: 400;"></span><span>/ Night</span></div>
+            font-weight: 400;"></span></div>
                                     </div>
                                 </a>
                             </div>
                             
                     </div>
+                    <div class="col-md-4"  ng-click="getDetailhotel(3)">
+                            <div class="project">
+                                <img src="./files/images/f5.jpg">
+                                <a class="over-area" href="#gaia">
+                                    <div class="content">
+                                        <!-- <label class="label label-info label-fill">App Development</label> -->
+                                        <h4 >PHUKET GRACELAND RESORT AND SPA</h4>
+                                         <p >Phuket</p>
+                                        <div style="text-align: right;"><span ng-bind="item.sale_price  | currency:'':0 " style="color: #f44336;
+            font-size: 16px;
+            font-weight: 400;"></span></div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                    </div>
+                   
+                    <div class="col-md-6" >
+                            <div class="project" ng-click="getDetailhotel(4)">
+                                 <img src="./files/images/f5.jpg">
+                                <a class="over-area" href="#gaia">
+                                    <div class="content">
+                                        <!-- <label class="label label-info label-fill">App Development</label> -->
+                                        <h4 >NOVOTEL PHUKET RESORT</h4>
+                                         <p >Phuket</p>
+                                        <div style="text-align: right;"><span ng-bind="item.sale_price  | currency:'':0 " style="color: #f44336;
+            font-size: 16px;
+            font-weight: 400;"></span></div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                    </div>
+                    <div class="col-md-6" >
+                            <div class="project" ng-click="getDetailhotel(5)">
+                                <img src="./files/images/f5.jpg">
+                                <a class="over-area" href="#gaia">
+                                    <div class="content">
+                                        <!-- <label class="label label-info label-fill">App Development</label> -->
+                                        <h4 >NOVOTEL PHUKET RESORT</h4>
+                                        <p >Phuket</p>
+                                        <div style="text-align: right;"><span ng-bind="item.sale_price  | currency:'':0 " style="color: #f44336;
+            font-size: 16px;
+            font-weight: 400;"></span></div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                    </div>
+                    <div class="col-md-4"  ng-click="getDetailhotel(6)">
+                            <div class="project">
+                                 <img src="./files/images/f5.jpg">
+                                <a class="over-area" href="#gaia">
+                                    <div class="content">
+                                        <!-- <label class="label label-info label-fill">App Development</label> -->
+                                        <h4 >THE PAVILIONS PHUKET</h4>
+                                         <p >Phuket</p>
+                                        <div style="text-align: right;"><span ng-bind="item.sale_price  | currency:'':0 " style="color: #f44336;
+            font-size: 16px;
+            font-weight: 400;"></span></div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                    </div>
+                    <div class="col-md-4"  ng-click="getDetailhotel(7)">
+                            <div class="project">
+                                 <img src="./files/images/f5.jpg">
+                                <a class="over-area" href="#gaia">
+                                    <div class="content">
+                                        <!-- <label class="label label-info label-fill">App Development</label> -->
+                                        <h4 >PUMERIA RESORT PHUKET</h4>
+                                         <p >Phuket</p>
+                                        <div style="text-align: right;"><span ng-bind="item.sale_price  | currency:'':0 " style="color: #f44336;
+            font-size: 16px;
+            font-weight: 400;"></span></div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                    </div>
+                    <div class="col-md-4"  ng-click="getDetailhotel(8)">
+                            <div class="project">
+                                 <img src="./files/images/f5.jpg">
+                                <a class="over-area" href="#gaia">
+                                    <div class="content">
+                                        <!-- <label class="label label-info label-fill">App Development</label> -->
+                                        <h4 >SANTHIYA RESORT AND SPA</h4>
+                                         <p >Phuket</p>
+                                        <div style="text-align: right;"><span ng-bind="item.sale_price  | currency:'':0 " style="color: #f44336;
+            font-size: 16px;
+            font-weight: 400;"></span></div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                    </div>
+                    <div class="col-md-6"  ng-click="getDetailhotel(9)">
+                            <div class="project">
+                                 <img src="./files/images/f5.jpg">
+                                <a class="over-area" href="#gaia">
+                                    <div class="content">
+                                        <!-- <label class="label label-info label-fill">App Development</label> -->
+                                        <h4 >RAMADA PHUKET DEEVANA</h4>
+                                         <p >Phuket</p>
+                                        <div style="text-align: right;"><span ng-bind="item.sale_price  | currency:'':0 " style="color: #f44336;
+            font-size: 16px;
+            font-weight: 400;"></span></div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                    </div>
+                    <div class="col-md-6"  ng-click="getDetailhotel(10)">
+                            <div class="project">
+                                 <img src="./files/images/f5.jpg">
+                                <a class="over-area" href="#gaia">
+                                    <div class="content">
+                                        <!-- <label class="label label-info label-fill">App Development</label> -->
+                                        <h4 >SLEEP WITH ME DESIGN HOTEL@PATONG</h4>
+                                         <p >Phuket</p>
+                                        <div style="text-align: right;"><span ng-bind="item.sale_price  | currency:'':0 " style="color: #f44336;
+            font-size: 16px;
+            font-weight: 400;"></span></div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                    </div>
+
+                    <div class="col-md-3"  ng-click="getDetailhotel(11)">
+                            <div class="project">
+                                <img src="./files/images/f5.jpg">
+                                <a class="over-area" href="#gaia">
+                                    <div class="content">
+                                        <!-- <label class="label label-info label-fill">App Development</label> -->
+                                        <h4 >ANGSANA LAGUNA PHUKET </h4>
+                                         <p >Phuket</p>
+                                        <div style="text-align: right;"><span ng-bind="item.sale_price  | currency:'':0 " style="color: #f44336;
+            font-size: 16px;
+            font-weight: 400;"></span></div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                    </div>
+                    <div class="col-md-3"  ng-click="getDetailhotel(12)">
+                            <div class="project">
+                                 <img src="./files/images/f5.jpg">
+                                <a class="over-area" href="#gaia">
+                                    <div class="content">
+                                        <!-- <label class="label label-info label-fill">App Development</label> -->
+                                        <h4 >SLEEP WITH ME DESIGN </h4>
+                                         <p >Phuket</p>
+                                        <div style="text-align: right;"><span ng-bind="item.sale_price  | currency:'':0 " style="color: #f44336;
+            font-size: 16px;
+            font-weight: 400;"></span></div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                    </div>
+                    <div class="col-md-3"  ng-click="getDetailhotel(13)">
+                            <div class="project">
+                                <img src="./files/images/f5.jpg">
+                                <a class="over-area" href="#gaia">
+                                    <div class="content">
+                                        <!-- <label class="label label-info label-fill">App Development</label> -->
+                                        <h4 >LEBUA TOWER CLUB BANGKOK </h4>
+                                         <p >Phuket</p>
+                                        <div style="text-align: right;"><span ng-bind="item.sale_price  | currency:'':0 " style="color: #f44336;
+            font-size: 16px;
+            font-weight: 400;"></span></div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                    </div>
+                    
 
                 
         </div>
