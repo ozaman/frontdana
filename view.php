@@ -102,7 +102,7 @@
                     <div class="col-md-12 text-center " >
                     <!-- col-md-offset-2 -->
                         <div class="brand">
-                            <h2  style="margin-top: -40px;margin-bottom: 0;color: #f44336;font-size: 20px;" ><span ng-bind="tours.sale_price_adult | currency:'':0" style="font-weight: 500;"></span><span style="color: #fff"><span style="color: #f44336">฿</span> / Package</span></h2>
+                            <h2  style="margin-top: -40px;margin-bottom: 0;color: #f44336;font-size: 20px;" ><span ng-bind="tours.cost_web | currency:'':0" style="font-weight: 500;"></span><span style="color: #fff"><span style="color: #f44336">฿</span> / Person</span></h2>
                             <h1 class="title"><div ng-bind="tours.name" align="center" style="     margin-top: -25px;font-size: 20px; font-weight: 500;"></div></h1>
                            
                         </div>
@@ -205,7 +205,7 @@
                             <i class="material-icons" style="display: inline-block; line-height: 0;">place</i>
                             <p class="pro-item" ng-bind="item.city" align="left" ></p>
                         </div>
-                         <div style="    text-align: right;"><span ng-bind="item.net_price_adult | currency:'':0 " style=" color: #FF5722;"></span><span> /person</span></div>
+                         <div style="    text-align: right;"><span ng-bind="item.cost_web | currency:'':0 " style=" color: #FF5722;"></span><span> /person</span></div>
 
                             
                         </div>
