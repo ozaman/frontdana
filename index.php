@@ -318,7 +318,7 @@
 
                 <div class="col-sm-6 col-md-3" ng-repeat="item in dataTour" id="fade-in-out" >
                     <div class="card card-blog" ng-click="getDetailtour(item.id)">
-                        <div class="card-image" ng-click="viewpackageforid(item.id)">
+                        <div class="card-image" >
                             <img src="./data/files/upload/tour/icon/{{item.icon}}" style="height: 180px" >
                         </div>
                         <div class="card-content">

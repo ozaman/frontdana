@@ -14,7 +14,7 @@
     <link href="files/css/bootstrap.min.css" rel="stylesheet">
     <link href="files/css/material-kit.min.css?v=1.1.0" rel="stylesheet">
     <link href="files/css/vertical-nav.css" rel="stylesheet">
-    <link href="files/css/material-dashboard.css" rel="stylesheet">
+    <!-- <link href="files/css/material-dashboard.css" rel="stylesheet"> -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
   
     <link rel="icon" href="backend/images/logo22.png" type="image/x-icon">
@@ -77,19 +77,19 @@
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">                    
                         <li>
-                            <a href="" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                            <a href="index.php" >
                                 <i class="material-icons">home</i>
-                                <p> HOME</p>
+                                <span> HOME</span>
 
                             </a>
-                            <ul class="dropdown-menu">
+                            <!-- <ul class="dropdown-menu">
                                 <li>
                                     <a href="/bootstrap-themes">All Categories</a>
                                 </li>
                                 <li>
                                     <a href="/bootstrap-themes/admin-dashboard">Admin &amp; Dashboards</a>
                                 </li> 
-                            </ul>
+                            </ul> -->
                         </li>
                     </ul>            
                 </div>
@@ -123,12 +123,12 @@
                         <div style="   background: rgba(255, 255, 255, 0.36);  padding: 15px 3px;    border-radius: 8px; margin-bottom: 20px;" >
                         <div id="myCarousel" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
-                                <li data-target="#myCarousel" data-slide-to="{{$index}}" class="active" ng-repeat="slide in slides " ng-class="{active: $index == 0}""></li>
+                                <li data-target="#myCarousel" data-slide-to="{{$index}}" class="active" ng-repeat="slide in datagallery " ng-class="{active: $index == 0}""></li>
                             </ol>
 
                             <div class="carousel-inner">
-                                <div class="item col-md-12" ng-repeat="slide in slides " ng-class="{active: $index == 0}">
-                                  <img ng-src="{{slide.image}}" alt="Los Angeles" style="width:100%;">
+                                <div class="item col-md-12" ng-repeat="slide in datagallery " ng-class="{active: $index == 0}">
+                                  <img ng-src="./data/files/upload/tour/gallery/{{slide.gallery}}" alt="Los Angeles" style="width:100%;">
                                 </div>
                             </div>
                             <a class="left carousel-control" href="#myCarousel" data-slide="prev">
@@ -186,7 +186,7 @@
                     <div style="margin-top: 95px">
                         <h3 class="title"><div align="center" style="     font-size: 16px; font-weight: 500;">Recommend</div></h3>
                     <div class="col-md-3" >
-                        <div class="col-sm-12 col-md-12" ng-repeat="item in tourpopular" id="fade-in-out" >
+                        <div class="col-sm-12 col-md-12" ng-repeat="item in dataTour" id="fade-in-out" >
                     <div class="card card-blog" >
                         <div class="card-image" ng-click="viewpackageforid(item.id)">
                             <img src="./data/files/upload/tour/icon/{{item.icon}}" style="height: 180px" >

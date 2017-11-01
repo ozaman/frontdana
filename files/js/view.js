@@ -159,6 +159,11 @@ var app = angular.module('myApp', ['ngCookies','ui.bootstrap']);
     $scope.toSection3 = function() {
       $document.scrollToElementAnimated(section3);
     }
+    $scope.viewpackageforid = function(x){
+        //alert("aaaa")
+         $window.location.href = 'view.php#?data='+x;
+         $window.location.reload();
+    }
 
     // angular.element('.navbar').bind("scroll", function(e) {
     //         var popupbookingdetail = e.target.scrollTop;//

@@ -14,47 +14,11 @@
     <link href="files/css/bootstrap.min.css" rel="stylesheet">
     <link href="files/css/material-kit.min.css?v=1.1.0" rel="stylesheet">
     <link href="files/css/vertical-nav.css" rel="stylesheet">
-    <link href="files/css/material-dashboard.css" rel="stylesheet">
+    <!-- <link href="files/css/material-dashboard.css" rel="stylesheet"> -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
   
     <link rel="icon" href="backend/images/logo22.png" type="image/x-icon">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js" type="text/javascript"></script>
-    <script src="files/js/ui-bootstrap-tpls-2.5.0.min.js" type="text/javascript"></script>
-    <script src="files/js/angular-cookies.min.js" type="text/javascript"></script>
-    <script src="files/js/angular-scroll.js" type="text/javascript"></script>
-
-
-    <!--  <script src="files/js/jquery-3.1.0.min.js"></script>  -->
-    <script src="files/js/jquery.min.js" type="text/javascript"></script>
-    <script src="files/js/bootstrap.min.js" type="text/javascript"></script>
-    <!-- <script src="files/js/ui-bootstrap-tpls-2.3.2.min.js" type="text/javascript"></script> -->
-    <script src="files/js/view-transfer.js" type="text/javascript"></script> 
-    <script src="files/js/material.min.js" type="text/javascript"></script>
-    <script src="files/js/material-dashboard.js"></script>
-    <!--    Plugin for Date Time Picker and Full Calendar Plugin   -->
-    <script src="files/js/moment.min.js" type="text/javascript"></script>
-
-    <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/   -->
-    <script src="files/js/nouislider.min.js" type="text/javascript"></script>
-
-    <!--  Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker   -->
-    <script src="files/js/bootstrap-datetimepicker.js" type="text/javascript"></script>
-
-    <!--  Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select   -->
-    <script src="files/js/bootstrap-selectpicker.js" type="text/javascript"></script>
-
-    <!--  Plugin for Tags, full documentation here: http://xoxco.com/projects/code/tagsinput/   -->
-    <script src="files/js/bootstrap-tagsinput.js" type="text/javascript"></script>
-
-    <!--  Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput   -->
-    <script src="files/js/jasny-bootstrap.min.js" type="text/javascript"></script>
-    <!--    Plugin For Google Maps   -->  
-
-    <!--    Plugin for 3D images animation effect, full documentation here: https://github.com/drewwilson/atvImg    -->
-    <script src="files/js/atv-img-animation.js" type="text/javascript"></script>
-
-    <!--    Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc    -->
-    <script src="files/js/material-kit.min.js" type="text/javascript"></script>
+   
     
     </head>
 
@@ -75,28 +39,28 @@
                     </a>
                 </div>
                 <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-right">                    
+                    <ul class="nav navbar-nav navbar-right ">                    
                         <li>
-                            <a href="" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                            <a href="index.php">
                                 <i class="material-icons">home</i>
-                                <p> HOME</p>
+                                <span> HOME</span>
 
                             </a>
-                            <ul class="dropdown-menu">
+                           <!--  <ul class="dropdown-menu">
                                 <li>
                                     <a href="/bootstrap-themes">All Categories</a>
                                 </li>
                                 <li>
                                     <a href="/bootstrap-themes/admin-dashboard">Admin &amp; Dashboards</a>
                                 </li> 
-                            </ul>
+                            </ul> -->
                         </li>
                     </ul>            
                 </div>
             </div>
         </nav>
 
-        <div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(&quot;./data/files/upload/tour/icon/{{tours.icon}}&quot;); background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);" id="page-headerpopular">
+        <div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(&quot;./data/files/upload/transfer/icon/{{tours.icon}}&quot;); background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);" id="page-headerpopular">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center " >
@@ -186,10 +150,10 @@
                     <div style="margin-top: 95px">
                         <h3 class="title"><div align="center" style="     font-size: 16px; font-weight: 500;">Recommend</div></h3>
                     <div class="col-md-3" >
-                        <div class="col-sm-12 col-md-12" ng-repeat="item in tourpopular" id="fade-in-out" >
+                        <div class="col-sm-12 col-md-12" ng-repeat="item in dataTour" id="fade-in-out" >
                     <div class="card card-blog" >
                         <div class="card-image" ng-click="viewpackageforid(item.id)">
-                            <img src="./data/files/upload/tour/icon/{{item.icon}}" style="height: 180px" >
+                            <img src="./data/files/upload/transfer/icon/{{item.icon}}" style="height: 180px" >
                         </div>
                         <div class="card-content">
                             <h6 class="category text-rose" ng-bind="item.name"></h6>                      
@@ -205,7 +169,11 @@
                             <i class="material-icons" style="display: inline-block; line-height: 0;">place</i>
                             <p class="pro-item" ng-bind="item.city" align="left" ></p>
                         </div>
-                         <div style="    text-align: right;"><span ng-bind="item.net_price_adult | currency:'':0 " style=" color: #FF5722;"></span><span> /person</span></div>
+                         <div style="    text-align: right;">
+                            <span  style=" color: #FF5722;" ng-if="item.province == 'Bangkok'">800</span>
+                            <span  style=" color: #FF5722;" ng-if="item.province == 'Phuket'">600</span>
+                            <span> /Car</span></div>
+
 
                             
                         </div>
@@ -715,6 +683,43 @@ li{
     background: #de6168;
 }
 </style>
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js" type="text/javascript"></script>
+    <script src="files/js/ui-bootstrap-tpls-2.5.0.min.js" type="text/javascript"></script>
+    <script src="files/js/angular-cookies.min.js" type="text/javascript"></script>
+    <script src="files/js/angular-scroll.js" type="text/javascript"></script>
+
+
+    <!--  <script src="files/js/jquery-3.1.0.min.js"></script>  -->
+    <script src="files/js/jquery.min.js" type="text/javascript"></script>
+    <script src="files/js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- <script src="files/js/ui-bootstrap-tpls-2.3.2.min.js" type="text/javascript"></script> -->
+    <script src="files/js/view-transfer.js" type="text/javascript"></script> 
+    <script src="files/js/material.min.js" type="text/javascript"></script>
+    <script src="files/js/material-dashboard.js"></script>
+    <!--    Plugin for Date Time Picker and Full Calendar Plugin   -->
+    <script src="files/js/moment.min.js" type="text/javascript"></script>
+
+    <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/   -->
+    <script src="files/js/nouislider.min.js" type="text/javascript"></script>
+
+    <!--  Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker   -->
+    <script src="files/js/bootstrap-datetimepicker.js" type="text/javascript"></script>
+
+    <!--  Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select   -->
+    <script src="files/js/bootstrap-selectpicker.js" type="text/javascript"></script>
+
+    <!--  Plugin for Tags, full documentation here: http://xoxco.com/projects/code/tagsinput/   -->
+    <script src="files/js/bootstrap-tagsinput.js" type="text/javascript"></script>
+
+    <!--  Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput   -->
+    <script src="files/js/jasny-bootstrap.min.js" type="text/javascript"></script>
+    <!--    Plugin For Google Maps   -->  
+
+    <!--    Plugin for 3D images animation effect, full documentation here: https://github.com/drewwilson/atvImg    -->
+    <script src="files/js/atv-img-animation.js" type="text/javascript"></script>
+
+    <!--    Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc    -->
+    <script src="files/js/material-kit.min.js" type="text/javascript"></script>
 </body>
 
 </html>

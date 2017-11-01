@@ -40,45 +40,43 @@ var app = angular.module('myApp', ['ngCookies','ui.bootstrap']);
 
             $http({
                 method : 'POST',
-                url : "php/getTourbyid.php",
+                url : "php/getTransferbyid.php",
                 data: $.param({'id': $scope.data}),
                 headers: {'Content-Type': 'application/x-www-form-urlencoded'}
                 }).success(function(res){
                  console.log(res)
                  $scope.tours = res[0];
-                 if (res[0].show_recommend == 1) {
+                 if (res[0].show_re == 1) {
                         $scope.echekrecommends = true;
                  }
-                  if (res[0].show_popular == 1) {
-                        $scope.echekpopulars = true;
-                 }
+                  
                  
-                 $scope.program = res[0].program.split('\n');
-                 $scope.conditions = res[0].conditions.split('\n');
+                 // $scope.program = res[0].program.split('\n');
+                 // $scope.conditions = res[0].conditions.split('\n');
                 
                  
-                  for (var i = 0; i < $scope.program.length; i++) {
-                    if ($scope.program[i] != "") {
+                 //  for (var i = 0; i < $scope.program.length; i++) {
+                 //    if ($scope.program[i] != "") {
                        
-                      $('#repeatprogram').append('<p class="time">'+$scope.program[i]+'</p>')
-                    }
-                    else{
-                        $('#repeatprogram').append('\n')
+                 //      $('#repeatprogram').append('<p class="time">'+$scope.program[i]+'</p>')
+                 //    }
+                 //    else{
+                 //        $('#repeatprogram').append('\n')
                       
                       
-                    }
-                 }
-                 for (var i = 0; i < $scope.conditions.length; i++) {
-                    if ($scope.conditions[i] != "") {
+                 //    }
+                 // }
+                 // for (var i = 0; i < $scope.conditions.length; i++) {
+                 //    if ($scope.conditions[i] != "") {
                        
-                      $('#repeatconditions').append('<p class="time">'+$scope.conditions[i]+'</p>')
-                    }
-                    else{
-                        $('#repeatconditions').append('\n')
+                 //      $('#repeatconditions').append('<p class="time">'+$scope.conditions[i]+'</p>')
+                 //    }
+                 //    else{
+                 //        $('#repeatconditions').append('\n')
                       
                       
-                    }
-                 }
+                 //    }
+                 // }
                        //console.log($scope.propush)         
                        //$('#repeatprogram').html($scope.propush)
                   // angular.forEach( $scope.repeatprogram, function (y) {
@@ -101,7 +99,7 @@ var app = angular.module('myApp', ['ngCookies','ui.bootstrap']);
             });
                 $http({
                 method : 'POST',
-                url : "php/getPackage.php",
+                url : "php/getTransfer.php",
                 //data: $.param({sv: $scope.dataSV}),
                 headers: {'Content-Type': 'application/x-www-form-urlencoded'}
                 }).success(function(res){
@@ -158,6 +156,11 @@ var app = angular.module('myApp', ['ngCookies','ui.bootstrap']);
     //var section3 = angular.element(document.getElementById('section-3'));
     $scope.toSection3 = function() {
       $document.scrollToElementAnimated(section3);
+    }
+    $scope.viewpackageforid = function(x){
+        //alert("aaaa")
+         $window.location.href = 'view-transfer.php#?data='+x;
+         $window.location.reload();
     }
 
     // angular.element('.navbar').bind("scroll", function(e) {

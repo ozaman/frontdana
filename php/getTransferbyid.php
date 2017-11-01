@@ -1,6 +1,6 @@
-<?
+<?php
 include("../config.php");
-    $sql = "SELECT *  FROM dn_product ";
+    $sql = "SELECT *  FROM dn_product WHERE id  ='".$_POST[id]."'";
     $Objquery = mysql_query($sql,$conndb);
     //echo $Objquery;
     //$row = mysql_num_rows($Objquery); // นับจำนวนแถว
