@@ -114,12 +114,12 @@
 
        <div class="container">
                 <div class="row">
-                    <div class="col-md-9 "  >
-                        <div class="brand" style="margin-top: 70px;   padding-top: 5px;">
-                            <!-- <h2  style="color: #f44336;font-size: 16px;" ><span ng-bind="tours.sale_price_adult | currency:'':0" style="font-weight: 500;"></span><span style="color: #333"><span style="color: #f44336">฿</span> / Package</span></h2> -->
+                    <div class="col-md-9 "  style="margin-top: 70px;  " >
+                       <!--  <div class="brand" style="margin-top: 70px;   padding-top: 5px;">
+                            
                             <h3 class="title"><div ng-bind="tours.name" align="center" style="     font-size: 16px; font-weight: 500;"></div></h3>
-                            <!-- <h4>IMRON PHUKET SPEEDBOAD TOUR  <b>LTD.</b> ,PART.</h4> -->
-                        </div>
+                           
+                        </div> -->
                         <div style="   background: rgba(255, 255, 255, 0.36);  padding: 15px 3px;    border-radius: 8px; margin-bottom: 20px;" >
                         <div id="myCarousel" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
@@ -167,22 +167,88 @@
                                         <span ng-if="flagcheck == 3">現在預訂</span></div> -->
                                 </div>
                             </div>
-                        </div>
-                        <div style="padding: 15px">
-                            <!-- <div class="timeline-heading">
-                                            <h4 class="">Contacts</h4>
-                                        </div>
-                                        <div class="timeline-body">
-                                            <div class="">Phones: 
-                                                <a href="tel:#" style="display: inline-block;">(+66) 096-6409949</a><a href="tel:#" style="display: inline-block;">087-2794723</a>
+                           
+                        
+                    </div>
+                      <div class="col-md-12">
+                            <div class="card card-plain">
+                                <div class="">
+                                            
+                                                <div class="timeline-heading" >
+                                                    <div class="" style=" width: 130px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+    /* background-color: #f44336; */
+    border-radius: 4px;
+    padding: 5px 0;
+    text-transform: uppercase;">Detail</div>
+                                                </div>
+                                                <div class="timeline-body">
+                                                    <p ng-bind="tours.detail">
+                                                      
+                                                    </p>
+                                                      
+                                                </div>
+                                                <!-- <div style="color: #f44336; margin-top: 50px;">
+                                                   <h4 al ng-bind="tours.class" style="display: inline-block;"></h4>
+                                                   <h4 style="display: inline-block;float: right;" >8 person</h4>
+                                                </div> -->
+                                           
+                                       
+
+                                            
+                                            <div class="timeline-panel">
+                                                <div class="timeline-heading" >
+                                                    <div class="" style="width: 130px;
+    margin-top:85px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+    /* background-color: #f44336; */
+    border-radius: 4px;
+    padding: 5px 0;
+    text-transform: uppercase;">Program </div>
+                                                </div>
+                                                <div class="timeline-body" >
+                                                <div id="repeatprogram">
+                                                  
+                                                </div>
+                                                </div>
                                             </div>
-                                            <div class="">E-mail: 
-                                              <a href="mailto:#" style="display: inline-block;"> sele@danatoursasia.com</a>
-                                            </div>            
-                                        </div> -->
+                                       
+                                      
+                                            <div class="timeline-panel">
+                                                <div class="timeline-heading" >
+                                                    <div class=""  style="width: 130px;
+    margin-top: 85px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+    /* background-color: #f44336; */
+    border-radius: 4px;
+    padding: 5px 0;
+    text-transform: uppercase;">condition</div>
+                                                </div>
+                                                <div class="timeline-body">
+                                                    <div id="repeatconditions"></div>
+                                                   
+                                                    
+                                                </div>
+                                            </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    </div>
+                </div>
+            </div>
+               
                     <div style="margin-top: 95px">
                         <h3 class="title"><div align="center" style="     font-size: 16px; font-weight: 500;">Recommend</div></h3>
                     <div class="col-md-3" >
@@ -201,7 +267,7 @@
                         <div class="cost-pro">
 
                            
-                            <div >
+                        <div>
                             <i class="material-icons" style="display: inline-block; line-height: 0;">place</i>
                             <p class="pro-item" ng-bind="item.city" align="left" ></p>
                         </div>

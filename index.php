@@ -47,7 +47,7 @@
                     </a>
           </div>
 
-          <div class="collapse navbar-collapse">
+          <!-- <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">                    
                         <li>
                             <a href="" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
@@ -65,43 +65,12 @@
                                         Admin &amp; Dashboards
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="/bootstrap-themes/ui-kit">
-                                        UI Kits
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/bootstrap-themes/free">
-                                        Free Themes
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/bootstrap-themes/premium">
-                                        Premium Themes
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/bootstrap-themes/angular-dashboard">
-                                        Angular Dashboards
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/bootstrap-themes/landing-page">
-                                        Landing Pages
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/bootstrap-themes/e-commerce">
-                                        E-commerce
-                                    </a>
-                                </li>
-                               
                             </ul>
                            
 
                         </li>
                     </ul>            
-                </div>
+                </div> -->
       </div>
     </nav>
     <div class="page-header header-filter header-small" data-parallax="true" style="background-size: 100%;background-image: url(./files/images/sunset-1.jpg);background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);    background-size: 100% 100%;">
@@ -2075,7 +2044,9 @@ height: 60%;
           <div class="contact" id="contact">             
             <ul >
               <li class="">Address: <a>100/16 Moo 5 , Soi 1 Chalernprakiet Rd., T.Rassada Muang Phuket Thailand 83000</a></li>
-              <li class="">Phones: <a href="tel:#" style="display: inline-block;">(+66) 096-6409949</a>; <a href="tel:#" style="display: inline-block;">087-2794723</a></li>
+              <li class="">Phones: <a href="tel:#" style="display: inline-block;">(+66) 081-0808804</a> 
+                <!-- <a href="tel:#" style="display: inline-block;">087-2794723</a> -->
+            </li>
               <li class="">E-mail: <a href="mailto:#" style="display: inline-block;"> sele@danatoursasia.com</a></li>
             </ul>
           </div>
