@@ -7,24 +7,195 @@ var app = angular.module('myApp', ['ngCookies','ui.bootstrap']);
       $scope.myInterval = 1000;
   $scope.noWrapSlides = true;
   $scope.active = 0;
+  $scope.slides;
   // var slides = $scope.slides = [];
   // var currIndex = 0;
      // $scope.myInterval = 3000;
-  $scope.slides = [
+  $scope.slides1 = [
     {
-      image: './files/images/1.png'
+      image: './data/files/hotel/ho1/1.png'
     },
     {
-      image: './files/images/2.jpg'
+      image: './data/files/hotel/ho1/1.png'
     },
     {
-      image: './files/images/3.jpg'
+      image: './data/files/hotel/ho1/1.png'
     },
     {
-      image: './files/images/43.png'
+      image: './data/files/hotel/ho1/1.png'
     },
     {
-      image: './files/images/64.jpg'
+      image: './data/files/hotel/ho1/1.png'
+    }
+  ];
+  $scope.slides2 = [
+    {
+      image: './data/files/hotel/ho2/1.png'
+    },
+    {
+      image: './data/files/hotel/ho2/1.png'
+    },
+    {
+      image: './data/files/hotel/ho2/1.png'
+    },
+    {
+      image: './data/files/hotel/ho2/1.png'
+    },
+    {
+      image: './data/files/hotel/ho2/1.png'
+    }
+  ];
+  $scope.slides3 = [
+    {
+      image: './data/files/hotel/ho3/1.png'
+    },
+    {
+      image: './data/files/hotel/ho3/1.png'
+    },
+    {
+      image: './data/files/hotel/ho3/1.png'
+    },
+    {
+      image: './data/files/hotel/ho3/1.png'
+    },
+    {
+      image: './data/files/hotel/ho3/1.png'
+    }
+  ];
+  $scope.slides4 = [
+    {
+      image: './data/files/hotel/ho4/1.png'
+    },
+    {
+      image: './data/files/hotel/ho4/1.png'
+    },
+    {
+      image: './data/files/hotel/ho4/1.png'
+    },
+    {
+      image: './data/files/hotel/ho4/1.png'
+    },
+    {
+      image: './data/files/hotel/ho4/1.png'
+    }
+  ];
+  $scope.slides5 = [
+    {
+      image: './data/files/hotel/ho5/1.png'
+    },
+    {
+      image: './data/files/hotel/ho5/1.png'
+    },
+    {
+      image: './data/files/hotel/ho5/1.png'
+    },
+    {
+      image: './data/files/hotel/ho5/1.png'
+    },
+    {
+      image: './data/files/hotel/ho5/1.png'
+    }
+  ];
+  $scope.slides7 = [
+    {
+      image: './data/files/hotel/ho7/1.png'
+    },
+    {
+      image: './data/files/hotel/ho7/1.png'
+    },
+    {
+      image: './data/files/hotel/ho7/1.png'
+    },
+    {
+      image: './data/files/hotel/ho7/1.png'
+    },
+    {
+      image: './data/files/hotel/ho7/1.png'
+    }
+  ];
+  $scope.slides8 = [
+    {
+      image: './data/files/hotel/ho8/1.png'
+    },
+    {
+      image: './data/files/hotel/ho8/1.png'
+    },
+    {
+      image: './data/files/hotel/ho8/1.png'
+    },
+    {
+      image: './data/files/hotel/ho8/1.png'
+    },
+    {
+      image: './data/files/hotel/ho8/1.png'
+    }
+  ];
+  $scope.slides9 = [
+    {
+      image: './data/files/hotel/ho9/1.png'
+    },
+    {
+      image: './data/files/hotel/ho9/1.png'
+    },
+    {
+      image: './data/files/hotel/ho9/1.png'
+    },
+    {
+      image: './data/files/hotel/ho9/1.png'
+    },
+    {
+      image: './data/files/hotel/ho9/1.png'
+    }
+  ];
+  $scope.slides10 = [
+    {
+      image: './data/files/hotel/ho10/1.png'
+    },
+    {
+      image: './data/files/hotel/ho10/1.png'
+    },
+    {
+      image: './data/files/hotel/ho10/1.png'
+    },
+    {
+      image: './data/files/hotel/ho10/1.png'
+    },
+    {
+      image: './data/files/hotel/ho10/1.png'
+    }
+  ];
+  $scope.slides11 = [
+    {
+      image: './data/files/hotel/ho11/1.png'
+    },
+    {
+      image: './data/files/hotel/ho11/1.png'
+    },
+    {
+      image: './data/files/hotel/ho11/1.png'
+    },
+    {
+      image: './data/files/hotel/ho11/1.png'
+    },
+    {
+      image: './data/files/hotel/ho11/1.png'
+    }
+  ];
+  $scope.slides12 = [
+    {
+      image: './data/files/hotel/ho12/1.png'
+    },
+    {
+      image: './data/files/hotel/ho12/1.png'
+    },
+    {
+      image: './data/files/hotel/ho12/1.png'
+    },
+    {
+      image: './data/files/hotel/ho12/1.png'
+    },
+    {
+      image: './data/files/hotel/ho12/1.png'
     }
   ];
   //var slides = $scope.slides;
@@ -32,6 +203,39 @@ var app = angular.module('myApp', ['ngCookies','ui.bootstrap']);
       $scope.err = $location.search().err;
             $scope.data = JSON.parse($location.search().data);
             console.log($scope.data)
+            if ($scope.data == 1) {
+              $scope.slides = $scope.slides1;
+            }
+            else if ($scope.data == 2) {
+              $scope.slides = $scope.slides2;
+            }
+            else if ($scope.data == 3) {
+              $scope.slides = $scope.slides3;
+            }
+            else if ($scope.data == 4) {
+              $scope.slides = $scope.slides4;
+            }
+            else if ($scope.data == 5) {
+              $scope.slides = $scope.slides5;
+            }
+            else if ($scope.data == 7) {
+              $scope.slides = $scope.slides7;
+            }
+            else if ($scope.data == 8) {
+              $scope.slides = $scope.slides8;
+            }
+            else if ($scope.data == 9) {
+              $scope.slides = $scope.slides9;
+            }
+            else if ($scope.data == 10) {
+              $scope.slides = $scope.slides10;
+            }
+            else if ($scope.data == 11) {
+              $scope.slides = $scope.slides11;
+            }
+            else if ($scope.data == 12) {
+              $scope.slides = $scope.slides12;
+            }
             $scope.datagallery = '';
             $scope.tourpopular = [];
     $scope.dataTour = [];

@@ -96,7 +96,18 @@
             </div>
         </nav>
 
-        <div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(&quot;./data/files/upload/tour/icon/{{tours.icon}}&quot;); background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);" id="page-headerpopular">
+        <div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(&quot;./data/files/hotel/ho1/1.jpg &quot;); background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);" id="page-headerpopular">
+        <div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(&quot;./data/files/hotel/ho2/1.jpg&quot;); background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);" id="page-headerpopular">
+        <div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(&quot;./data/files/hotel/ho3/1.jpg&quot;); background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);" id="page-headerpopular">
+        <div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(&quot;./data/files/hotel/ho4/1.jpg&quot;); background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);" id="page-headerpopular">
+        <div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(&quot;./data/files/hotel/ho5/1.jpg&quot;); background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);" id="page-headerpopular">
+        <div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(&quot;./data/files/hotel/ho7/1.jpg&quot;); background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);" id="page-headerpopular">
+        <div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(&quot;./data/files/hotel/ho8/1.jpg&quot;); background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);" id="page-headerpopular">
+        <div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(&quot;./data/files/hotel/ho9/1.jpg&quot;); background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);" id="page-headerpopular">
+        <div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(&quot;./data/files/hotel/ho10/1.jpg&quot;); background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);" id="page-headerpopular">
+        <div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(&quot;./data/files/hotel/ho11/1.jpg&quot;); background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);" id="page-headerpopular">
+        <div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(&quot;./data/files/hotel/ho12/1.jpg&quot;); background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);" id="page-headerpopular">
+
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center " >
