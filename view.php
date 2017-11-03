@@ -59,7 +59,8 @@
     </head>
 
     <body class="ecommerce-page" ng-app="myApp" ng-controller="view"> 
-        <nav class="navbar navbar-default navbar-fixed-top navbar-color-on-scroll navbar-transparent" color-on-scroll="100" id="sectionsNav">
+        <nav class="navbar" color-on-scroll="100" id="sectionsNav" style="background: rgba(76, 175, 80, 0.85);
+    color: #fff;">
       <!-- navbar-fixed-top -->
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -96,11 +97,11 @@
             </div>
         </nav>
 
-        <div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(&quot;./data/files/upload/tour/icon/{{tours.icon}}&quot;); background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);" id="page-headerpopular">
+       <!--  <div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(&quot;./data/files/upload/tour/icon/{{tours.icon}}&quot;); background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);" id="page-headerpopular">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center " >
-                    <!-- col-md-offset-2 -->
+                
                         <div class="brand">
                             <h2  style="margin-top: -40px;margin-bottom: 0;color: #f44336;font-size: 20px;" ><span ng-bind="tours.cost_web | currency:'':0" style="font-weight: 500;"></span><span style="color: #fff"><span style="color: #f44336">฿</span> / Person</span></h2>
                             <h1 class="title"><div ng-bind="tours.name" align="center" style="     margin-top: -25px;font-size: 20px; font-weight: 500;"></div></h1>
@@ -109,17 +110,25 @@
                     </div>
                 </div>
             </div>
-        </div> 
+        </div> --> 
 
 
        <div class="container">
                 <div class="row">
-                    <div class="col-md-9 "  style="margin-top: 70px;  " >
-                       <!--  <div class="brand" style="margin-top: 70px;   padding-top: 5px;">
-                            
-                            <h3 class="title"><div ng-bind="tours.name" align="center" style="     font-size: 16px; font-weight: 500;"></div></h3>
+                    <div class="col-md-9 ">
+                       <div class="brand">
+                            <!-- <h2  style="margin-top: -40px;margin-bottom: 0;color: #f44336;font-size: 20px;" ><span ng-bind="tours.cost_web | currency:'':0" style="font-weight: 500;"></span><span style="color: #fff"><span style="color: #f44336">฿</span> / Person</span></h2> -->
+                            <h1 class="title"><div ng-bind="tours.name" align="center" style="color: #333;
+    border-radius: 8px;
+    /* border: 8px solid #fff; */
+    /* margin-bottom: 57px; */
+    /* background: #4caf50; */
+    /* border-top: 1px dashed #4caf50; */
+    /* border-bottom: 1px dashed #4caf50; */
+    font-size: 20px;
+    font-weight: 500;"></div></h1>
                            
-                        </div> -->
+                        </div>
                         <div style="   background: rgba(255, 255, 255, 0.36);  padding: 15px 3px;    border-radius: 8px; margin-bottom: 20px;" >
                         <div id="myCarousel" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
@@ -173,6 +182,26 @@
                       <div class="col-md-12">
                             <div class="card card-plain">
                                 <div class="">
+                                    <div class="timeline-heading" >
+                                                    <div class="" style=" width: 130px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+    /* background-color: #f44336; */
+    border-radius: 4px;
+    padding: 5px 0;
+    text-transform: uppercase;">Package</div>
+                                                </div>
+                                                <div class="timeline-body">
+                                                    <div ng-bind="tours.name" ></div>
+                                                    <div><span  style="color: #f44336;" ><span ng-bind="tours.cost_web | currency:'':0" style="font-weight: 500;"></span><span style="color: #333"><span style="color: #f44336">฿</span> / Person</span></span></div>
+                                                      
+                                                </div>
+                                    
+
                                             
                                                 <div class="timeline-heading" >
                                                     <div class="" style=" width: 130px;
@@ -249,9 +278,12 @@
                 </div>
             </div>
                
-                    <div style="margin-top: 95px">
-                        <h3 class="title"><div align="center" style="     font-size: 16px; font-weight: 500;">Recommend</div></h3>
-                    <div class="col-md-3" >
+                    <!-- <div style="margin-top: 95px"> -->
+                        
+                    <div class="col-md-3" style="margin-top: 20px;
+    border-radius: 8px;
+    border: 1px solid #4caf50;margin-bottom: 30px;">
+                        <h3 class="title"><div align="center" style="margin-bottom: 15px;margin-top: 15px;     font-size: 16px; font-weight: 500;">Recommend</div></h3>
                         <div class="col-sm-12 col-md-12" ng-repeat="item in dataTour" id="fade-in-out" >
                     <div class="card card-blog" >
                         <div class="card-image" ng-click="viewpackageforid(item.id)">
@@ -300,7 +332,7 @@
 }
                 </style>
                     </div>
-                </div>
+                <!-- </div> -->
                 </div>
             </div>
        
@@ -390,21 +422,21 @@
                 <div class="row">
                     <div class="col-md-4 " >
                     <!-- col-md-offset-1 -->
-                        <h5 style="color: #fff">Contacts</h5>
+                        <h2 style="color: #fff">Contact Us</h2>
                         <div class="contact" id="contact">             
                             <ul >
                                 <li class="">Address: <a>100/16 Moo 5 , Soi 1 Chalernprakiet Rd., T.Rassada Muang Phuket Thailand 83000</a></li>
-                                <li class="">Phones: <a href="tel:#" style="display: inline-block;">(+66) 096-6409949</a>; <a href="tel:#" style="display: inline-block;">087-2794723</a></li>
+                                <li class="">Phones: <a href="tel:#" style="display: inline-block;">(+66) 096-6409949</a></li>
                                 <li class="">E-mail: <a href="mailto:#" style="display: inline-block;"> sele@danatoursasia.com</a></li>
                             </ul>
                         </div>
                     </div>
                   <div class="col-md-8 ">
                       <div class="col-sm-12">                    
-                          <div class="section">
+                          <div class="">
                               <div class="title-area">
-                                  <h5 class="subtitle text-gray">Glad to Talk With You</h5>
-                                  <h2 style="color: #fff">Contact Us</h2>
+                                  <h5 class="subtitle text-gray" align="center">Glad to Talk With You</h5>
+                                  <!-- <h2 style="color: #fff">Contact Us</h2> -->
                                   <div style="width: 100%;text-align: center;"><div class="separator separator-danger">✻</div></div>
                               </div>
 
@@ -497,11 +529,54 @@
             </div>
         </div>
   <style >
+  .separator-danger {
+    color: #e78b90;
+}
+
+.separator {
+    color: #c5a47e;
+    margin: 0 auto 20px;
+    max-width: 240px;
+    text-align: center;
+    position: relative;
+}
+.separator-danger:before, .separator-danger:after {
+    border-color: #e78b90;
+}
+
+.separator:before {
+    float: left;
+}
+
+.separator:before, .separator:after {
+    display: block;
+    width: 40%;
+    content: " ";
+    margin-top: 10px;
+    border: 1px solid #c5a47e;
+}
+.separator:after {
+    float: right;
+}
+
+.separator:before, .separator:after {
+    display: block;
+    width: 40%;
+    content: " ";
+    margin-top: 10px;
+    border: 1px solid #c5a47e;
+}
+  .navbar, .navbar.navbar-default{
+    box-shadow: none !important;
+  }
   .product_nav {
+        border-radius: 8px;
+    border: 8px solid #fff;
     background: #fff;
     width: 100%;
-    border-top: 1px solid #55caf5;
-    border-bottom: 1px solid #55caf5;
+    font-weight: 400;
+    /*border-top: 1px solid #55caf5;*/
+    /*border-bottom: 1px solid #55caf5;*/
     /* box-shadow: 0 2px 2px #eee; */
     color: #000;
     /* height: 70px; */

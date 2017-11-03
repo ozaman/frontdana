@@ -5,6 +5,7 @@ var app = angular.module('myApp', ['ngCookies']);
     $scope.dataTour = [];
     $scope.dataTransfer = [];
     $scope.dataHotel = [];
+    $scope.dataHotelcheck = 0;
     console.log("aaaaaa")
     $http({
                 method : 'POST',
@@ -100,12 +101,12 @@ var app = angular.module('myApp', ['ngCookies']);
             });
     }
     $scope.getHotelforareaall = function(){
-        $scope.dataHotel = [];
-        angular.forEach($scope.hotel, function (z,i) {
-                if (i<=7) {
-                    $scope.dataHotel.push(z);
-                }
-            });
+        $scope.dataHotelcheck = 0;
+        // angular.forEach($scope.hotel, function (z,i) {
+        //         if (i<=7) {
+        //             $scope.dataHotel.push(z);
+        //         }
+        //     });
     }
     $scope.viewpackageforid = function(x){
         //alert("aaaa")
@@ -159,7 +160,10 @@ var app = angular.module('myApp', ['ngCookies']);
          angular.forEach($scope.tours, function (y,key) {
         console.log(key)
             if (y.city == x && key <= 8) {
-                $scope.dataTour.push(y);
+                if (d.show_web == 1 ) {
+                        $scope.dataTour.push(d);
+                 }
+                // $scope.dataTour.push(y);
             }
             
             
@@ -175,7 +179,10 @@ var app = angular.module('myApp', ['ngCookies']);
          angular.forEach($scope.transfer, function (y,key) {
         console.log(key)
             if (y.province == x && key <= 8) {
-                $scope.dataTransfer.push(y);
+                 if (d.show_web == 1 ) {
+                        $scope.dataTransfer.push(d);
+                 }
+                //$scope.dataTransfer.push(y);
             }
             
             
@@ -185,19 +192,29 @@ var app = angular.module('myApp', ['ngCookies']);
         //$window.location.href = 'new.php';
     }
     $scope.getHotelforarea = function(x){
-        $scope.dataHotel = [];
+        // $scope.dataHotel = 1;
         console.log(x)
+        if (x == 'Phuket') {
+           $scope.dataHotelcheck = 1; 
+        }
+        else if(x == 'Bangkok'){
+           $scope.dataHotelcheck = 2; 
+
+        }
+        else{
+            $scope.dataHotelcheck = 0; 
+        }
         //console.log($scope.allTour)
-         angular.forEach($scope.hotel, function (y,key) {
-        console.log(key)
-            if (y.province == x && key <= 8) {
-                $scope.dataHotel.push(y);
-            }
+        //  angular.forEach($scope.hotel, function (y,key) {
+        // console.log(key)
+        //     if (y.province == x && key <= 8) {
+        //         $scope.dataHotel.push(y);
+        //     }
             
             
                             
                                 
-                        });
+        //                 });
         //$window.location.href = 'new.php';
     }
      // $document.scrollTopAnimated(10 ,5000).then(function() {

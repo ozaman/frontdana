@@ -59,7 +59,8 @@
     </head>
 
     <body class="ecommerce-page" ng-app="myApp" ng-controller="view"> 
-        <nav class="navbar navbar-default navbar-fixed-top navbar-color-on-scroll navbar-transparent" color-on-scroll="100" id="sectionsNav">
+        <nav class="navbar " color-on-scroll="100" id="sectionsNav" style="    background: rgba(51, 122, 183, 0.68);
+    color: #fff;">
       <!-- navbar-fixed-top -->
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -77,56 +78,88 @@
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">                    
                         <li>
-                            <a href="" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                            <a href="index.php" >
                                 <i class="material-icons">home</i>
-                                <p> HOME</p>
+                                <span> HOME</span>
 
                             </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="/bootstrap-themes">All Categories</a>
-                                </li>
-                                <li>
-                                    <a href="/bootstrap-themes/admin-dashboard">Admin &amp; Dashboards</a>
-                                </li> 
-                            </ul>
+                            
                         </li>
                     </ul>            
                 </div>
             </div>
         </nav>
 
-        <div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(&quot;./data/files/hotel/ho1/1.jpg &quot;); background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);" id="page-headerpopular">
-        <div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(&quot;./data/files/hotel/ho2/1.jpg&quot;); background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);" id="page-headerpopular">
-        <div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(&quot;./data/files/hotel/ho3/1.jpg&quot;); background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);" id="page-headerpopular">
-        <div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(&quot;./data/files/hotel/ho4/1.jpg&quot;); background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);" id="page-headerpopular">
-        <div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(&quot;./data/files/hotel/ho5/1.jpg&quot;); background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);" id="page-headerpopular">
-        <div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(&quot;./data/files/hotel/ho7/1.jpg&quot;); background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);" id="page-headerpopular">
-        <div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(&quot;./data/files/hotel/ho8/1.jpg&quot;); background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);" id="page-headerpopular">
-        <div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(&quot;./data/files/hotel/ho9/1.jpg&quot;); background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);" id="page-headerpopular">
-        <div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(&quot;./data/files/hotel/ho10/1.jpg&quot;); background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);" id="page-headerpopular">
-        <div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(&quot;./data/files/hotel/ho11/1.jpg&quot;); background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);" id="page-headerpopular">
-        <div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(&quot;./data/files/hotel/ho12/1.jpg&quot;); background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);" id="page-headerpopular">
+        
+        <!-- <div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(&quot;./data/files/hotel/ho1/1.jpg&quot;); background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);" id="page-headerpopular"  ng-if="data == 1">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center " >                   
+                        <div class="brand">
+                            <h1 class="title">
+                                <div align="center"  style="     margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 1">WYNDHAM GRAND PHUKET KALIM BAY</div> 
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(&quot;./data/files/hotel/ho2/1.jpg&quot;); background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);" id="page-headerpopular" ng-if="data == 2">
 
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center " >
-                    <!-- col-md-offset-2 -->
+                  
                         <div class="brand">
-                           <!--  <h2  style="margin-top: -40px;margin-bottom: 0;color: #f44336;font-size: 20px;" ><span ng-bind="tours.sale_price_adult | currency:'':0" style="font-weight: 500;"></span><span style="color: #fff"><span style="color: #f44336">฿</span> / Package</span>
-                            </h2> -->
-                            <h1 class="title">
-                                <div align="center"  style="     margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 1">WYNDHAM GRAND PHUKET KALIM BAY</div>
+                            <h1 class="title">                               
                                 <div align="center" style="     margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 2">VILLA TANTAWAN</div>
-                                <div align="center" style="     margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 3">PHUKET GRACELAND RESORT AND SPA</div>
+                            </h1>
+
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(&quot;./data/files/hotel/ho3/1.jpg&quot;); background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);" id="page-headerpopular" ng-if="data == 3">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center " >
+                   
+                        <div class="brand">
+                            <h1 class="title">
+                                
+                                <div align="center" style="     margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 3">PHUKET GRACELAND RESORT AND SPA</div>  
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(&quot;./data/files/hotel/ho4/1.jpg&quot;); background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);" id="page-headerpopular" ng-if="data == 4">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center " >                    
+                        <div class="brand">
+                            <h1 class="title">                                
                                 <div align="center" style="     margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 4">NOVOTEL PHUKET RESORT</div>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(&quot;./data/files/hotel/ho5/1.jpg&quot;); background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);" id="page-headerpopular" ng-if="data == 5">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center " >
+                    
+                        <div class="brand">
+                            <h1 class="title">
+                                
                                 <div align="center" style="     margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 5">THE PAVILIONS PHUKET</div>
-                                <div align="center" style="     margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 7">PUMERIA RESORT PHUKET</div>
-                                <div align="center" style="     margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 8">SANTHIYA RESORT AND SPA</div>
-                                <div align="center" style="     margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 9">RAMADA PHUKET DEEVANA</div>
-                                <div align="center" style="     margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 10">SLEEP WITH ME DESIGN HOTEL@PATONG</div>
-                                <div align="center" style="     margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 11">ANGSANA LAGUNA PHUKET</div>
-                                <div align="center" style="     margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 12">LEBUA TOWER CLUB BANGKOK </div>
+                               
                                
                             </h1>
 
@@ -135,16 +168,128 @@
                     </div>
                 </div>
             </div>
-        </div> 
+        </div><div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(&quot;./data/files/hotel/ho7/1.jpg&quot;); background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);" id="page-headerpopular" ng-if="data == 7">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center " >                  
+                        <div class="brand">
+                            <h1 class="title">                                
+                                <div align="center" style="     margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 7">PUMERIA RESORT PHUKET</div>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(&quot;./data/files/hotel/ho8/1.jpg&quot;); background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);" id="page-headerpopular" ng-if="data == 8">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center " >
+                        <div class="brand">
+                            <h1 class="title">                                
+                                <div align="center" style="     margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 8">SANTHIYA RESORT AND SPA</div>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(&quot;./data/files/hotel/ho9/1.jpg&quot;); background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);" id="page-headerpopular" ng-if="data == 9">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center " >                   
+                        <div class="brand">
+                            <h1 class="title">
+                                <div align="center" style="margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 9">RAMADA PHUKET DEEVANA</div>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(&quot;./data/files/hotel/ho10/1.jpg&quot;); background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);" id="page-headerpopular" ng-if="data == 10">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center " >
+                        <div class="brand">
+                            <h1 class="title">                                
+                                <div align="center" style="     margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 10">SLEEP WITH ME DESIGN HOTEL@PATONG</div>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(&quot;./data/files/hotel/ho11/1.jpg&quot;); background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);" id="page-headerpopular" ng-if="data == 11">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center " >
+                        <div class="brand">
+                            <h1 class="title">                                
+                                <div align="center" style="margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 11">ANGSANA LAGUNA PHUKET</div>                               
+                            </h1>                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(&quot;./data/files/hotel/ho12/1.jpg&quot;); background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);" id="page-headerpopular" ng-if="data == 12">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center " >
+                        <div class="brand">
+                            <h1 class="title">                                
+                                <div align="center" style="margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 12">LEBUA TOWER CLUB BANGKOK </div>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  -->
 
 
        <div class="container">
                 <div class="row">
                     <div class="col-md-9 "  >
-                        <div class="brand" style="margin-top: 70px;   padding-top: 5px;">
-                            <!-- <h2  style="color: #f44336;font-size: 16px;" ><span ng-bind="tours.sale_price_adult | currency:'':0" style="font-weight: 500;"></span><span style="color: #333"><span style="color: #f44336">฿</span> / Package</span></h2> -->
-                            <h3 class="title"><div ng-bind="tours.name" align="center" style="     font-size: 16px; font-weight: 500;"></div></h3>
-                            <!-- <h4>IMRON PHUKET SPEEDBOAD TOUR  <b>LTD.</b> ,PART.</h4> -->
+                        <div class="brand">
+                            <!-- <h2  style="margin-top: -40px;margin-bottom: 0;color: #f44336;font-size: 20px;" ><span ng-bind="tours.cost_web | currency:'':0" style="font-weight: 500;"></span><span style="color: #fff"><span style="color: #f44336">฿</span> / Person</span></h2> -->
+                            <h1 class="title"><div  align="center" style="    color: #333;
+    border-radius: 8px;
+    /* border: 8px solid #fff; */
+    /* margin-bottom: 57px; */
+    /* background: rgba(51, 122, 183, 0.68); */
+    /* border-top: 1px dashed #4caf50; */
+    /* border-bottom: 1px dashed #4caf50; */
+    font-size: 20px;
+    font-weight: 500;">
+       
+                                <span align="center"  style="     margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 1">WYNDHAM GRAND PHUKET KALIM BAY</span> 
+                                                    
+                                <span align="center" style="     margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 2">VILLA TANTAWAN</span>
+                      
+                                
+                                <span align="center" style="     margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 3">PHUKET GRACELAND RESORT AND SPA</span>  
+                                                        
+                                <span align="center" style="     margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 4">NOVOTEL PHUKET RESORT</span>
+                            
+                                
+                                <span align="center" style="     margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 5">THE PAVILIONS PHUKET</span>
+                                            
+                                <span align="center" style="     margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 7">PUMERIA RESORT PHUKET</span>
+                                                  
+                                <span align="center" style="     margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 8">SANTHIYA RESORT AND SPA</span>
+               
+                                <span align="center" style="margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 9">RAMADA PHUKET DEEVANA</span>
+                                                 
+                                <span align="center" style="     margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 10">SLEEP WITH ME DESIGN HOTEL@PATONG</span>
+                                                
+                                <span align="center" style="margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 11">ANGSANA LAGUNA PHUKET</span>                               
+                                                
+                                <span align="center" style="margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 12">LEBUA TOWER CLUB BANGKOK </span>
+                            
+
+    </div></h1>
+                           
                         </div>
                         <div style="   background: rgba(255, 255, 255, 0.36);  padding: 15px 3px;    border-radius: 8px; margin-bottom: 20px;" >
                         <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -154,11 +299,11 @@
 
                             <div class="carousel-inner">
                                 <div class="item col-md-12" ng-repeat="slide in slides " ng-class="{active: $index == 0}">
-                                  <img ng-src="{{slide.image}}" alt="Los Angeles" style="width:100%;">
+                                  <img ng-src="{{slide.image}}" style="width:100%;">
                                 </div>
                             </div>
                             <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left"></span>                           
+                                <span class="glyphicon glyphicon-chevron-left"></span>
                                 <i class="material-icons">keyboard_arrow_left</i>
                             </a>
                             <a class="right carousel-control" href="#myCarousel" data-slide="next">
@@ -167,7 +312,6 @@
                             </a>
                         </div>
                     </div>
-
 
                     <div class="row">        
                         <div class="col-md-12">
@@ -178,17 +322,88 @@
                                             <span >Overview detail</span>
                                           
                                         </li>
-                                      <!-- <li class="cur">
-                                            <span >Free</span>
-                                           
-                                      <li class="cur">
-                                            <span>Introduction</span>
-                                            
-                                      </li> -->
-                                      
                                     </ul>
-                                    <div id="map"></div>
-                                    <script>
+                                    
+                                 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12" >
+                            <div class="card card-plain">
+                                <div class="">
+                                   <!--  <div class="timeline-heading" >
+                                                    <div class="" style=" width: 130px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+    /* background-color: #f44336; */
+    border-radius: 4px;
+    padding: 5px 0;
+    text-transform: uppercase;">Package</div>
+                                                </div>
+                                                <div class="timeline-body">
+                                                    <div ng-bind="tours.name" ></div>
+                                                    <div><span  style="color: #f44336;" ><span ng-bind="tours.cost_web | currency:'':0" style="font-weight: 500;"></span><span style="color: #333"><span style="color: #f44336">฿</span> / Person</span></span></div>
+                                                      
+                                                </div> -->
+                                    
+
+                                            
+                                                <div class="timeline-heading" >
+                                                    <div class="" style=" 
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+    /* background-color: #f44336; */
+    border-radius: 4px;
+    padding: 5px 0;
+    text-transform: uppercase;">Room Information</div>
+                                                </div>
+                                                <div class="timeline-body">
+                                                    <div ng-bind="room">
+                                                      
+                                                    </div>
+                                                      
+                                                </div>
+                                                <!-- <div style="color: #f44336; margin-top: 50px;">
+                                                   <h4 al ng-bind="tours.class" style="display: inline-block;"></h4>
+                                                   <h4 style="display: inline-block;float: right;" >8 person</h4>
+                                                </div> -->
+                                           
+                                       
+
+                                            
+                                            <div class="timeline-panel">
+                                                <div class="timeline-heading" >
+                                                    <div class="" style="
+    margin-top:85px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+    /* background-color: #f44336; */
+    border-radius: 4px;
+    padding: 5px 0;
+    text-transform: uppercase;">Location Informatio </div>
+                                                </div>
+                                                <div class="timeline-body" >
+                                                <div ng-bind="location" ></div>
+                                                </div>
+                                            </div>
+                                       
+                                      
+                                            
+                                </div>
+                            </div>
+                            <!-- <div id="map"></div> -->
+                                   <!--  <script>
       function initMap() {
         var uluru = {lat: 7.9135092, lng: 98.3663543};
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -200,37 +415,23 @@
           map: map
         });
       }
-    </script>
-    <script async defer
+    </script> -->
+   <!--  <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBliu9xPrAQcibmkptCc3bwlpM1M6MbgAs&callback=initMap">
-    </script>
-                                    <iframe width="600" height="450" frameborder="0" style="border:0"
-src="https://www.google.com/maps/embed/v1/undefined?origin=...&q=...&destination=...&center=...&zoom=...&key=..." allowfullscreen></iframe>
-                                    <!-- <div class="btn_orange" style="display:none">
-                                        <span ng-if="flagcheck == 1">Book Now</span>
-                                        <span ng-if="flagcheck == 2">จอง</span>
-                                        <span ng-if="flagcheck == 3">現在預訂</span></div> -->
-                                </div>
-                            </div>
-                        </div>
-                        <div style="padding: 15px">
-                            <!-- <div class="timeline-heading">
-                                            <h4 class="">Contacts</h4>
-                                        </div>
-                                        <div class="timeline-body">
-                                            <div class="">Phones: 
-                                                <a href="tel:#" style="display: inline-block;">(+66) 096-6409949</a><a href="tel:#" style="display: inline-block;">087-2794723</a>
-                                            </div>
-                                            <div class="">E-mail: 
-                                              <a href="mailto:#" style="display: inline-block;"> sele@danatoursasia.com</a>
-                                            </div>            
-                                        </div> -->
+    </script> -->
+                                   <!--  <iframe width="600" height="450" frameborder="0" style="border:0"
+src="https://www.google.com/maps/embed/v1/undefined?origin=...&q=...&destination=...&center=...&zoom=...&key=..." allowfullscreen></iframe> -->
                         </div>
                     </div>
                     </div>
-                    <div style="margin-top: 95px">
-                        <h3 class="title"><div align="center" style="     font-size: 16px; font-weight: 500;">Recommend</div></h3>
-                        <div class="col-md-3" >
+                    <div class="col-md-3" style="margin-top: 20px;
+    border-radius: 8px;
+    border: 1px solid #1171b7;margin-bottom: 30px;">
+                        <h3 class="title"><div align="center" style="    margin-top: 15px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 500;">Recommend</div></h3>
+                        
                             <div class="col-sm-12 col-md-12" id="fade-in-out" >
                                 <div class="card card-blog" >
                                     <div class="card-image" ng-click="viewpackageforid(1)">
@@ -249,8 +450,7 @@ src="https://www.google.com/maps/embed/v1/undefined?origin=...&q=...&destination
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-3" >
+                        
                             <div class="col-sm-12 col-md-12" id="fade-in-out" >
                                 <div class="card card-blog" >
                                     <div class="card-image" ng-click="viewpackageforid(2)">
@@ -269,8 +469,7 @@ src="https://www.google.com/maps/embed/v1/undefined?origin=...&q=...&destination
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-3" >
+                        
                             <div class="col-sm-12 col-md-12" id="fade-in-out" >
                                 <div class="card card-blog" >
                                     <div class="card-image" ng-click="viewpackageforid(3)">
@@ -288,8 +487,7 @@ src="https://www.google.com/maps/embed/v1/undefined?origin=...&q=...&destination
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-3" >
+                        
                             <div class="col-sm-12 col-md-12" id="fade-in-out" >
                                 <div class="card card-blog" >
                                     <div class="card-image" ng-click="viewpackageforid(4)">
@@ -307,8 +505,7 @@ src="https://www.google.com/maps/embed/v1/undefined?origin=...&q=...&destination
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-3" >
+                        
                             <div class="col-sm-12 col-md-12" id="fade-in-out" >
                                 <div class="card card-blog" >
                                     <div class="card-image" ng-click="viewpackageforid(5)">
@@ -326,8 +523,7 @@ src="https://www.google.com/maps/embed/v1/undefined?origin=...&q=...&destination
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-3" >
+                        
                             <div class="col-sm-12 col-md-12" id="fade-in-out" >
                                 <div class="card card-blog" >
                                     <div class="card-image" ng-click="viewpackageforid(7)">
@@ -345,8 +541,7 @@ src="https://www.google.com/maps/embed/v1/undefined?origin=...&q=...&destination
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-3" >
+                       
                             <div class="col-sm-12 col-md-12" id="fade-in-out" >
                                 <div class="card card-blog" >
                                     <div class="card-image" ng-click="viewpackageforid(8)">
@@ -364,8 +559,7 @@ src="https://www.google.com/maps/embed/v1/undefined?origin=...&q=...&destination
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-3" >
+                        
                             <div class="col-sm-12 col-md-12" id="fade-in-out" >
                                 <div class="card card-blog" >
                                     <div class="card-image" ng-click="viewpackageforid(9)">
@@ -383,8 +577,7 @@ src="https://www.google.com/maps/embed/v1/undefined?origin=...&q=...&destination
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-3" >
+                       
                             <div class="col-sm-12 col-md-12" id="fade-in-out" >
                                 <div class="card card-blog" >
                                     <div class="card-image" ng-click="viewpackageforid(10)">
@@ -402,8 +595,7 @@ src="https://www.google.com/maps/embed/v1/undefined?origin=...&q=...&destination
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-3" >
+                        
                             <div class="col-sm-12 col-md-12" id="fade-in-out" >
                                 <div class="card card-blog" >
                                     <div class="card-image" ng-click="viewpackageforid(11)">
@@ -421,8 +613,7 @@ src="https://www.google.com/maps/embed/v1/undefined?origin=...&q=...&destination
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-3" >
+                        
                             <div class="col-sm-12 col-md-12" id="fade-in-out" >
                                 <div class="card card-blog" >
                                     <div class="card-image" ng-click="viewpackageforid(12)">
@@ -440,7 +631,7 @@ src="https://www.google.com/maps/embed/v1/undefined?origin=...&q=...&destination
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                       
                         
                 <style >
                     .cost-pro p {
@@ -470,106 +661,28 @@ src="https://www.google.com/maps/embed/v1/undefined?origin=...&q=...&destination
             </div>
        
 
-         <!-- <div class="container-fluid" > 
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="card card-plain">
-                        <div class="card-content">
-                            <ul class="timeline timeline-simple">
-                                   
-                                <li class="timeline-inverted">
-                                    <div class="timeline-badge danger">
-                                        <i class="material-icons">receipt</i>
-                                    </div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <span class="label label-danger">Detail</span>
-                                        </div>
-                                        <div class="timeline-body">
-                                            <p ng-bind="tours.detail"></p>
-                                                      
-                                        </div>
-                                        <div style="color: #f44336; margin-top: 50px;">
-                                            <h4 al ng-bind="tours.class" style="display: inline-block;"></h4>
-                                            <h4 style="display: inline-block;float: right;" >8 person</h4>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li class="timeline-inverted">
-                                    <div class="timeline-badge success">
-                                        <i class="material-icons">alarm</i>
-                                    </div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <span class="label label-success">Program </span>
-                                        </div>
-                                        <div class="timeline-body" >
-                                            <div id="repeatprogram"></div>
-                                                  
-                                        </div>
-                                    </div>
-                                </li>
-                                        
-                                <li class="timeline-inverted">
-                                    <div class="timeline-badge info">
-                                        <i class="material-icons">description</i>
-                                    </div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <span class="label label-info">condition</span>
-                                        </div>
-                                        <div class="timeline-body">
-                                            <div id="repeatconditions"></div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="timeline-inverted">
-                                    <div class="timeline-badge warning">
-                                        <i class="material-icons">perm_phone_msg</i>
-                                    </div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <span class="label label-warning">Contacts</span>
-                                        </div>
-                                        <div class="timeline-body">
-                                            <div class="">Phones: 
-                                                <a href="tel:#" style="display: inline-block;">(+66) 096-6409949</a><a href="tel:#" style="display: inline-block;">087-2794723</a>
-                                            </div>
-                                            <div class="">E-mail: 
-                                              <a href="mailto:#" style="display: inline-block;"> sele@danatoursasia.com</a>
-                                            </div>            
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div> -->
+         
                 
         <div class="subscribe-line subscribe-line-image" data-parallax="true" style="background-image: url(&#39;files/images/bg_body.jpg&#39;);" id="footers">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 " >
                     <!-- col-md-offset-1 -->
-                        <h5 style="color: #fff">Contacts</h5>
+                        <h2 style="color: #fff;margin-top: 0">Contact Us</h2>
                         <div class="contact" id="contact">             
                             <ul >
                                 <li class="">Address: <a>100/16 Moo 5 , Soi 1 Chalernprakiet Rd., T.Rassada Muang Phuket Thailand 83000</a></li>
-                                <li class="">Phones: <a href="tel:#" style="display: inline-block;">(+66) 096-6409949</a>; <a href="tel:#" style="display: inline-block;">087-2794723</a></li>
+                                <li class="">Phones: <a href="tel:#" style="display: inline-block;">(+66) 096-6409949</a></li>
                                 <li class="">E-mail: <a href="mailto:#" style="display: inline-block;"> sele@danatoursasia.com</a></li>
                             </ul>
                         </div>
                     </div>
                   <div class="col-md-8 ">
                       <div class="col-sm-12">                    
-                          <div class="section">
+                          <div class="">
                               <div class="title-area">
-                                  <h5 class="subtitle text-gray">Glad to Talk With You</h5>
-                                  <h2 style="color: #fff">Contact Us</h2>
+                                  <h5 class="subtitle text-gray" align="center">Glad to Talk With You</h5>
+                                  <!-- <h2 style="color: #fff">Contact Us</h2> -->
                                   <div style="width: 100%;text-align: center;"><div class="separator separator-danger">✻</div></div>
                               </div>
 
@@ -648,11 +761,11 @@ src="https://www.google.com/maps/embed/v1/undefined?origin=...&q=...&destination
                     </div>
                     <div class="modal-body">
                         <div style="padding: 20px;padding-top: 20px">
-                            <h5 style="color: #fff;font-size: 20px;">Contacts</h5>
+                            <h2 style="color: #fff">Contact Us</h2>
                             <div class="contact">             
                                 <ul style="    padding-left: 0;">
                                     <li class="">Address: <a>100/16 Moo 5 , Soi 1 Chalernprakiet Rd., T.Rassada Muang Phuket Thailand 83000</a></li>
-                                    <li class="">Phones: <a href="tel:#" style="display: inline-block;">(+66) 096-6409949</a>; <a href="tel:#" style="display: inline-block;">087-2794723</a></li>
+                                    <li class="">Phones: <a href="tel:#" style="display: inline-block;">(+66) 081-0808804</a> 
                                     <li class="">E-mail: <a href="mailto:#" style="display: inline-block;"> sele@danatoursasia.com</a></li>
                                 </ul>
                             </div>
@@ -661,12 +774,54 @@ src="https://www.google.com/maps/embed/v1/undefined?origin=...&q=...&destination
                 </div>
             </div>
         </div>
-  <style >
+  <style >.separator-danger {
+    color: #e78b90;
+}
+
+.separator {
+    color: #c5a47e;
+    margin: 0 auto 20px;
+    max-width: 240px;
+    text-align: center;
+    position: relative;
+}
+.separator-danger:before, .separator-danger:after {
+    border-color: #e78b90;
+}
+
+.separator:before {
+    float: left;
+}
+
+.separator:before, .separator:after {
+    display: block;
+    width: 40%;
+    content: " ";
+    margin-top: 10px;
+    border: 1px solid #c5a47e;
+}
+.separator:after {
+    float: right;
+}
+
+.separator:before, .separator:after {
+    display: block;
+    width: 40%;
+    content: " ";
+    margin-top: 10px;
+    border: 1px solid #c5a47e;
+}
+  .navbar, .navbar.navbar-default{
+    box-shadow: none !important;
+  }
   .product_nav {
+        border-radius: 8px;
+    border: 8px solid #fff;
     background: #fff;
     width: 100%;
-    border-top: 1px solid #55caf5;
-    border-bottom: 1px solid #55caf5;
+    font-weight: 400;
+    /*border-top: 1px solid #55caf5;*/
+    /*border-bottom: 1px solid #55caf5;*/
     /* box-shadow: 0 2px 2px #eee; */
     color: #000;
     /* height: 70px; */

@@ -10,25 +10,9 @@ var app = angular.module('myApp', ['ngCookies','ui.bootstrap']);
   // var slides = $scope.slides = [];
   // var currIndex = 0;
      // $scope.myInterval = 3000;
-  $scope.slides = [
-    {
-      image: './files/images/1.png'
-    },
-    {
-      image: './files/images/2.jpg'
-    },
-    {
-      image: './files/images/3.jpg'
-    },
-    {
-      image: './files/images/43.png'
-    },
-    {
-      image: './files/images/64.jpg'
-    }
-  ];
+ 
   //var slides = $scope.slides;
-  console.log($scope.slides)
+  
       $scope.err = $location.search().err;
             $scope.data = JSON.parse($location.search().data);
             console.log($scope.data)
@@ -139,7 +123,7 @@ var app = angular.module('myApp', ['ngCookies','ui.bootstrap']);
  // var currIndex = 0;
       $http({
                             method : 'POST',
-                            url : "php/getGallery.php",
+                            url : "php/getGallerytransfer.php",
                             data: $.param({"id": $scope.data}),
                             headers: {'Content-Type': 'application/x-www-form-urlencoded'}
                             }).success(function(res){

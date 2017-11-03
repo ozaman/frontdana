@@ -23,7 +23,8 @@
     </head>
 
     <body class="ecommerce-page" ng-app="myApp" ng-controller="view"> 
-        <nav class="navbar navbar-default navbar-fixed-top navbar-color-on-scroll navbar-transparent" color-on-scroll="100" id="sectionsNav">
+        <nav class="navbar " color-on-scroll="100" id="sectionsNav" style="    background: rgba(255, 94, 0, 0.53);
+    color: #fff;">
       <!-- navbar-fixed-top -->
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -60,39 +61,50 @@
             </div>
         </nav>
 
-        <div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(&quot;./data/files/upload/transfer/icon/{{tours.icon}}&quot;); background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);" id="page-headerpopular">
+        <!-- <div class="page-header header-filter header-small" data-parallax="true" style="background-image: url(&quot;./data/files/upload/transfer/icon/{{tours.icon}}&quot;); background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);" id="page-headerpopular">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center " >
-                    <!-- col-md-offset-2 -->
+                   
                         <div class="brand">
-                            <h2  style="margin-top: -40px;margin-bottom: 0;color: #f44336;font-size: 20px;" ><span ng-bind="tours.sale_price_adult | currency:'':0" style="font-weight: 500;"></span><span style="color: #fff"><span style="color: #f44336">฿</span> / Package</span></h2>
+                            <h2  style="margin-top: -40px;margin-bottom: 0;color: #f44336;font-size: 20px;" >
+                                <span ng-if="tours.province == 'Phuket' " style="font-weight: 500;">600</span>
+                                <span ng-if="tours.province == 'Bangkok' " style="font-weight: 500;">800</span>
+                                <span style="color: #fff"><span style="color: #f44336">฿</span> / Package</span></h2>
                             <h1 class="title"><div ng-bind="tours.name" align="center" style="     margin-top: -25px;font-size: 20px; font-weight: 500;"></div></h1>
                            
                         </div>
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>  -->
 
 
        <div class="container">
                 <div class="row">
                     <div class="col-md-9 "  >
-                        <div class="brand" style="margin-top: 70px;   padding-top: 5px;">
-                            <!-- <h2  style="color: #f44336;font-size: 16px;" ><span ng-bind="tours.sale_price_adult | currency:'':0" style="font-weight: 500;"></span><span style="color: #333"><span style="color: #f44336">฿</span> / Package</span></h2> -->
-                            <h3 class="title"><div ng-bind="tours.name" align="center" style="     font-size: 16px; font-weight: 500;"></div></h3>
-                            <!-- <h4>IMRON PHUKET SPEEDBOAD TOUR  <b>LTD.</b> ,PART.</h4> -->
+                        <div class="brand">
+                            <!-- <h2  style="margin-top: -40px;margin-bottom: 0;color: #f44336;font-size: 20px;" ><span ng-bind="tours.cost_web | currency:'':0" style="font-weight: 500;"></span><span style="color: #fff"><span style="color: #f44336">฿</span> / Person</span></h2> -->
+                            <h1 class="title"><div ng-bind="tours.name" align="center" style="    color: #333;
+    /* border-radius: 8px; */
+    /* border: 8px solid #fff; */
+    /* margin-bottom: 57px; */
+    /* background: #ff9800; */
+    /* border-top: 1px dashed #4caf50; */
+    /* border-bottom: 1px dashed #4caf50; */
+    font-size: 20px;
+    font-weight: 500;"></div></h1>
+                           
                         </div>
                         <div style="   background: rgba(255, 255, 255, 0.36);  padding: 15px 3px;    border-radius: 8px; margin-bottom: 20px;" >
                         <div id="myCarousel" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
-                                <li data-target="#myCarousel" data-slide-to="{{$index}}" class="active" ng-repeat="slide in slides " ng-class="{active: $index == 0}""></li>
+                                <li data-target="#myCarousel" data-slide-to="{{$index}}" class="active" ng-repeat="slide in datagallery " ng-class="{active: $index == 0}""></li>
                             </ol>
 
                             <div class="carousel-inner">
-                                <div class="item col-md-12" ng-repeat="slide in slides " ng-class="{active: $index == 0}">
-                                  <img ng-src="{{slide.image}}" alt="Los Angeles" style="width:100%;">
+                                <div class="item col-md-12" ng-repeat="slide in datagallery " ng-class="{active: $index == 0}">
+                                  <img ng-src="./data/files/upload/transfer/gallery/{{slide.gallery}}"  style="width:100%;">
                                 </div>
                             </div>
                             <a class="left carousel-control" href="#myCarousel" data-slide="prev">
@@ -132,24 +144,68 @@
                                 </div>
                             </div>
                         </div>
-                        <div style="padding: 15px">
-                            <!-- <div class="timeline-heading">
-                                            <h4 class="">Contacts</h4>
-                                        </div>
-                                        <div class="timeline-body">
-                                            <div class="">Phones: 
-                                                <a href="tel:#" style="display: inline-block;">(+66) 096-6409949</a><a href="tel:#" style="display: inline-block;">087-2794723</a>
-                                            </div>
-                                            <div class="">E-mail: 
-                                              <a href="mailto:#" style="display: inline-block;"> sele@danatoursasia.com</a>
-                                            </div>            
-                                        </div> -->
+                        <div class="col-md-12" >
+                            <div class="card card-plain">
+                                 <div class="timeline-heading" >
+                                                    <div class="" style=" width: 130px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+    /* background-color: #f44336; */
+    border-radius: 4px;
+    padding: 5px 0;
+    text-transform: uppercase;">Package</div>
+                                                </div>
+                                                <div class="timeline-body">
+                                                    <div ng-bind="tours.name" ></div>
+                                                    <div>
+                                                        <span  style="color: #f44336;" 
+                                                        >
+                                                         <span ng-if="tours.province == 'Phuket' " style="font-weight: 500;">600</span>
+                                <span ng-if="tours.province == 'Bangkok' " style="font-weight: 500;">800</span>
+                                <span style="color: #333"><span style="color: #f44336">฿</span> / Package</span>
+                                                        </span></div>
+                                                      
+                                                </div>
+                            <div id="facilities">
+                    <div align="left" style="width: 130px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+    /* background-color: #f44336; */
+    border-radius: 4px;
+    padding: 5px 0;
+    text-transform: uppercase;">
+                        <span class="lng-facilitiy">Facilitiy</span>
+                    </div>
+                    <div style="padding: 3px 3px;  border-radius: 8px; ">
+                        <div style="margin-left: 3%; padding-top: 9px;">
+                            <b>1.</b> 
+                            <img src="https://dotdotdottrip.com/files/img/air.png" style="margin: 8px;"> 
+                            <span class="lng-conditioner">Air Conditioner</span>                                        
+                        </div>
+                        <div style="margin-left: 3%;padding-bottom: 9px;">
+                            <b>2.</b> 
+                            <i class="fa fa-music" aria-hidden="true" style="margin: 8px;"></i> 
+                            <span class="lng-audio-player">Audio Player</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
                         </div>
                     </div>
                     </div>
-                    <div style="margin-top: 95px">
-                        <h3 class="title"><div align="center" style="     font-size: 16px; font-weight: 500;">Recommend</div></h3>
-                    <div class="col-md-3" >
+                    <!-- <div style="margin-top: 95px"> -->
+                        
+                    <div class="col-md-3" style="margin-top: 20px;
+    border-radius: 8px;
+    border: 1px solid #ff9800;    margin-bottom: 29px;">
                         <div class="col-sm-12 col-md-12" ng-repeat="item in dataTour" id="fade-in-out" >
                     <div class="card card-blog" >
                         <div class="card-image" ng-click="viewpackageforid(item.id)">
@@ -202,97 +258,15 @@
 }
                 </style>
                     </div>
-                </div>
+                <!-- </div> -->
                 </div>
             </div>
-       
-
-         <!-- <div class="container-fluid" > 
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="card card-plain">
-                        <div class="card-content">
-                            <ul class="timeline timeline-simple">
-                                   
-                                <li class="timeline-inverted">
-                                    <div class="timeline-badge danger">
-                                        <i class="material-icons">receipt</i>
-                                    </div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <span class="label label-danger">Detail</span>
-                                        </div>
-                                        <div class="timeline-body">
-                                            <p ng-bind="tours.detail"></p>
-                                                      
-                                        </div>
-                                        <div style="color: #f44336; margin-top: 50px;">
-                                            <h4 al ng-bind="tours.class" style="display: inline-block;"></h4>
-                                            <h4 style="display: inline-block;float: right;" >8 person</h4>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li class="timeline-inverted">
-                                    <div class="timeline-badge success">
-                                        <i class="material-icons">alarm</i>
-                                    </div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <span class="label label-success">Program </span>
-                                        </div>
-                                        <div class="timeline-body" >
-                                            <div id="repeatprogram"></div>
-                                                  
-                                        </div>
-                                    </div>
-                                </li>
-                                        
-                                <li class="timeline-inverted">
-                                    <div class="timeline-badge info">
-                                        <i class="material-icons">description</i>
-                                    </div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <span class="label label-info">condition</span>
-                                        </div>
-                                        <div class="timeline-body">
-                                            <div id="repeatconditions"></div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="timeline-inverted">
-                                    <div class="timeline-badge warning">
-                                        <i class="material-icons">perm_phone_msg</i>
-                                    </div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <span class="label label-warning">Contacts</span>
-                                        </div>
-                                        <div class="timeline-body">
-                                            <div class="">Phones: 
-                                                <a href="tel:#" style="display: inline-block;">(+66) 096-6409949</a><a href="tel:#" style="display: inline-block;">087-2794723</a>
-                                            </div>
-                                            <div class="">E-mail: 
-                                              <a href="mailto:#" style="display: inline-block;"> sele@danatoursasia.com</a>
-                                            </div>            
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div> -->
-                
         <div class="subscribe-line subscribe-line-image" data-parallax="true" style="background-image: url(&#39;files/images/bg_body.jpg&#39;);" id="footers">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 " >
                     <!-- col-md-offset-1 -->
-                        <h5 style="color: #fff">Contacts</h5>
+                        <h2 style="color: #fff;margin-top: 0;" >Contact Us</h2>
                         <div class="contact" id="contact">             
                             <ul >
                                 <li class="">Address: <a>100/16 Moo 5 , Soi 1 Chalernprakiet Rd., T.Rassada Muang Phuket Thailand 83000</a></li>
@@ -303,10 +277,10 @@
                     </div>
                   <div class="col-md-8 ">
                       <div class="col-sm-12">                    
-                          <div class="section">
+                          <div class="">
                               <div class="title-area">
-                                  <h5 class="subtitle text-gray">Glad to Talk With You</h5>
-                                  <h2 style="color: #fff">Contact Us</h2>
+                                  <h5 class="subtitle text-gray" align="center">Glad to Talk With You</h5>
+                                  <!-- <h2 style="color: #fff">Contact Us</h2> -->
                                   <div style="width: 100%;text-align: center;"><div class="separator separator-danger">✻</div></div>
                               </div>
 
@@ -389,7 +363,7 @@
                             <div class="contact">             
                                 <ul style="    padding-left: 0;">
                                     <li class="">Address: <a>100/16 Moo 5 , Soi 1 Chalernprakiet Rd., T.Rassada Muang Phuket Thailand 83000</a></li>
-                                    <li class="">Phones: <a href="tel:#" style="display: inline-block;">(+66) 096-6409949</a>; <a href="tel:#" style="display: inline-block;">087-2794723</a></li>
+                                    <li class="">Phones: <a href="tel:#" style="display: inline-block;">(+66) 081-0808804</a> 
                                     <li class="">E-mail: <a href="mailto:#" style="display: inline-block;"> sele@danatoursasia.com</a></li>
                                 </ul>
                             </div>
@@ -398,12 +372,54 @@
                 </div>
             </div>
         </div>
-  <style >
+  <style >.separator-danger {
+    color: #e78b90;
+}
+
+.separator {
+    color: #c5a47e;
+    margin: 0 auto 20px;
+    max-width: 240px;
+    text-align: center;
+    position: relative;
+}
+.separator-danger:before, .separator-danger:after {
+    border-color: #e78b90;
+}
+
+.separator:before {
+    float: left;
+}
+
+.separator:before, .separator:after {
+    display: block;
+    width: 40%;
+    content: " ";
+    margin-top: 10px;
+    border: 1px solid #c5a47e;
+}
+.separator:after {
+    float: right;
+}
+
+.separator:before, .separator:after {
+    display: block;
+    width: 40%;
+    content: " ";
+    margin-top: 10px;
+    border: 1px solid #c5a47e;
+}
+  .navbar, .navbar.navbar-default{
+    box-shadow: none !important;
+  }
   .product_nav {
+        border-radius: 8px;
+    border: 8px solid #fff;
     background: #fff;
     width: 100%;
-    border-top: 1px solid #55caf5;
-    border-bottom: 1px solid #55caf5;
+    font-weight: 400;
+    /*border-top: 1px solid #55caf5;*/
+    /*border-bottom: 1px solid #55caf5;*/
     /* box-shadow: 0 2px 2px #eee; */
     color: #000;
     /* height: 70px; */

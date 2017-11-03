@@ -13,189 +13,285 @@ var app = angular.module('myApp', ['ngCookies','ui.bootstrap']);
      // $scope.myInterval = 3000;
   $scope.slides1 = [
     {
-      image: './data/files/hotel/ho1/1.png'
+      image: 'data/files/hotel/ho1/1.jpg'
     },
     {
-      image: './data/files/hotel/ho1/1.png'
+      image: 'data/files/hotel/ho1/2.jpg'
     },
     {
-      image: './data/files/hotel/ho1/1.png'
+      image: 'data/files/hotel/ho1/3.jpg'
     },
     {
-      image: './data/files/hotel/ho1/1.png'
+      image: 'data/files/hotel/ho1/4.jpg'
     },
     {
-      image: './data/files/hotel/ho1/1.png'
+      image: 'data/files/hotel/ho1/5.jpg'
     }
   ];
   $scope.slides2 = [
     {
-      image: './data/files/hotel/ho2/1.png'
+      image: 'data/files/hotel/ho2/1.jpg'
     },
     {
-      image: './data/files/hotel/ho2/1.png'
+      image: 'data/files/hotel/ho2/2.jpg'
     },
     {
-      image: './data/files/hotel/ho2/1.png'
+      image: 'data/files/hotel/ho2/3.jpg'
     },
     {
-      image: './data/files/hotel/ho2/1.png'
+      image: 'data/files/hotel/ho2/4.jpg'
     },
     {
-      image: './data/files/hotel/ho2/1.png'
+      image: 'data/files/hotel/ho2/5.jpg'
     }
   ];
   $scope.slides3 = [
     {
-      image: './data/files/hotel/ho3/1.png'
+      image: 'data/files/hotel/ho3/1.jpg'
     },
     {
-      image: './data/files/hotel/ho3/1.png'
+      image: 'data/files/hotel/ho3/2.jpg'
     },
     {
-      image: './data/files/hotel/ho3/1.png'
+      image: 'data/files/hotel/ho3/3.jpg'
     },
     {
-      image: './data/files/hotel/ho3/1.png'
+      image: 'data/files/hotel/ho3/4.jpg'
     },
     {
-      image: './data/files/hotel/ho3/1.png'
+      image: 'data/files/hotel/ho3/5.jpg'
+    }
+    ,{
+      image: 'data/files/hotel/ho3/6.jpg'
     }
   ];
   $scope.slides4 = [
     {
-      image: './data/files/hotel/ho4/1.png'
+      image: 'data/files/hotel/ho4/1.jpg'
     },
     {
-      image: './data/files/hotel/ho4/1.png'
+      image: 'data/files/hotel/ho4/2.jpg'
     },
     {
-      image: './data/files/hotel/ho4/1.png'
+      image: 'data/files/hotel/ho4/3.jpg'
     },
     {
-      image: './data/files/hotel/ho4/1.png'
+      image: 'data/files/hotel/ho4/4.jpg'
     },
     {
-      image: './data/files/hotel/ho4/1.png'
+      image: 'data/files/hotel/ho4/5.jpg'
+    },
+    {
+      image: 'data/files/hotel/ho4/6.jpg'
+    },
+    {
+      image: 'data/files/hotel/ho4/7.jpg'
     }
   ];
   $scope.slides5 = [
     {
-      image: './data/files/hotel/ho5/1.png'
+      image: 'data/files/hotel/ho5/1.jpg'
     },
     {
-      image: './data/files/hotel/ho5/1.png'
+      image: 'data/files/hotel/ho5/2.jpg'
     },
     {
-      image: './data/files/hotel/ho5/1.png'
+      image: 'data/files/hotel/ho5/3.jpg'
     },
     {
-      image: './data/files/hotel/ho5/1.png'
+      image: 'data/files/hotel/ho5/4.jpg'
     },
     {
-      image: './data/files/hotel/ho5/1.png'
+      image: 'data/files/hotel/ho5/5.jpg'
     }
   ];
   $scope.slides7 = [
     {
-      image: './data/files/hotel/ho7/1.png'
+      image: 'data/files/hotel/ho7/1.jpg'
     },
     {
-      image: './data/files/hotel/ho7/1.png'
+      image: 'data/files/hotel/ho7/2.jpg'
     },
     {
-      image: './data/files/hotel/ho7/1.png'
+      image: 'data/files/hotel/ho7/3.jpg'
     },
     {
-      image: './data/files/hotel/ho7/1.png'
+      image: 'data/files/hotel/ho7/4.jpg'
     },
     {
-      image: './data/files/hotel/ho7/1.png'
+      image: 'data/files/hotel/ho7/5.jpg'
+    },
+    {
+      image: 'data/files/hotel/ho7/6.jpg'
     }
   ];
   $scope.slides8 = [
     {
-      image: './data/files/hotel/ho8/1.png'
+      image: 'data/files/hotel/ho8/1.jpg'
     },
     {
-      image: './data/files/hotel/ho8/1.png'
+      image: 'data/files/hotel/ho8/2.jpg'
     },
     {
-      image: './data/files/hotel/ho8/1.png'
+      image: 'data/files/hotel/ho8/3.jpg'
     },
     {
-      image: './data/files/hotel/ho8/1.png'
+      image: 'data/files/hotel/ho8/4.jpg'
     },
     {
-      image: './data/files/hotel/ho8/1.png'
+      image: 'data/files/hotel/ho8/5.jpg'
+    },
+    {
+      image: 'data/files/hotel/ho8/6.jpg'
+    },
+    {
+      image: 'data/files/hotel/ho8/7.jpg'
+    },
+    {
+      image: 'data/files/hotel/ho8/8.jpg'
+    },
+    {
+      image: 'data/files/hotel/ho8/9.jpg'
+    },
+    {
+      image: 'data/files/hotel/ho8/10.jpg'
     }
   ];
   $scope.slides9 = [
     {
-      image: './data/files/hotel/ho9/1.png'
+      image: 'data/files/hotel/ho9/1.jpg'
     },
     {
-      image: './data/files/hotel/ho9/1.png'
+      image: 'data/files/hotel/ho9/2.jpg'
     },
     {
-      image: './data/files/hotel/ho9/1.png'
+      image: 'data/files/hotel/ho9/3.jpg'
     },
     {
-      image: './data/files/hotel/ho9/1.png'
+      image: 'data/files/hotel/ho9/4.jpg'
     },
     {
-      image: './data/files/hotel/ho9/1.png'
+      image: 'data/files/hotel/ho9/5.jpg'
+    },
+    {
+      image: 'data/files/hotel/ho9/6.jpg'
+    },
+    {
+      image: 'data/files/hotel/ho9/7.jpg'
+    },
+    {
+      image: 'data/files/hotel/ho9/8.jpg'
+    },
+    {
+      image: 'data/files/hotel/ho9/9.jpg'
+    },
+    {
+      image: 'data/files/hotel/ho9/10.jpg'
+    },
+    {
+      image: 'data/files/hotel/ho9/11.jpg'
+    },
+    {
+      image: 'data/files/hotel/ho9/12.jpg'
+    },
+    {
+      image: 'data/files/hotel/ho9/13.jpg'
+    },
+    {
+      image: 'data/files/hotel/ho9/14.jpg'
     }
   ];
   $scope.slides10 = [
     {
-      image: './data/files/hotel/ho10/1.png'
+      image: 'data/files/hotel/ho10/1.jpg'
     },
     {
-      image: './data/files/hotel/ho10/1.png'
+      image: 'data/files/hotel/ho10/2.jpg'
     },
     {
-      image: './data/files/hotel/ho10/1.png'
+      image: 'data/files/hotel/ho10/3.jpg'
     },
     {
-      image: './data/files/hotel/ho10/1.png'
+      image: 'data/files/hotel/ho10/4.jpg'
     },
     {
-      image: './data/files/hotel/ho10/1.png'
+      image: 'data/files/hotel/ho10/5.jpg'
+    },
+    {
+      image: 'data/files/hotel/ho10/6.jpg'
+    },
+    {
+      image: 'data/files/hotel/ho10/7.jpg'
     }
   ];
   $scope.slides11 = [
     {
-      image: './data/files/hotel/ho11/1.png'
+      image: 'data/files/hotel/ho11/1.jpg'
     },
     {
-      image: './data/files/hotel/ho11/1.png'
+      image: 'data/files/hotel/ho11/2.jpg'
     },
     {
-      image: './data/files/hotel/ho11/1.png'
+      image: 'data/files/hotel/ho11/3.jpg'
     },
     {
-      image: './data/files/hotel/ho11/1.png'
+      image: 'data/files/hotel/ho11/4.jpg'
     },
     {
-      image: './data/files/hotel/ho11/1.png'
+      image: 'data/files/hotel/ho11/5.jpg'
+    },
+    {
+      image: 'data/files/hotel/ho11/6.jpg'
+    },
+    {
+      image: 'data/files/hotel/ho11/7.jpg'
+    },
+    {
+      image: 'data/files/hotel/ho11/8.jpg'
+    },
+    {
+      image: 'data/files/hotel/ho11/9.jpg'
+    },
+    {
+      image: 'data/files/hotel/ho11/10.jpg'
+    },
+    {
+      image: 'data/files/hotel/ho11/11.jpg'
+    },
+    {
+      image: 'data/files/hotel/ho11/12.jpg'
+    },
+    {
+      image: 'data/files/hotel/ho11/13.jpg'
+    },
+    {
+      image: 'data/files/hotel/ho11/14.jpg'
+    },
+    {
+      image: 'data/files/hotel/ho11/15.jpg'
     }
   ];
   $scope.slides12 = [
     {
-      image: './data/files/hotel/ho12/1.png'
+      image: 'data/files/hotel/ho12/1.jpg'
     },
     {
-      image: './data/files/hotel/ho12/1.png'
+      image: 'data/files/hotel/ho12/2.jpg'
     },
     {
-      image: './data/files/hotel/ho12/1.png'
+      image: 'data/files/hotel/ho12/3.jpg'
     },
     {
-      image: './data/files/hotel/ho12/1.png'
+      image: 'data/files/hotel/ho12/4.jpg'
     },
     {
-      image: './data/files/hotel/ho12/1.png'
+      image: 'data/files/hotel/ho12/5.jpg'
+    },
+    {
+      image: 'data/files/hotel/ho12/6.jpg'
+    },
+    {
+      image: 'data/files/hotel/ho12/6.jpg'
     }
   ];
   //var slides = $scope.slides;
@@ -214,6 +310,8 @@ var app = angular.module('myApp', ['ngCookies','ui.bootstrap']);
             }
             else if ($scope.data == 4) {
               $scope.slides = $scope.slides4;
+              $scope.room = 'Novotel Phuket Resort houses 215 rooms, each with private balcony and stunning views of the Andaman Sea and Patong. Each room incorporates the local culture and style through careful interior design and decoration. All rooms are equipped with standard features such as individually controlled air conditioning, IDD/STD telephone, Mini-bar, Tea and coffee making facilities, hairdryer, in-room safe, security card lock, satellite TV and 24-hour room service.';
+              $scope.location = 'Novotel Phuket Resort is nestled in the hills above the pristine waters of picturesque Kalim Bay, Patong. It sits 10 metres away from the crystal clear waters and white sandy beach yet still within easy reach of Patong exciting nightlife and shopping.';
             }
             else if ($scope.data == 5) {
               $scope.slides = $scope.slides5;
@@ -236,73 +334,14 @@ var app = angular.module('myApp', ['ngCookies','ui.bootstrap']);
             else if ($scope.data == 12) {
               $scope.slides = $scope.slides12;
             }
+            console.log($scope.slides)
             $scope.datagallery = '';
             $scope.tourpopular = [];
     $scope.dataTour = [];
     $scope.dataTransfer = [];
     $scope.dataHotel = [];
 
-            $http({
-                method : 'POST',
-                url : "php/getTourbyid.php",
-                data: $.param({'id': $scope.data}),
-                headers: {'Content-Type': 'application/x-www-form-urlencoded'}
-                }).success(function(res){
-                 console.log(res)
-                 $scope.tours = res[0];
-                 if (res[0].show_recommend == 1) {
-                        $scope.echekrecommends = true;
-                 }
-                  if (res[0].show_popular == 1) {
-                        $scope.echekpopulars = true;
-                 }
-                 
-                 $scope.program = res[0].program.split('\n');
-                 $scope.conditions = res[0].conditions.split('\n');
-                
-                 
-                  for (var i = 0; i < $scope.program.length; i++) {
-                    if ($scope.program[i] != "") {
-                       
-                      $('#repeatprogram').append('<p class="time">'+$scope.program[i]+'</p>')
-                    }
-                    else{
-                        $('#repeatprogram').append('\n')
-                      
-                      
-                    }
-                 }
-                 for (var i = 0; i < $scope.conditions.length; i++) {
-                    if ($scope.conditions[i] != "") {
-                       
-                      $('#repeatconditions').append('<p class="time">'+$scope.conditions[i]+'</p>')
-                    }
-                    else{
-                        $('#repeatconditions').append('\n')
-                      
-                      
-                    }
-                 }
-                       //console.log($scope.propush)         
-                       //$('#repeatprogram').html($scope.propush)
-                  // angular.forEach( $scope.repeatprogram, function (y) {
-                  //   console.log(y)
-                  //     if (y == '') {
-                        
-                  //     }
-                  //     else{
-                         
-                  //     }
-                      
-                  // });
-                 //console.log($scope.tours)
-                 $scope.program = res[0].program;
-                 //console.log($scope.program)
-                  $scope.setIndex = function(index){
-                            $scope.tourData = res[index] ;
-                        }
-                       
-            });
+            
                 $http({
                 method : 'POST',
                 url : "php/getPackage.php",

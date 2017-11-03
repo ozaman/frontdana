@@ -36,12 +36,12 @@
       <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse">
+            <!-- <button type="button" class="navbar-toggle" data-toggle="collapse">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
-            </button>
+            </button> -->
             <a  href="index.php" class="navbar-brand"> 
                         <img src="./files/images/logo.png" width="50">
                     </a>
@@ -76,7 +76,7 @@
     <div class="page-header header-filter header-small" data-parallax="true" style="background-size: 100%;background-image: url(./files/images/sunset-1.jpg);background-repeat-x: no-repeat;background-repeat-y: no-repeat; transform: translate3d(0px, 0px, 0px);    background-size: 100% 100%;">
         <!-- min-height: 90vh; -->
         <div >  
-            <div class="container">
+            <div class="container" style="padding-top: 60px ">
                 <div class="row">
                     <div class="col-md-12 col-xs-12 ">
                         <div class="brand">
@@ -277,7 +277,7 @@
                         <li class="" id="Krabi"><a href="#pill4" data-toggle="tab" aria-expanded="false" ng-click="getTourforarea('Krabi');show = !show">Krabi</a></li>
                         <li class="" id="PhiPhiisland"><a href="#pill5" data-toggle="tab" aria-expanded="false" ng-click="getTourforarea('Phi Phi island');show = !show">Phi Phi island</a></li>
                         <li class="active" id="PhiPhiisland"><a href="#pill6" data-toggle="tab" aria-expanded="false" ng-click="getTourforareaall('All');show = !show">All</a></li>
-                        <li class="" aling="right" id="PhiPhiisland" style="float: right;"><a href="#pill7" data-toggle="tab" aria-expanded="false" ng-click="getTourforarea('Phi Phi island');show = !show">More..</a></li>
+                        <!-- <li class="" aling="right" id="PhiPhiisland" style="float: right;"><a href="#pill7" data-toggle="tab" aria-expanded="false" ng-click="getTourforarea('Phi Phi island');show = !show">More..</a></li> -->
                        <!--  <li class="" id="All"><a href="#pill3" data-toggle="tab" aria-expanded="false" ng-click="getTourforareaall('All');show = !show">All</a></li> -->
                     </ul> 
                 </div>
@@ -339,7 +339,7 @@ height: 60%;
                         <li class="" id="Phuket"><a href="#transfer2" data-toggle="tab" aria-expanded="true" ng-click="getTransferforarea('Bangkok');show = !show">Bangkok</a></li>
                         
                         <li class="active" id="PhiPhiisland"><a href="#transfer6" data-toggle="tab" aria-expanded="false" ng-click="getTransferforareaall('All');show = !show">All</a></li>
-                        <li class="" aling="right" id="PhiPhiisland" style="float: right;"><a href="#transfer7" data-toggle="tab" aria-expanded="false" ng-click="getTransfermore();show = !show">More..</a></li>
+                        <!-- <li class="" aling="right" id="PhiPhiisland" style="float: right;"><a href="#transfer7" data-toggle="tab" aria-expanded="false" ng-click="getTransfermore();show = !show">More..</a></li> -->
                        <!--  <li class="" id="All"><a href="#pill3" data-toggle="tab" aria-expanded="false" ng-click="getTourforareaall('All');show = !show">All</a></li> -->
                     </ul> 
                 </div>
@@ -440,8 +440,8 @@ height: 60%;
                         <li class="" id="Phuket"><a href="#hotel1" data-toggle="tab" aria-expanded="true" ng-click="getHotelforarea('Phuket');show = !show">Phuket</a></li>
                         <li class="" id="Phuket"><a href="#hotel2" data-toggle="tab" aria-expanded="true" ng-click="getHotelforarea('Bangkok');show = !show">Bangkok</a></li>
                         
-                        <li class="active" id="PhiPhiisland"><a href="#hotel6" data-toggle="tab" aria-expanded="false" ng-click="getHotelforareaall('All');show = !show">All</a></li>
-                        <li class="" aling="right" id="PhiPhiisland" style="float: right;"><a href="#hotel7" data-toggle="tab" aria-expanded="false" ng-click="getHotelmore();show = !show">More..</a></li>
+                        <li class="active" id="PhiPhiisland"><a href="#hotel6" data-toggle="tab" aria-expanded="false" ng-click="getHotelforareaall();show = !show">All</a></li>
+                        <!-- <li class="" aling="right" id="PhiPhiisland" style="float: right;"><a href="#hotel7" data-toggle="tab" aria-expanded="false" ng-click="getHotelmore();show = !show">More..</a></li> -->
                        <!--  <li class="" id="All"><a href="#pill3" data-toggle="tab" aria-expanded="false" ng-click="getTourforareaall('All');show = !show">All</a></li> -->
                     </ul> 
                 </div>
@@ -449,8 +449,8 @@ height: 60%;
        
         <div class="h-data-list section-our-projects" id="div_top_sell"> 
             <div>
-                
-                     <div class="col-md-4"  ng-click="getDetailhotel(1)">
+                <div class="row">
+                     <div class="col-md-4"  ng-click="getDetailhotel(1)" ng-if="dataHotelcheck == 0 || dataHotelcheck == 1">
                             <div class="project">
                                  <img src="./data/files/hotel/ho1/1.jpg">
                                 <a class="over-area" href="#gaia">
@@ -466,7 +466,7 @@ height: 60%;
                             </div>
                             
                     </div>
-                    <div class="col-md-4"  ng-click="getDetailhotel(2)">
+                    <div class="col-md-4"  ng-click="getDetailhotel(2)" ng-if="dataHotelcheck == 0 || dataHotelcheck == 1">
                             <div class="project">
                                 <img src="./data/files/hotel/ho2/1.jpg">
                                 <a class="over-area" href="#gaia">
@@ -482,7 +482,7 @@ height: 60%;
                             </div>
                             
                     </div>
-                    <div class="col-md-4"  ng-click="getDetailhotel(3)">
+                    <div class="col-md-4"  ng-click="getDetailhotel(3)" ng-if="dataHotelcheck == 0 || dataHotelcheck == 1">
                             <div class="project">
                                 <img src="./data/files/hotel/ho3/1.jpg">
                                 <a class="over-area" href="#gaia">
@@ -498,9 +498,11 @@ height: 60%;
                             </div>
                             
                     </div>
+                </div>
+                <div class="row">
                    
                     <div class="col-md-6" >
-                            <div class="project" ng-click="getDetailhotel(4)">
+                            <div class="project" ng-click="getDetailhotel(4)" ng-if="dataHotelcheck == 0 || dataHotelcheck == 1">
                                  <img src="./data/files/hotel/ho4/1.jpg">
                                 <a class="over-area" href="#gaia">
                                     <div class="content">
@@ -516,7 +518,7 @@ height: 60%;
                             
                     </div>
                    
-                    <div class="col-md-6"  ng-click="getDetailhotel(5)">
+                    <div class="col-md-6"  ng-click="getDetailhotel(5)" ng-if="dataHotelcheck == 0 || dataHotelcheck == 1">
                             <div class="project">
                                  <img src="./data/files/hotel/ho5/1.jpg">
                                 <a class="over-area" href="#gaia">
@@ -532,7 +534,9 @@ height: 60%;
                             </div>
                             
                     </div>
-                    <div class="col-md-4"  ng-click="getDetailhotel(7)">
+                </div>
+                <div class="row">
+                    <div class="col-md-4"  ng-click="getDetailhotel(7)" ng-if="dataHotelcheck == 0 || dataHotelcheck == 1">
                             <div class="project">
                                  <img src="./data/files/hotel/ho7/1.jpg">
                                 <a class="over-area" href="#gaia">
@@ -548,7 +552,7 @@ height: 60%;
                             </div>
                             
                     </div>
-                    <div class="col-md-4"  ng-click="getDetailhotel(8)">
+                    <div class="col-md-4"  ng-click="getDetailhotel(8)" ng-if="dataHotelcheck == 0 || dataHotelcheck == 1">
                             <div class="project">
                                  <img src="./data/files/hotel/ho8/1.jpg">
                                 <a class="over-area" href="#gaia">
@@ -564,7 +568,7 @@ height: 60%;
                             </div>
                             
                     </div>
-                    <div class="col-md-4"  ng-click="getDetailhotel(9)">
+                    <div class="col-md-4"  ng-click="getDetailhotel(9)" ng-if="dataHotelcheck == 0 || dataHotelcheck == 1">
                             <div class="project">
                                  <img src="./data/files/hotel/ho9/1.jpg">
                                 <a class="over-area" href="#gaia">
@@ -580,7 +584,9 @@ height: 60%;
                             </div>
                             
                     </div>
-                    <div class="col-md-6"  ng-click="getDetailhotel(10)">
+                </div>
+                <div class="row">
+                    <div class="col-md-6"  ng-click="getDetailhotel(10)" ng-if="dataHotelcheck == 0 || dataHotelcheck == 1">
                             <div class="project">
                                  <img src="./data/files/hotel/ho10/1.jpg">
                                 <a class="over-area" href="#gaia">
@@ -597,7 +603,7 @@ height: 60%;
                             
                     </div>
 
-                    <div class="col-md-6"  ng-click="getDetailhotel(11)">
+                    <div class="col-md-6"  ng-click="getDetailhotel(11)" ng-if="dataHotelcheck == 0 || dataHotelcheck == 1">
                             <div class="project">
                                 <img src="./data/files/hotel/ho11/1.jpg">
                                 <a class="over-area" href="#gaia">
@@ -613,15 +619,17 @@ height: 60%;
                             </div>
                             
                     </div>
+                </div>
+                <div class="row">
                     
-                    <div class="col-md-3"  ng-click="getDetailhotel(12)">
+                    <div class="col-md-4"  ng-click="getDetailhotel(12)" ng-if="dataHotelcheck == 0 || dataHotelcheck == 2">
                             <div class="project">
                                 <img src="./data/files/hotel/ho12/1.jpg">
                                 <a class="over-area" href="#gaia">
                                     <div class="content">
                                         <!-- <label class="label label-info label-fill">App Development</label> -->
                                         <h4 >LEBUA TOWER CLUB BANGKOK </h4>
-                                         <p >Phuket</p>
+                                         <p >Bangkok</p>
                                         <div style="text-align: right;"><span ng-bind="item.sale_price  | currency:'':0 " style="color: #f44336;
             font-size: 16px;
             font-weight: 400;"></span></div>
@@ -630,6 +638,7 @@ height: 60%;
                             </div>
                             
                     </div>
+                </div>
                     
 
                 
@@ -2010,7 +2019,7 @@ height: 60%;
       <div class="row">
         <div class="col-md-4 " >
             <!-- col-md-offset-1 -->
-          <h5 style="color: #fff">Contacts</h5>
+          <h2 style="color: #fff">Contact Us</h2>
           <div class="contact" id="contact">             
             <ul >
               <li class="">Address: <a>100/16 Moo 5 , Soi 1 Chalernprakiet Rd., T.Rassada Muang Phuket Thailand 83000</a></li>
@@ -2020,36 +2029,22 @@ height: 60%;
               <li class="">E-mail: <a href="mailto:#" style="display: inline-block;"> sele@danatoursasia.com</a></li>
             </ul>
           </div>
-
         </div>
-        <div class="col-md-8 ">
-          <!-- <div class="text-center"> -->
-            <!-- <h3 class="title">Subscribe to our Newsletter</h3> -->
-            <!-- <p class="description">
-              Join our newsletter and get news in your inbox every week! We hate spam too, so no worries about this.
-            </p> -->
-          <!-- </div> -->
-
-          <!-- <div class="card card-raised card-form-horizontal"> -->
-            <!-- <div class="card-content"> -->
-              <!-- <form id="contactsform" name="contactsform" method="post" action="http://www.danatoursasia.com/sendmail/sendmail.php" onsubmit="return validate_form(this);"> -->
-                <!-- <div class="row"> -->
-                  <div class="col-sm-12">
-                    
+        <div class="col-md-8 ">         
+                  <div class="col-sm-12">                    
                         <div class="section">
-                    <div class="title-area">
-                        <h5 class="subtitle text-gray">Glad to Talk With You</h5>
-                        <h2 style="color: #fff">Contact Us</h2>
-                        <div style="width: 100%;text-align: center;"><div class="separator separator-danger">✻</div></div>
-                        <!-- <p class="description">In this area you can write some interesting description about the projects that your team created. Don't forget to add some awesome images under this description, like the beautiful ones that we added.</p> -->
-                    </div>
+                            <div class="title-area">
+                                <h5 class="subtitle text-gray" align="center">Glad to Talk With You</h5>
+                                <!-- <h2 style="color: #fff">Contact Us</h2> -->
+                                <div style="width: 100%;text-align: center;"><div class="separator separator-danger">✻</div></div>
+                            </div>
 
-                <div class="social-buttons">
-                    <button class="btn btn-social btn-simple"><i class="fa fa-facebook-square"></i></button>
-                    <button class="btn btn-social btn-simple"><i class="fa fa-twitter"></i></button>
-                    <button class="btn btn-social btn-simple"><i class="fa fa-instagram"></i></button>
-                    <button class="btn btn-social btn-simple"><i class="fa fa-google"></i></button>
-                </div>
+                            <div class="social-buttons">
+                                <button class="btn btn-social btn-simple"><i class="fa fa-facebook-square"></i></button>
+                                <button class="btn btn-social btn-simple"><i class="fa fa-twitter"></i></button>
+                                <button class="btn btn-social btn-simple"><i class="fa fa-instagram"></i></button>
+                                <button class="btn btn-social btn-simple"><i class="fa fa-google"></i></button>
+                            </div>
 
                 <div class="row">
                     <div class="col-md-12 ">
@@ -2267,45 +2262,7 @@ height: 60%;
   background: #de6168;
 }
             </style>
-<!-- <div id="map">
-                    </div> -->
-                   <!--  <div class="input-group">
-                      <span class="input-group-addon">
-                        <i class="material-icons">mail</i>
-                      </span>
-                      <div class="form-group"><input type="email" value="" placeholder="Your Email..." class="form-control"><span class="material-input"></span><span class="material-input"></span></div>
-                      <div>
-                            <div>
-                                <label>Name:*</label>
-                                <div class="form-group"><input  type="text" name="fullname" value="" class="form-control" /></div>
-                            </div>
-                            <div>
-                               <span class="input-group-addon">
-                        <i class="material-icons">mail</i>
-                      </span>
-                                <div class="form-group"><input type="text" name="emailaddress" value="" class="form-control"/></div>
-                            </div>
-                            <div>
-                                <label>Phone Number:*</label>
-                                <input type="text" name="phonenumber" value="" class="form-control" />
-                            </div>
-                        </div>
-                        
-                        <div class="last">
-                            <div>
-                                <label>Message:*</label>
-                                <textarea rows="" cols="" name="message" class="form-control"></textarea>
-                            </div>
-                            <div class="g-recaptcha" data-sitekey="6LcN3f8SAAAAAEJNJXa-07z0TUbReUWBgPp39nQq"></div>
-                            <p>
-                                <input type="submit" name="submit" value="Send Now" class="submit" />
-                            </p>
-                        </div>
-                    </div> -->
-                  <!-- </div> -->
-                 <!--  <div class="col-sm-4">
-                    <button type="submit" name="submit" value="Send Now" class="btn btn-rose btn-block">Send</button>
-                  </div> -->
+
                 </div>
               <!-- </form> -->
             <!-- </div> -->
