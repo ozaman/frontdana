@@ -102,8 +102,23 @@
                     <div class="col-md-12 text-center " >
                     <!-- col-md-offset-2 -->
                         <div class="brand">
-                            <h2  style="margin-top: -40px;margin-bottom: 0;color: #f44336;font-size: 20px;" ><span ng-bind="tours.sale_price_adult | currency:'':0" style="font-weight: 500;"></span><span style="color: #fff"><span style="color: #f44336">฿</span> / Package</span></h2>
-                            <h1 class="title"><div ng-bind="tours.name" align="center" style="     margin-top: -25px;font-size: 20px; font-weight: 500;"></div></h1>
+                           <!--  <h2  style="margin-top: -40px;margin-bottom: 0;color: #f44336;font-size: 20px;" ><span ng-bind="tours.sale_price_adult | currency:'':0" style="font-weight: 500;"></span><span style="color: #fff"><span style="color: #f44336">฿</span> / Package</span>
+                            </h2> -->
+                            <h1 class="title">
+                                <div align="center"  style="     margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 1">WYNDHAM GRAND PHUKET KALIM BAY</div>
+                                <div align="center" style="     margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 2">VILLA TANTAWAN</div>
+                                <div align="center" style="     margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 3">PHUKET GRACELAND RESORT AND SPA</div>
+                                <div align="center" style="     margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 4">NOVOTEL PHUKET RESORT</div>
+                                <div align="center" style="     margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 5">THE PAVILIONS PHUKET</div>
+                                <div align="center" style="     margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 7">PUMERIA RESORT PHUKET</div>
+                                <div align="center" style="     margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 8">SANTHIYA RESORT AND SPA</div>
+                                <div align="center" style="     margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 9">RAMADA PHUKET DEEVANA</div>
+                                <div align="center" style="     margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 10">SLEEP WITH ME DESIGN HOTEL@PATONG</div>
+                                <div align="center" style="     margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 11">ANGSANA LAGUNA PHUKET</div>
+                                <div align="center" style="     margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 12">LEBUA TOWER CLUB BANGKOK </div>
+                               
+                            </h1>
+
                            
                         </div>
                     </div>
@@ -188,17 +203,18 @@
                         <div class="col-md-3" >
                             <div class="col-sm-12 col-md-12" id="fade-in-out" >
                                 <div class="card card-blog" >
-                                    <div class="card-image" ng-click="viewpackageforid(item.id)">
-                                        <img src="./data/files/upload/tour/icon/{{item.icon}}" style="height: 180px" >
+                                    <div class="card-image" ng-click="viewpackageforid(1)">
+                                        <!-- <img src="./data/files/hotel/ho2/1.jpg"> -->
+                                        <img src="./data/files/hotel/ho1/1.jpg" style="height: 180px" >
                                     </div>
                                     <div class="card-content">
-                                        <h6 class="category text-rose" ng-bind="item.name"></h6>                      
+                                        <h6 class="category text-rose" >WYNDHAM GRAND PHUKET KALIM BAY</h6>                      
                                         
                                     </div>                       
                                     <div class="cost-pro">
                                         <div >
                                             <i class="material-icons" style="display: inline-block; line-height: 0;">place</i>
-                                            <p class="pro-item" ng-bind="item.city" align="left" ></p>
+                                            <p class="pro-item" align="left" >Phuket</p>
                                         </div>
                                     </div>
                                 </div>
@@ -207,17 +223,18 @@
                         <div class="col-md-3" >
                             <div class="col-sm-12 col-md-12" id="fade-in-out" >
                                 <div class="card card-blog" >
-                                    <div class="card-image" ng-click="viewpackageforid(item.id)">
-                                        <img src="./data/files/upload/tour/icon/{{item.icon}}" style="height: 180px" >
+                                    <div class="card-image" ng-click="viewpackageforid(2)">
+                                        <img src="./data/files/hotel/ho2/1.jpg" style="height: 180px" >
+                                        
                                     </div>
                                     <div class="card-content">
-                                        <h6 class="category text-rose" ng-bind="item.name"></h6>                      
+                                        <h6 class="category text-rose" >VILLA TANTAWAN</h6>                      
                                         
                                     </div>                       
                                     <div class="cost-pro">
                                         <div >
                                             <i class="material-icons" style="display: inline-block; line-height: 0;">place</i>
-                                            <p class="pro-item" ng-bind="item.city" align="left" ></p>
+                                            <p class="pro-item"  align="left" >Phuket</p>
                                         </div>
                                     </div>
                                 </div>
@@ -226,17 +243,17 @@
                         <div class="col-md-3" >
                             <div class="col-sm-12 col-md-12" id="fade-in-out" >
                                 <div class="card card-blog" >
-                                    <div class="card-image" ng-click="viewpackageforid(item.id)">
-                                        <img src="./data/files/upload/tour/icon/{{item.icon}}" style="height: 180px" >
+                                    <div class="card-image" ng-click="viewpackageforid(3)">
+                                        <img src="./data/files/hotel/ho3/1.jpg" style="height: 180px" >
                                     </div>
                                     <div class="card-content">
-                                        <h6 class="category text-rose" ng-bind="item.name"></h6>                      
+                                        <h6 class="category text-rose" >PHUKET GRACELAND RESORT AND SPA</h6>                      
                                         
                                     </div>                       
                                     <div class="cost-pro">
                                         <div >
                                             <i class="material-icons" style="display: inline-block; line-height: 0;">place</i>
-                                            <p class="pro-item" ng-bind="item.city" align="left" ></p>
+                                            <p class="pro-item"  align="left" >Phuket</p>
                                         </div>
                                     </div>
                                 </div>
@@ -245,17 +262,17 @@
                         <div class="col-md-3" >
                             <div class="col-sm-12 col-md-12" id="fade-in-out" >
                                 <div class="card card-blog" >
-                                    <div class="card-image" ng-click="viewpackageforid(item.id)">
-                                        <img src="./data/files/upload/tour/icon/{{item.icon}}" style="height: 180px" >
+                                    <div class="card-image" ng-click="viewpackageforid(4)">
+                                        <img src="./data/files/hotel/ho4/1.jpg" style="height: 180px" >
                                     </div>
                                     <div class="card-content">
-                                        <h6 class="category text-rose" ng-bind="item.name"></h6>                      
+                                        <h6 class="category text-rose" >NOVOTEL PHUKET RESORT</h6>                      
                                         
                                     </div>                       
                                     <div class="cost-pro">
                                         <div >
                                             <i class="material-icons" style="display: inline-block; line-height: 0;">place</i>
-                                            <p class="pro-item" ng-bind="item.city" align="left" ></p>
+                                            <p class="pro-item"  align="left" >Phuket</p>
                                         </div>
                                     </div>
                                 </div>
@@ -264,17 +281,17 @@
                         <div class="col-md-3" >
                             <div class="col-sm-12 col-md-12" id="fade-in-out" >
                                 <div class="card card-blog" >
-                                    <div class="card-image" ng-click="viewpackageforid(item.id)">
-                                        <img src="./data/files/upload/tour/icon/{{item.icon}}" style="height: 180px" >
+                                    <div class="card-image" ng-click="viewpackageforid(5)">
+                                        <img src="./data/files/hotel/ho5/1.jpg" style="height: 180px" >
                                     </div>
                                     <div class="card-content">
-                                        <h6 class="category text-rose" ng-bind="item.name"></h6>                      
+                                        <h6 class="category text-rose" >THE PAVILIONS PHUKET</h6>                      
                                         
                                     </div>                       
                                     <div class="cost-pro">
                                         <div >
                                             <i class="material-icons" style="display: inline-block; line-height: 0;">place</i>
-                                            <p class="pro-item" ng-bind="item.city" align="left" ></p>
+                                            <p class="pro-item"  align="left" >Phuket</p>
                                         </div>
                                     </div>
                                 </div>
@@ -283,17 +300,17 @@
                         <div class="col-md-3" >
                             <div class="col-sm-12 col-md-12" id="fade-in-out" >
                                 <div class="card card-blog" >
-                                    <div class="card-image" ng-click="viewpackageforid(item.id)">
-                                        <img src="./data/files/upload/tour/icon/{{item.icon}}" style="height: 180px" >
+                                    <div class="card-image" ng-click="viewpackageforid(7)">
+                                       <img src="./data/files/hotel/ho7/1.jpg" style="height: 180px" >
                                     </div>
                                     <div class="card-content">
-                                        <h6 class="category text-rose" ng-bind="item.name"></h6>                      
+                                        <h6 class="category text-rose" >PUMERIA RESORT PHUKET</h6>                      
                                         
                                     </div>                       
                                     <div class="cost-pro">
                                         <div >
                                             <i class="material-icons" style="display: inline-block; line-height: 0;">place</i>
-                                            <p class="pro-item" ng-bind="item.city" align="left" ></p>
+                                            <p class="pro-item"  align="left" >Phuket</p>
                                         </div>
                                     </div>
                                 </div>
@@ -302,17 +319,17 @@
                         <div class="col-md-3" >
                             <div class="col-sm-12 col-md-12" id="fade-in-out" >
                                 <div class="card card-blog" >
-                                    <div class="card-image" ng-click="viewpackageforid(item.id)">
-                                        <img src="./data/files/upload/tour/icon/{{item.icon}}" style="height: 180px" >
+                                    <div class="card-image" ng-click="viewpackageforid(8)">
+                                        <img src="./data/files/hotel/ho8/1.jpg" style="height: 180px" >
                                     </div>
                                     <div class="card-content">
-                                        <h6 class="category text-rose" ng-bind="item.name"></h6>                      
+                                        <h6 class="category text-rose" >SANTHIYA RESORT AND SPA</h6>                      
                                         
                                     </div>                       
                                     <div class="cost-pro">
                                         <div >
                                             <i class="material-icons" style="display: inline-block; line-height: 0;">place</i>
-                                            <p class="pro-item" ng-bind="item.city" align="left" ></p>
+                                            <p class="pro-item"  align="left" >Phuket</p>
                                         </div>
                                     </div>
                                 </div>
@@ -321,17 +338,17 @@
                         <div class="col-md-3" >
                             <div class="col-sm-12 col-md-12" id="fade-in-out" >
                                 <div class="card card-blog" >
-                                    <div class="card-image" ng-click="viewpackageforid(item.id)">
-                                        <img src="./data/files/upload/tour/icon/{{item.icon}}" style="height: 180px" >
+                                    <div class="card-image" ng-click="viewpackageforid(9)">
+                                        <img src="./data/files/hotel/ho9/1.jpg" style="height: 180px" >
                                     </div>
                                     <div class="card-content">
-                                        <h6 class="category text-rose" ng-bind="item.name"></h6>                      
+                                        <h6 class="category text-rose" >RAMADA PHUKET DEEVANA</h6>                      
                                         
                                     </div>                       
                                     <div class="cost-pro">
                                         <div >
                                             <i class="material-icons" style="display: inline-block; line-height: 0;">place</i>
-                                            <p class="pro-item" ng-bind="item.city" align="left" ></p>
+                                            <p class="pro-item"  align="left" >Phuket</p>
                                         </div>
                                     </div>
                                 </div>
@@ -340,17 +357,17 @@
                         <div class="col-md-3" >
                             <div class="col-sm-12 col-md-12" id="fade-in-out" >
                                 <div class="card card-blog" >
-                                    <div class="card-image" ng-click="viewpackageforid(item.id)">
-                                        <img src="./data/files/upload/tour/icon/{{item.icon}}" style="height: 180px" >
+                                    <div class="card-image" ng-click="viewpackageforid(10)">
+                                        <img src="./data/files/hotel/ho10/1.jpg" style="height: 180px" >
                                     </div>
                                     <div class="card-content">
-                                        <h6 class="category text-rose" ng-bind="item.name"></h6>                      
+                                        <h6 class="category text-rose" >SLEEP WITH ME DESIGN HOTEL@PATONG</h6>                      
                                         
                                     </div>                       
                                     <div class="cost-pro">
                                         <div >
                                             <i class="material-icons" style="display: inline-block; line-height: 0;">place</i>
-                                            <p class="pro-item" ng-bind="item.city" align="left" ></p>
+                                            <p class="pro-item"  align="left" >Phuket</p>
                                         </div>
                                     </div>
                                 </div>
@@ -359,17 +376,17 @@
                         <div class="col-md-3" >
                             <div class="col-sm-12 col-md-12" id="fade-in-out" >
                                 <div class="card card-blog" >
-                                    <div class="card-image" ng-click="viewpackageforid(item.id)">
-                                        <img src="./data/files/upload/tour/icon/{{item.icon}}" style="height: 180px" >
+                                    <div class="card-image" ng-click="viewpackageforid(11)">
+                                       <img src="./data/files/hotel/ho11/1.jpg" style="height: 180px" >
                                     </div>
                                     <div class="card-content">
-                                        <h6 class="category text-rose" ng-bind="item.name"></h6>                      
+                                        <h6 class="category text-rose" >ANGSANA LAGUNA PHUKET </h6>                      
                                         
                                     </div>                       
                                     <div class="cost-pro">
                                         <div >
                                             <i class="material-icons" style="display: inline-block; line-height: 0;">place</i>
-                                            <p class="pro-item" ng-bind="item.city" align="left" ></p>
+                                            <p class="pro-item"  align="left" >Phuket</p>
                                         </div>
                                     </div>
                                 </div>
@@ -378,41 +395,23 @@
                         <div class="col-md-3" >
                             <div class="col-sm-12 col-md-12" id="fade-in-out" >
                                 <div class="card card-blog" >
-                                    <div class="card-image" ng-click="viewpackageforid(item.id)">
-                                        <img src="./data/files/upload/tour/icon/{{item.icon}}" style="height: 180px" >
+                                    <div class="card-image" ng-click="viewpackageforid(12)">
+                                        <img src="./data/files/hotel/ho12/1.jpg" style="height: 180px" >
                                     </div>
                                     <div class="card-content">
-                                        <h6 class="category text-rose" ng-bind="item.name"></h6>                      
+                                        <h6 class="category text-rose" >LEBUA TOWER CLUB BANGKOK</h6>                      
                                         
                                     </div>                       
                                     <div class="cost-pro">
                                         <div >
                                             <i class="material-icons" style="display: inline-block; line-height: 0;">place</i>
-                                            <p class="pro-item" ng-bind="item.city" align="left" ></p>
+                                            <p class="pro-item"  align="left" >Bangkok</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3" >
-                            <div class="col-sm-12 col-md-12" id="fade-in-out" >
-                                <div class="card card-blog" >
-                                    <div class="card-image" ng-click="viewpackageforid(item.id)">
-                                        <img src="./data/files/upload/tour/icon/{{item.icon}}" style="height: 180px" >
-                                    </div>
-                                    <div class="card-content">
-                                        <h6 class="category text-rose" ng-bind="item.name"></h6>                      
-                                        
-                                    </div>                       
-                                    <div class="cost-pro">
-                                        <div >
-                                            <i class="material-icons" style="display: inline-block; line-height: 0;">place</i>
-                                            <p class="pro-item" ng-bind="item.city" align="left" ></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
                 <style >
                     .cost-pro p {
     display: inline-block;
