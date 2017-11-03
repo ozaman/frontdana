@@ -180,7 +180,7 @@
                         
                     </div>
                       <div class="col-md-12">
-                            <div class="card card-plain">
+                            <div class="card-plain">
                                 <div class="">
                                     <div class="timeline-heading" >
                                                     <div class="" style=" width: 130px;
@@ -854,6 +854,275 @@ li{
 }
 .filter.filter-color-red:before {
     background: #de6168;
+}
+
+
+
+
+.card {
+    background: #fff;
+    box-shadow: 0 32px 44px -24px rgba(0, 0, 0, 0.23), 0 20px 25px 0px rgba(0, 0, 0, 0.12), 0 15px 10px -10px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    margin-bottom: 30px;
+    -webkit-transition: all 370ms cubic-bezier(0.34, 1.61, 0.7, 1);
+    -moz-transition: all 370ms cubic-bezier(0.34, 1.61, 0.7, 1);
+    -o-transition: all 370ms cubic-bezier(0.34, 1.61, 0.7, 1);
+    -ms-transition: all 370ms cubic-bezier(0.34, 1.61, 0.7, 1);
+    transition: all 370ms cubic-bezier(0.34, 1.61, 0.7, 1);
+}
+.card:not(.card-plain):not(.card-price):hover {
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  -o-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  transform: scale(1.03);
+  box-shadow: 0 26px 50px -10px rgba(0, 0, 0, 0.38), 0 10px 20px 0px rgba(0, 0, 0, 0.2), 0 15px 10px -10px rgba(0, 0, 0, 0.2);
+}
+.section-our-projects .project {
+    margin-bottom: 30px;
+}
+
+.project {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.project .over-area {
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    z-index: 3;
+    padding: 10% 8%;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    color: white;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.55);
+    -webkit-transition: background 0.5s, opacity 0.5s 0.5s;
+    -moz-transition: background 0.5s, opacity 0.5s 0.5s;
+    -o-transition: background 0.5s, opacity 0.5s 0.5s;
+    -ms-transition: background 0.5s, opacity 0.5s 0.5s;
+    transition: background 0.5s, opacity 0.5s 0.5s;
+}
+.project .over-area:hover {
+  opacity: 1;
+  -webkit-transition: background 0.25s, opacity 0.25s 0s;
+  -moz-transition: background 0.25s, opacity 0.25s 0s;
+  -o-transition: background 0.25s, opacity 0.25s 0s;
+  -ms-transition: background 0.25s, opacity 0.25s 0s;
+  transition: background 0.25s, opacity 0.25s 0s;
+  transition-delay: 0;
+  -webkit-transition-delay: 0;
+}
+.project .over-area:hover .content {
+  opacity: 1;
+  opacity: 0.2s;
+  filter: alpha(opacity=20s);
+}
+.project .over-area:hover h3 {
+  opacity: 1;
+  -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  transform: translateY(0px);
+}
+.project .over-area:hover p {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  transform: translateY(0px);
+}
+.project .over-area:hover .btn {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  transform: translateY(0px);
+}
+.project .over-area:hover .btn {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  transform: translateY(0px);
+}
+.project .over-area.no-opacity {
+  background-color: #333333;
+}
+
+
+.project .over-area.over-area-sm {
+  padding: 20px 30px;
+}
+.project .over-area.over-area-sm .content {
+  text-align: center;
+}
+.project .over-area.over-area-sm .content h4 {
+  font-size: 1.75em;
+}
+.project .over-area.over-area-sm .content p {
+  font-size: 1em;
+}
+.project .over-area.color-black {
+  background: rgba(52, 52, 52, 0.7);
+}
+.project .over-area.color-green {
+  background: rgba(39, 94, 76, 0.55);
+}
+.project .over-area.color-gold {
+  background: rgba(197, 164, 126, 0.55);
+}
+.project .over-area.color-blue {
+  background: rgba(61, 146, 207, 0.55);
+}
+.project .over-area.color-purple {
+  background: rgba(89, 57, 111, 0.55);
+}
+.project .over-area.gradient-1 {
+  background: -moz-linear-gradient(-45deg, rgba(151, 78, 32, 0.4) 0%, rgba(244, 218, 138, 0.4) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(151, 78, 32, 0.4)), color-stop(100%, rgba(244, 218, 138, 0.4)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg, rgba(151, 78, 32, 0.4) 0%, rgba(244, 218, 138, 0.4) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg, rgba(151, 78, 32, 0.4) 0%, rgba(244, 218, 138, 0.4) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg, rgba(151, 78, 32, 0.4) 0%, rgba(244, 218, 138, 0.4) 100%);
+  /* IE10+ */
+  background: linear-gradient(135deg, rgba(151, 78, 32, 0.4) 0%, rgba(244, 218, 138, 0.4) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66954d20', endColorstr='#66f4d887',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+}
+.project .over-area.gradient-2 {
+  background: -moz-linear-gradient(-45deg, rgba(216, 44, 73, 0.4) 0%, rgba(217, 99, 131, 0.4) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(216, 44, 73, 0.4)), color-stop(100%, rgba(217, 99, 131, 0.4)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg, rgba(216, 44, 73, 0.4) 0%, rgba(217, 99, 131, 0.4) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg, rgba(216, 44, 73, 0.4) 0%, rgba(217, 99, 131, 0.4) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg, rgba(216, 44, 73, 0.4) 0%, rgba(217, 99, 131, 0.4) 100%);
+  /* IE10+ */
+  background: linear-gradient(135deg, rgba(216, 44, 73, 0.4) 0%, rgba(217, 99, 131, 0.4) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66d82c49', endColorstr='#66d96383',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+}
+.project .over-area.gradient-3 {
+  background: -moz-linear-gradient(-45deg, rgba(223, 212, 139, 0.4) 0%, rgba(236, 101, 101, 0.4) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(223, 212, 139, 0.4)), color-stop(100%, rgba(236, 101, 101, 0.4)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg, rgba(223, 212, 139, 0.4) 0%, rgba(236, 101, 101, 0.4) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg, rgba(223, 212, 139, 0.4) 0%, rgba(236, 101, 101, 0.4) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg, rgba(223, 212, 139, 0.4) 0%, rgba(236, 101, 101, 0.4) 100%);
+  /* IE10+ */
+  background: linear-gradient(135deg, rgba(223, 212, 139, 0.4) 0%, rgba(236, 101, 101, 0.4) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66dfd48b', endColorstr='#66ec6565',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+}
+.project .over-area.gradient-4 {
+  background: -moz-linear-gradient(-45deg, rgba(174, 97, 167, 0.4) 0%, rgba(210, 121, 135, 0.4) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(174, 97, 167, 0.4)), color-stop(100%, rgba(210, 121, 135, 0.4)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg, rgba(174, 97, 167, 0.4) 0%, rgba(210, 121, 135, 0.4) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg, rgba(174, 97, 167, 0.4) 0%, rgba(210, 121, 135, 0.4) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg, rgba(174, 97, 167, 0.4) 0%, rgba(210, 121, 135, 0.4) 100%);
+  /* IE10+ */
+  background: linear-gradient(135deg, rgba(174, 97, 167, 0.4) 0%, rgba(210, 121, 135, 0.4) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66ae61a8', endColorstr='#66d27987',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+}
+.project .over-area.gradient-5 {
+  background: #6c3aad;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, rgba(107, 57, 172, 0.4) 0%, rgba(200, 254, 206, 0.4) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(107, 57, 172, 0.4)), color-stop(100%, rgba(200, 254, 206, 0.4)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg, rgba(107, 57, 172, 0.4) 0%, rgba(200, 254, 206, 0.4) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg, rgba(107, 57, 172, 0.4) 0%, rgba(200, 254, 206, 0.4) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg, rgba(107, 57, 172, 0.4) 0%, rgba(200, 254, 206, 0.4) 100%);
+  /* IE10+ */
+  background: linear-gradient(135deg, rgba(107, 57, 172, 0.4) 0%, rgba(200, 254, 206, 0.4) 100%);
+  /* W3C */
+}
+.project .content {
+  position: relative;
+  opacity: 0;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  width: 100%;
+  min-height: 165px;
+  word-break: break;
+  opacity: 0.5s;
+  filter: alpha(opacity=50s);
+  -webkit-perspective: 300px;
+  -moz-perspective: 300px;
+  -o-perspective: 300px;
+  -ms-perspective: 300px;
+  perspective: 300px;
+}
+.project h3 {
+  opacity: 0;
+  font-weight: 600;
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -o-transform: translateY(-20px);
+  transform: translateY(-20px);
+  -moz-transition: opacity 0.2s, -moz-transform 0.2s;
+  -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+  transition: opacity 0.2s, transform 0.2s;
+}
+.project p {
+  font-size: 1em;
+  color: #FFFFFF;
+  opacity: 0;
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -o-transform: translateY(-20px);
+  transform: translateY(-20px);
+  -moz-transition: background-color 0.5s, opacity 0.5s 0.15s, -moz-transform 0.5s 0.15s;
+  -webkit-transition: background-color 0.5s, opacity 0.5s 0.15s, -webkit-transform 0.5s 0.15s;
+  transition: background-color 0.5s, opacity 0.5s 0.15s, transform 0.5s 0.15s;
+}
+.project .btn {
+  opacity: 0;
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -o-transform: translateY(-20px);
+  transform: translateY(-20px);
+  -moz-transition: background-color 0.3s, opacity 0.3s 0.3s, -moz-transform 0.3s 0.3s;
+  -webkit-transition: background-color 0.3s, opacity 0.3s 0.3s, -webkit-transform 0.3s 0.3s;
+  transition: background-color 0.3s, opacity 0.3s 0.3s, transform 0.3s 0.3s;
+  color: #fff;
+  border-color: #fff;
 }
 </style>
 </body>
