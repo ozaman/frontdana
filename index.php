@@ -452,7 +452,7 @@ height: 60%;
                 
                      <div class="col-md-4"  ng-click="getDetailhotel(1)">
                             <div class="project">
-                                 <img src="./files/images/f5.jpg">
+                                 <img src="./data/files/hotel/ho1/1.jpg">
                                 <a class="over-area" href="#gaia">
                                     <div class="content">
                                         <!-- <label class="label label-info label-fill">App Development</label> -->
@@ -468,7 +468,7 @@ height: 60%;
                     </div>
                     <div class="col-md-4"  ng-click="getDetailhotel(2)">
                             <div class="project">
-                                <img src="./files/images/f5.jpg">
+                                <img src="./data/files/hotel/ho2/1.jpg">
                                 <a class="over-area" href="#gaia">
                                     <div class="content">
                                         <!-- <label class="label label-info label-fill">App Development</label> -->
@@ -484,7 +484,7 @@ height: 60%;
                     </div>
                     <div class="col-md-4"  ng-click="getDetailhotel(3)">
                             <div class="project">
-                                <img src="./files/images/f5.jpg">
+                                <img src="./data/files/hotel/ho3/1.jpg">
                                 <a class="over-area" href="#gaia">
                                     <div class="content">
                                         <!-- <label class="label label-info label-fill">App Development</label> -->
@@ -501,7 +501,7 @@ height: 60%;
                    
                     <div class="col-md-6" >
                             <div class="project" ng-click="getDetailhotel(4)">
-                                 <img src="./files/images/f5.jpg">
+                                 <img src="./data/files/hotel/ho4/1.jpg">
                                 <a class="over-area" href="#gaia">
                                     <div class="content">
                                         <!-- <label class="label label-info label-fill">App Development</label> -->
@@ -515,25 +515,10 @@ height: 60%;
                             </div>
                             
                     </div>
-                    <div class="col-md-6" >
-                            <div class="project" ng-click="getDetailhotel(5)">
-                                <img src="./files/images/f5.jpg">
-                                <a class="over-area" href="#gaia">
-                                    <div class="content">
-                                        <!-- <label class="label label-info label-fill">App Development</label> -->
-                                        <h4 >NOVOTEL PHUKET RESORT</h4>
-                                        <p >Phuket</p>
-                                        <div style="text-align: right;"><span ng-bind="item.sale_price  | currency:'':0 " style="color: #f44336;
-            font-size: 16px;
-            font-weight: 400;"></span></div>
-                                    </div>
-                                </a>
-                            </div>
-                            
-                    </div>
-                    <div class="col-md-4"  ng-click="getDetailhotel(6)">
+                   
+                    <div class="col-md-6"  ng-click="getDetailhotel(5)">
                             <div class="project">
-                                 <img src="./files/images/f5.jpg">
+                                 <img src="./data/files/hotel/ho5/1.jpg">
                                 <a class="over-area" href="#gaia">
                                     <div class="content">
                                         <!-- <label class="label label-info label-fill">App Development</label> -->
@@ -549,7 +534,7 @@ height: 60%;
                     </div>
                     <div class="col-md-4"  ng-click="getDetailhotel(7)">
                             <div class="project">
-                                 <img src="./files/images/f5.jpg">
+                                 <img src="./data/files/hotel/ho7/1.jpg">
                                 <a class="over-area" href="#gaia">
                                     <div class="content">
                                         <!-- <label class="label label-info label-fill">App Development</label> -->
@@ -565,7 +550,7 @@ height: 60%;
                     </div>
                     <div class="col-md-4"  ng-click="getDetailhotel(8)">
                             <div class="project">
-                                 <img src="./files/images/f5.jpg">
+                                 <img src="./data/files/hotel/ho8/1.jpg">
                                 <a class="over-area" href="#gaia">
                                     <div class="content">
                                         <!-- <label class="label label-info label-fill">App Development</label> -->
@@ -579,9 +564,9 @@ height: 60%;
                             </div>
                             
                     </div>
-                    <div class="col-md-6"  ng-click="getDetailhotel(9)">
+                    <div class="col-md-4"  ng-click="getDetailhotel(9)">
                             <div class="project">
-                                 <img src="./files/images/f5.jpg">
+                                 <img src="./data/files/hotel/ho9/1.jpg">
                                 <a class="over-area" href="#gaia">
                                     <div class="content">
                                         <!-- <label class="label label-info label-fill">App Development</label> -->
@@ -597,7 +582,7 @@ height: 60%;
                     </div>
                     <div class="col-md-6"  ng-click="getDetailhotel(10)">
                             <div class="project">
-                                 <img src="./files/images/f5.jpg">
+                                 <img src="./data/files/hotel/ho10/1.jpg">
                                 <a class="over-area" href="#gaia">
                                     <div class="content">
                                         <!-- <label class="label label-info label-fill">App Development</label> -->
@@ -612,9 +597,9 @@ height: 60%;
                             
                     </div>
 
-                    <div class="col-md-3"  ng-click="getDetailhotel(11)">
+                    <div class="col-md-6"  ng-click="getDetailhotel(11)">
                             <div class="project">
-                                <img src="./files/images/f5.jpg">
+                                <img src="./data/files/hotel/ho11/1.jpg">
                                 <a class="over-area" href="#gaia">
                                     <div class="content">
                                         <!-- <label class="label label-info label-fill">App Development</label> -->
@@ -628,25 +613,10 @@ height: 60%;
                             </div>
                             
                     </div>
+                    
                     <div class="col-md-3"  ng-click="getDetailhotel(12)">
                             <div class="project">
-                                 <img src="./files/images/f5.jpg">
-                                <a class="over-area" href="#gaia">
-                                    <div class="content">
-                                        <!-- <label class="label label-info label-fill">App Development</label> -->
-                                        <h4 >SLEEP WITH ME DESIGN </h4>
-                                         <p >Phuket</p>
-                                        <div style="text-align: right;"><span ng-bind="item.sale_price  | currency:'':0 " style="color: #f44336;
-            font-size: 16px;
-            font-weight: 400;"></span></div>
-                                    </div>
-                                </a>
-                            </div>
-                            
-                    </div>
-                    <div class="col-md-3"  ng-click="getDetailhotel(13)">
-                            <div class="project">
-                                <img src="./files/images/f5.jpg">
+                                <img src="./data/files/hotel/ho12/1.jpg">
                                 <a class="over-area" href="#gaia">
                                     <div class="content">
                                         <!-- <label class="label label-info label-fill">App Development</label> -->
