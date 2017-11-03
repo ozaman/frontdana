@@ -187,6 +187,25 @@
                                       </li> -->
                                       
                                     </ul>
+                                    <div id="map"></div>
+                                    <script>
+      function initMap() {
+        var uluru = {lat: 7.9135092, lng: 98.3663543};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBliu9xPrAQcibmkptCc3bwlpM1M6MbgAs&callback=initMap">
+    </script>
+                                    <iframe width="600" height="450" frameborder="0" style="border:0"
+src="https://www.google.com/maps/embed/v1/undefined?origin=...&q=...&destination=...&center=...&zoom=...&key=..." allowfullscreen></iframe>
                                     <!-- <div class="btn_orange" style="display:none">
                                         <span ng-if="flagcheck == 1">Book Now</span>
                                         <span ng-if="flagcheck == 2">จอง</span>
