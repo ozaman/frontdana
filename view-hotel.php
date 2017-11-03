@@ -185,32 +185,234 @@
                     </div>
                     <div style="margin-top: 95px">
                         <h3 class="title"><div align="center" style="     font-size: 16px; font-weight: 500;">Recommend</div></h3>
-                    <div class="col-md-3" >
-                        <div class="col-sm-12 col-md-12" ng-repeat="item in tourpopular" id="fade-in-out" >
-                    <div class="card card-blog" >
-                        <div class="card-image" ng-click="viewpackageforid(item.id)">
-                            <img src="./data/files/upload/tour/icon/{{item.icon}}" style="height: 180px" >
+                        <div class="col-md-3" >
+                            <div class="col-sm-12 col-md-12" id="fade-in-out" >
+                                <div class="card card-blog" >
+                                    <div class="card-image" ng-click="viewpackageforid(item.id)">
+                                        <img src="./data/files/upload/tour/icon/{{item.icon}}" style="height: 180px" >
+                                    </div>
+                                    <div class="card-content">
+                                        <h6 class="category text-rose" ng-bind="item.name"></h6>                      
+                                        
+                                    </div>                       
+                                    <div class="cost-pro">
+                                        <div >
+                                            <i class="material-icons" style="display: inline-block; line-height: 0;">place</i>
+                                            <p class="pro-item" ng-bind="item.city" align="left" ></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-content">
-                            <h6 class="category text-rose" ng-bind="item.name"></h6>                      
-                            
+                        <div class="col-md-3" >
+                            <div class="col-sm-12 col-md-12" id="fade-in-out" >
+                                <div class="card card-blog" >
+                                    <div class="card-image" ng-click="viewpackageforid(item.id)">
+                                        <img src="./data/files/upload/tour/icon/{{item.icon}}" style="height: 180px" >
+                                    </div>
+                                    <div class="card-content">
+                                        <h6 class="category text-rose" ng-bind="item.name"></h6>                      
+                                        
+                                    </div>                       
+                                    <div class="cost-pro">
+                                        <div >
+                                            <i class="material-icons" style="display: inline-block; line-height: 0;">place</i>
+                                            <p class="pro-item" ng-bind="item.city" align="left" ></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <!-- <div class="description-package">
-                            <p class="card-description" ng-bind="item.description"></p>
-                        </div> -->
-                        <div class="cost-pro">
-
-                           
-                            <div >
-                            <i class="material-icons" style="display: inline-block; line-height: 0;">place</i>
-                            <p class="pro-item" ng-bind="item.city" align="left" ></p>
+                        <div class="col-md-3" >
+                            <div class="col-sm-12 col-md-12" id="fade-in-out" >
+                                <div class="card card-blog" >
+                                    <div class="card-image" ng-click="viewpackageforid(item.id)">
+                                        <img src="./data/files/upload/tour/icon/{{item.icon}}" style="height: 180px" >
+                                    </div>
+                                    <div class="card-content">
+                                        <h6 class="category text-rose" ng-bind="item.name"></h6>                      
+                                        
+                                    </div>                       
+                                    <div class="cost-pro">
+                                        <div >
+                                            <i class="material-icons" style="display: inline-block; line-height: 0;">place</i>
+                                            <p class="pro-item" ng-bind="item.city" align="left" ></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                         <div style="    text-align: right;"><span ng-bind="item.net_price_adult | currency:'':0 " style=" color: #FF5722;"></span><span> /person</span></div>
-
-                            
+                        <div class="col-md-3" >
+                            <div class="col-sm-12 col-md-12" id="fade-in-out" >
+                                <div class="card card-blog" >
+                                    <div class="card-image" ng-click="viewpackageforid(item.id)">
+                                        <img src="./data/files/upload/tour/icon/{{item.icon}}" style="height: 180px" >
+                                    </div>
+                                    <div class="card-content">
+                                        <h6 class="category text-rose" ng-bind="item.name"></h6>                      
+                                        
+                                    </div>                       
+                                    <div class="cost-pro">
+                                        <div >
+                                            <i class="material-icons" style="display: inline-block; line-height: 0;">place</i>
+                                            <p class="pro-item" ng-bind="item.city" align="left" ></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
+                        <div class="col-md-3" >
+                            <div class="col-sm-12 col-md-12" id="fade-in-out" >
+                                <div class="card card-blog" >
+                                    <div class="card-image" ng-click="viewpackageforid(item.id)">
+                                        <img src="./data/files/upload/tour/icon/{{item.icon}}" style="height: 180px" >
+                                    </div>
+                                    <div class="card-content">
+                                        <h6 class="category text-rose" ng-bind="item.name"></h6>                      
+                                        
+                                    </div>                       
+                                    <div class="cost-pro">
+                                        <div >
+                                            <i class="material-icons" style="display: inline-block; line-height: 0;">place</i>
+                                            <p class="pro-item" ng-bind="item.city" align="left" ></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3" >
+                            <div class="col-sm-12 col-md-12" id="fade-in-out" >
+                                <div class="card card-blog" >
+                                    <div class="card-image" ng-click="viewpackageforid(item.id)">
+                                        <img src="./data/files/upload/tour/icon/{{item.icon}}" style="height: 180px" >
+                                    </div>
+                                    <div class="card-content">
+                                        <h6 class="category text-rose" ng-bind="item.name"></h6>                      
+                                        
+                                    </div>                       
+                                    <div class="cost-pro">
+                                        <div >
+                                            <i class="material-icons" style="display: inline-block; line-height: 0;">place</i>
+                                            <p class="pro-item" ng-bind="item.city" align="left" ></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3" >
+                            <div class="col-sm-12 col-md-12" id="fade-in-out" >
+                                <div class="card card-blog" >
+                                    <div class="card-image" ng-click="viewpackageforid(item.id)">
+                                        <img src="./data/files/upload/tour/icon/{{item.icon}}" style="height: 180px" >
+                                    </div>
+                                    <div class="card-content">
+                                        <h6 class="category text-rose" ng-bind="item.name"></h6>                      
+                                        
+                                    </div>                       
+                                    <div class="cost-pro">
+                                        <div >
+                                            <i class="material-icons" style="display: inline-block; line-height: 0;">place</i>
+                                            <p class="pro-item" ng-bind="item.city" align="left" ></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3" >
+                            <div class="col-sm-12 col-md-12" id="fade-in-out" >
+                                <div class="card card-blog" >
+                                    <div class="card-image" ng-click="viewpackageforid(item.id)">
+                                        <img src="./data/files/upload/tour/icon/{{item.icon}}" style="height: 180px" >
+                                    </div>
+                                    <div class="card-content">
+                                        <h6 class="category text-rose" ng-bind="item.name"></h6>                      
+                                        
+                                    </div>                       
+                                    <div class="cost-pro">
+                                        <div >
+                                            <i class="material-icons" style="display: inline-block; line-height: 0;">place</i>
+                                            <p class="pro-item" ng-bind="item.city" align="left" ></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3" >
+                            <div class="col-sm-12 col-md-12" id="fade-in-out" >
+                                <div class="card card-blog" >
+                                    <div class="card-image" ng-click="viewpackageforid(item.id)">
+                                        <img src="./data/files/upload/tour/icon/{{item.icon}}" style="height: 180px" >
+                                    </div>
+                                    <div class="card-content">
+                                        <h6 class="category text-rose" ng-bind="item.name"></h6>                      
+                                        
+                                    </div>                       
+                                    <div class="cost-pro">
+                                        <div >
+                                            <i class="material-icons" style="display: inline-block; line-height: 0;">place</i>
+                                            <p class="pro-item" ng-bind="item.city" align="left" ></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3" >
+                            <div class="col-sm-12 col-md-12" id="fade-in-out" >
+                                <div class="card card-blog" >
+                                    <div class="card-image" ng-click="viewpackageforid(item.id)">
+                                        <img src="./data/files/upload/tour/icon/{{item.icon}}" style="height: 180px" >
+                                    </div>
+                                    <div class="card-content">
+                                        <h6 class="category text-rose" ng-bind="item.name"></h6>                      
+                                        
+                                    </div>                       
+                                    <div class="cost-pro">
+                                        <div >
+                                            <i class="material-icons" style="display: inline-block; line-height: 0;">place</i>
+                                            <p class="pro-item" ng-bind="item.city" align="left" ></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3" >
+                            <div class="col-sm-12 col-md-12" id="fade-in-out" >
+                                <div class="card card-blog" >
+                                    <div class="card-image" ng-click="viewpackageforid(item.id)">
+                                        <img src="./data/files/upload/tour/icon/{{item.icon}}" style="height: 180px" >
+                                    </div>
+                                    <div class="card-content">
+                                        <h6 class="category text-rose" ng-bind="item.name"></h6>                      
+                                        
+                                    </div>                       
+                                    <div class="cost-pro">
+                                        <div >
+                                            <i class="material-icons" style="display: inline-block; line-height: 0;">place</i>
+                                            <p class="pro-item" ng-bind="item.city" align="left" ></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3" >
+                            <div class="col-sm-12 col-md-12" id="fade-in-out" >
+                                <div class="card card-blog" >
+                                    <div class="card-image" ng-click="viewpackageforid(item.id)">
+                                        <img src="./data/files/upload/tour/icon/{{item.icon}}" style="height: 180px" >
+                                    </div>
+                                    <div class="card-content">
+                                        <h6 class="category text-rose" ng-bind="item.name"></h6>                      
+                                        
+                                    </div>                       
+                                    <div class="cost-pro">
+                                        <div >
+                                            <i class="material-icons" style="display: inline-block; line-height: 0;">place</i>
+                                            <p class="pro-item" ng-bind="item.city" align="left" ></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                 <style >
                     .cost-pro p {
     display: inline-block;
@@ -233,7 +435,7 @@
     width: 100%;
 }
                 </style>
-                    </div>
+                    
                 </div>
                 </div>
             </div>
