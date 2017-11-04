@@ -221,6 +221,29 @@ var app = angular.module('myApp', ['ngCookies']);
         //                 });
         //$window.location.href = 'new.php';
     }
+    $scope.sendmailcontact = function(){
+        // console.log($scope.subject)
+        // console.log($scope.name)
+        // console.log($scope.email)
+        // console.log($scope.phone)
+        // console.log($scope.message)
+
+        $http({
+                method : 'POST',
+                url : "../../sendmail/sendmail.php",
+                data: $.param({'subject': $scope.subject,'name':$scope.name,'email':$scope.email,'phone':$scope.phone,'message':$scope.message}),
+                headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+                }).success(function(res){
+                    console.log(res)
+                    if (res == 1) {
+                      alert("Your message was sent, we'll contact you in shortly.");
+                    }
+                    else{
+                      alert("Can't sent your message, please try again.");
+                    }
+                    
+            });   
+    }
      // $document.scrollTopAnimated(10 ,5000).then(function() {
      //    console && console.log('You just scrolled to the top!');
      //  });

@@ -164,6 +164,28 @@ var app = angular.module('myApp', ['ngCookies','ui.bootstrap']);
          $window.location.href = 'view.php#?data='+x;
          $window.location.reload();
     }
+    $scope.sendmailcontact = function(){
+        // console.log($scope.subject)
+        // console.log($scope.name)
+        // console.log($scope.email)
+        // console.log($scope.phone)
+        // console.log($scope.message)
+
+        $http({
+                method : 'POST',
+                url : "../../sendmail/sendmail.php",
+                data: $.param({'subject': $scope.subject,'name':$scope.name,'email':$scope.email,'phone':$scope.phone,'message':$scope.message}),
+                headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+                }).success(function(res){
+                    console.log(res)
+                    if (res == 1) {
+                      alert("Your message was sent, we'll contact you in shortly.");
+                    }
+                    else{
+                      alert("Can't sent your message, please try again.");
+                    }
+            });   
+    }
 
     // angular.element('.navbar').bind("scroll", function(e) {
     //         var popupbookingdetail = e.target.scrollTop;//

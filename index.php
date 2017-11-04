@@ -2084,28 +2084,34 @@ height: 60%;
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label>Your Full Name</label>
-                                            <input type="text" name="name" value="" placeholder="Michael Jordan" class="form-control form-control-plain">
+                                            <input type="text" name="name" value="" placeholder="Michael Jordan" class="form-control form-control-plain" ng-model="name" style="color: #fff;">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label>Your Email</label>
-                                            <input type="text" name="email" value="" placeholder="michael.j@gmail.com" class="form-control form-control-plain">
+                                            <input type="text" name="email" value="" placeholder="michael.j@gmail.com" class="form-control form-control-plain" ng-model="email" style="color: #fff;">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <label>Subject</label>
-                                            <input type="text" name="subject" value="" placeholder="Say hi to you" class="form-control form-control-plain">
+                                            <label>Phone</label>
+                                            <input type="text" name="subject" value="" placeholder="Say hi to you" class="form-control form-control-plain" ng-model="phone">
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <textarea name="content" class="form-control form-control-plain" placeholder="Here you can write your nice text" rows="8"></textarea>
+                                            <label>Subject</label>
+                                            <input type="text" name="subject" value="" placeholder="Say hi to you" class="form-control form-control-plain" ng-model="subject" style="color: #fff;">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <textarea name="content" class="form-control form-control-plain" placeholder="Here you can write your nice text" rows="8" ng-model="message" style="color: #fff;"></textarea>
                                         </div>
                                         <div>
                                             <div class="col-md-2 col-md-offset-5">
-                                                <button type="button" class="btn btn-danger btn-fill">
+                                                <button type="button" class="btn btn-danger btn-fill" ng-click="sendmailcontact()">
                                                     Contact Us
                                                 </button>
                                             </div>

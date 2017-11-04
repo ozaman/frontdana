@@ -289,7 +289,7 @@
                               </div>
 
                               <div class="social-buttons">
-                                  <a href="https://www.facebook.com/DanaToursandTravel/?ref=br_rs"> <button class="btn btn-social btn-simple"><i class="fa fa-facebook-square"></i></button></a>
+                                  <button class="btn btn-social btn-simple"><a href="https://www.facebook.com/DanaToursandTravel/?ref=br_rs"> <i class="fa fa-facebook-square"></i></a></button>
                                   <button class="btn btn-social btn-simple"><i class="fa fa-twitter"></i></button>
                                   <button class="btn btn-social btn-simple"><i class="fa fa-instagram"></i></button>
                                   <button class="btn btn-social btn-simple"><i class="fa fa-google"></i></button>
@@ -299,39 +299,45 @@
                                   <div class="col-md-12 ">
                                       <div class="contact-form">
                                           <form action="" method="post">
-                                              <div class="row">
-                                                  <div class="col-md-4">
-                                                      <div class="form-group">
-                                                          <label>Your Full Name</label>
-                                                          <input type="text" name="name" value="" placeholder="Michael Jordan" class="form-control form-control-plain">
-                                                      </div>
-                                                  </div>
-                                                  <div class="col-md-4">
-                                                      <div class="form-group">
-                                                          <label>Your Email</label>
-                                                          <input type="text" name="email" value="" placeholder="michael.j@gmail.com" class="form-control form-control-plain">
-                                                      </div>
-                                                  </div>
-                                                  <div class="col-md-4">
-                                                      <div class="form-group">
-                                                          <label>Subject</label>
-                                                          <input type="text" name="subject" value="" placeholder="Say hi to you" class="form-control form-control-plain">
-                                                      </div>
-                                                  </div>
-                                                  <div class="col-md-12">
-                                                      <div class="form-group">
-                                                          <textarea name="content" class="form-control form-control-plain" placeholder="Here you can write your nice text" rows="8"></textarea>
-                                                      </div>
-                                                      <div>
-                                                          <div class="col-md-2 col-md-offset-5">
-                                                              <button type="button" class="btn btn-danger btn-fill">
-                                                                  Contact Us
-                                                              </button>
-                                                          </div>
-                                                      </div>
-                                                  </div>
-                                              </div>
-                                          </form>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label>Your Full Name</label>
+                                                            <input type="text" name="name" value="" placeholder="Michael Jordan" class="form-control form-control-plain" ng-model="name" style="color: #fff;">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label>Your Email</label>
+                                                            <input type="text" name="email" value="" placeholder="michael.j@gmail.com" class="form-control form-control-plain" ng-model="email" style="color: #fff;">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label>Phone</label>
+                                                            <input type="text" name="subject" value="" placeholder="Say hi to you" class="form-control form-control-plain" ng-model="phone">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <label>Subject</label>
+                                                            <input type="text" name="subject" value="" placeholder="Say hi to you" class="form-control form-control-plain" ng-model="subject" style="color: #fff;">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <textarea name="content" class="form-control form-control-plain" placeholder="Here you can write your nice text" rows="8" ng-model="message" style="color: #fff;"></textarea>
+                                                        </div>
+                                                        <div>
+                                                            <div class="col-md-2 col-md-offset-5">
+                                                                <button type="button" class="btn btn-danger btn-fill" ng-click="sendmailcontact()">
+                                                                    Contact Us
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
                                       </div>
                                   </div>
                               </div>
