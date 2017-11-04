@@ -87,17 +87,21 @@ var app = angular.module('myApp', ['ngCookies']);
     $scope.getTourforareaall = function(){
         $scope.dataTour = [];
         angular.forEach($scope.tours, function (z,i) {
-                if (i<=7) {
-                    $scope.dataTour.push(z);
-                }
+            if (z.show_web == 1 ) {
+                        $scope.dataTour.push(z);
+                 }
+               
             });
     }
     $scope.getTransferforareaall = function(){
         $scope.dataTransfer = [];
         angular.forEach($scope.transfer, function (z,i) {
-                if (i<=7) {
-                    $scope.dataTransfer.push(z);
-                }
+
+                 if (z.show_web == 1 ) {
+                        $scope.dataTransfer.push(z);
+                 }
+                //$scope.dataTransfer.push(y);
+            
             });
     }
     $scope.getHotelforareaall = function(){
@@ -160,8 +164,8 @@ var app = angular.module('myApp', ['ngCookies']);
          angular.forEach($scope.tours, function (y,key) {
         console.log(key)
             if (y.city == x && key <= 8) {
-                if (d.show_web == 1 ) {
-                        $scope.dataTour.push(d);
+                if (y.show_web == 1 ) {
+                        $scope.dataTour.push(y);
                  }
                 // $scope.dataTour.push(y);
             }
@@ -179,8 +183,8 @@ var app = angular.module('myApp', ['ngCookies']);
          angular.forEach($scope.transfer, function (y,key) {
         console.log(key)
             if (y.province == x && key <= 8) {
-                 if (d.show_web == 1 ) {
-                        $scope.dataTransfer.push(d);
+                 if (y.show_web == 1 ) {
+                        $scope.dataTransfer.push(y);
                  }
                 //$scope.dataTransfer.push(y);
             }

@@ -338,7 +338,7 @@ height: 60%;
                         <li class="" id="Phuket"><a href="#transfer1" data-toggle="tab" aria-expanded="true" ng-click="getTransferforarea('Phuket');show = !show">Phuket</a></li>
                         <li class="" id="Phuket"><a href="#transfer2" data-toggle="tab" aria-expanded="true" ng-click="getTransferforarea('Bangkok');show = !show">Bangkok</a></li>
                         
-                        <li class="active" id="PhiPhiisland"><a href="#transfer6" data-toggle="tab" aria-expanded="false" ng-click="getTransferforareaall('All');show = !show">All</a></li>
+                        <li class="active" id="PhiPhiisland"><a href="#transfer6" data-toggle="tab" aria-expanded="false" ng-click="getTransferforareaall();show = !show">All</a></li>
                         <!-- <li class="" aling="right" id="PhiPhiisland" style="float: right;"><a href="#transfer7" data-toggle="tab" aria-expanded="false" ng-click="getTransfermore();show = !show">More..</a></li> -->
                        <!--  <li class="" id="All"><a href="#pill3" data-toggle="tab" aria-expanded="false" ng-click="getTourforareaall('All');show = !show">All</a></li> -->
                     </ul> 
@@ -371,9 +371,9 @@ height: 60%;
                                 <div class="card-titles">
                                     <a href="#pablo" class="card-link"  ng-bind="item.name"></a>
                                 </div>
-                                <div class="card-description">
+                                <!-- <div class="card-description">
                                     <span>Pax:</span><span ng-bind="item.person"></span>
-                                </div>
+                                </div> -->
                                 <div class="" style="position: absolute;
     /* height: 10%; */
     /* padding: 18px; */
@@ -2026,7 +2026,7 @@ height: 60%;
               <li class="">Phones: <a href="tel:#" style="display: inline-block;">(+66) 081-0808804</a> 
                 <!-- <a href="tel:#" style="display: inline-block;">087-2794723</a> -->
             </li>
-              <li class="">E-mail: <a href="mailto:#" style="display: inline-block;"> sele@danatoursasia.com</a></li>
+              <li class="">E-mail: <a href="mailto:#" style="display: inline-block;"> sales@danatoursasia.com</a></li>
             </ul>
           </div>
         </div>
@@ -2282,7 +2282,7 @@ height: 60%;
               <a href="#" class="fa fa-twitter"></a>
               <a href="#" class="fa fa-google-plus"></a>
             </div>
-            <div class="copy">Website Template Designed by <a href="" rel="nofollow">ozaman</a></div>
+            <div class="copy">Website Template Designed by <a href="" rel="nofollow">Dana Tours Asia</a></div>
         </div>
     </footer>
 

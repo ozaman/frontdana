@@ -368,7 +368,7 @@
                                 <ul style="    padding-left: 0;">
                                     <li class="">Address: <a>100/16 Moo 5 , Soi 1 Chalernprakiet Rd., T.Rassada Muang Phuket Thailand 83000</a></li>
                                     <li class="">Phones: <a href="tel:#" style="display: inline-block;">(+66) 081-0808804</a> 
-                                    <li class="">E-mail: <a href="mailto:#" style="display: inline-block;"> sele@danatoursasia.com</a></li>
+                                    <li class="">E-mail: <a href="mailto:#" style="display: inline-block;"> sales@danatoursasia.com</a></li>
                                 </ul>
                             </div>
                         </div>
