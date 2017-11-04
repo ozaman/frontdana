@@ -721,7 +721,7 @@ src="https://www.google.com/maps/embed/v1/undefined?origin=...&q=...&destination
                               </div>
 
                               <div class="social-buttons">
-                                  <button class="btn btn-social btn-simple"><i class="fa fa-facebook-square"></i></button>
+                                  <button class="btn btn-social btn-simple"><a href="https://www.facebook.com/DanaToursandTravel/?ref=br_rs"> <i class="fa fa-facebook-square"></i></a></button>
                                   <button class="btn btn-social btn-simple"><i class="fa fa-twitter"></i></button>
                                   <button class="btn btn-social btn-simple"><i class="fa fa-instagram"></i></button>
                                   <button class="btn btn-social btn-simple"><i class="fa fa-google"></i></button>
