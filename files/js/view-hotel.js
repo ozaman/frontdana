@@ -291,7 +291,50 @@ var app = angular.module('myApp', ['ngCookies','ui.bootstrap']);
       image: 'data/files/hotel/ho12/6.jpg'
     },
     {
-      image: 'data/files/hotel/ho12/6.jpg'
+      image: 'data/files/hotel/ho12/7.jpg'
+    }
+  ];
+  $scope.slides13 = [
+    {
+      image: 'data/files/hotel/ho13/1.jpg'
+    },
+    {
+      image: 'data/files/hotel/ho13/2.jpg'
+    },
+    {
+      image: 'data/files/hotel/ho13/3.jpg'
+    },
+    {
+      image: 'data/files/hotel/ho13/4.jpg'
+    },
+    {
+      image: 'data/files/hotel/ho13/5.jpg'
+    },
+    {
+      image: 'data/files/hotel/ho13/6.jpg'
+    },
+    {
+      image: 'data/files/hotel/ho13/7.jpg',
+    },
+    {
+      image: 'data/files/hotel/ho13/8.jpg'
+    },
+    {
+      image: 'data/files/hotel/ho13/9.jpg'
+    }
+  ];
+  $scope.slides14 = [
+    {
+      image: 'data/files/hotel/ho14/1.jpg'
+    },
+    {
+      image: 'data/files/hotel/ho14/2.jpg'
+    },
+    {
+      image: 'data/files/hotel/ho14/3.jpg'
+    },
+    {
+      image: 'data/files/hotel/ho14/4.jpg'
     }
   ];
   //var slides = $scope.slides;
@@ -333,6 +376,12 @@ var app = angular.module('myApp', ['ngCookies','ui.bootstrap']);
             }
             else if ($scope.data == 12) {
               $scope.slides = $scope.slides12;
+            }
+             else if ($scope.data == 13) {
+              $scope.slides = $scope.slides13;
+            }
+             else if ($scope.data == 14) {
+              $scope.slides = $scope.slides14;
             }
             console.log($scope.slides)
             $scope.datagallery = '';

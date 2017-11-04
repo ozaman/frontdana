@@ -71,7 +71,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a  href="index.php" class="navbar-brand" style="padding: 0"> 
+                    <a  href="http://danatoursasia.com" class="navbar-brand" style="padding: 0"> 
                         <img src="./files/images/logo.png" width="50">
                     </a>
                 </div>
@@ -497,7 +497,7 @@
         <footer class="footer footer-black footer-big"  style="padding: 15px;">
             <div class="container">
                 <div class="socials">
-                  <a href="#" class="fa fa-facebook"></a>
+                  <a href="https://www.facebook.com/DanaToursandTravel/?ref=br_rs" class="fa fa-facebook"></a>
                   <a href="#" class="fa fa-twitter"></a>
                   <a href="#" class="fa fa-google-plus"></a>
                 </div>

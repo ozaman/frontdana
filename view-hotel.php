@@ -71,7 +71,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a  href="index.php" class="navbar-brand" style="padding: 0"> 
+                    <a  href="http://danatoursasia.com" class="navbar-brand" style="padding: 0"> 
                         <img src="./files/images/logo.png" width="50">
                     </a>
                 </div>
@@ -286,6 +286,8 @@
                                 <span align="center" style="margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 11">ANGSANA LAGUNA PHUKET</span>                               
                                                 
                                 <span align="center" style="margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 12">LEBUA TOWER CLUB BANGKOK </span>
+                                <span align="center" style="margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 13">Holiday Inn Express Phuket Patong Beach Central </span>
+                                <span align="center" style="margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 14">BANYAN TREE PHUKET </span>
                             
 
     </div></h1>
@@ -613,7 +615,39 @@ src="https://www.google.com/maps/embed/v1/undefined?origin=...&q=...&destination
                                     </div>
                                 </div>
                             </div>
-                        
+                            <div class="col-sm-12 col-md-12" id="fade-in-out" >
+                                <div class="card card-blog" >
+                                    <div class="card-image" ng-click="viewpackageforid(13)">
+                                        <img src="./data/files/hotel/ho13/1.jpg" style="height: 180px" >
+                                    </div>
+                                    <div class="card-content">
+                                        <h6 class="category text-rose" >Holiday Inn Express Phuket Patong Beach Central</h6>                      
+                                        
+                                    </div>                       
+                                    <div class="cost-pro">
+                                        <div >
+                                            <i class="material-icons" style="display: inline-block; line-height: 0;">place</i>
+                                            <p class="pro-item"  align="left" >Phuket</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><div class="col-sm-12 col-md-12" id="fade-in-out" >
+                                <div class="card card-blog" >
+                                    <div class="card-image" ng-click="viewpackageforid(14)">
+                                        <img src="./data/files/hotel/ho14/1.jpg" style="height: 180px" >
+                                    </div>
+                                    <div class="card-content">
+                                        <h6 class="category text-rose" >BANYAN TREE PHUKET</h6>                      
+                                        
+                                    </div>                       
+                                    <div class="cost-pro">
+                                        <div >
+                                            <i class="material-icons" style="display: inline-block; line-height: 0;">place</i>
+                                            <p class="pro-item"  align="left" >Phuket</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="col-sm-12 col-md-12" id="fade-in-out" >
                                 <div class="card card-blog" >
                                     <div class="card-image" ng-click="viewpackageforid(12)">
@@ -743,7 +777,7 @@ src="https://www.google.com/maps/embed/v1/undefined?origin=...&q=...&destination
         <footer class="footer footer-black footer-big"  style="padding: 15px;">
             <div class="container">
                 <div class="socials">
-                  <a href="#" class="fa fa-facebook"></a>
+                  <a href="https://www.facebook.com/DanaToursandTravel/?ref=br_rs" class="fa fa-facebook"></a>
                   <a href="#" class="fa fa-twitter"></a>
                   <a href="#" class="fa fa-google-plus"></a>
                 </div>

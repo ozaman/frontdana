@@ -80,7 +80,7 @@
                 <div class="row">
                     <div class="col-md-12 col-xs-12 ">
                         <div class="brand">
-                            <h1 class="title" style="text-align: center;"><span style="color: #ffd400">D</span>ana Tours Asia!</h1>
+                            <h1 class="title" style="text-align: center;"><span style="color: #ffd400">D</span>ana Tours and Travel!</h1>
                          
                         </div>
                     </div>
@@ -621,7 +621,37 @@ height: 60%;
                     </div>
                 </div>
                 <div class="row">
-                    
+                    <div class="col-md-4"  ng-click="getDetailhotel(13)" ng-if="dataHotelcheck == 0 || dataHotelcheck == 1">
+                            <div class="project">
+                                <img src="./data/files/hotel/ho13/1.jpg">
+                                <a class="over-area" href="#gaia">
+                                    <div class="content">
+                                        <!-- <label class="label label-info label-fill">App Development</label> -->
+                                        <h4 >Holiday Inn Express Phuket Patong Beach Central </h4>
+                                         <p >Phuket</p>
+                                        <div style="text-align: right;"><span ng-bind="item.sale_price  | currency:'':0 " style="color: #f44336;
+            font-size: 16px;
+            font-weight: 400;"></span></div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                    </div><div class="col-md-4"  ng-click="getDetailhotel(14)" ng-if="dataHotelcheck == 0 || dataHotelcheck == 1">
+                            <div class="project">
+                                <img src="./data/files/hotel/ho14/1.jpg">
+                                <a class="over-area" href="#gaia">
+                                    <div class="content">
+                                        <!-- <label class="label label-info label-fill">App Development</label> -->
+                                        <h4 >BANYAN TREE PHUKET </h4>
+                                         <p >Phuket</p>
+                                        <div style="text-align: right;"><span ng-bind="item.sale_price  | currency:'':0 " style="color: #f44336;
+            font-size: 16px;
+            font-weight: 400;"></span></div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                    </div>
                     <div class="col-md-4"  ng-click="getDetailhotel(12)" ng-if="dataHotelcheck == 0 || dataHotelcheck == 2">
                             <div class="project">
                                 <img src="./data/files/hotel/ho12/1.jpg">
@@ -2278,7 +2308,7 @@ height: 60%;
     <footer class="footer footer-black footer-big"  style="padding: 15px;">
         <div class="container">
             <div class="socials">
-              <a href="#" class="fa fa-facebook"></a>
+              <a href="https://www.facebook.com/DanaToursandTravel/?ref=br_rs" class="fa fa-facebook"></a>
               <a href="#" class="fa fa-twitter"></a>
               <a href="#" class="fa fa-google-plus"></a>
             </div>
