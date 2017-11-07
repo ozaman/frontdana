@@ -427,7 +427,7 @@
                             <ul >
                                 <li class="">Address: <a>100/16 Moo 5 , Soi 1 Chalernprakiet Rd., T.Rassada Muang Phuket Thailand 83000</a></li>
                                 <li class="">Phones: <a href="tel:#" style="display: inline-block;">(+66) 096-6409949</a></li>
-                                <li class="">E-mail: <a href="mailto:#" style="display: inline-block;"> sele@danatoursasia.com</a></li>
+                                <li class="">E-mail: <a href="mailto:#" style="display: inline-block;"> sales@danatoursasia.com</a></li>
                             </ul>
                         </div>
                     </div>
@@ -441,10 +441,10 @@
                               </div>
 
                               <div class="social-buttons">
-                                  <button class="btn btn-social btn-simple"><a href="https://www.facebook.com/DanaToursandTravel/?ref=br_rs"> <i class="fa fa-facebook-square"></i></a></button>
-                                  <button class="btn btn-social btn-simple"><i class="fa fa-twitter"></i></button>
-                                  <button class="btn btn-social btn-simple"><i class="fa fa-instagram"></i></button>
-                                  <button class="btn btn-social btn-simple"><i class="fa fa-google"></i></button>
+                                  <button class="btn btn-social btn-simple"><a style="color: #d2d2d2;" href="https://www.facebook.com/DanaToursandTravel/?ref=br_rs"> <i class="fa fa-facebook-square"></i></a></button>
+                                  <button class="btn btn-social btn-simple"><i style="color: #d2d2d2;" class="fa fa-twitter"></i></button>
+                                  <button class="btn btn-social btn-simple"><i style="color: #d2d2d2;" class="fa fa-instagram"></i></button>
+                                  <button class="btn btn-social btn-simple"><i style="color: #d2d2d2;" class="fa fa-google"></i></button>
                               </div>
 
                               <div class="row">
