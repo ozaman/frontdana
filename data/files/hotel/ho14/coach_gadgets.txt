@@ -1,0 +1,103 @@
+-- phpMyAdmin SQL Dump
+-- version 2.10.3
+-- http://www.phpmyadmin.net
+-- 
+-- Host: localhost
+-- Generation Time: Nov 04, 2017 at 11:47 PM
+-- Server version: 5.0.51
+-- PHP Version: 5.2.6
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+-- 
+-- Database: `coach_gadgets`
+-- 
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `coach`
+-- 
+
+CREATE TABLE `coach` (
+  `coach_id` int(10) NOT NULL auto_increment,
+  `coach_name` varchar(60) collate utf8_unicode_ci NOT NULL,
+  `username` varchar(10) collate utf8_unicode_ci NOT NULL,
+  `password` varchar(10) collate utf8_unicode_ci NOT NULL,
+  `DOB` date NOT NULL,
+  `gender` varchar(7) collate utf8_unicode_ci NOT NULL,
+  `address` varchar(100) collate utf8_unicode_ci NOT NULL,
+  `phone` varchar(20) collate utf8_unicode_ci NOT NULL,
+  `sign_date` date NOT NULL,
+  `release_date` date NOT NULL,
+  PRIMARY KEY  (`coach_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=3 ;
+
+-- 
+-- Dumping data for table `coach`
+-- 
+
+INSERT INTO `coach` VALUES (1, 'Waeismael Hayisamoh', 'wae123', '123456', '1993-11-01', 'Male', 'Muang, Yala', '0978782878', '2015-01-01', '2018-01-01');
+INSERT INTO `coach` VALUES (2, 'Sulaiman Tohjeh', 'man456', '456789', '1994-03-01', 'Male', 'Muang, Yala', '0942342424', '2015-01-01', '2018-01-01');
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `match`
+-- 
+
+CREATE TABLE `match` (
+  `match_id` int(7) NOT NULL auto_increment,
+  `opp_name` varchar(100) collate utf8_unicode_ci NOT NULL,
+  `stadium` varchar(100) collate utf8_unicode_ci NOT NULL,
+  `date` date NOT NULL,
+  `balance` int(12) NOT NULL,
+  `squad` varchar(50) collate utf8_unicode_ci NOT NULL,
+  `competition` varchar(100) collate utf8_unicode_ci NOT NULL,
+  `team_id` int(7) NOT NULL,
+  PRIMARY KEY  (`match_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=3 ;
+
+-- 
+-- Dumping data for table `match`
+-- 
+
+INSERT INTO `match` VALUES (1, 'Yaha City', 'Rajabhat Yala University Stadium', '2017-06-15', 20000, '4-4-2', 'FA Cup Junior ', 0);
+INSERT INTO `match` VALUES (2, 'Kotabaru FC', 'Kotabaru Stadium', '2017-08-22', 20000, '4-5-1', 'FA Cup Junior', 0);
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `player`
+-- 
+
+CREATE TABLE `player` (
+  `player_id` int(7) NOT NULL auto_increment,
+  `name` varchar(50) collate utf8_unicode_ci NOT NULL,
+  `position` varchar(50) collate utf8_unicode_ci NOT NULL,
+  `birthday` date NOT NULL,
+  `school` varchar(50) collate utf8_unicode_ci NOT NULL,
+  `height` int(7) NOT NULL,
+  `weight` int(7) NOT NULL,
+  `foot` varchar(10) collate utf8_unicode_ci NOT NULL,
+  `address` varchar(50) collate utf8_unicode_ci NOT NULL,
+  `phone` varchar(20) collate utf8_unicode_ci NOT NULL,
+  `sign_date` date NOT NULL,
+  `release_date` date NOT NULL,
+  `team_id` int(7) NOT NULL,
+  `team_class` varchar(50) collate utf8_unicode_ci NOT NULL,
+  `goal` int(6) NOT NULL,
+  `assist` int(6) NOT NULL,
+  `yellow` int(6) NOT NULL,
+  `red` int(6) NOT NULL,
+  PRIMARY KEY  (`player_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=5 ;
+
+-- 
+-- Dumping data for table `player`
+-- 
+
+INSERT INTO `player` VALUES (1, 'Muhammad Ridwan', 'DMF', '2009-01-01', 'Raman Sirivit, Yala', 130, 29, 'Right', 'Raman, Yala', '0912341234', '2015-01-01', '2018-01-01', 0, 'U-9', 0, 0, 0, 0);
+INSERT INTO `player` VALUES (2, 'Abdul Ali', 'LW', '2006-02-01', 'Benjama Rachuthit, Pattani', 140, 36, 'Left', 'Muang, Pattani', '0902302020', '2015-01-01', '2018-01-01', 0, 'U-11', 0, 0, 0, 0);
+INSERT INTO `player` VALUES (3, 'Nattawat Srisai', 'RB', '2004-09-07', 'Tessabarn 5, Yala', 157, 45, 'Right', 'Muang, Yala', '0975775757', '2015-01-01', '2018-01-01', 0, 'U-13', 0, 0, 0, 0);
+INSERT INTO `player` VALUES (4, 'Pongsak Tephee', 'LB', '2002-09-14', 'Kanarat Bamrung, Yala', 160, 50, 'Left', 'Muang, Yala', '0932342564', '2015-01-01', '2018-01-01', 0, 'U-15', 0, 0, 0, 0);

@@ -19,6 +19,7 @@
   
     <link rel="icon" href="backend/images/logo22.png" type="image/x-icon">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js" type="text/javascript"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-sanitize.js"></script>
     <script src="files/js/ui-bootstrap-tpls-2.5.0.min.js" type="text/javascript"></script>
     <script src="files/js/angular-cookies.min.js" type="text/javascript"></script>
     <script src="files/js/angular-scroll.js" type="text/javascript"></script>
@@ -288,6 +289,7 @@
                                 <span align="center" style="margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 12">LEBUA TOWER CLUB BANGKOK </span>
                                 <span align="center" style="margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 13">Holiday Inn Express Phuket Patong Beach Central </span>
                                 <span align="center" style="margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 14">BANYAN TREE PHUKET </span>
+                                <span align="center" style="margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 15">ALOFT BANGKOK, SUKHUMVIT 11 </span>
                             
 
     </div></h1>
@@ -332,7 +334,7 @@
                         </div>
                         <div class="col-md-12" >
                             <div class="card-plain">
-                                <div class="">
+                                <div class="" style="margin-top: 80px">
                                    <!--  <div class="timeline-heading" >
                                                     <div class="" style=" width: 130px;
     margin-top: 30px;
@@ -352,8 +354,28 @@
                                                       
                                                 </div> -->
                                     
-
-                                            
+                                                <div class="timeline-panel">
+                                            <div class="timeline-heading" >
+                                                    <div class="" style=" 
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+    /* background-color: #f44336; */
+    border-radius: 4px;
+    padding: 5px 0;
+    text-transform: uppercase;">HOTEL BACKGROUND</div>
+                                                </div>
+                                                <div class="timeline-body">
+                                                    <div ng-bind-html="background">
+                                                      
+                                                    </div>
+                                                      
+                                                </div>
+                                            </div>
+                                                <div class="timeline-panel">
                                                 <div class="timeline-heading" >
                                                     <div class="" style=" 
     margin-top: 30px;
@@ -365,14 +387,13 @@
     /* background-color: #f44336; */
     border-radius: 4px;
     padding: 5px 0;
-    text-transform: uppercase;">Room Information</div>
+    text-transform: uppercase;">ROOM TYPE</div>
                                                 </div>
                                                 <div class="timeline-body">
-                                                    <div ng-bind="room">
-                                                      
-                                                    </div>
+                                                    <div ng-bind-html="room"></div>
                                                       
                                                 </div>
+                                            </div>
                                                 <!-- <div style="color: #f44336; margin-top: 50px;">
                                                    <h4 al ng-bind="tours.class" style="display: inline-block;"></h4>
                                                    <h4 style="display: inline-block;float: right;" >8 person</h4>
@@ -393,10 +414,29 @@
     /* background-color: #f44336; */
     border-radius: 4px;
     padding: 5px 0;
-    text-transform: uppercase;">Location Informatio </div>
+    text-transform: uppercase;">LOCATION </div>
                                                 </div>
                                                 <div class="timeline-body" >
-                                                <div ng-bind="location" ></div>
+                                                <div ng-bind-html="location" ></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="timeline-panel">
+                                                <div class="timeline-heading" >
+                                                    <div class="" style="
+    margin-top:85px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+    /* background-color: #f44336; */
+    border-radius: 4px;
+    padding: 5px 0;
+    text-transform: uppercase;">ATTRACTIONS NEARBY </div>
+                                                </div>
+                                                <div class="timeline-body" >
+                                                <div ng-bind-html="attraction" ></div>
                                                 </div>
                                             </div>
                                        
@@ -655,6 +695,23 @@ src="https://www.google.com/maps/embed/v1/undefined?origin=...&q=...&destination
                                     </div>
                                     <div class="card-content">
                                         <h6 class="category text-rose" >LEBUA TOWER CLUB BANGKOK</h6>                      
+                                        
+                                    </div>                       
+                                    <div class="cost-pro">
+                                        <div >
+                                            <i class="material-icons" style="display: inline-block; line-height: 0;">place</i>
+                                            <p class="pro-item"  align="left" >Bangkok</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12" id="fade-in-out" >
+                                <div class="card card-blog" >
+                                    <div class="card-image" ng-click="viewpackageforid(15)">
+                                        <img src="./data/files/hotel/ho15/1.jpg" style="height: 180px" >
+                                    </div>
+                                    <div class="card-content">
+                                        <h6 class="category text-rose" >ALOFT BANGKOK, SUKHUMVIT 11</h6>                      
                                         
                                     </div>                       
                                     <div class="cost-pro">

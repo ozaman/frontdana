@@ -669,6 +669,24 @@ height: 60%;
                             
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-md-6"  ng-click="getDetailhotel(15)" ng-if="dataHotelcheck == 0 || dataHotelcheck == 2">
+                            <div class="project">
+                                <img src="./data/files/hotel/ho15/1.jpg">
+                                <a class="over-area" href="#gaia">
+                                    <div class="content">
+                                        <!-- <label class="label label-info label-fill">App Development</label> -->
+                                        <h4 >ALOFT BANGKOK, SUKHUMVIT 11 </h4>
+                                         <p >Bangkok</p>
+                                        <div style="text-align: right;"><span ng-bind="item.sale_price  | currency:'':0 " style="color: #f44336;
+            font-size: 16px;
+            font-weight: 400;"></span></div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                    </div>
+                </div>
                     
 
                 
