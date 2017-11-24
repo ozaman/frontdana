@@ -197,7 +197,7 @@
                                                 </div>
                                                 <div class="timeline-body">
                                                     <div ng-bind="tours.name" ></div>
-                                                    <div><span  style="color: #f44336;" ><span ng-bind="tours.cost_web | currency:'':0" style="font-weight: 500;"></span><span style="color: #333"><span style="color: #f44336">฿</span> / Person</span></span></div>
+                                                    <div><span  style="color: #f44336;" ><span ng-bind="tours.cost_web" style="font-weight: 500;"></span><span style="color: #333"><span style="color: #f44336">฿</span> / Person</span></span></div>
                                                       
                                                 </div>
                                     
