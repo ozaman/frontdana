@@ -241,7 +241,7 @@
                                             </div>
                                             <div class="price-container" align="left" style="float: right;">
                                                 <span class="price price-old"> <!-- 12,500 --></span>
-                                                <span class="price price-new" ng-bind="item.cost_web | currency:'':0 "> </span> / Package
+                                                <span class="price price-new" ng-bind="item.cost_web "> </span> / Package
                                             </div>
                                         </div>
                                     </div>
@@ -304,7 +304,7 @@
                             <i class="material-icons" style="display: inline-block; line-height: 0;">place</i>
                             <p class="pro-item" ng-bind="item.city" align="left" ></p>
                         </div>
-                         <div style="    text-align: right;"><span ng-bind="item.cost_web | currency:'':0 " style=" color: #FF5722;"></span><span> /person</span></div>
+                         <div style="    text-align: right;"><span ng-bind="item.cost_web" style=" color: #FF5722;"></span><span> /person</span></div>
 
                             
                         </div>

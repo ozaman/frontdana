@@ -163,7 +163,7 @@ var app = angular.module('myApp', ['ngCookies']);
         //console.log($scope.allTour)
          angular.forEach($scope.tours, function (y,key) {
         console.log(key)
-            if (y.city == x && key <= 8) {
+            if (y.city == x) {
                 if (y.show_web == 1 ) {
                         $scope.dataTour.push(y);
                  }
@@ -182,7 +182,7 @@ var app = angular.module('myApp', ['ngCookies']);
         //console.log($scope.allTour)
          angular.forEach($scope.transfer, function (y,key) {
         console.log(key)
-            if (y.province == x && key <= 8) {
+            if (y.province == x) {
                  if (y.show_web == 1 ) {
                         $scope.dataTransfer.push(y);
                  }
