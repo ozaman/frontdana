@@ -386,7 +386,8 @@ height: 60%;
                                     </div>
                                     <div class="price-container" style="text-align: right;">
                                         <span class="price" ng-if="item.province == 'Bangkok'" style="margin-right: 8px;">800</span>
-                                        <span class="price"  style="margin-right: 8px;" ng-if="item.province == 'Phuket'">600</span>
+                                        <span class="price"  style="margin-right: 8px;" ng-if="item.province == 'Phuket' && item.person <= 4" >600</span>
+                                        <span class="price"  style="margin-right: 8px;" ng-if="item.province == 'Phuket' && item.person > 4" >850</span>
                                         <label class="f12" style="font-size: 16px;"> THB</label>
                                         
                                     </div>
