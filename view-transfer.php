@@ -162,11 +162,15 @@
                                                 <div class="timeline-body">
                                                     <div ng-bind="tours.name" ></div>
                                                     <div>
-                                                        <span  style="color: #f44336;" 
-                                                        >
-                                                         <span ng-if="tours.province == 'Phuket' " style="font-weight: 500;">600</span>
-                                <span ng-if="tours.province == 'Bangkok' " style="font-weight: 500;">800</span>
-                                <span style="color: #333"><span style="color: #f44336">฿</span> / Package</span>
+
+
+
+                                                        <span  style="color: #f44336;">
+                                                         <span ng-if="tours.province == 'Phuket' && tours.person <= 4" style="font-weight: 500;">600</span>
+                                                         <span ng-if="tours.province == 'Phuket' && tours.person > 4" style="font-weight: 500;">850</span>
+                                                        <span ng-if="tours.province == 'Bangkok' && tours.person <= 4' " style="font-weight: 500;">800</span>
+                                                        <span ng-if="tours.province == 'Bangkok' && tours.person > 4' " style="font-weight: 500;">900</span>
+                                                        <span style="color: #333"><span style="color: #f44336">฿</span> / Package</span>
                                                         </span></div>
                                                       
                                                 </div>
@@ -187,7 +191,7 @@
                     <div style="padding: 3px 3px;  border-radius: 8px; ">
                         <div style="margin-left: 3%; padding-top: 9px;">
                             <b>1.</b> 
-                            <img src="https://dotdotdottrip.com/files/img/air.png" style="margin: 8px;"> 
+                            <img src="https://www.welovetaxi.com/app/booking/files/img/air.png" style="margin: 8px;"> 
                             <span class="lng-conditioner">Air Conditioner</span>                                        
                         </div>
                         <div style="margin-left: 3%;padding-bottom: 9px;">
@@ -274,7 +278,7 @@
                         <div class="contact" id="contact">             
                             <ul >
                                 <li class="">Address: <a>100/16 Moo 5 , Soi 1 Chalernprakiet Rd., T.Rassada Muang Phuket Thailand 83000</a></li>
-                                <li class="">Phones: <a href="tel:#" style="display: inline-block;">(+66) 096-6409949</a>; <a href="tel:#" style="display: inline-block;">087-2794723</a></li>
+                                <li class="">Phones: <a href="tel:#" style="display: inline-block;">(+66) 081-0808804</a> </li>
                                 <li class="">E-mail: <a href="mailto:#" style="display: inline-block;"> sales@danatoursasia.com</a></li>
                             </ul>
                         </div>
@@ -315,7 +319,7 @@
                                                     <div class="col-md-4">
                                                         <div class="form-group">
                                                             <label>Phone</label>
-                                                            <input type="text" name="subject" value="" placeholder="Say hi to you" class="form-control form-control-plain" ng-model="phone">
+                                                            <input type="text" name="subject" value="" placeholder="" class="form-control form-control-plain" ng-model="phone">
                                                         </div>
                                                     </div>
                                                     <div class="col-md-12">

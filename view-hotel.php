@@ -804,7 +804,7 @@ src="https://www.google.com/maps/embed/v1/undefined?origin=...&q=...&destination
                                                     <div class="col-md-4">
                                                         <div class="form-group">
                                                             <label>Phone</label>
-                                                            <input type="text" name="subject" value="" placeholder="Say hi to you" class="form-control form-control-plain" ng-model="phone">
+                                                            <input type="text" name="subject" value="" placeholder="" class="form-control form-control-plain" ng-model="phone">
                                                         </div>
                                                     </div>
                                                     <div class="col-md-12">

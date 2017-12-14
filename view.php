@@ -426,7 +426,7 @@
                         <div class="contact" id="contact">             
                             <ul >
                                 <li class="">Address: <a>100/16 Moo 5 , Soi 1 Chalernprakiet Rd., T.Rassada Muang Phuket Thailand 83000</a></li>
-                                <li class="">Phones: <a href="tel:#" style="display: inline-block;">(+66) 096-6409949</a></li>
+                                <li class="">Phones: <a href="tel:#" style="display: inline-block;">(+66) 081-0808804</a></li>
                                 <li class="">E-mail: <a href="mailto:#" style="display: inline-block;"> sales@danatoursasia.com</a></li>
                             </ul>
                         </div>
@@ -467,7 +467,7 @@
                                                     <div class="col-md-4">
                                                         <div class="form-group">
                                                             <label>Phone</label>
-                                                            <input type="text" name="subject" value="" placeholder="Say hi to you" class="form-control form-control-plain" ng-model="phone">
+                                                            <input type="text" name="subject" value="" placeholder="" class="form-control form-control-plain" ng-model="phone">
                                                         </div>
                                                     </div>
                                                     <div class="col-md-12">
