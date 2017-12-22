@@ -212,9 +212,9 @@
                                         <div class="card-image">
                                             <div class="front">
                                                 <img class="img" src="./data/files/upload/tour/icon/{{item.icon}}"  style="height: 280px">
-                                                <div class="colored-shadow" style="background-image: url(&quot;files/images/dolce.jpg&quot;); opacity: 1;"></div>
+                                               <!--  <div class="colored-shadow" style="background-image: url(&quot;files/images/dolce.jpg&quot;); opacity: 1;"></div> -->
                                             </div>
-                                            <div class="back back-background" style="height: 376px; width: 360px; background-image: url(&quot;files/images/page1_img1.jpg&quot;);">
+                                            <div class="back back-background" style="height: 376px; width: 360px; background-image: url(&quot;./data/files/upload/tour/icon/{{item.icon}}&quot;);">
                                                 <div class="card-content">
                                                     <div class="footer text-center">
                                                       <a href="view.php#?data={{item.id}}" class="btn  btn-white">
