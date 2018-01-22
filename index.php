@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!-- saved from url=(0070)http://demos.creative-tim.com/material-kit-pro/examples/ecommerce.html -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   
@@ -232,16 +232,30 @@
                                         </h4>
                                        <!--  <p class="card-description" ng-bind="item.description" style="height: 125px;overflow: hidden;">                                          
                                         </p> -->
-                                        <div class="footer">                                            
+                                        <div class="">                                            
                                             <div class="" style="display: inline-block;" align="right">
                                                 <div type="button" rel="tooltip" title="" class="btn btn-simple " data-original-title="place" style=" margin-top: -7px; text-transform: none; /* margin: -2px; */ font-size: 16px; padding: 0; margin-left: -38px;">
                                                     <i class="material-icons" style="line-height: 2;">place</i>
                                                     <span ng-bind="item.city"></span>
                                                 </div>
                                             </div>
-                                            <div class="price-container" align="left" style="float: right;">
-                                                <span class="price price-old"> <!-- 12,500 --></span>
-                                                <span class="price price-new" ng-bind="item.cost_web "> </span> / Package
+                                            <div class="price-container" align="left" style="float: right;    margin-bottom: 10px">
+                                                <div style="    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 8px;
+    margin-top: 25px;"><span>Start from</span></div>
+                                                <div>
+                                                    <span  style="font-size: 16px">Adult : </span>
+                                                    <span class="price price-new" ng-bind="item.sale_price_adult |  currency:'':0"> </span>
+                                                    <span style="margin-left: 8px">Baht</span>
+                                                </div>
+                                                <div>
+                                                    <span  style="font-size: 16px">Child :</span>
+                                                    <span class="price price-new" ng-bind="item.sale_price_child |  currency:'':0"> </span>
+                                                    <span style="margin-left: 8px">Baht</span>
+                                                </div>
+                                               <!--  <span class="price price-old" ng-bind="item.adult_price"> </span> -->
+                                                 <!-- / Package -->
                                             </div>
                                         </div>
                                     </div>
@@ -300,11 +314,29 @@
                         <div class="cost-pro">
 
                            
-                            <div >
+                           <div style="    float: left;
+    ">
                             <i class="material-icons" style="display: inline-block; line-height: 0;">place</i>
-                            <p class="pro-item" ng-bind="item.city" align="left" ></p>
-                        </div>
-                         <div style="    text-align: right;"><span ng-bind="item.cost_web" style=" color: #FF5722;"></span><span> /person</span></div>
+                            <p class="pro-item" ng-bind="item.city"  ></p>
+                        </div> 
+                         <div class="price-container" align="left" style="float: right;    margin-bottom: 10px">
+
+                        <div style="text-align:  right;    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 8px;
+    "><span>Start from</span></div>
+                        <div style="text-align: right;">
+                                                    <span style="font-size: 16px">Adult : </span>
+                                                    <span class="price price-new" ng-bind="item.sale_price_adult | currency:'':0" style=" color: #FF5722;"> </span>
+                                                    <span style="margin-left: 8px">Baht</span>
+                                                </div>
+                                                <div  style="text-align: right;">
+                                                    <span  style="font-size: 16px">Child : </span>
+                                                    <span class="price price-new" ng-bind="item.sale_price_child | currency:'':0" style=" color: #FF5722;"> </span>
+                                                    <span style="margin-left: 8px">Baht</span>
+                                                </div>
+                                            </div>
+                         <!-- <div style="    text-align: right;"><span ng-bind="item.cost_web" style=" color: #FF5722;"></span><span> /person</span></div> -->
 
                             
                         </div>
@@ -363,33 +395,35 @@ height: 60%;
                         <div class="card card-product2" ng-click="getDetailtransfer(item.id)">
                             <div class="card-images">
                                 <a href="#pablo">
-                                    <img class="img rounded" src="./data/files/upload/transfer/icon/{{item.icon}}">
+                                    <img class="img rounded" src="./data/files/upload/transfer/icon/{{item.icon}}" style="height: 175px;">
                                 </a>
                             </div>
                             <div class="card-body">
                                <!--  <h6 class="category text-danger"  style="text-align: right;"></h6> -->
-                                <div class="card-titles">
+                                <div class="card-titles" style="    margin-left: 15px;
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 25px;">
                                     <a href="#pablo" class="card-link"  ng-bind="item.name"></a>
                                 </div>
                                 <!-- <div class="card-description">
                                     <span>Pax:</span><span ng-bind="item.person"></span>
                                 </div> -->
-                                <div class="" style="position: absolute;
-    /* height: 10%; */
-    /* padding: 18px; */
-    bottom: 15px;
-    width: 96%;
-    right: 2%;
-    left: 2%;">
+                                <div class="" style="margin-top: 15px;">
                                     <div style="float: left;"> 
                                         <i class="material-icons" style="display: inline-block; line-height: 0;">place</i><span ng-bind="item.province"></span>
                                     </div>
+                                    <div style="text-align:  right;    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 8px;
+    margin-top: 25px;"><span>Start from</span></div>
                                     <div class="price-container" style="text-align: right;">
+
                                         <span class="price" ng-if="item.province == 'Bangkok && item.person <= 4'" style="margin-right: 8px;">800</span>
                                         <span class="price" ng-if="item.province == 'Bangkok' && item.person > 4" style="margin-right: 8px;">900</span>
                                         <span class="price"  style="margin-right: 8px;" ng-if="item.province == 'Phuket' && item.person <= 4" >600</span>
                                         <span class="price"  style="margin-right: 8px;" ng-if="item.province == 'Phuket' && item.person > 4" >850</span>
-                                        <label class="f12" style="font-size: 16px;"> THB</label>
+                                        <label class="f12" style="font-size: 16px;"> Baht</label>
                                         
                                     </div>
                                     
@@ -452,28 +486,29 @@ height: 60%;
         <div class="h-data-list section-our-projects" id="div_top_sell"> 
             <div>
                 <div class="row">
-                     <div class="col-md-4"  ng-click="getDetailhotel(1)" ng-if="dataHotelcheck == 0 || dataHotelcheck == 1">
+                     <div class="col-md-4" ng-repeat="item in dataHotel"  ng-click="getDetailhotel(item.id)" >
                             <div class="project">
-                                 <img src="./data/files/hotel/ho1/1.jpg">
+                                 <img src="./data/files/upload/hotel/icon/{{item.icon}}" style="height: 245px;width: 100%">
                                 <a class="over-area" href="#gaia">
                                     <div class="content">
                                         <!-- <label class="label label-info label-fill">App Development</label> -->
-                                        <h4 >WYNDHAM GRAND PHUKET KALIM BAY</h4>
-                                        <p >Phuket</p>
-                                        <div style="text-align: right;"><span ng-bind="item.sale_price  | currency:'':0 " style="color: #f44336;
+                                        <h4 ><span ng-bind="item.hotel_name"></span></h4>
+                                        <p ><span ng-bind="item.province"></span></p>
+                                        <!-- <div style="text-align: right;"><span ng-bind="item.sale_price  | currency:'':0 " style="color: #f44336;
             font-size: 16px;
-            font-weight: 400;"></span></div>
+            font-weight: 400;"></span></div -->
                                     </div>
                                 </a>
                             </div>
                             
                     </div>
-                    <div class="col-md-4"  ng-click="getDetailhotel(2)" ng-if="dataHotelcheck == 0 || dataHotelcheck == 1">
+                </div>
+                   <!--  <div class="col-md-4"  ng-click="getDetailhotel(2)" ng-if="dataHotelcheck == 0 || dataHotelcheck == 1">
                             <div class="project">
                                 <img src="./data/files/hotel/ho2/1.jpg">
                                 <a class="over-area" href="#gaia">
                                     <div class="content">
-                                        <!-- <label class="label label-info label-fill">App Development</label> -->
+                                        
                                         <h4 >VILLA TANTAWAN</h4>
                                          <p >Phuket</p>
                                         <div style="text-align: right;"><span ng-bind="item.sale_price  | currency:'':0 " style="color: #f44336;
@@ -489,7 +524,7 @@ height: 60%;
                                 <img src="./data/files/hotel/ho3/1.jpg">
                                 <a class="over-area" href="#gaia">
                                     <div class="content">
-                                        <!-- <label class="label label-info label-fill">App Development</label> -->
+                                       
                                         <h4 >PHUKET GRACELAND RESORT AND SPA</h4>
                                          <p >Phuket</p>
                                         <div style="text-align: right;"><span ng-bind="item.sale_price  | currency:'':0 " style="color: #f44336;
@@ -508,7 +543,7 @@ height: 60%;
                                  <img src="./data/files/hotel/ho4/1.jpg">
                                 <a class="over-area" href="#gaia">
                                     <div class="content">
-                                        <!-- <label class="label label-info label-fill">App Development</label> -->
+                                        
                                         <h4 >NOVOTEL PHUKET RESORT</h4>
                                          <p >Phuket</p>
                                         <div style="text-align: right;"><span ng-bind="item.sale_price  | currency:'':0 " style="color: #f44336;
@@ -525,7 +560,7 @@ height: 60%;
                                  <img src="./data/files/hotel/ho5/1.jpg">
                                 <a class="over-area" href="#gaia">
                                     <div class="content">
-                                        <!-- <label class="label label-info label-fill">App Development</label> -->
+                                        
                                         <h4 >THE PAVILIONS PHUKET</h4>
                                          <p >Phuket</p>
                                         <div style="text-align: right;"><span ng-bind="item.sale_price  | currency:'':0 " style="color: #f44336;
@@ -543,7 +578,7 @@ height: 60%;
                                  <img src="./data/files/hotel/ho7/1.jpg">
                                 <a class="over-area" href="#gaia">
                                     <div class="content">
-                                        <!-- <label class="label label-info label-fill">App Development</label> -->
+                                       
                                         <h4 >PUMERIA RESORT PHUKET</h4>
                                          <p >Phuket</p>
                                         <div style="text-align: right;"><span ng-bind="item.sale_price  | currency:'':0 " style="color: #f44336;
@@ -556,10 +591,10 @@ height: 60%;
                     </div>
                     <div class="col-md-4"  ng-click="getDetailhotel(8)" ng-if="dataHotelcheck == 0 || dataHotelcheck == 1">
                             <div class="project">
-                                 <img src="./data/files/hotel/ho8/1.jpg">
+                                 <img src="./data/files/hotel/ho8/1.jpg" style="height: 245px">
                                 <a class="over-area" href="#gaia">
                                     <div class="content">
-                                        <!-- <label class="label label-info label-fill">App Development</label> -->
+                                        
                                         <h4 >SANTHIYA RESORT AND SPA</h4>
                                          <p >Phuket</p>
                                         <div style="text-align: right;"><span ng-bind="item.sale_price  | currency:'':0 " style="color: #f44336;
@@ -575,7 +610,7 @@ height: 60%;
                                  <img src="./data/files/hotel/ho9/1.jpg">
                                 <a class="over-area" href="#gaia">
                                     <div class="content">
-                                        <!-- <label class="label label-info label-fill">App Development</label> -->
+                                        
                                         <h4 >RAMADA PHUKET DEEVANA</h4>
                                          <p >Phuket</p>
                                         <div style="text-align: right;"><span ng-bind="item.sale_price  | currency:'':0 " style="color: #f44336;
@@ -593,7 +628,7 @@ height: 60%;
                                  <img src="./data/files/hotel/ho10/1.jpg">
                                 <a class="over-area" href="#gaia">
                                     <div class="content">
-                                        <!-- <label class="label label-info label-fill">App Development</label> -->
+                                        
                                         <h4 >SLEEP WITH ME DESIGN HOTEL@PATONG</h4>
                                          <p >Phuket</p>
                                         <div style="text-align: right;"><span ng-bind="item.sale_price  | currency:'':0 " style="color: #f44336;
@@ -610,7 +645,7 @@ height: 60%;
                                 <img src="./data/files/hotel/ho11/1.jpg">
                                 <a class="over-area" href="#gaia">
                                     <div class="content">
-                                        <!-- <label class="label label-info label-fill">App Development</label> -->
+                                       
                                         <h4 >ANGSANA LAGUNA PHUKET </h4>
                                          <p >Phuket</p>
                                         <div style="text-align: right;"><span ng-bind="item.sale_price  | currency:'':0 " style="color: #f44336;
@@ -628,7 +663,7 @@ height: 60%;
                                 <img src="./data/files/hotel/ho13/1.jpg">
                                 <a class="over-area" href="#gaia">
                                     <div class="content">
-                                        <!-- <label class="label label-info label-fill">App Development</label> -->
+                                       
                                         <h4 >Holiday Inn Express Phuket Patong Beach Central </h4>
                                          <p >Phuket</p>
                                         <div style="text-align: right;"><span ng-bind="item.sale_price  | currency:'':0 " style="color: #f44336;
@@ -643,7 +678,7 @@ height: 60%;
                                 <img src="./data/files/hotel/ho14/1.jpg">
                                 <a class="over-area" href="#gaia">
                                     <div class="content">
-                                        <!-- <label class="label label-info label-fill">App Development</label> -->
+                                      
                                         <h4 >BANYAN TREE PHUKET </h4>
                                          <p >Phuket</p>
                                         <div style="text-align: right;"><span ng-bind="item.sale_price  | currency:'':0 " style="color: #f44336;
@@ -659,7 +694,7 @@ height: 60%;
                                 <img src="./data/files/hotel/ho12/1.jpg">
                                 <a class="over-area" href="#gaia">
                                     <div class="content">
-                                        <!-- <label class="label label-info label-fill">App Development</label> -->
+                                       
                                         <h4 >LEBUA TOWER CLUB BANGKOK </h4>
                                          <p >Bangkok</p>
                                         <div style="text-align: right;"><span ng-bind="item.sale_price  | currency:'':0 " style="color: #f44336;
@@ -677,7 +712,7 @@ height: 60%;
                                 <img src="./data/files/hotel/ho15/1.jpg">
                                 <a class="over-area" href="#gaia">
                                     <div class="content">
-                                        <!-- <label class="label label-info label-fill">App Development</label> -->
+                                        
                                         <h4 >ALOFT BANGKOK, SUKHUMVIT 11 </h4>
                                          <p >Bangkok</p>
                                         <div style="text-align: right;"><span ng-bind="item.sale_price  | currency:'':0 " style="color: #f44336;
@@ -688,7 +723,7 @@ height: 60%;
                             </div>
                             
                     </div>
-                </div>
+                </div> -->
                     
 
                 
@@ -2068,24 +2103,71 @@ height: 60%;
     <div class="container">
       <div class="row">
         <div class="col-md-4 " >
+            <div class="row">
+                <div class="col-md-12">
+                     <h2 style="color: #fff">Contact Us</h2>
+                    <div class="contact" id="contact"> 
+                    <table width="100%" style="color: #fff; font-size: 16px;margin-bottom: 15px">
+                        <tr>
+                            <td valign="top" style="width: 70px; padding: 8px 0px;">Address: </td>
+                            <td  style="padding: 8px 0px;">100/16 Moo 5 , Soi 1 Chalernprakiet Rd., T.Rassada Muang Phuket Thailand 83000</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 70px; padding: 8px 0px;">Phones: </td>
+                            <td  style="padding: 8px 0px;">(+66) 081-0808804</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 70px; padding: 8px 0px;">E-mail: </td>
+                            <td style="padding: 8px 0px;">sales@danatoursasia.com</td>
+                        </tr>
+                    </table>            
+                        <!-- <ul >
+                            <li class="">Address: <a>100/16 Moo 5 , Soi 1 Chalernprakiet Rd., T.Rassada Muang Phuket Thailand 83000</a></li>
+                            <li class="">Phones: <a href="tel:#" style="display: inline-block;">(+66) 081-0808804</a> 
+                           
+                            </li>
+                            <li class="">E-mail: <a href="mailto:#" style="display: inline-block;"> sales@danatoursasia.com</a></li>
+                        </ul> -->
+                    </div>
+                </div>
+            </div>
             <!-- col-md-offset-1 -->
-          <h2 style="color: #fff">Contact Us</h2>
-          <div class="contact" id="contact">             
-            <ul >
-              <li class="">Address: <a>100/16 Moo 5 , Soi 1 Chalernprakiet Rd., T.Rassada Muang Phuket Thailand 83000</a></li>
-              <li class="">Phones: <a href="tel:#" style="display: inline-block;">(+66) 081-0808804</a> 
-                <!-- <a href="tel:#" style="display: inline-block;">087-2794723</a> -->
-            </li>
-              <li class="">E-mail: <a href="mailto:#" style="display: inline-block;"> sales@danatoursasia.com</a></li>
-            </ul>
-          </div>
+         
+
+          <div class="row">
+                <div class="col-md-12">
+                    <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="width: 100%;" 
+  data-width="100%"
+  height="450"
+   data-tabs="timeline,events,messages"
+   data-hide-cover="false"
+  frameborder="0" style="border:0"
+  src='https://www.google.com/maps/embed/v1/directions?key=AIzaSyDtMCRvG35DYC9TC_cXfIY7qA5LB6Gv-iA&destination=Dana+tours+%26+travel+CO.,+LTD&origin=7.913528,98.3681061&center=7.913528,98.3681061&avoid=tolls|highways&zoom=15?hl=en'
+
+   allowfullscreen>
+</iframe>
+                </div>
+            </div>
         </div>
         <div class="col-md-8 ">         
                   <div class="col-sm-12">                    
                         <div class="section">
-                            <div class="title-area">
+                            <div class="row">
+                        <div class="col-md-12" style="text-align: center;margin-top: 35px;margin-bottom: 25;">
+                                <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v2.11&appId=1865903040340223';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <div class="fb-page" data-href="https://www.facebook.com/DanaToursandTravel/" ><blockquote cite="https://www.facebook.com/DanaToursandTravel/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/DanaToursandTravel/"></a></blockquote></div>
+                        </div>
+                    </div>
+                            <!-- <div class="title-area">
                                 <h5 class="subtitle text-gray" align="center">Glad to Talk With You</h5>
-                                <!-- <h2 style="color: #fff">Contact Us</h2> -->
+                                
                                 <div style="width: 100%;text-align: center;"><div class="separator separator-danger">✻</div></div>
                             </div>
 
@@ -2094,7 +2176,8 @@ height: 60%;
                                 <button class="btn btn-social btn-simple"><i style="color: #d2d2d2;"  class="fa fa-twitter"></i></button>
                                 <button class="btn btn-social btn-simple"><i style="color: #d2d2d2;" class="fa fa-instagram"></i></button>
                                 <button class="btn btn-social btn-simple"><i style="color: #d2d2d2;" class="fa fa-google"></i></button>
-                            </div>
+                            </div> -->
+                            <!-- <h2 style="color: #fff;text-align: center;">Contact Us</h2> -->
 
                 <div class="row">
                     <div class="col-md-12 ">
@@ -2103,31 +2186,31 @@ height: 60%;
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <label>Your Full Name</label>
+                                            <!-- <label>Your Full Name</label> -->
                                             <input type="text" name="name" value="" placeholder="Michael Jordan" class="form-control form-control-plain" ng-model="name" style="color: #fff;">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <label>Your Email</label>
+                                            <!-- <label>Your Email</label> -->
                                             <input type="text" name="email" value="" placeholder="michael.j@gmail.com" class="form-control form-control-plain" ng-model="email" style="color: #fff;">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <label>Phone</label>
-                                            <input type="text" name="subject" value="" placeholder="" class="form-control form-control-plain" ng-model="phone">
+                                            <!-- <label>Phone</label> -->
+                                            <input type="text" name="subject" value="" placeholder="Phone" class="form-control form-control-plain" ng-model="phone">
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <label>Subject</label>
-                                            <input type="text" name="subject" value="" placeholder="Say hi to you" class="form-control form-control-plain" ng-model="subject" style="color: #fff;">
+                                            <!-- <label>Subject</label> -->
+                                            <input type="text" name="subject" value="" placeholder="Subject" class="form-control form-control-plain" ng-model="subject" style="color: #fff;">
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <textarea name="content" class="form-control form-control-plain" placeholder="Here you can write your nice text" rows="8" ng-model="message" style="color: #fff;"></textarea>
+                                            <textarea name="content" class="form-control form-control-plain" placeholder="Here you can write your nice text" rows="5" ng-model="message" style="color: #fff;"></textarea>
                                         </div>
                                         <div>
                                             <div class="col-md-2 col-md-offset-5">
@@ -2141,6 +2224,7 @@ height: 60%;
                             </form>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         
@@ -2497,7 +2581,7 @@ height: 60%;
     color: #fff;
 }      
 .cost-pro{
-    position: absolute;
+    /*position: absolute;*/
     padding: 0 15px;
     bottom: 10px;
     width: 100%;
@@ -2507,7 +2591,7 @@ height: 60%;
 }
 .card-blog, .card-testimonial .card-description+.card-title, .card-testimonial .icon {
     margin-top: 30px;
-    min-height: 300px;
+    min-height: 315px;
     cursor: pointer;
 }
 .card .card-content {
@@ -2562,7 +2646,7 @@ box-shadow: none !important;
 }
 .card-product2 {
      margin-top: 0;
-     min-height: 340px 
+     min-height: 295px 
 }
 .contact ul li {
     list-style: none;
@@ -3031,8 +3115,6 @@ h-data-list .server-box .h-icon {
     padding-left: 0px;
   }
 }
-
-.
 </style>      
 
 </html>

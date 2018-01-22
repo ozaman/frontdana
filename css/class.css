@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+
+#thumbsider{
+	width:100%;
+	height:140px;
+	margin-bottom:20px;
+	position:relative;
+	z-index:1;
+}
+
+.leftdiv{
+	width:640px;
+	overflow:hidden;
+	float:left;
+	margin-right:25px;
+}
+.leftdiv p{
+	font-size:13px;
+	line-height:18px;
+}
+.rightdiv{
+	width:254px;
+	height:267px;
+	overflow:hidden;
+}
+
+.bluebold{
+	font-weight:600;
+	color:#0066cc;
+}
+
+.top5{
+	width:254px;
+	height:267px;
+	overflow:hidden;
+	padding-top:50px;
+	background:url(../images/bg-top5.png) 0 0 no-repeat;
+}
+.top5 li{
+	width:204px;
+	margin-left:25px;
+	font-family: 'Open Sans', sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	color:#fff;
+	padding:5px 0;
+	border-bottom:1px solid #fff;
+	overflow:hidden;
+}
+.top5 li span.left{
+	width:25px;
+	float:left;
+	display:block;
+	overflow:hidden;
+}
+.top5 li span.right{
+	width:179px;
+	display:block;
+	overflow:hidden;
+}
+.top5 li span.right a{
+	color:#fff !important;
+	text-decoration:none;
+}
+.top5 li span.right a:hover{
+	color:#F60 !important;
+	text-decoration:none;
+}
+#googlemap{
+	width:254px;
+	height:200px;
+	overflow:hidden;
+}

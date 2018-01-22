@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,body{
+	width:100%;
+	height:100%;
+	background:url(../images/bg-popup.jpg) fixed 0 0 no-repeat;
+}
+.wrap{
+	width:570px; overflow:hidden; padding:25px;
+}
+.img{
+	width:100%; height:225px; overflow:hidden; text-align:center;
+}
+.content{
+	width:510px; overflow:hidden; padding:15px 30px; text-align:left; background:url(../images/popup/bg-content.png) 0 0 repeat-x;
+}
+h1{
+	font-family: 'Open Sans', sans-serif; font-weight:800; font-size:21px; color:#06c; text-shadow: 1px 1px #fff; margin-bottom:15px;
+}
+p{
+	font-family: 'Open Sans', sans-serif; color:#333; font-size:12px; line-height:15px;
+}
+h2{
+	font-family: 'Open Sans', sans-serif; font-weight:800; font-size:21px; color:#06c; text-shadow: 1px 1px #f0edde; padding-top:15px; color:#ff9000;
+}
+h2 span{
+	color:#ff9000;
+}
+ul.intinerary li{
+	margin:0px;
+	width:100%;
+	overflow:hidden;
+	font-family: 'Open Sans', sans-serif;
+	font-size:12px;
+	color:#333;
+	border-bottom:1px solid #fff;
+}
+ul.intinerary li.last{
+	border:0px;
+}
+ul.intinerary li span{
+	float:left;
+	display:block;
+	padding:10px 0;
+}
+ul.intinerary li span.time{
+	width:130px;
+	font-weight:bold;
+}
+ul.intinerary li span.details{
+	width:355px;
+	padding-left:20px;
+	border-left:1px solid #fff;
+}
+.orange{
+	color:#F60;
+}
+span.star{
+	display:block;
+	overflow:hidden;
+	margin-bottom:5px;
+}
+span.star img{
+	float:left;
+}

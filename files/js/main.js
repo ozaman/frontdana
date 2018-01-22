@@ -70,7 +70,7 @@ var app = angular.module('myApp', ['ngCookies']);
                     console.log(res)
                     $scope.hotel = res;
                      angular.forEach(res, function (d,i) {
-                    if (d.show_re == 1 ) {
+                    if (d.show_web == 1 ) {
                         $scope.dataHotel.push(d);
                  }
                 
@@ -105,12 +105,13 @@ var app = angular.module('myApp', ['ngCookies']);
             });
     }
     $scope.getHotelforareaall = function(){
+        $scope.dataHotel = []
         $scope.dataHotelcheck = 0;
-        // angular.forEach($scope.hotel, function (z,i) {
-        //         if (i<=7) {
-        //             $scope.dataHotel.push(z);
-        //         }
-        //     });
+        angular.forEach($scope.hotel, function (z,i) {
+                if (i<=7) {
+                    $scope.dataHotel.push(z);
+                }
+            });
     }
     $scope.viewpackageforid = function(x){
         //alert("aaaa")
@@ -196,6 +197,20 @@ var app = angular.module('myApp', ['ngCookies']);
         //$window.location.href = 'new.php';
     }
     $scope.getHotelforarea = function(x){
+        $scope.dataHotel = [];
+         angular.forEach($scope.hotel, function (y,key) {
+        console.log(key)
+            if (y.province == x) {
+                 if (y.show_web == 1 ) {
+                        $scope.dataHotel.push(y);
+                 }
+                //$scope.dataTransfer.push(y);
+            }
+            
+            
+                            
+                                
+                        });
         // $scope.dataHotel = 1;
         console.log(x)
         if (x == 'Phuket') {

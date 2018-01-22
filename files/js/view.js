@@ -79,6 +79,17 @@ var app = angular.module('myApp', ['ngCookies','ui.bootstrap']);
                       
                     }
                  }
+                 for (var i = 0; i < $scope.include.length; i++) {
+                    if ($scope.include[i] != "") {
+                       
+                      $('#repeatinclede').append('<p class="time">'+$scope.include[i]+'</p>')
+                    }
+                    else{
+                        $('#repeatinclede').append('\n')
+                      
+                      
+                    }
+                 }
                        //console.log($scope.propush)         
                        //$('#repeatprogram').html($scope.propush)
                   // angular.forEach( $scope.repeatprogram, function (y) {
@@ -108,9 +119,12 @@ var app = angular.module('myApp', ['ngCookies','ui.bootstrap']);
                     console.log(res)
                     $scope.toursall = res;
                     angular.forEach(res, function (d,i) {
+                      console.log(i)
+                      // if (i<=5) {
                     if (d.show_re == 1 ) {
                         $scope.dataTour.push(d);
                  }
+               // }
                 
 
             });   

@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+
+.tourslist{
+	overflow:hidden;
+	margin-bottom:25px;
+}
+.tourslist ul{
+	overflow:hidden;
+	margin-bottom:25px;
+}
+.tourslist ul li{
+	width:280px;
+	overflow:hidden;
+	float:left;
+	margin-right:40px;
+	border-bottom:1px solid #d0cbba;
+}
+.tourslist ul li.last{
+	margin-right:0px;
+}
+.tourslist ul li.null{
+	border:0px;
+}
+.tourslist ul li img{
+	display:block;
+	border:2px solid #fff;
+	margin-bottom:15px;
+}
+.tourslist ul li p{
+	margin-bottom:10px;
+}
+.tourslist ul li p span.header{
+	color:#0066cc;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:600;
+	font-size:16px;
+	display:block;
+	margin-bottom:10px;
+}
+.tourslist ul li p span.price{
+	color:#f60;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:bold;
+	font-size:12px;
+	display:block;
+	margin-top:5px;
+}
+.tourslist ul li a.readmore{
+	text-align:center;
+	color:#fff;
+	width:80px;
+	padding:2px 0;
+	background:#d0cbba;
+	float:right;
+}

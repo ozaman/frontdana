@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+
+#contactsform > div{
+	width:305px;
+	overflow:hidden;
+	float:left;
+	margin-right:30px;
+}
+#contactsform > div.last{
+	margin-right:0px;
+}
+#contactsform p{
+	margin-bottom:12px;
+}
+#contactsform label{
+	display:block;
+	color:#0066cc;
+	font-weight:bold;
+	padding-left:7px;
+}
+#contactsform input.text, #contactsform textarea{
+	width:290px;
+	font-size:14px;
+	color:#444;
+	padding:3px 5px;
+}
+#contactsform textarea{
+	height:138px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#444;
+}
+#contactsform input.submit{
+	text-transform:uppercase;
+	color:#fff;
+	width:150px;
+	background:#0066cc;
+	border:0px;
+	font-weight:bold;
+	font-size:12px;
+	padding:5px 0;
+}

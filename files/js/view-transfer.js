@@ -90,9 +90,12 @@ var app = angular.module('myApp', ['ngCookies','ui.bootstrap']);
                     console.log(res)
                     $scope.toursall = res;
                     angular.forEach(res, function (d,i) {
+                    //if (i<5) {
+                        console.log(i)
                     if (d.show_re == 1 ) {
                         $scope.dataTour.push(d);
                  }
+            // }
                 
 
             });   

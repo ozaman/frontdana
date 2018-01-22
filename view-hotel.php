@@ -251,22 +251,12 @@
 
        <div class="container">
                 <div class="row">
-                    <div class="col-md-9 "  >
+                    <div class="col-md-9 "  style="margin-bottom: 30px">
                         <div class="brand">
                             <!-- <h2  style="margin-top: -40px;margin-bottom: 0;color: #f44336;font-size: 20px;" ><span ng-bind="tours.cost_web | currency:'':0" style="font-weight: 500;"></span><span style="color: #fff"><span style="color: #f44336">฿</span> / Person</span></h2> -->
-                            <h1 class="title"><div  align="center" style="    color: #333;
-    border-radius: 8px;
-    /* border: 8px solid #fff; */
-    /* margin-bottom: 57px; */
-    /* background: rgba(51, 122, 183, 0.68); */
-    /* border-top: 1px dashed #4caf50; */
-    /* border-bottom: 1px dashed #4caf50; */
-    font-size: 20px;
-    font-weight: 500;">
-       
-                                <span align="center"  style="     margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 1">WYNDHAM GRAND PHUKET KALIM BAY</span> 
-                                                    
-                                <span align="center" style="     margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 2">VILLA TANTAWAN</span>
+                            <h1 class="title"><div  align="center" style="color: #333;border-radius: 8px; font-size: 20px; font-weight: 500;">     
+                                <span align="center"  style="     margin-top: -25px;font-size: 20px; font-weight: 500;" ng-bind="tours.hotel_name"></span>                                                     
+                                <!-- <span align="center" style="     margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 2">VILLA TANTAWAN</span>
                       
                                 
                                 <span align="center" style="     margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 3">PHUKET GRACELAND RESORT AND SPA</span>  
@@ -289,7 +279,7 @@
                                 <span align="center" style="margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 12">LEBUA TOWER CLUB BANGKOK </span>
                                 <span align="center" style="margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 13">Holiday Inn Express Phuket Patong Beach Central </span>
                                 <span align="center" style="margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 14">BANYAN TREE PHUKET </span>
-                                <span align="center" style="margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 15">ALOFT BANGKOK, SUKHUMVIT 11 </span>
+                                <span align="center" style="margin-top: -25px;font-size: 20px; font-weight: 500;" ng-if="data == 15">ALOFT BANGKOK, SUKHUMVIT 11 </span> -->
                             
 
     </div></h1>
@@ -298,12 +288,12 @@
                         <div style="   background: rgba(255, 255, 255, 0.36);  padding: 15px 3px;    border-radius: 8px; margin-bottom: 20px;" >
                         <div id="myCarousel" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
-                                <li data-target="#myCarousel" data-slide-to="{{$index}}" class="active" ng-repeat="slide in slides " ng-class="{active: $index == 0}""></li>
+                                <li data-target="#myCarousel" data-slide-to="{{$index}}" class="active" ng-repeat="slide in datagallery" ng-class="{active: $index == 0}""></li>
                             </ol>
 
                             <div class="carousel-inner">
-                                <div class="item col-md-12" ng-repeat="slide in slides " ng-class="{active: $index == 0}">
-                                  <img ng-src="{{slide.image}}" style="width:100%;">
+                                <div class="item col-md-12" ng-repeat="slide in datagallery" ng-class="{active: $index == 0}">
+                                  <img ng-src="./data/files/upload/hotel/gallery/{{slide.gallery}}" style="width:100%;">
                                 </div>
                             </div>
                             <a class="left carousel-control" href="#myCarousel" data-slide="prev">
@@ -323,7 +313,7 @@
                                 <div class="">
                                     <ul>
                                         <li class="cur">
-                                            <span >Overview detail</span>
+                                            <span >OVERVIEW DETAIL</span>
                                           
                                         </li>
                                     </ul>
@@ -369,8 +359,7 @@
     text-transform: uppercase;">HOTEL BACKGROUND</div>
                                                 </div>
                                                 <div class="timeline-body">
-                                                    <div ng-bind-html="background">
-                                                      
+                                                    <div ng-bind="tours.background">
                                                     </div>
                                                       
                                                 </div>
@@ -390,7 +379,7 @@
     text-transform: uppercase;">ROOM TYPE</div>
                                                 </div>
                                                 <div class="timeline-body">
-                                                    <div ng-bind-html="room"></div>
+                                                    <div ng-repeat="i in tours.room_type.split('\n')">{{ i }}</div>
                                                       
                                                 </div>
                                             </div>
@@ -417,7 +406,7 @@
     text-transform: uppercase;">LOCATION </div>
                                                 </div>
                                                 <div class="timeline-body" >
-                                                <div ng-bind-html="location" ></div>
+                                                <div ng-bind="tours.location"></div>
                                                 </div>
                                             </div>
 
@@ -436,48 +425,64 @@
     text-transform: uppercase;">ATTRACTIONS NEARBY </div>
                                                 </div>
                                                 <div class="timeline-body" >
-                                                <div ng-bind-html="attraction" ></div>
+                                                <div  ng-repeat="i in tours.attraction.split('\n')">{{ i }}</div>
                                                 </div>
                                             </div>
                                        
                                       
-                                            
+                                   <div class="row" style="    margin-top: 30px;
+    margin-bottom: 30px;" ng-if="tours.map != ''">
+                                       <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="width: 100%;" 
+ 
+  height="450"
+   data-tabs="timeline,events,messages"
+   data-hide-cover="false"
+  frameborder="0" style="border:0"
+  src='{{iframe.navilink | trusted}}'
+
+   allowfullscreen></iframe>
+                                   </div>         
                                 </div>
                             </div>
-                            <!-- <div id="map"></div> -->
-                                   <!--  <script>
-      function initMap() {
-        var uluru = {lat: 7.9135092, lng: 98.3663543};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-    </script> -->
-   <!--  <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBliu9xPrAQcibmkptCc3bwlpM1M6MbgAs&callback=initMap">
-    </script> -->
-                                   <!--  <iframe width="600" height="450" frameborder="0" style="border:0"
-src="https://www.google.com/maps/embed/v1/undefined?origin=...&q=...&destination=...&center=...&zoom=...&key=..." allowfullscreen></iframe> -->
                         </div>
                     </div>
                     </div>
-                    <div class="col-md-3" style="margin-top: 20px;
+                    <div class="col-md-3" style="margin-top: 90px;
     border-radius: 8px;
     border: 1px solid #1171b7;margin-bottom: 30px;">
                         <h3 class="title"><div align="center" style="    margin-top: 15px;
     font-size: 16px;
     margin-bottom: 15px;
     font-weight: 500;">Recommend</div></h3>
-                        
-                            <div class="col-sm-12 col-md-12" id="fade-in-out" >
+                              <div class="col-sm-12 col-md-12" ng-repeat="item in dataTourre" id="fade-in-out" >
+                    <div class="card card-blog" >
+                        <div class="card-image" ng-click="viewpackageforid(item.id)">
+                            <img src="./data/files/upload/hotel/icon/{{item.icon}}" style="height: 180px" >
+                        </div>
+                        <div class="card-content">
+                            <h6 class="category text-rose" ng-bind="item.hotel_name"></h6>                      
+                            
+                        </div>
+                        <!-- <div class="description-package">
+                            <p class="card-description" ng-bind="item.description"></p>
+                        </div> -->
+                        <div class="cost-pro">
+
+                           
+                        <div>
+                            <i class="material-icons" style="display: inline-block; line-height: 0;">place</i>
+                            <p class="pro-item" ng-bind="item.province" align="left" ></p>
+                        </div>
+                         <!-- <div style="    text-align: right;"><span ng-bind="item.cost_web | currency:'':0 " style=" color: #FF5722;"></span><span> /person</span></div> -->
+
+                            
+                        </div>
+                    </div>
+                </div>
+                            <!-- <div class="col-sm-12 col-md-12" id="fade-in-out" ng-repeat="item in dataTour">
                                 <div class="card card-blog" >
                                     <div class="card-image" ng-click="viewpackageforid(1)">
-                                        <!-- <img src="./data/files/hotel/ho2/1.jpg"> -->
+                                        
                                         <img src="./data/files/hotel/ho1/1.jpg" style="height: 180px" >
                                     </div>
                                     <div class="card-content">
@@ -491,9 +496,9 @@ src="https://www.google.com/maps/embed/v1/undefined?origin=...&q=...&destination
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         
-                            <div class="col-sm-12 col-md-12" id="fade-in-out" >
+                           <!--  <div class="col-sm-12 col-md-12" id="fade-in-out" >
                                 <div class="card card-blog" >
                                     <div class="card-image" ng-click="viewpackageforid(2)">
                                         <img src="./data/files/hotel/ho2/1.jpg" style="height: 180px" >
@@ -721,7 +726,7 @@ src="https://www.google.com/maps/embed/v1/undefined?origin=...&q=...&destination
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                        
                         
                 <style >
@@ -758,31 +763,81 @@ src="https://www.google.com/maps/embed/v1/undefined?origin=...&q=...&destination
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 " >
-                    <!-- col-md-offset-1 -->
-                        <h2 style="color: #fff;margin-top: 0">Contact Us</h2>
-                        <div class="contact" id="contact">             
-                            <ul >
-                                <li class="">Address: <a>100/16 Moo 5 , Soi 1 Chalernprakiet Rd., T.Rassada Muang Phuket Thailand 83000</a></li>
-                                <li class="">Phones: <a href="tel:#" style="display: inline-block;">(+66) 081-0808804</a></li>
-                                <li class="">E-mail: <a href="mailto:#" style="display: inline-block;"> sales@danatoursasia.com</a></li>
-                            </ul>
-                        </div>
+            <div class="row">
+                <div class="col-md-12">
+                     <h2 style="color: #fff">Contact Us</h2>
+                    <div class="contact" id="contact"> 
+                    <table width="100%" style="color: #fff; font-size: 16px;margin-bottom: 15px">
+                        <tr>
+                            <td valign="top" style="width: 70px; padding: 8px 0px;">Address: </td>
+                            <td  style="padding: 8px 0px;">100/16 Moo 5 , Soi 1 Chalernprakiet Rd., T.Rassada Muang Phuket Thailand 83000</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 70px; padding: 8px 0px;">Phones: </td>
+                            <td  style="padding: 8px 0px;">(+66) 081-0808804</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 70px; padding: 8px 0px;">E-mail: </td>
+                            <td style="padding: 8px 0px;">sales@danatoursasia.com</td>
+                        </tr>
+                    </table>            
+                        <!-- <ul >
+                            <li class="">Address: <a>100/16 Moo 5 , Soi 1 Chalernprakiet Rd., T.Rassada Muang Phuket Thailand 83000</a></li>
+                            <li class="">Phones: <a href="tel:#" style="display: inline-block;">(+66) 081-0808804</a> 
+                           
+                            </li>
+                            <li class="">E-mail: <a href="mailto:#" style="display: inline-block;"> sales@danatoursasia.com</a></li>
+                        </ul> -->
                     </div>
+                </div>
+            </div>
+            <!-- col-md-offset-1 -->
+         
+
+          <div class="row">
+                <div class="col-md-12">
+                    <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="width: 100%;" 
+  data-width="100%"
+  height="450"
+   data-tabs="timeline,events,messages"
+   data-hide-cover="false"
+  frameborder="0" style="border:0"
+  src='https://www.google.com/maps/embed/v1/directions?key=AIzaSyDtMCRvG35DYC9TC_cXfIY7qA5LB6Gv-iA&destination=Dana+tours+%26+travel+CO.,+LTD&origin=7.913528,98.3681061&center=7.913528,98.3681061&avoid=tolls|highways&zoom=15?hl=en'
+
+   allowfullscreen>
+</iframe>
+                </div>
+            </div>
+        </div>
                   <div class="col-md-8 ">
                       <div class="col-sm-12">                    
                           <div class="">
-                              <div class="title-area">
-                                  <h5 class="subtitle text-gray" align="center">Glad to Talk With You</h5>
-                                  <!-- <h2 style="color: #fff">Contact Us</h2> -->
-                                  <div style="width: 100%;text-align: center;"><div class="separator separator-danger">✻</div></div>
-                              </div>
+                              <div class="row">
+                        <div class="col-md-12" style="text-align: center;margin-top: 35px;margin-bottom: 25;">
+                                <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v2.11&appId=1865903040340223';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <div class="fb-page" data-href="https://www.facebook.com/DanaToursandTravel/" ><blockquote cite="https://www.facebook.com/DanaToursandTravel/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/DanaToursandTravel/"></a></blockquote></div>
+                        </div>
+                    </div>
+                            <!-- <div class="title-area">
+                                <h5 class="subtitle text-gray" align="center">Glad to Talk With You</h5>
+                                
+                                <div style="width: 100%;text-align: center;"><div class="separator separator-danger">✻</div></div>
+                            </div>
 
-                              <div class="social-buttons">
-                                  <button class="btn btn-social btn-simple"><a style="color: #d2d2d2;" href="https://www.facebook.com/DanaToursandTravel/?ref=br_rs"> <i class="fa fa-facebook-square"></i></a></button>
-                                  <button class="btn btn-social btn-simple"><i style="color: #d2d2d2;" style="color: #d2d2d2;" class="fa fa-twitter"></i></button>
-                                  <button class="btn btn-social btn-simple"><i style="color: #d2d2d2;" class="fa fa-instagram"></i></button>
-                                  <button class="btn btn-social btn-simple"><i style="color: #d2d2d2;" class="fa fa-google"></i></button>
-                              </div>
+                            <div class="social-buttons">
+                                <button class="btn btn-social btn-simple"><a style="color: #d2d2d2;" href="https://www.facebook.com/DanaToursandTravel/?ref=br_rs"> <i class="fa fa-facebook-square"></i></a></button>
+                                <button class="btn btn-social btn-simple"><i style="color: #d2d2d2;"  class="fa fa-twitter"></i></button>
+                                <button class="btn btn-social btn-simple"><i style="color: #d2d2d2;" class="fa fa-instagram"></i></button>
+                                <button class="btn btn-social btn-simple"><i style="color: #d2d2d2;" class="fa fa-google"></i></button>
+                            </div> -->
+                            <!-- <h2 style="color: #fff;text-align: center;">Contact Us</h2> -->
 
                               <div class="row">
                                   <div class="col-md-12 ">
@@ -791,31 +846,31 @@ src="https://www.google.com/maps/embed/v1/undefined?origin=...&q=...&destination
                                                 <div class="row">
                                                     <div class="col-md-4">
                                                         <div class="form-group">
-                                                            <label>Your Full Name</label>
+                                                            <!-- <label>Your Full Name</label> -->
                                                             <input type="text" name="name" value="" placeholder="Michael Jordan" class="form-control form-control-plain" ng-model="name" style="color: #fff;">
                                                         </div>
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="form-group">
-                                                            <label>Your Email</label>
+                                                            <!-- <label>Your Email</label> -->
                                                             <input type="text" name="email" value="" placeholder="michael.j@gmail.com" class="form-control form-control-plain" ng-model="email" style="color: #fff;">
                                                         </div>
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="form-group">
-                                                            <label>Phone</label>
-                                                            <input type="text" name="subject" value="" placeholder="" class="form-control form-control-plain" ng-model="phone">
+                                                            <!-- <label>Phone</label> -->
+                                                            <input type="text" name="subject" value="" placeholder="Phone" class="form-control form-control-plain" ng-model="phone">
                                                         </div>
                                                     </div>
                                                     <div class="col-md-12">
                                                         <div class="form-group">
-                                                            <label>Subject</label>
-                                                            <input type="text" name="subject" value="" placeholder="Say hi to you" class="form-control form-control-plain" ng-model="subject" style="color: #fff;">
+                                                            <!-- <label>Subject</label> -->
+                                                            <input type="text" name="subject" value="" placeholder="Subject" class="form-control form-control-plain" ng-model="subject" style="color: #fff;">
                                                         </div>
                                                     </div>
                                                     <div class="col-md-12">
                                                         <div class="form-group">
-                                                            <textarea name="content" class="form-control form-control-plain" placeholder="Here you can write your nice text" rows="8" ng-model="message" style="color: #fff;"></textarea>
+                                                            <textarea name="content" class="form-control form-control-plain" placeholder="Here you can write your nice text" rows="5" ng-model="message" style="color: #fff;"></textarea>
                                                         </div>
                                                         <div>
                                                             <div class="col-md-2 col-md-offset-5">

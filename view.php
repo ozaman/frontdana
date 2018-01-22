@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
     <link rel="apple-touch-icon" sizes="76x76" href="">
     <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
@@ -158,7 +158,7 @@
                                 <div class="">
                                     <ul>
                                         <li class="cur">
-                                            <span >Overview detail</span>
+                                            <span >OVERVIEW DETAIL</span>
                                           
                                         </li>
                                       <!-- <li class="cur">
@@ -196,8 +196,21 @@
     text-transform: uppercase;">Package</div>
                                                 </div>
                                                 <div class="timeline-body">
-                                                    <div ng-bind="tours.name" ></div>
-                                                    <div><span  style="color: #f44336;" ><span ng-bind="tours.cost_web" style="font-weight: 500;"></span><span style="color: #333"><span style="color: #f44336">฿</span> / Person</span></span></div>
+                                                    <!-- <div ng-bind="tours.name" ></div> -->
+                                                    <div style="   font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 8px;
+    margin-top: 25px;"><span>Start from</span></div>
+                        <div style="">
+                                                    <span style="font-size: 16px">Adult : </span>
+                                                    <span class="price price-new" ng-bind="tours.sale_price_adult | currency:'':0" style=" color: #FF5722;"> </span>
+                                                    <span style="margin-left: 8px">Baht</span>
+                                                </div>
+                                                <div  style="">
+                                                    <span  style="font-size: 16px">Child : </span>
+                                                    <span class="price price-new" ng-bind="tours.sale_price_child | currency:'':0" style=" color: #FF5722;"> </span>
+                                                    <span style="margin-left: 8px">Baht</span>
+                                                </div>
                                                       
                                                 </div>
                                     
@@ -217,7 +230,7 @@
     text-transform: uppercase;">Detail</div>
                                                 </div>
                                                 <div class="timeline-body">
-                                                    <p ng-bind="tours.detail">
+                                                    <p style="font-size: 16px" ng-bind="tours.detail">
                                                       
                                                     </p>
                                                       
@@ -245,9 +258,9 @@
     text-transform: uppercase;">Program </div>
                                                 </div>
                                                 <div class="timeline-body" >
-                                                <div id="repeatprogram">
+                                                <p style="font-size: 16px" id="repeatprogram">
                                                   
-                                                </div>
+                                                </p>
                                                 </div>
                                             </div>
                                        
@@ -267,11 +280,52 @@
     text-transform: uppercase;">condition</div>
                                                 </div>
                                                 <div class="timeline-body">
-                                                    <div id="repeatconditions"></div>
-                                                   
+                                                    <!-- <div id="repeatconditions"></div> -->
+                                                    <!-- <div id="repeatconditions"></div> -->
+                                                     <p style="font-size: 16px" ng-repeat="i in tours.conditions.split('\n')">{{ i }}</p>
+                                                   <!-- <div style="font-size: 16px" ng-bind="tours.conditions"></div> -->
                                                     
                                                 </div>
                                             </div>
+                                            <div class="timeline-panel" style="margin-bottom: 50px">
+                                                <div class="timeline-heading" >
+                                                    <div class="" style=" 
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+    /* background-color: #f44336; */
+    border-radius: 4px;
+    padding: 5px 0;
+    text-transform: uppercase;">Include</div>
+                                                </div>
+                                                <div class="timeline-body">
+                                                    <p style="font-size: 16px" ng-repeat="i in tours.include.split('\n')">{{ i }}</p>
+                                                      
+                                                </div>
+                                            </div>
+                                           <!--  <div class="timeline-panel">
+                                                <div class="timeline-heading" >
+                                                    <div class="" style="width: 130px;
+    margin-top:85px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+    /* background-color: #f44336; */
+    border-radius: 4px;
+    padding: 5px 0;
+    text-transform: uppercase;">Include </div>
+                                                </div>
+                                                <div class="timeline-body" >
+                                                <div id="repeatprogram">
+                                                  
+                                                </div>
+                                                </div>
+                                            </div> -->
                                 </div>
                             </div>
                         </div>
@@ -280,7 +334,7 @@
                
                     <!-- <div style="margin-top: 95px"> -->
                         
-                    <div class="col-md-3" style="margin-top: 20px;
+                    <div class="col-md-3" style="margin-top: 90px;
     border-radius: 8px;
     border: 1px solid #4caf50;margin-bottom: 30px;">
                         <h3 class="title"><div align="center" style="margin-bottom: 15px;margin-top: 15px;     font-size: 16px; font-weight: 500;">Recommend</div></h3>
@@ -299,11 +353,33 @@
                         <div class="cost-pro">
 
                            
-                        <div>
+                        <!-- <div>
                             <i class="material-icons" style="display: inline-block; line-height: 0;">place</i>
                             <p class="pro-item" ng-bind="item.city" align="left" ></p>
+                        </div> -->
+                        <div style="    float: left;
+    margin-top: 20px;">
+                            <i class="material-icons" style="display: inline-block; line-height: 0;">place</i>
+                            <p class="pro-item" ng-bind="item.city"  ></p>
                         </div>
-                         <div style="    text-align: right;"><span ng-bind="item.cost_web | currency:'':0 " style=" color: #FF5722;"></span><span> /person</span></div>
+                         <!-- <div style="    text-align: right;"><span ng-bind="item.cost_web" style=" color: #FF5722;"></span><span> /person</span></div> -->
+                         <div class="price-container" align="left" style="float: right;    margin-bottom: 10px">
+
+                        <div style="text-align:  right;    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 8px;
+    margin-top: 25px;"><span>Start from</span></div>
+                        <div style="text-align: right;">
+                                                    <span style="font-size: 16px">Adult : </span>
+                                                    <span class="price price-new" ng-bind="item.sale_price_adult | currency:'':0" style=" color: #FF5722;"> </span>
+                                                    <span style="margin-left: 8px">Baht</span>
+                                                </div>
+                                                <div  style="text-align: right;">
+                                                    <span  style="font-size: 16px">Child : </span>
+                                                    <span class="price price-new" ng-bind="item.sale_price_child | currency:'':0" style=" color: #FF5722;"> </span>
+                                                    <span style="margin-left: 8px">Baht</span>
+                                                </div>
+                                            </div>
 
                             
                         </div>
@@ -421,31 +497,81 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 " >
-                    <!-- col-md-offset-1 -->
-                        <h2 style="color: #fff">Contact Us</h2>
-                        <div class="contact" id="contact">             
-                            <ul >
-                                <li class="">Address: <a>100/16 Moo 5 , Soi 1 Chalernprakiet Rd., T.Rassada Muang Phuket Thailand 83000</a></li>
-                                <li class="">Phones: <a href="tel:#" style="display: inline-block;">(+66) 081-0808804</a></li>
-                                <li class="">E-mail: <a href="mailto:#" style="display: inline-block;"> sales@danatoursasia.com</a></li>
-                            </ul>
-                        </div>
+            <div class="row">
+                <div class="col-md-12">
+                     <h2 style="color: #fff">Contact Us</h2>
+                    <div class="contact" id="contact"> 
+                    <table width="100%" style="color: #fff; font-size: 16px;margin-bottom: 15px">
+                        <tr>
+                            <td valign="top" style="width: 70px; padding: 8px 0px;">Address: </td>
+                            <td  style="padding: 8px 0px;">100/16 Moo 5 , Soi 1 Chalernprakiet Rd., T.Rassada Muang Phuket Thailand 83000</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 70px; padding: 8px 0px;">Phones: </td>
+                            <td  style="padding: 8px 0px;">(+66) 081-0808804</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 70px; padding: 8px 0px;">E-mail: </td>
+                            <td style="padding: 8px 0px;">sales@danatoursasia.com</td>
+                        </tr>
+                    </table>            
+                        <!-- <ul >
+                            <li class="">Address: <a>100/16 Moo 5 , Soi 1 Chalernprakiet Rd., T.Rassada Muang Phuket Thailand 83000</a></li>
+                            <li class="">Phones: <a href="tel:#" style="display: inline-block;">(+66) 081-0808804</a> 
+                           
+                            </li>
+                            <li class="">E-mail: <a href="mailto:#" style="display: inline-block;"> sales@danatoursasia.com</a></li>
+                        </ul> -->
                     </div>
+                </div>
+            </div>
+            <!-- col-md-offset-1 -->
+         
+
+          <div class="row">
+                <div class="col-md-12">
+                    <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="width: 100%;" 
+  data-width="100%"
+  height="450"
+   data-tabs="timeline,events,messages"
+   data-hide-cover="false"
+  frameborder="0" style="border:0"
+  src='https://www.google.com/maps/embed/v1/directions?key=AIzaSyDtMCRvG35DYC9TC_cXfIY7qA5LB6Gv-iA&destination=Dana+tours+%26+travel+CO.,+LTD&origin=7.913528,98.3681061&center=7.913528,98.3681061&avoid=tolls|highways&zoom=15?hl=en'
+
+   allowfullscreen>
+</iframe>
+                </div>
+            </div>
+        </div>
                   <div class="col-md-8 ">
                       <div class="col-sm-12">                    
                           <div class="">
-                              <div class="title-area">
-                                  <h5 class="subtitle text-gray" align="center">Glad to Talk With You</h5>
-                                  <!-- <h2 style="color: #fff">Contact Us</h2> -->
-                                  <div style="width: 100%;text-align: center;"><div class="separator separator-danger">✻</div></div>
-                              </div>
+                              <div class="row">
+                        <div class="col-md-12" style="text-align: center;margin-top: 35px;margin-bottom: 25;">
+                                <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v2.11&appId=1865903040340223';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <div class="fb-page" data-href="https://www.facebook.com/DanaToursandTravel/" ><blockquote cite="https://www.facebook.com/DanaToursandTravel/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/DanaToursandTravel/"></a></blockquote></div>
+                        </div>
+                    </div>
+                            <!-- <div class="title-area">
+                                <h5 class="subtitle text-gray" align="center">Glad to Talk With You</h5>
+                                
+                                <div style="width: 100%;text-align: center;"><div class="separator separator-danger">✻</div></div>
+                            </div>
 
-                              <div class="social-buttons">
-                                  <button class="btn btn-social btn-simple"><a style="color: #d2d2d2;" href="https://www.facebook.com/DanaToursandTravel/?ref=br_rs"> <i class="fa fa-facebook-square"></i></a></button>
-                                  <button class="btn btn-social btn-simple"><i style="color: #d2d2d2;" class="fa fa-twitter"></i></button>
-                                  <button class="btn btn-social btn-simple"><i style="color: #d2d2d2;" class="fa fa-instagram"></i></button>
-                                  <button class="btn btn-social btn-simple"><i style="color: #d2d2d2;" class="fa fa-google"></i></button>
-                              </div>
+                            <div class="social-buttons">
+                                <button class="btn btn-social btn-simple"><a style="color: #d2d2d2;" href="https://www.facebook.com/DanaToursandTravel/?ref=br_rs"> <i class="fa fa-facebook-square"></i></a></button>
+                                <button class="btn btn-social btn-simple"><i style="color: #d2d2d2;"  class="fa fa-twitter"></i></button>
+                                <button class="btn btn-social btn-simple"><i style="color: #d2d2d2;" class="fa fa-instagram"></i></button>
+                                <button class="btn btn-social btn-simple"><i style="color: #d2d2d2;" class="fa fa-google"></i></button>
+                            </div> -->
+                            <!-- <h2 style="color: #fff;text-align: center;">Contact Us</h2> -->
 
                               <div class="row">
                                   <div class="col-md-12 ">
@@ -454,31 +580,31 @@
                                                 <div class="row">
                                                     <div class="col-md-4">
                                                         <div class="form-group">
-                                                            <label>Your Full Name</label>
+                                                            <!-- <label>Your Full Name</label> -->
                                                             <input type="text" name="name" value="" placeholder="Michael Jordan" class="form-control form-control-plain" ng-model="name" style="color: #fff;">
                                                         </div>
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="form-group">
-                                                            <label>Your Email</label>
+                                                            <!-- <label>Your Email</label> -->
                                                             <input type="text" name="email" value="" placeholder="michael.j@gmail.com" class="form-control form-control-plain" ng-model="email" style="color: #fff;">
                                                         </div>
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="form-group">
-                                                            <label>Phone</label>
-                                                            <input type="text" name="subject" value="" placeholder="" class="form-control form-control-plain" ng-model="phone">
+                                                            <!-- <label>Phone</label> -->
+                                                            <input type="text" name="subject" value="" placeholder="Phone" class="form-control form-control-plain" ng-model="phone">
                                                         </div>
                                                     </div>
                                                     <div class="col-md-12">
                                                         <div class="form-group">
-                                                            <label>Subject</label>
-                                                            <input type="text" name="subject" value="" placeholder="Say hi to you" class="form-control form-control-plain" ng-model="subject" style="color: #fff;">
+                                                            <!-- <label>Subject</label> -->
+                                                            <input type="text" name="subject" value="" placeholder="Subject" class="form-control form-control-plain" ng-model="subject" style="color: #fff;">
                                                         </div>
                                                     </div>
                                                     <div class="col-md-12">
                                                         <div class="form-group">
-                                                            <textarea name="content" class="form-control form-control-plain" placeholder="Here you can write your nice text" rows="8" ng-model="message" style="color: #fff;"></textarea>
+                                                            <textarea name="content" class="form-control form-control-plain" placeholder="Here you can write your nice text" rows="5" ng-model="message" style="color: #fff;"></textarea>
                                                         </div>
                                                         <div>
                                                             <div class="col-md-2 col-md-offset-5">
@@ -616,7 +742,7 @@ li{
     padding-bottom:  0;
 }
 .timeline-body p{
-    font-size: 16px;
+    /*font-size: 16px;*/
 }
 .page-header.header-small {
     height: 27vh;

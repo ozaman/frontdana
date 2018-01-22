@@ -1,0 +1,13 @@
+RewriteEngine on
+
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http://danatoursasia.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://danatoursasia.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.danatoursasia.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.danatoursasia.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://danatoursasia.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://danatoursasia.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.danatoursasia.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.danatoursasia.com$      [NC]
+RewriteRule .*\.(jpg|jpeg|gif|png|bmp)$ - [F,NC]
+
